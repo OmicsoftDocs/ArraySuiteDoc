@@ -1,0 +1,3232 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="OmicSoft Doc">
+      
+      
+        <link rel="canonical" href="http://192.168.3.222/WikiBigFiles/doc/v10.3/tutorials/Transgene/DataAnalysis/">
+      
+      
+        <meta name="author" content="OmicSoft Support">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.0.2">
+    
+    
+      
+        <title>Analysis Workflow - omicsoft doc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application-5b1b46901f.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-23f75ab9c7.palette.css">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr-e826f8942a.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    
+      <body data-md-color-primary="blue" data-md-color-accent="teal">
+    
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="http://192.168.3.222/WikiBigFiles/doc/v10.3/" title="omicsoft doc" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  NGS
+                </span>
+              
+                <span class="md-header-nav__parent">
+                  Transgene
+                </span>
+              
+            
+            Analysis Workflow
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../ArrayStudio/ArrayStudio/" title="Framework" class="md-tabs__link">
+          Framework
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Microarray/Installing_Array_Studio/" title="OmicData" class="md-tabs__link">
+          OmicData
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../RNASeq/Introduction/" title="NGS" class="md-tabs__link">
+          NGS
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../OncoLand/Introduction/" title="Land" class="md-tabs__link">
+          Land
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../about/Release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    omicsoft doc
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Framework
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Framework
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ArrayStudio/ArrayStudio/" title="Array Studio" class="md-nav__link">
+      Array Studio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Array Server
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Array Server
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Connecting_to_a_Server_and_Uploading_Files/" title="Connecting to a Server and Uploading Files" class="md-nav__link">
+      Connecting to a Server and Uploading Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Creating_and_Publishing_a_Server_Project/" title="Creating and Publishing a Server Project" class="md-nav__link">
+      Creating and Publishing a Server Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Array_Server_on_Cluster/" title="Array Server on Cluster" class="md-nav__link">
+      Array Server on Cluster
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Array_Server_on_Cloud/" title="Array Server on Cloud" class="md-nav__link">
+      Array Server on Cloud
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Server Explorer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Server Explorer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Getting_Started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Searching_Projects/" title="Searching Projects" class="md-nav__link">
+      Searching Projects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Publishing_Data/" title="Publishing Data" class="md-nav__link">
+      Publishing Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Server_FileManagement/" title="Server File Management" class="md-nav__link">
+      Server File Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Server_Sample_Management/" title="Server Sample Management" class="md-nav__link">
+      Server Sample Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Server_Administration/" title="Server Administration" class="md-nav__link">
+      Server Administration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      GenomeBrowser
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        GenomeBrowser
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Create_Genome_Browser/" title="Create Genome Browser" class="md-nav__link">
+      Create Genome Browser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Adding_Tracks/" title="Adding Tracks" class="md-nav__link">
+      Adding Tracks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Browsing_Data/" title="Browsing Data" class="md-nav__link">
+      Browsing Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Browsing_Data_from_Local_Analysis/" title="Browsing Data from Local Analysis" class="md-nav__link">
+      Browsing Data from Local Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      Sample Management
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        Sample Management
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/SampleManagement/" title="Sample Management" class="md-nav__link">
+      Sample Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/Integration/" title="Integration" class="md-nav__link">
+      Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      Studio on the Cloud
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        Studio on the Cloud
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Connecting_to_Cloud_and_Uploading_Files/" title="Cloud Connection" class="md-nav__link">
+      Cloud Connection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Creatinga_Cloud_Project/" title="Cloud Project" class="md-nav__link">
+      Cloud Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Managing_Cloud_Instance_and_Proxy/" title="Proxy Instance" class="md-nav__link">
+      Proxy Instance
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      Oscript
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        Oscript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oscript/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oscript/RunOscript/" title="Run Oscript" class="md-nav__link">
+      Run Oscript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oscript/PipelineScript/" title="Pipeline Script" class="md-nav__link">
+      Pipeline Script
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      OmicData
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        OmicData
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Microarray
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Microarray
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/Installing_Array_Studio/" title="Installing Array Studio" class="md-nav__link">
+      Installing Array Studio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/Importing_a_Dataset/" title="Importing a Dataset" class="md-nav__link">
+      Importing a Dataset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/Data_Visualization_and_Quality_Control/" title="Data Visualization and Quality Control" class="md-nav__link">
+      Data Visualization and Quality Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/Differential_Expression/" title="Differential Expression" class="md-nav__link">
+      Differential Expression
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/Data_Exploration/" title="Data Exploration" class="md-nav__link">
+      Data Exploration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/Audit_trail/" title="Audit trail" class="md-nav__link">
+      Audit trail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/References/" title="References" class="md-nav__link">
+      References
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      CNV
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        CNV
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Visualization_of_Data/" title="Data Visulization" class="md-nav__link">
+      Data Visulization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Summarization_of_CNV_Data/" title="Data Summarization" class="md-nav__link">
+      Data Summarization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Advanced_Visualization/" title="Advanced Visulization" class="md-nav__link">
+      Advanced Visulization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Analysis_Modules/" title="Analysis" class="md-nav__link">
+      Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      ExonArray
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        ExonArray
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Importing_a_Dataset/" title="Importing a Dataset" class="md-nav__link">
+      Importing a Dataset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Visualization_of_Data/" title="Visualization of Data" class="md-nav__link">
+      Visualization of Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Data_Visualization_and_Quality_Control/" title="Data Visualization and Quality Control" class="md-nav__link">
+      Data Visualization and Quality Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Differential_Expression__Probeset_Level_/" title="Differential Expression Probeset Level" class="md-nav__link">
+      Differential Expression Probeset Level
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Exon_Level_ANOVA_ExonDiffertialExpression_/" title="Exon Level Differtial Expression" class="md-nav__link">
+      Exon Level Differtial Expression
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Alternative_Splicing_ANOVA/" title="Alternative Splicing ANOVA" class="md-nav__link">
+      Alternative Splicing ANOVA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Generate_Transcript_Level_Data/" title="Generate Transcript Level Data" class="md-nav__link">
+      Generate Transcript Level Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      RT-PCR
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        RT-PCR
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Manage_RT-PCR_Raw_Data/" title="Manage RT-PCR Raw Data" class="md-nav__link">
+      Manage RT-PCR Raw Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Import_RT-PCR_Wizard/" title="Import RT-PCR Wizard" class="md-nav__link">
+      Import RT-PCR Wizard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Downstream_Analysis_of_RT-PCR_data/" title="Downstream Analysis of RT-PCR data" class="md-nav__link">
+      Downstream Analysis of RT-PCR data
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
+    
+    <label class="md-nav__link" for="nav-3-5">
+      SNP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-5">
+        SNP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Visualization_of_Data/" title="Visualization of Data" class="md-nav__link">
+      Visualization of Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Marker_Statistics__Data_Filtering__and_Population_Structure/" title="Marker Statistics Data Filtering and Population Structure" class="md-nav__link">
+      Marker Statistics Data Filtering and Population Structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Association_Analysis/" title="Association Analysis" class="md-nav__link">
+      Association Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Visualizationof_pValues/" title="Visualizationof pValues" class="md-nav__link">
+      Visualizationof pValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      NGS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        NGS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      RNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        RNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/CreateArray_Studio_Project/" title="Create ArrayStudio Project" class="md-nav__link">
+      Create ArrayStudio Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Add%20From%20RNA-Seq%20Pipeline/" title="Add From RNA-Seq Pipeline" class="md-nav__link">
+      Add From RNA-Seq Pipeline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/QC_ofRawData_Files/" title="QC of RawData Files" class="md-nav__link">
+      QC of RawData Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Alignment_to_the_Genome/" title="Alignment to the Genome" class="md-nav__link">
+      Alignment to the Genome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/QC_of_AlignedData/" title="QC of AlignedData" class="md-nav__link">
+      QC of AlignedData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/RNA-Seq_Quantification/" title="RNA-Seq Quantification" class="md-nav__link">
+      RNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/RNA-Seq_Fusion_Gene_Detection/" title="RNA-Seq Fusion Gene Detection" class="md-nav__link">
+      RNA-Seq Fusion Gene Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/RNA-Seq_Mutation_Detection/" title="RNA-Seq Mutation Detection" class="md-nav__link">
+      RNA-Seq Mutation Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Save___Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      DNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        DNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Create_Array_Studio_Project/" title="Create Project" class="md-nav__link">
+      Create Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/QC_of_Raw_Data_Files/" title="Raw Data QC" class="md-nav__link">
+      Raw Data QC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Alignment_to_the_Genome/" title="Alignment" class="md-nav__link">
+      Alignment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/QC_of_Aligned_Data/" title="Aligned QC" class="md-nav__link">
+      Aligned QC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/DNA-Seq_Fusion_Gene_Detection/" title="Fusion Detection" class="md-nav__link">
+      Fusion Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/DNA-SeqMutation_Detection/" title="Variant Detection" class="md-nav__link">
+      Variant Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/DNA-Seq_Copy_Number_Analysis/" title="Copy Number Analysis" class="md-nav__link">
+      Copy Number Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Save___Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      miRNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        miRNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/CreateArray_Studio_Project/" title="CreateArray Studio Project" class="md-nav__link">
+      CreateArray Studio Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/workflow_and_pipeline/" title="workflow and pipeline" class="md-nav__link">
+      workflow and pipeline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/QC_ofRaw_Data_Files/" title="QC of Raw Data Files" class="md-nav__link">
+      QC of Raw Data Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Filtering_Trimming_Reads/" title="Filtering Trimming Reads" class="md-nav__link">
+      Filtering Trimming Reads
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Alignment_to_the_Genome/" title="Alignment to the Genome" class="md-nav__link">
+      Alignment to the Genome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/QC_of_Aligned_Data/" title="QC of Aligned Data" class="md-nav__link">
+      QC of Aligned Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/miRNA-Seq_Quantification/" title="miRNA-Seq Quantification" class="md-nav__link">
+      miRNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Save_Close_Project/" title="Save and Close Project" class="md-nav__link">
+      Save and Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      scRNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        scRNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Create_ArrayStudio_Project/" title="CreateArray Studio Project" class="md-nav__link">
+      CreateArray Studio Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/scRNA_Analysis_Workflow/" title="scRNA analysis workflow" class="md-nav__link">
+      scRNA analysis workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Preprocess_scRNA_Data/" title="Pre-process of scRNA-Seq data" class="md-nav__link">
+      Pre-process of scRNA-Seq data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Tag_based_QC/" title="TAG Based QC" class="md-nav__link">
+      TAG Based QC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Alignment_to_the_Genome/" title="Alignment to the Genome" class="md-nav__link">
+      Alignment to the Genome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Remove_Duplicate/" title="Remove Duplicate" class="md-nav__link">
+      Remove Duplicate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/scRNASeq_Quantification/" title="scRNA-Seq Quantification" class="md-nav__link">
+      scRNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Other_Downstream_Analysis/" title="Other Downstream Analysis" class="md-nav__link">
+      Other Downstream Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Save_Close_Project/" title="Save and Close Project" class="md-nav__link">
+      Save and Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      GWAS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        GWAS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Connecting_To_A_Server_And_Uploading_Files/" title="Connecting To A Server And Uploading Files" class="md-nav__link">
+      Connecting To A Server And Uploading Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Preprocessing/" title="Preprocessing" class="md-nav__link">
+      Preprocessing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/QC_of_GWAS_data/" title="QC of GWAS data" class="md-nav__link">
+      QC of GWAS data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Imputation/" title="Imputation" class="md-nav__link">
+      Imputation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Association/" title="Association" class="md-nav__link">
+      Association
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Annotation/" title="Annotation" class="md-nav__link">
+      Annotation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6" checked>
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Transgene
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Transgene
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Analysis Workflow
+      </label>
+    
+    <a href="./" title="Analysis Workflow" class="md-nav__link md-nav__link--active">
+      Analysis Workflow
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build-plasmid-reference-and-gene-model" title="Build plasmid Reference and Gene Model" class="md-nav__link">
+    Build plasmid Reference and Gene Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raw-data-qc" title="Raw Data QC" class="md-nav__link">
+    Raw Data QC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alignment" title="Alignment" class="md-nav__link">
+    Alignment
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#align-to-host" title="Align to Host" class="md-nav__link">
+    Align to Host
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#align-to-plasmid" title="Align to Plasmid" class="md-nav__link">
+    Align to Plasmid
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coverage-analysis-on-host-genome" title="Coverage analysis on host genome" class="md-nav__link">
+    Coverage analysis on host genome
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quantify-coverage-on-contigs" title="Quantify Coverage on contigs" class="md-nav__link">
+    Quantify Coverage on contigs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summarize-coverage" title="Summarize Coverage" class="md-nav__link">
+    Summarize Coverage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-coverage-at-base-pair-resolution-using-bedgraph-file-in-genome-browser" title="Check coverage at base pair resolution using BedGraph file in Genome Browser" class="md-nav__link">
+    Check coverage at base pair resolution using BedGraph file in Genome Browser
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-detection" title="Integration Detection" class="md-nav__link">
+    Integration Detection
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tag-split" title="Tag Split" class="md-nav__link">
+    Tag Split
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transgene-detection" title="Transgene Detection" class="md-nav__link">
+    Transgene Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genome-browser-of-transgene-integration" title="Genome Browser Of Transgene Integration" class="md-nav__link">
+    Genome Browser Of Transgene Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variation-detection-on-transgene" title="Variation detection on transgene" class="md-nav__link">
+    Variation detection on transgene
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Land
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Land
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      OncoLand
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        OncoLand
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Search_Basics/" title="Basic Search" class="md-nav__link">
+      Basic Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Advanced_Analytics/" title="Advanced Analytics" class="md-nav__link">
+      Advanced Analytics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Measurement_Data/" title="Measurement Data" class="md-nav__link">
+      Measurement Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Land_Tools/" title="Land Tools" class="md-nav__link">
+      Land Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Virtual_Land/" title="Virtual Land" class="md-nav__link">
+      Virtual Land
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      DiseaseLand
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        DiseaseLand
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/BodyMap/" title="Body Map" class="md-nav__link">
+      Body Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/DiseaseLand/" title="DiseaseLand" class="md-nav__link">
+      DiseaseLand
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/LINCS/" title="LINCs" class="md-nav__link">
+      LINCs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/scLand/" title="Single Cell Lands" class="md-nav__link">
+      Single Cell Lands
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      ComparisonLand from External Inferences
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        ComparisonLand from External Inferences
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/AddExpressionData/" title="Add Expression Data" class="md-nav__link">
+      Add Expression Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/ConvertInferenceData/" title="Convert Inference Data" class="md-nav__link">
+      Convert Inference Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/CreateLand/" title="Create Land" class="md-nav__link">
+      Create Land
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/ExploreComparisonLand/" title="Explore ComparisonLand" class="md-nav__link">
+      Explore ComparisonLand
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
+    
+    <label class="md-nav__link" for="nav-5-4">
+      GeneticsLand
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-4">
+        GeneticsLand
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Introduction_to_GeneticsLand/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Adding_Data_to_GeneticsLand/" title="Adding Data to GeneticsLand" class="md-nav__link">
+      Adding Data to GeneticsLand
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Explore_Your_Data_in_GeneticsLand/" title="Explore Your Data in GeneticsLand" class="md-nav__link">
+      Explore Your Data in GeneticsLand
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Delete_your_GeneticsLand/" title="Delete your GeneticsLand" class="md-nav__link">
+      Delete your GeneticsLand
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/Release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/Contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../example/" title="Example" class="md-nav__link">
+      Example
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build-plasmid-reference-and-gene-model" title="Build plasmid Reference and Gene Model" class="md-nav__link">
+    Build plasmid Reference and Gene Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raw-data-qc" title="Raw Data QC" class="md-nav__link">
+    Raw Data QC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alignment" title="Alignment" class="md-nav__link">
+    Alignment
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#align-to-host" title="Align to Host" class="md-nav__link">
+    Align to Host
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#align-to-plasmid" title="Align to Plasmid" class="md-nav__link">
+    Align to Plasmid
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coverage-analysis-on-host-genome" title="Coverage analysis on host genome" class="md-nav__link">
+    Coverage analysis on host genome
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quantify-coverage-on-contigs" title="Quantify Coverage on contigs" class="md-nav__link">
+    Quantify Coverage on contigs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summarize-coverage" title="Summarize Coverage" class="md-nav__link">
+    Summarize Coverage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-coverage-at-base-pair-resolution-using-bedgraph-file-in-genome-browser" title="Check coverage at base pair resolution using BedGraph file in Genome Browser" class="md-nav__link">
+    Check coverage at base pair resolution using BedGraph file in Genome Browser
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-detection" title="Integration Detection" class="md-nav__link">
+    Integration Detection
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tag-split" title="Tag Split" class="md-nav__link">
+    Tag Split
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transgene-detection" title="Transgene Detection" class="md-nav__link">
+    Transgene Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genome-browser-of-transgene-integration" title="Genome Browser Of Transgene Integration" class="md-nav__link">
+    Genome Browser Of Transgene Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variation-detection-on-transgene" title="Variation detection on transgene" class="md-nav__link">
+    Variation detection on transgene
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="data-analysis">Data Analysis<a class="headerlink" href="#data-analysis" title="Permanent link">&para;</a></h1>
+<p>In this tutorial, we will show how to run the following analysis: build genome reference, raw data QC, pre-processing, coverage analysis, transgene detection, consensus inference and variation detection, . The general analysis workflow can be illustrated as below:</p>
+<p><img alt="image3_png" src="../images/image3.png" /></p>
+<p>We will show each step one by one in this tutorial. All these steps can be concatenated together using OmicScript to be a standard pipeline and generate report using ExportToReport function.</p>
+<h2 id="build-plasmid-reference-and-gene-model">Build plasmid Reference and Gene Model<a class="headerlink" href="#build-plasmid-reference-and-gene-model" title="Permanent link">&para;</a></h2>
+<p>For transgene analysis, the user has to build a genome reference for the plasmid sequence. To build a reference library, use <strong>NGS | Build | Build Reference Library</strong> to build the reference from a FASTA file:</p>
+<p><img alt="image4_png" src="../images/image4.png" /></p>
+<p>Input any name for Reference Library ID:</p>
+<p><img alt="image5_png" src="../images/image5.png" /></p>
+<p>If the user also has the gene model files (GTF or GFF) for the plasmid, a gene model can also be built in <strong>NGS | Build | Build Gene Model</strong>. It is optional for transgene analysis.
+With a gene model, the genome browser can show the transgene integration site along with gene annotation on the genome. The mutation analysis can also use a gene model to assess the impact of the variation (in order to check whether it is causing amino acid changes or not).</p>
+<p><img alt="image6_png" src="../images/image6.png" /></p>
+<p>Once built, the user can check how the reference and gene model look like in the Genome Browser:</p>
+<p><img alt="image7_png" src="../images/image7.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you do not see your new reference in the drop-down menu, de-select the option "List Server components". This is because the reference you have build that is stored in your local cache, not the server.  If you wish to perform this tutorial, please connect to ArrayServer, and create a Server Project before building your reference genome and gene model.</p>
+</div>
+<p>You will get a genome browser view of the plasmid in linear scale:</p>
+<p><img alt="image8_png" src="../images/image8.png" /></p>
+<h2 id="raw-data-qc">Raw Data QC<a class="headerlink" href="#raw-data-qc" title="Permanent link">&para;</a></h2>
+<p>Once user gets raw data from NGS machine, it is best to go through the raw data QC step to check data quality.</p>
+<p>Array Studio contains modules for QC of raw data files. The easiest way is to run <strong>Raw Data QC Wizard</strong>, which scans each file once to calculate all quality statistics such as GC content, per position nucleotide distribution, read length distribution, quality box plot, sequence duplication and K-mer analysis.</p>
+<p><img alt="Raw_Data_QC_Wizard_Menu" src="../images/Raw_Data_QC_Wizard_Menu.png" /></p>
+<p>Click <strong>Add</strong> to find all fastq files, and check the QC metrics to run. Optionally, for a faster analysis, the user can choose <strong>preview mode</strong> to only generate QC on the first one million reads. This is, in most cases, good enough to get an assessment of quality. Leave File format to AUTO and <strong>Quality encoding</strong> as <strong>Automatic</strong> to automatically set the correct quality encoding method.</p>
+<p><img alt="image10_png" src="../images/image10.png" /></p>
+<p>Click <strong>Submit</strong> to begin the analysis.</p>
+<p>The raw data QC returns multiple raw data QC results/reports in <strong>Raw Data QC</strong> folder:</p>
+<p><img alt="image11_png" src="../images/image11.png" /></p>
+<p>The basic statistics table contains some important information about your samples, including total Sample #, Minimum and Maximum read length (if pre-filtering has occurred), total Nucleotide #, and GC%. Use this table to confirm any expected values, as well as to get an idea of the overall size of your experiment.</p>
+<p>The Sequence length report shows the distribution of read length. For original data from the sequencer, read length should be the same. After the user runs pre-processing such as trimming and adapter stripping, the read lengths will be different. The distribution of sequence length will show the final read length after trimming and stripping.</p>
+<p>Base distribution of each raw data file is useful for ensuring that the base distribution is as expected
+(sometimes can be used to notice adapter sequences if the user is not aware that they are there as well).</p>
+<p>Quality BoxPlot shows, for each base pair position in a file, information on the quality scoring at that position.
+This gives the user an idea of where the quality starts to drop for most reads in a sample. It is useful to compare plots when evaluating sequencing quality of multiple samples.</p>
+<p>The K-Mer Analysis module counts the enrichment of every possible 5-mer across the positions of the reads.
+This analysis identifies whether there is an enrichment of a kmer on a particular region of the read.
+It can help find overrepresented patterns, such as adapters being read through when inserted fragment is short.
+In the <strong>KMerAnalysis</strong> profile view, Y-axis is the percentage of reads (0.001 means 0.1%) that contain each KMer.
+There is no significant (all less than 1%) enrichment of k-mer in this tutorial dataset.</p>
+<h2 id="alignment">Alignment<a class="headerlink" href="#alignment" title="Permanent link">&para;</a></h2>
+<h3 id="align-to-host">Align to Host<a class="headerlink" href="#align-to-host" title="Permanent link">&para;</a></h3>
+<p>User should then align reads to host genome. At this moment, we provided two CHO reference genomes:</p>
+<ul>
+<li>CriGri.B1.0: the original BGI version</li>
+<li>CriGri.B1.1: based on NCBI, Genome reference "C_griseus_v1.0".</li>
+</ul>
+<p><img alt="image16_png" src="../images/image16.png" /></p>
+<p>Check "<em>Reads are paired</em>", and specify output name in the <strong>Advanced</strong> tab.
+The user can leave all other options as default in general tab. Some companies may require users to specify the output folder too.</p>
+<p><img alt="image17_png" src="../images/image17.png" /></p>
+<p>The Advanced menu has more options to specify the indel length. By default, it detects deletion up to 1000bp and insertion up to 10bp. However, it is designed for regular human/mouse DNA-Seq samples. For mutation detection in plasmids, it is recommended to decrease the upper limit of deletion length to 10bp. The expected insert size in this dataset is 800bp since the data was simulated based on SRA dataset SRX091184.</p>
+<p><img alt="image18_png" src="../images/image18.png" /></p>
+<p>It will align to host, CHO reference, and generate NgsData (BAM files) and alignment statistics.</p>
+<p>NgsData in ArrayStudio Projects:</p>
+<p><img alt="image19_png" src="../images/image19.png" /></p>
+<p>Alignment reports summarize the alignment statistics, such as fragment size of paired end reads, # and % of reads uniquely aligned.</p>
+<p><img alt="image20_png" src="../images/image20.png" /></p>
+<p>In the coverage analysis step, users can further use the NgsData to count the # of reads mapped to each contig, and get coverage report/views at base pair resolution.</p>
+<h3 id="align-to-plasmid">Align to Plasmid<a class="headerlink" href="#align-to-plasmid" title="Permanent link">&para;</a></h3>
+<p>Before alignment to plasmid, the user will have to pre-build plasmid genome reference from FASTA files.
+As mentioned in the previous step, the user has to build a plasmid reference: pGRG36, for this tutorial.</p>
+<p><img alt="image16_png" src="../images/image16.png" /></p>
+<p><img alt="image12_png" src="../images/image12.png" /></p>
+<p>More options can be found under the <em>Advanced</em> tab:</p>
+<p><img alt="image13_png" src="../images/image13.png" /></p>
+<p>It will align to plasmid reference, and generate NgsData (BAM files) and alignment statistics.</p>
+<p>NgsData in ArrayStudio Projects:</p>
+<p><img alt="image14_png" src="../images/image14.png" /></p>
+<p>Alignment reports:</p>
+<p><img alt="image15_png" src="../images/image15.png" /></p>
+<h2 id="coverage-analysis-on-host-genome">Coverage analysis on host genome<a class="headerlink" href="#coverage-analysis-on-host-genome" title="Permanent link">&para;</a></h2>
+<h3 id="quantify-coverage-on-contigs">Quantify Coverage on contigs<a class="headerlink" href="#quantify-coverage-on-contigs" title="Permanent link">&para;</a></h3>
+<p>Since the CHO genome reference is not yet well defined, there are many contigs from CHO, and the user will get lost by looking at coverage directly. The user can first quantify the coverage on each contig, and get the percentage of mapped reads in each contig.</p>
+<p>The <strong>NGS | Quantification | Report Gene/Transcript Count</strong> function is designed to quantify gene expression from RNA-Seq data. If the input is DNA-Seq data, it will quantify the read counts on each contig/chr:</p>
+<p><img alt="image21_png" src="../images/image21.png" /></p>
+<p>Choose the host alignment NgsData, and choose expression measurement to be <strong>Count</strong>; <strong>Count fragments</strong> instead of reads will count properly paired reads only; <strong>EM algorithm</strong> will assign reads mapped to multiple contigs based on EM iterations.</p>
+<p>It will generate an OmicData with rows for contigs and columns for samples:</p>
+<p><img alt="image22_png" src="../images/image22.png" /></p>
+<p>The default data object name still contains "Transcript" since it was designed for RNA-Seq. User can always rename it to other names such as <em>AlignToHost.ContigReadCount</em>.</p>
+<p>The data values are EM read counts for each contig. User can further convert them to percentages of mapped reads in each contig by using <strong>NGS | Inference | Normalize RNA-Seq Data</strong> (again, the function was designed for RNA-Seq, but can be applied to DNA-Seq data).</p>
+<p><img alt="image23_png" src="../images/image23.png" /></p>
+<p>Use the <strong>TotalCount</strong> method and scale the total count to 1, then the count of reads will be normalized as percentage of reads mapped to each contigs.</p>
+<p><img alt="image24_png" src="../images/image24.png" /></p>
+<p>In the table, user can right click the header and sort the table column descending.
+It shows top contigs which have been enriched in the NGS library.</p>
+<p>By selecting top contigs, user can create a list of them for filtering purpose in other tables.
+Right click on <em>List</em>, "Add list from selected rows" and name it "TopContigs":</p>
+<p><img alt="image25_png" src="../images/image25.png" /></p>
+<h3 id="summarize-coverage">Summarize Coverage<a class="headerlink" href="#summarize-coverage" title="Permanent link">&para;</a></h3>
+<p>The <strong>NGS | Coverage | Coverage Summary Statistics</strong> module can be used to calculate the coverage of the mapping at defined bin resolution or export as a bedgraph file at base pair resolution.</p>
+<p><img alt="image26_png" src="../images/image26.png" /></p>
+<p>Pick the <strong>Host alignment</strong> NgsData as Data input.</p>
+<p>Exclude multi-reads: Multi reads are considered non-unique (i.e. reads that align to multiple genomic locations with equal or similar numbers of mismatches). Selecting this option will include unique reads only when performing the coverage summarization.</p>
+<p>Exclude duplicates: duplicate reads are reads mapped to the exact same location. Duplicated reads are excluded by default in most NGS modules.</p>
+<p>The coverage will be summarized in each bin size specified. If user wants to have the basepair resolution coverage, he/she can choose to output <a href="http://genome.ucsc.edu/goldenpath/help/bedgraph.html">bedGraph</a> files.</p>
+<p>The output is a table of coverage values in each bin for each sample.</p>
+<p><img alt="coverage_report_png" src="../images/coverage_report.png" /></p>
+<p>It also generates a histogram of coverage on all contigs.
+However, there are so many contigs in CHO, it is recommended to use top contigs as a filter to filter the table, then open the histogram plot.</p>
+<p>In the View Controller on the right, select the Row tab, then right-click on "Chromosome" and select "Add List Filter". For some tables, it has been set as check box by default. If you do not see "Add list Filter", please change the column to "String Filter". User can also type the following contigs in the String filter in to check contigs:</p>
+<p><img alt="filtered_histogram_png" src="../images/filtered_histogram.png" /></p>
+<h3 id="check-coverage-at-base-pair-resolution-using-bedgraph-file-in-genome-browser">Check coverage at base pair resolution using BedGraph file in Genome Browser<a class="headerlink" href="#check-coverage-at-base-pair-resolution-using-bedgraph-file-in-genome-browser" title="Permanent link">&para;</a></h3>
+<p>The bedGraph files contain continuous coverage data in track format. It is generated by the coverage analysis and loads much faster in genome browser than loading the actual BAM files.</p>
+<p>Steps:</p>
+<p>Create new genome browser:</p>
+<p><img alt="image29_png" src="../images/image29.png" /></p>
+<p>Add Track | Add Track from Server Files | Numeric Tracks | BedGraph file</p>
+<p><img alt="image30_png" src="../images/image30.png" /></p>
+<p>Select the bedgraph files generated in the output folder:</p>
+<p><img alt="image31_png" src="../images/image31.png" /></p>
+<p>Jump to contigs of interest to browse coverage at base pair resolution:</p>
+<p><img alt="image32_png" src="../images/image32.png" /></p>
+<h2 id="integration-detection">Integration Detection<a class="headerlink" href="#integration-detection" title="Permanent link">&para;</a></h2>
+<h3 id="tag-split">Tag Split<a class="headerlink" href="#tag-split" title="Permanent link">&para;</a></h3>
+<p>If the NGS library fragments are generated from digestion with a cutting enzyme, it may generate random chimeric DNA fragments which results in false positives in  transgene detection. If the cutting enzyme relies on short restriction NT sites, it can bring a lot of false positives in the downstream analysis. If we know the restriction NT combinations, users can first split the reads when finding an enzyme cutting site. It can greatly reduce the false positives in transgene detection.</p>
+<p>Users can split reads by Tag in the Analysis tab by navigating to <strong>NGS | Preprocess | Split by Tag</strong>:</p>
+<p><img alt="image32_0_png" src="../images/image32_0.png" /></p>
+<p>Add the sample fastq data from server folder:</p>
+<ul>
+<li>
+<p><strong>Input format:</strong>
+    choose AUTO and it will check file format automatically</p>
+</li>
+<li>
+<p><strong>Quality encoding:</strong>
+    the encoding for quality score; recommend using Automatic.</p>
+</li>
+<li>
+<p><strong>Tag sequence:</strong>
+    The sequence tag which will be recognized by restriction enzyme.</p>
+</li>
+<li>
+<p><strong>Minimal sequence length:</strong>
+    The read will be thrown again if length &lt; MinLength after split</p>
+</li>
+<li>
+<p><strong>Zip format:</strong>
+    no gzip or bzip format.</p>
+</li>
+</ul>
+<p>The program will go over each fastq file and split reads recursively based on the tag:</p>
+<p><img alt="image32_1_png" src="../images/image4.png" /></p>
+<p>New fastq.gz files will be generated in the output folder.</p>
+<p>Note, it is also possible that there are enzyme sites near the true integration site. These sites will not be detected when running Transgene Detection using split reads.</p>
+<h3 id="transgene-detection">Transgene Detection<a class="headerlink" href="#transgene-detection" title="Permanent link">&para;</a></h3>
+<p>From the raw data (or split read data if Split by Tag has been run), user can start to run transgene detection in <strong>NGS | Fusion | Transgene Integration Analysis</strong>:</p>
+<p><img alt="transgene_int_menu" src="../images/transgene_int_menu.png" /></p>
+<p><img alt="image34_png" src="../images/image4.png" /></p>
+<p>Add data from server folder and follow the following options:</p>
+<ul>
+<li>
+<p><strong>Input format:</strong>
+    choose AUTO and it will check file format automatically</p>
+</li>
+<li>
+<p><strong>Reads are paired Check box:</strong>
+    if the box is checked, read1 and read2 files will be automatically paired based on read names as one sample for integration analysis.</p>
+</li>
+<li>
+<p><strong>Host genome:</strong>
+    the host genome to detect integration; Make sure you pick the same host reference as in the previous alignment step.</p>
+</li>
+<li>
+<p><strong>Plasmid genome:</strong>
+    the custom plasmid genome built by user.</p>
+</li>
+<li>
+<p><strong>Quality encoding:</strong>
+    the encoding for quality score; we recommend using Automatic.</p>
+</li>
+<li>
+<p><strong>Zip format:</strong>
+    no gzip or bzip format.</p>
+</li>
+<li>
+<p><strong>Thread number:</strong>
+    Number of Threads for each job.</p>
+</li>
+<li>
+<p><strong>Job number:</strong>
+    Number of parallel jobs to run.</p>
+</li>
+<li>
+<p><strong>Cut size:</strong>
+    the minimum size of read end to be aligned to host or plasmid. For read length &gt; 75 bp, we recommend using 25. If read length is less than 75bp, please use
+    the formula (ReadLength/3).</p>
+</li>
+<li>
+<p><strong>Extension:</strong>
+    display the left and right extension length of integration junction sequence in the report; will be used to filter false positives caused by restriction enzyme.</p>
+</li>
+<li>
+<p><strong>Perform consensus analysis for partially aligned reads:</strong>
+    If checked, the function will scan reads partilly aligned to plasmid reference, and infer the consensus on soft clipped read sequences. Since the CHO genome is not a complete reference, the consensus analysis for partially aligned reads potentially will find integration sites which are not part of the current CHO genome reference.</p>
+</li>
+<li>
+<p><strong>Minimal clipping:</strong>
+    The minimal length of clipping region of the read to be used for consensus analysis</p>
+</li>
+<li>
+<p><strong>Minimal read#:</strong>
+    The minmal number of reads to report a integration site from consensus analysis</p>
+</li>
+<li>
+<p><strong>Output folder:</strong>
+    Browse to specify the output folder.</p>
+</li>
+</ul>
+<p>In the <strong>Advanced</strong> tab:</p>
+<p><img alt="image35_png" src="../images/image35.png" /></p>
+<p>More options:</p>
+<ul>
+<li>
+<p><strong>Read Trimming</strong>: We recommend the default settings as filtering will typically be done before users get to this step.</p>
+</li>
+<li>
+<p><strong>Mask fuzzy plasmid/host fusion</strong>: check this box if user wants to mask regions that are the same in plasmid and host, such as the EASE region in CHO.</p>
+</li>
+<li>
+<p><strong>Exclude fusion if cutting position#</strong>: number of cutting position means number of unique reads. The default cut off is one single read support.</p>
+</li>
+<li>
+<p><strong>Misc</strong>: generate table land to support big report tables; checking this option will make it easier to share this data with others when complete.</p>
+</li>
+<li>
+<p>Set an output name in ArraySuite project.</p>
+</li>
+</ul>
+<p>Click <strong>Send to Queue</strong> and it will send the job to run on server.</p>
+<p>Once the job finishes, you can update the project with results and will see three NgsData objects and three result tables:</p>
+<p><img alt="image36_png" src="../images/image36.png" /></p>
+<p><strong>TransgeneReport_PlasmidHost</strong>: reports the number of support reads for each transgene integration site for each sample, with information of the integration positions in host and plasmid.</p>
+<p><img alt="image37_png" src="../images/image37.png" /></p>
+<p>For better characterization of integration site, a column named "Integration Type" is reported, based on the definition in the schematic below:</p>
+<p><img alt="image37_1_png" src="../images/image37_1.png" /></p>
+<p>Example:</p>
+<p>TRANS_1140_165663373(--) is an integration site between plasmid position 1141 to CHO NW_003613610.1, with 9 reads (8 unique read sequences) supporting from the this dataset. From integration type, user can tell that plasmid sequence starting 1141 has been integrated after CHO NW_003613610.1 position 3346702.</p>
+<p>TRANS_10161_165672719(++) is an integration site between plasmid position 10162 to CHO NW_003613610.1, with 23 reads (19 unique read sequences) supporting from this dataset. From integration type, user can tell that integration of plasmid ends at 10162 and then continues with CHO seqeunce starting from NW_003613610.1 position 3356048.</p>
+<p>This data is quite clean and does not have any false positives. Due to the nature of enrichment technology, it is possible to have many false positives introduced, as mentioned in the "Split by Tag" section. If user does not run the transgene detection using fastq files from "Split by Tag" run, user should filter the detection table based on integration junction sequence (such as not containing "CATG" for Targeted Locus Amplification (TLA) datasets, using filter "not catg" in the junction sequence), top contigs, and # of supporting reads. Note that the "Split by Tag" option, while useful to filter out false positives, has the potential to generate false negatives. Users of this tutorial will notice that only one of the two fusions are detected when using the split fastq files. Thus, filtering of false positives should be done on a case-by-case basis, with users defining how many false positives they can tolerate.</p>
+<p>For a table with multiple samples, user can get the summary statistics on read counts, such as max of unique reads in any samples,
+using <strong>Table | Columns | Add Columns | Column Summarization | Pick columns and pick summarization method</strong>.</p>
+<p><img alt="image38_png" src="../images/image38.png" /></p>
+<p><strong>TransgeneReport_PlasmidPlasmid</strong>: report the number of support reads for each plasmid-to-plasmid integration in each sample, with information of the integration positions in host and plasmid.</p>
+<p><strong>Transgene.TransgeneReport_Consensus</strong>: report the number of supporting reads from consensus analysis. The direction indicates the location of consensus sequence relative to the plasmid breakpoint. The consensus sequences that are inferred from soft clipped reads should be part of the host (such as CHO) genome. It reports the number of supporting clipped reads and total number of reads (the total coverage) at the breakpoint.</p>
+<p><img alt="image38_1_png" src="../images/image38_1.png" /></p>
+<p>Users can further visualize these integration sites in genome browser based on the NgsData.</p>
+<h3 id="genome-browser-of-transgene-integration">Genome Browser Of Transgene Integration<a class="headerlink" href="#genome-browser-of-transgene-integration" title="Permanent link">&para;</a></h3>
+<p>Within the transgene report, right click on the row ID, user will have the option to open a new genome browser:</p>
+<p><img alt="image39_png" src="../images/image39.png" /></p>
+<p>In the example above, right click on TRANS_1140_165663373(--), which it has option to open one of two NgsData objects.
+Because we are in the plasmid-to-host transgene report table, choose to open the PlasmidHostFusion NgsData object.
+It will jump to the Genome browser tab, and list available NGS samples to open:</p>
+<p><img alt="image40_png" src="../images/image40.png" /></p>
+<p>Leave all samples checked and click <strong>OK</strong>.
+It will first load the coverage of these supporting reads on two panels, one for plasmid and the other for the host:</p>
+<p><img alt="image41_png" src="../images/image41.png" /></p>
+<p>User can switch the two panes to have the breakpoints facing each other if necessary.</p>
+<p>Note, although we jump to this genome browser based on one transgene integration site, it loads the NgsData containing all integration site supporting reads.
+If the current region contains multiple integration sites, the genome browser will show all supporting reads for them.
+User can filter reads by transgene integration ID in the tag filter in genome browser track property:</p>
+<p><img alt="image42_png" src="../images/image42.png" /></p>
+<p>User can mouse over the sample genome browser track name and it will pop up a tooltip allowing user to display the supporting reads. If the option is grey, please zoom in a little bit
+to &lt; 200bp region:</p>
+<p><img alt="image43_png" src="../images/image43.png" /></p>
+<p>Strikethrough of part of the read means the read part is not aligned to the region: Part of the read is aligned to plasmid and the rest of the read is aligned to host.</p>
+<p>User can also view the consensus inference in genome browser.</p>
+<p><img alt="image44_1_png" src="../images/image44_1.png" /></p>
+<p>User can filter genome browser alignment by Cigar filter to softclipping reads only, and set minimal length of softclip to be 5 or 10.</p>
+<p><img alt="image44_2_png" src="../images/image44_2.png" /></p>
+<p>From the alignment of softclipped region (read parts with strike), the genome view can help user visually check the consensus seqeunce, starting with ACATCAGCCCACGTTTCCAGTTGATGA. User can use PCR to verify the integration site if the reported consensus sequence is not a part of current host genome sequence.</p>
+<p>For more information about genome browser such as sharing a genome browser, please read <a href="http://www.arrayserver.com/wiki/index.php?title=Tutorials">Omicsoft Genome Browser Tutorial</a>
+Here is a general key for genome browser:</p>
+<p><img alt="image44_png" src="../images/image44.png" /></p>
+<h2 id="variation-detection-on-transgene">Variation detection on transgene<a class="headerlink" href="#variation-detection-on-transgene" title="Permanent link">&para;</a></h2>
+<p>Based on the alignment of NGS data to plasmid, we can further detect variation based on consensus mutations calls.
+To do so, user can use the <strong>NGS | Variation | Summarize Variant Data (Omicsoft)</strong>:</p>
+<p><img alt="summarize_variant_data_png" src="../images/summarize_variant_data.png" />
+<img alt="summarize_variant_data_window_png" src="../images/summarize_variant_data_window.png" /></p>
+<p>Pick the Data to the NgsData of Plasmid alignment, change the <strong>Mutation options</strong>.
+The default mutation options are designed for regular human/mouse studies.
+For production cell lines with enrichment on transgene regions, user should use high cutoff of position coverage and # of reads supporting mutation,
+while lowering the cutoff for mutation frequency.
+In this way, user can detect confident variation, at very low frequency level since there might be hundreds of plasmid integrations to the host.</p>
+<p>Also make sure to reduce the "exclude mutation if maximal frequency" option to zero to maximize the sensitivity:</p>
+<p><img alt="summarize_variant_data_advanced" src="../images/summarize_variant_data_advanced.png" /></p>
+<p>The mutation report will contain three columns (coverage, read frequency and %Plus strand) for each data file, and additional annotation for the mutation,
+such as positions, reference and mutations:</p>
+<p><img alt="mutation_report_png" src="../images/mutation_report.png" /></p>
+<p>Sorting this table by the mutation frequency, we can see that the most frequent mutation is MUT00000026. The mutation position on the plasmid is base pair 6930, reference is A and Variation is G, or an A-&gt;G. The position is covered by 87 reads and 87*0.6667=58 reads are supporting G in this position.</p>
+<p>User can also create a view of Mutation Frequency vs. Coverage by adding a scatterplot view:</p>
+<p><img alt="image48_png" src="../images/image48.png" /></p>
+<p>Selecting data points will show details for these positions.
+User can further customize the view using options highlighted in the screenshot below:</p>
+<p><img alt="image49_png" src="../images/image49.png" /></p>
+<p>Right click on the row names and show the mutation in genome browser with detailed pile-ups from reads:</p>
+<p><img alt="image50_png" src="../images/image50.png" /></p>
+<p>The genome browser might be slow due to high coverage on these regions:</p>
+<p><img alt="image51_png" src="../images/image51.png" /></p>
+<p>If gene model was built with CDS information for the plasmid, user can add the gene model in the genome browser using:</p>
+<p><img alt="image52_png" src="../images/image52.png" /></p>
+<p>With the gene model, user can further use <strong>NGS | Variation | Annotate Variant Table Report</strong> to find Non-Synonymous changes.
+If any exist, it will also annotate the exact amino acid changes.</p>
+<p><img alt="annotate_mutation_png" src="../images/annotate_mutation.png" /></p>
+<p>The annotated mutation report will look like below, and can be filtered for certain mutation types (i.e. synonymous) in the View Controller on the right:</p>
+<p><img alt="annotation_view_png" src="../images/annotation_view.png" /></p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Introduction/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Others/" title="Others" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Others
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2008 - 2017 OmicSoft/QIAGEN Bioinformatics
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://omicsoft.github.io" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/omicsoft" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/company-beta/3531113/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application-84693e5e49.js"></script>
+      
+      <script>app.initialize({version:"0.17.1",url:{base:"../../.."}})</script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>

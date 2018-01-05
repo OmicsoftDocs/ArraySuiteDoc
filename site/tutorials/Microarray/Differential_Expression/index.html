@@ -1,0 +1,2969 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="OmicSoft Doc">
+      
+      
+        <link rel="canonical" href="http://192.168.3.222/WikiBigFiles/doc/v10.3/tutorials/Microarray/Differential_Expression/">
+      
+      
+        <meta name="author" content="OmicSoft Support">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.0.2">
+    
+    
+      
+        <title>Differential Expression - omicsoft doc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application-5b1b46901f.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-23f75ab9c7.palette.css">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr-e826f8942a.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    
+      <body data-md-color-primary="blue" data-md-color-accent="teal">
+    
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="http://192.168.3.222/WikiBigFiles/doc/v10.3/" title="omicsoft doc" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  OmicData
+                </span>
+              
+                <span class="md-header-nav__parent">
+                  Microarray
+                </span>
+              
+            
+            Differential Expression
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../ArrayStudio/ArrayStudio/" title="Framework" class="md-tabs__link">
+          Framework
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Installing_Array_Studio/" title="OmicData" class="md-tabs__link md-tabs__link--active">
+          OmicData
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../RNASeq/Introduction/" title="NGS" class="md-tabs__link">
+          NGS
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../OncoLand/Introduction/" title="Land" class="md-tabs__link">
+          Land
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../about/Release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    omicsoft doc
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Framework
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Framework
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ArrayStudio/ArrayStudio/" title="Array Studio" class="md-nav__link">
+      Array Studio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Array Server
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Array Server
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Connecting_to_a_Server_and_Uploading_Files/" title="Connecting to a Server and Uploading Files" class="md-nav__link">
+      Connecting to a Server and Uploading Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Creating_and_Publishing_a_Server_Project/" title="Creating and Publishing a Server Project" class="md-nav__link">
+      Creating and Publishing a Server Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Array_Server_on_Cluster/" title="Array Server on Cluster" class="md-nav__link">
+      Array Server on Cluster
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Array_Server_on_Cloud/" title="Array Server on Cloud" class="md-nav__link">
+      Array Server on Cloud
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Server Explorer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Server Explorer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Getting_Started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Searching_Projects/" title="Searching Projects" class="md-nav__link">
+      Searching Projects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Publishing_Data/" title="Publishing Data" class="md-nav__link">
+      Publishing Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Server_FileManagement/" title="Server File Management" class="md-nav__link">
+      Server File Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Server_Sample_Management/" title="Server Sample Management" class="md-nav__link">
+      Server Sample Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Server_Administration/" title="Server Administration" class="md-nav__link">
+      Server Administration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      GenomeBrowser
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        GenomeBrowser
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Create_Genome_Browser/" title="Create Genome Browser" class="md-nav__link">
+      Create Genome Browser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Adding_Tracks/" title="Adding Tracks" class="md-nav__link">
+      Adding Tracks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Browsing_Data/" title="Browsing Data" class="md-nav__link">
+      Browsing Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Browsing_Data_from_Local_Analysis/" title="Browsing Data from Local Analysis" class="md-nav__link">
+      Browsing Data from Local Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      Sample Management
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        Sample Management
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/SampleManagement/" title="Sample Management" class="md-nav__link">
+      Sample Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/Integration/" title="Integration" class="md-nav__link">
+      Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      Studio on the Cloud
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        Studio on the Cloud
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Connecting_to_Cloud_and_Uploading_Files/" title="Cloud Connection" class="md-nav__link">
+      Cloud Connection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Creatinga_Cloud_Project/" title="Cloud Project" class="md-nav__link">
+      Cloud Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Managing_Cloud_Instance_and_Proxy/" title="Proxy Instance" class="md-nav__link">
+      Proxy Instance
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      Oscript
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        Oscript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oscript/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oscript/RunOscript/" title="Run Oscript" class="md-nav__link">
+      Run Oscript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oscript/PipelineScript/" title="Pipeline Script" class="md-nav__link">
+      Pipeline Script
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      OmicData
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        OmicData
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Microarray
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Microarray
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Installing_Array_Studio/" title="Installing Array Studio" class="md-nav__link">
+      Installing Array Studio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Importing_a_Dataset/" title="Importing a Dataset" class="md-nav__link">
+      Importing a Dataset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Data_Visualization_and_Quality_Control/" title="Data Visualization and Quality Control" class="md-nav__link">
+      Data Visualization and Quality Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Differential Expression
+      </label>
+    
+    <a href="./" title="Differential Expression" class="md-nav__link md-nav__link--active">
+      Differential Expression
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#two-way-anova" title="Two-Way ANOVA" class="md-nav__link">
+    Two-Way ANOVA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-volcanoplotview-and-inference-report" title="The VolcanoPlotView and Inference Report" class="md-nav__link">
+    The VolcanoPlotView and Inference Report
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-venn-diagram-view" title="The Venn diagram view" class="md-nav__link">
+    The Venn diagram view
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-general-linear-model" title="The General Linear Model" class="md-nav__link">
+    The General Linear Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summarize-inference-report" title="Summarize Inference Report" class="md-nav__link">
+    Summarize Inference Report
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Data_Exploration/" title="Data Exploration" class="md-nav__link">
+      Data Exploration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Audit_trail/" title="Audit trail" class="md-nav__link">
+      Audit trail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../References/" title="References" class="md-nav__link">
+      References
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      CNV
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        CNV
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Visualization_of_Data/" title="Data Visulization" class="md-nav__link">
+      Data Visulization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Summarization_of_CNV_Data/" title="Data Summarization" class="md-nav__link">
+      Data Summarization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Advanced_Visualization/" title="Advanced Visulization" class="md-nav__link">
+      Advanced Visulization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Analysis_Modules/" title="Analysis" class="md-nav__link">
+      Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      ExonArray
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        ExonArray
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Importing_a_Dataset/" title="Importing a Dataset" class="md-nav__link">
+      Importing a Dataset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Visualization_of_Data/" title="Visualization of Data" class="md-nav__link">
+      Visualization of Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Data_Visualization_and_Quality_Control/" title="Data Visualization and Quality Control" class="md-nav__link">
+      Data Visualization and Quality Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Differential_Expression__Probeset_Level_/" title="Differential Expression Probeset Level" class="md-nav__link">
+      Differential Expression Probeset Level
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Exon_Level_ANOVA_ExonDiffertialExpression_/" title="Exon Level Differtial Expression" class="md-nav__link">
+      Exon Level Differtial Expression
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Alternative_Splicing_ANOVA/" title="Alternative Splicing ANOVA" class="md-nav__link">
+      Alternative Splicing ANOVA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Generate_Transcript_Level_Data/" title="Generate Transcript Level Data" class="md-nav__link">
+      Generate Transcript Level Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      RT-PCR
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        RT-PCR
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Manage_RT-PCR_Raw_Data/" title="Manage RT-PCR Raw Data" class="md-nav__link">
+      Manage RT-PCR Raw Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Import_RT-PCR_Wizard/" title="Import RT-PCR Wizard" class="md-nav__link">
+      Import RT-PCR Wizard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Downstream_Analysis_of_RT-PCR_data/" title="Downstream Analysis of RT-PCR data" class="md-nav__link">
+      Downstream Analysis of RT-PCR data
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
+    
+    <label class="md-nav__link" for="nav-3-5">
+      SNP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-5">
+        SNP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Visualization_of_Data/" title="Visualization of Data" class="md-nav__link">
+      Visualization of Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Marker_Statistics__Data_Filtering__and_Population_Structure/" title="Marker Statistics Data Filtering and Population Structure" class="md-nav__link">
+      Marker Statistics Data Filtering and Population Structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Association_Analysis/" title="Association Analysis" class="md-nav__link">
+      Association Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Visualizationof_pValues/" title="Visualizationof pValues" class="md-nav__link">
+      Visualizationof pValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      NGS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        NGS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      RNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        RNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/CreateArray_Studio_Project/" title="Create ArrayStudio Project" class="md-nav__link">
+      Create ArrayStudio Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Add%20From%20RNA-Seq%20Pipeline/" title="Add From RNA-Seq Pipeline" class="md-nav__link">
+      Add From RNA-Seq Pipeline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/QC_ofRawData_Files/" title="QC of RawData Files" class="md-nav__link">
+      QC of RawData Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Alignment_to_the_Genome/" title="Alignment to the Genome" class="md-nav__link">
+      Alignment to the Genome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/QC_of_AlignedData/" title="QC of AlignedData" class="md-nav__link">
+      QC of AlignedData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/RNA-Seq_Quantification/" title="RNA-Seq Quantification" class="md-nav__link">
+      RNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/RNA-Seq_Fusion_Gene_Detection/" title="RNA-Seq Fusion Gene Detection" class="md-nav__link">
+      RNA-Seq Fusion Gene Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/RNA-Seq_Mutation_Detection/" title="RNA-Seq Mutation Detection" class="md-nav__link">
+      RNA-Seq Mutation Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Save___Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      DNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        DNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Create_Array_Studio_Project/" title="Create Project" class="md-nav__link">
+      Create Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/QC_of_Raw_Data_Files/" title="Raw Data QC" class="md-nav__link">
+      Raw Data QC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Alignment_to_the_Genome/" title="Alignment" class="md-nav__link">
+      Alignment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/QC_of_Aligned_Data/" title="Aligned QC" class="md-nav__link">
+      Aligned QC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/DNA-Seq_Fusion_Gene_Detection/" title="Fusion Detection" class="md-nav__link">
+      Fusion Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/DNA-SeqMutation_Detection/" title="Variant Detection" class="md-nav__link">
+      Variant Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/DNA-Seq_Copy_Number_Analysis/" title="Copy Number Analysis" class="md-nav__link">
+      Copy Number Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Save___Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      miRNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        miRNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/CreateArray_Studio_Project/" title="CreateArray Studio Project" class="md-nav__link">
+      CreateArray Studio Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/workflow_and_pipeline/" title="workflow and pipeline" class="md-nav__link">
+      workflow and pipeline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/QC_ofRaw_Data_Files/" title="QC of Raw Data Files" class="md-nav__link">
+      QC of Raw Data Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Filtering_Trimming_Reads/" title="Filtering Trimming Reads" class="md-nav__link">
+      Filtering Trimming Reads
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Alignment_to_the_Genome/" title="Alignment to the Genome" class="md-nav__link">
+      Alignment to the Genome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/QC_of_Aligned_Data/" title="QC of Aligned Data" class="md-nav__link">
+      QC of Aligned Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/miRNA-Seq_Quantification/" title="miRNA-Seq Quantification" class="md-nav__link">
+      miRNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Save_Close_Project/" title="Save and Close Project" class="md-nav__link">
+      Save and Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      scRNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        scRNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Create_ArrayStudio_Project/" title="CreateArray Studio Project" class="md-nav__link">
+      CreateArray Studio Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/scRNA_Analysis_Workflow/" title="scRNA analysis workflow" class="md-nav__link">
+      scRNA analysis workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Preprocess_scRNA_Data/" title="Pre-process of scRNA-Seq data" class="md-nav__link">
+      Pre-process of scRNA-Seq data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Tag_based_QC/" title="TAG Based QC" class="md-nav__link">
+      TAG Based QC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Alignment_to_the_Genome/" title="Alignment to the Genome" class="md-nav__link">
+      Alignment to the Genome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Remove_Duplicate/" title="Remove Duplicate" class="md-nav__link">
+      Remove Duplicate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/scRNASeq_Quantification/" title="scRNA-Seq Quantification" class="md-nav__link">
+      scRNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Other_Downstream_Analysis/" title="Other Downstream Analysis" class="md-nav__link">
+      Other Downstream Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Save_Close_Project/" title="Save and Close Project" class="md-nav__link">
+      Save and Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      GWAS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        GWAS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Connecting_To_A_Server_And_Uploading_Files/" title="Connecting To A Server And Uploading Files" class="md-nav__link">
+      Connecting To A Server And Uploading Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Preprocessing/" title="Preprocessing" class="md-nav__link">
+      Preprocessing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/QC_of_GWAS_data/" title="QC of GWAS data" class="md-nav__link">
+      QC of GWAS data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Imputation/" title="Imputation" class="md-nav__link">
+      Imputation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Association/" title="Association" class="md-nav__link">
+      Association
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Annotation/" title="Annotation" class="md-nav__link">
+      Annotation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Transgene
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Transgene
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Transgene/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Transgene/DataAnalysis/" title="Analysis Workflow" class="md-nav__link">
+      Analysis Workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Transgene/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Land
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Land
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      OncoLand
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        OncoLand
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Search_Basics/" title="Basic Search" class="md-nav__link">
+      Basic Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Advanced_Analytics/" title="Advanced Analytics" class="md-nav__link">
+      Advanced Analytics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Measurement_Data/" title="Measurement Data" class="md-nav__link">
+      Measurement Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Land_Tools/" title="Land Tools" class="md-nav__link">
+      Land Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Virtual_Land/" title="Virtual Land" class="md-nav__link">
+      Virtual Land
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      DiseaseLand
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        DiseaseLand
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/BodyMap/" title="Body Map" class="md-nav__link">
+      Body Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/DiseaseLand/" title="DiseaseLand" class="md-nav__link">
+      DiseaseLand
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/LINCS/" title="LINCs" class="md-nav__link">
+      LINCs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/scLand/" title="Single Cell Lands" class="md-nav__link">
+      Single Cell Lands
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      ComparisonLand from External Inferences
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        ComparisonLand from External Inferences
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/AddExpressionData/" title="Add Expression Data" class="md-nav__link">
+      Add Expression Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/ConvertInferenceData/" title="Convert Inference Data" class="md-nav__link">
+      Convert Inference Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/CreateLand/" title="Create Land" class="md-nav__link">
+      Create Land
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/ExploreComparisonLand/" title="Explore ComparisonLand" class="md-nav__link">
+      Explore ComparisonLand
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
+    
+    <label class="md-nav__link" for="nav-5-4">
+      GeneticsLand
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-4">
+        GeneticsLand
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Introduction_to_GeneticsLand/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Adding_Data_to_GeneticsLand/" title="Adding Data to GeneticsLand" class="md-nav__link">
+      Adding Data to GeneticsLand
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Explore_Your_Data_in_GeneticsLand/" title="Explore Your Data in GeneticsLand" class="md-nav__link">
+      Explore Your Data in GeneticsLand
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Delete_your_GeneticsLand/" title="Delete your GeneticsLand" class="md-nav__link">
+      Delete your GeneticsLand
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/Release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/Contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../example/" title="Example" class="md-nav__link">
+      Example
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#two-way-anova" title="Two-Way ANOVA" class="md-nav__link">
+    Two-Way ANOVA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-volcanoplotview-and-inference-report" title="The VolcanoPlotView and Inference Report" class="md-nav__link">
+    The VolcanoPlotView and Inference Report
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-venn-diagram-view" title="The Venn diagram view" class="md-nav__link">
+    The Venn diagram view
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-general-linear-model" title="The General Linear Model" class="md-nav__link">
+    The General Linear Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summarize-inference-report" title="Summarize Inference Report" class="md-nav__link">
+    Summarize Inference Report
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="differential-expression">Differential Expression<a class="headerlink" href="#differential-expression" title="Permanent link">&para;</a></h1>
+<p><em>Array Studio</em> contains a number of different modules for performing univariate analysis/differential expression, including One-Way ANOVA, Two-Way ANOVA, and the more advanced General Linear Model, as well as a few others.</p>
+<h2 id="two-way-anova">Two-Way ANOVA<a class="headerlink" href="#two-way-anova" title="Permanent link">&para;</a></h2>
+<p><em>Two-Way ANOVA</em> can be used to research the effects of multiple factors on expression data. The design of the experiment in this tutorial is set-up so that the user will perform a <em>Two-Way ANOVA</em>.</p>
+<p>For this tutorial, we are interested in generating contrasts for each time point, in comparing the DBP (treatment) group to the control group. The first factor in the ANOVA is <em>time</em> while the second factor is <em>treatment</em>. Thus, we should be able to generate four contrasts, and associating fold changes, p-values, estimates, etc.</p>
+<p>While the <em>General Linear Model</em> could easily be used instead (and provide more customization of the results), it is a much more straightforward process for the novice user to use the <em>Two-way ANOVA</em> module.</p>
+<p>To run the <em>Differential Expression-Two Way ANOVA</em> module, go to the <strong>Statistical Inference</strong> section of the workflow, and select <strong>Two-Way ANOVA</strong>. Alternatively, the same module can be selected by going to the <strong>OmicData Menu | Inference | Standard Tests | Two-way ANOVA</strong>.</p>
+<p><img alt="image118_png" src="../images/image118.png" /></p>
+<p>This opens the <em>Two-way Analysis of Variance</em> window:</p>
+<p><img alt="image119_png" src="../images/image119.png" /></p>
+<p>As with other analysis windows, the user must first set the <em>Project</em> and <em>Data</em> on which to run the analysis, in the <em>Input/Output</em> section.</p>
+<ul>
+<li>
+<p>Make sure <em>TutorialMicroArray</em> is chosen as the project and <em>MicroArrayData</em> is chosen as the input data.</p>
+</li>
+<li>
+<p>For <em>Variables</em> , ensure that <em>All Variables</em> is selected.</p>
+</li>
+<li>
+<p>For <em>Observations</em>, choose <strong>Customized observations</strong> , then click the <strong>Select</strong> button to choose the list <strong>MicroArrayData.Observation23</strong>. This ensures that the statistical tests are only run on the 23 observations that passed the PCA quality control.</p>
+</li>
+</ul>
+<p><img alt="image120_png" src="../images/image120.png" /></p>
+<p><em>Array Studio</em> will attempt to automatically populate the <strong>Factor 1</strong> and <strong>Factor 2</strong> dropdown boxes, using the first two <em>Factor</em> type columns in the design table. For this tutorial, this should correctly populate <em>Factor 1</em> as <em>time</em> and <em>Factor 2</em> as <em>treatment</em>.</p>
+<ul>
+<li>
+<p>For generating the comparisons, the <strong>For each</strong> box is used. The factor chosen for <em>Factor 1</em> will automatically be populated into the <em>For each</em> box, and cannot be changed, unless the user changes the <em>Factor 1</em> column.</p>
+</li>
+<li>
+<p>To figure out what comparisons will be generated, read the <strong>For each</strong>, <strong>Compare to</strong> boxes together. So, <em>For each: time¸ Compare to</em>: control will generate a contrast comparing DBP to control at each time point.</p>
+</li>
+<li>
+<p>Ensure that the <em>Compare to</em> dropdown box is set to <em>control</em>.</p>
+</li>
+<li>
+<p>The option to <strong>Include interaction term</strong> should be enabled, however if users wish to run a two-way ANOVA without the interaction, this is available here as well.</p>
+</li>
+<li>
+<p><strong>Comparison</strong> specifies the multiple comparison procedure. Options include <em>Control</em>, <em>Dunnett</em> and <em>Tukey</em>.</p>
+</li>
+<li>
+<p><strong>By</strong> - Allows the user to select an additional categorical variable to subset the data set before running ANOVA.</p>
+</li>
+<li>
+<p><strong>Multiplicity</strong> adjustments for the comparisons can be set as well, with the default adjustment being FDR_BH (options include <em>None</em>, <em>FDR_BH</em>, <em>FDR_BY</em>, <em>Bonferonni</em>, <em>Sidak</em>, <em>StepDownBonferroni</em>, <em>StepDownSidak</em>, <em>StepUp</em>, <em>QValue</em>, <em>QValue41</em>). The <em>multiplicity</em> adjustment will calculate an <em>Adjusted p-value</em> column in the result report.</p>
+</li>
+<li>
+<p><strong>FC Transformation</strong> specifies how the Fold Change is calculated based on estimate.     Fold change is defined as the unlogged estimate. By default, it is Exp2: sign(estimate)*2^abs(estimate). User also has the options of Exp, Exp10 and Ratio.</p>
+</li>
+<li>
+<p>The <strong>Alpha level</strong>, or p-value cutoff, is used in the automatic generation of <em>Lists</em> for each contrast. If a <em>multiplicity</em> adjustment is set to anything other than <em>None</em>, these lists will be generated for probesets that have an adjusted p-value less than this value (by default 0.05).</p>
+</li>
+<li>
+<p><strong>Report F-Test Pvalues</strong> will report the p-values for the F-tests (i.e. one p-value each for time, treatment, and treatment*time). Leave this box unchecked as we are more interested in specific estimates.</p>
+</li>
+<li>
+<p><strong>Generate LSMean data</strong> will generate a new <em>Data</em> object, where each observation is the LSMean of the interaction of <em>Factor 1</em> and <em>Factor 2</em> group (i.e. in this case, the LSMean     <em>data</em> would have 8 observations, one for each <em>time*treatment</em> group). For this tutorial, leave this box unchecked.</p>
+</li>
+<li>
+<p>If <em>Generate LSMean data</em> is checked, <strong>Append LSMeans to the inference report</strong> becomes available. This will append the <em>LSMeans data</em>, for each interaction group, to the inference report. This can be used to see the adjusted mean intensity levels of each group for any potential differentially expressed probesets (i.e. some users prefer to ignore lower-expressing probesets, and this provides the user with a way to filter by these values).</p>
+</li>
+<li>
+<p><strong>Generate estimate data</strong> will generate a <em>Data</em> object containing one observation per contrast. So, in the case of this tutorial, the new <em>Estimate data</em> would contain four observations, one for each of the four comparisons being generated. For the purposes of this tutorial, leave this box unchecked.</p>
+</li>
+<li>
+<p><strong>Split the significant list by change direction</strong> will split each generated significant list (based on the alpha level value) by direction of change.</p>
+</li>
+</ul>
+<p>For users familiar with SAS Code, clicking the <strong>Show SAS Code</strong> button will generate the equivalent SAS code in a text file (the SAS code can only be used to run one probeset at a time).</p>
+<p>To run the differential expression, click the <strong>Submit</strong> button.</p>
+<h2 id="the-volcanoplotview-and-inference-report">The VolcanoPlotView and Inference Report<a class="headerlink" href="#the-volcanoplotview-and-inference-report" title="Permanent link">&para;</a></h2>
+<p>After running the <em>Two-way ANOVA</em> (the computing time should be 1-3 seconds), a <em>Table</em> is generated under the <strong>Inference</strong> folder of the Solution Explorer, <strong>MicroArray Data.Tests</strong> (expand the Inference folder to see this). This table contains the information generated by the <em>Two-way ANOVA</em>. As can be observed in the <em>Solution Explorer</em>, this table contains 15923 rows (for the 15923 probesets) and 51 columns (35 from the original <em>Annotation</em> and 16 new columns).</p>
+<p>Also notice that a number of new <em>Lists</em> have been automatically generated by the <em>Two-way ANOVA</em>. These <em>Lists</em> can be used for purposes of filtering, and also in the next section, for generating a <em>Venn Diagram</em>. These lists were generated using an adjusted p-value cutoff of 0.05 (this was set in the previous dialog menu). If the user preferred to automatically generate lists using raw p-value, then no multiplicity adjustment test should have been specified.</p>
+<p><img alt="list_post_ANOVA_analysis_png" src="../images/list_post_ANOVA_analysis.png" /></p>
+<p>By default, a <em>VolcanoPlotView</em> will be generated for the <em>Inference Table</em>. It should be the view visible in the main view window. If not, double-click on it in the <em>Solution Explorer</em> or switch to the view in the main <em>Data View</em> window.</p>
+<p><img alt="image122_png" src="../images/image122.png" /></p>
+<p>After opening the <em>view VolcanoPlot</em>, notice that four <em>volcano plots</em> have been created in this view, one for each comparison generated by the <em>Two-Way ANOVA</em> window.</p>
+<p><img alt="volcano_plots_1_png" src="../images/volcano_plots_1.png" /></p>
+<p>To change all graphs to the same scale, click <em>Use Uniform Scale</em> icon on the toolbar (as shown below).</p>
+<p><img alt="image124_png" src="../images/image124.png" /></p>
+<p>The graph should be updated instantly.</p>
+<p><img alt="volcano_plots_normalized_png" src="../images/volcano_plots_normalized.png" /></p>
+<p>Looking in the <em>toolbar</em>, the user should recognize many of the icons from previous views.</p>
+<p><img alt="image126_png" src="../images/image126.png" /></p>
+<p><img alt="image127_png" src="../images/image127.png" /> <strong>Open Current view as picture</strong>: will open current visible view in the default picture viewer</p>
+<p><img alt="image128_png" src="../images/image128.png" /></p>
+<p><strong>Open Current view in Excel:</strong> will open current visible view in Microsoft Excel</p>
+<p><strong>Open All Charts in Excel:</strong> will open all opened views in Microsoft Excel</p>
+<p><strong>Open Current view in Excel (Editable)</strong>: will open current visible view in Microsoft Excel and allow the user to edit the graphics (in Office 2003 and above)</p>
+<p><strong>Open All Charts in Excel (Editable)</strong>: will open all opened views in Microsoft Excel and allow the user to edit the graphics (in Office 2003 and above)</p>
+<p><img alt="image129_png" src="../images/image129.png" /></p>
+<p><strong>Open Current view in PowerPoint</strong>: will open current visible view in Microsoft PowerPoint</p>
+<p><strong>Open All Charts in PowerPoint</strong>: will open all opened views in Microsoft PowerPoint</p>
+<p><strong>Open Current view in PowerPoint (Editable)</strong> : will open current visible viewin Microsoft PowerPoint and allow the user to edit the graphics (in Office 2003 and above)</p>
+<p><strong>Open All Charts in PowerPoint (Editable)</strong>: will open current visible view in Microsoft PowerPoint and allow the user to edit the graphics (in Office 2003 and above)</p>
+<p><img alt="image130_png" src="../images/image130.png" /> <strong>Copy Current View</strong>: will copy current view to the clipboard</p>
+<p><img alt="image131_png" src="../images/image131.png" /> <strong>Save Current View</strong>: will save the current visible view as an image file (default is pdf but other formats include png, emf, gif, jpg, tif, bmp)</p>
+<p><img alt="image132_png" src="../images/image132.png" /> <strong>Print Current View</strong>: will print the current view</p>
+<p><strong>Print All Charts</strong>: will print charts that are currently opened</p>
+<p><img alt="image133_png" src="../images/image133.png" /> <strong>Select</strong>: allow the user to lasso multiple selections</p>
+<p><img alt="image134_png" src="../images/image134.png" /> <strong>Zoom in</strong>: will zoom in the table using lasso</p>
+<p><img alt="full_screen_png" src="../images/full_screen.png" /> <strong>Full Screen</strong>: will open the view in full screen mode</p>
+<p><img alt="image136_png" src="../images/image136.png" /> <strong>Refresh Chart and Undo all Zooms/Pans</strong>: Returns view to the original format</p>
+<p><img alt="image137_png" src="../images/image137.png" /></p>
+<p><strong>Specify Layout</strong> <em>(rows*columns)</em>: To specify layout by rows and columns. For instance, if the user was only interested in seeing one column per view in order to see a particular view in greater detail, this would be set to 3*1 (3 rows*1 column). Each column represents a view.</p>
+<p><img alt="image138_png" src="../images/image138.png" /> <strong>Use Uniform Scale</strong>: when selected, will use the same scale (x and y-axis) for all graphs.</p>
+<p>The <em>VolcanoPlotView</em> shows the * Log10* <em>P-value</em> on the y-axis and the <em>Estimate</em> (<em>Estimate</em> is defined as the statistically adjusted difference between the means of the two groups being compared) on the x-axis. Thus, the most significant probesets are higher on the y-axis, while the most positive or negative genes can be found at the extremes of the x-axis. Similar to all views in Array Studio, the <em>VolcanoPlotView</em> is fully interactive. Selecting a particular point or points on the plot brings up the details of that probeset (based on its annotation) in the <em>Details</em> window at the bottom of the screen.</p>
+<p>The <em>View Controller | Task</em> under <em>VolcanoPlotView</em> mode gives the user options to <em>Change Chart Properties</em> (which includes renaming the title of the chart as well as the x and y-axis titles, and many other options), <em>Change Symbol Properties</em>, and <em>Change To Quality-First Mode</em>. The VolcanoPlot will often default to what is known as a "Speed-First Mode", where it is updated quickly when any changes are applied to the view (i.e. layout, specify columns). This mode is particularly useful when dealing with large numbers of variables. Users can toggle between this mode and <em>Quality-First</em> mode by clicking the option in the <em>View Controller</em>:</p>
+<p><img alt="quality_first_png" src="../images/quality_first.png" /></p>
+<p>Switch to <em>Quality-First</em> mode now and select <em>Change Symbol Properties</em>. To enlarge the data points in the volcano plot and allow for better visualization, users can slide the button in Size. Users can also add labels to all data points, or only those selected. In this example, choose selected and use the drop-down menu to label by Probe Set ID:</p>
+<p><img alt="probe_label_png" src="../images/probe_label.png" /></p>
+<p>Now, move the mouse around the volcano plot named <em>1 DBP vs. Control</em>. Notice that a red square encompasses each individual point on the graph. This can be used to select an individual probeset from the graph, and retrieve information in the <em>Details Window</em>. Now, click on the data point that is in the upper most right corner of this plot. The point should now turn red, as it has been selected and labeled.</p>
+<p><img alt="volcano_plot_selected_png" src="../images/volcano_plot_selected.png" /></p>
+<p>Make sure that the <em>Details Window</em> is visible down below. If it has been closed, go to <em>View | Show Details Window</em>. If necessary, drag the border between the main <em>Data View Window</em> and the <em>Details Window</em> to expand the size of the <em>Details Window</em>. After selecting the upper right-hand data point, check the <em>Details Window</em>. Notice that the <em>Details Window</em> now contains the information of <em>Estimates</em>, <em>Fold Changes</em>, <em>Raw P-values</em>, and <em>Adjusted P-values</em> for each comparison.</p>
+<p><img alt="selected_sig_probe_png" src="../images/selected_sig_probe.png" /></p>
+<p>Scroll right in the <em>Details Window</em> to see the rest of the annotation columns.</p>
+<p><img alt="selected_sig_probe2_png" src="../images/selected_sig_probe2.png" /></p>
+<p>Because the test report is a type of <em>Table</em>, it also allows the user to use the <em>View Controller | Column</em> and <em>Row</em> tabs to filter the data by any column or row (includes the <em>Two-Way ANOVA</em> generated columns, as well as the gene <em>annotation</em> columns).</p>
+<p>Click the <em>Options</em> icon in the <em>Row</em> tab <img alt="image143_png" src="../images/image143.png" /></p>
+<p><img alt="Controller_row_options_dropdown_png" src="../images/Controller_row_options_dropdown.png" /></p>
+<p>This allows the user to group the filters by either mode (i.e. p-value, fold-change, estimate, etc.) or contrast (time point 1 DBP vs. control, time point 2 DBP vs. control, etc.). Try grouping the p-values by <em>mode</em> now, and notice the effect on the filters.</p>
+<p>Notice that the Estimates for each comparison are now grouped together, as are the FoldChange, RawPValue, and AdjustedPValue columns. This is especially helpful for organizing filters in studies where a large number of contrasts have been generated.</p>
+<p>Also, note that the filter can be set to <strong>Match All Column</strong> or <strong>Match Any Columns</strong> . By default, the filter uses <em>Match All Columns</em> , ensuring that all filters will be matched when set. However, choosing <em>Match Any Columns</em> will allow the user to get results matching any of the filters.</p>
+<p>The <em>Table View</em> for the inference report is also automatically generated by the <em>Two-way ANOVA</em>, as a <em>TableView</em> named <em>Report</em>. Open this view now by double clicking in the <em>Solution Explorer</em>.</p>
+<p><img alt="image145_png" src="../images/image145.png" /></p>
+<p>A <em>TableView</em> is now shown in the main view window, containing the columns generated by the <em>Two-way ANOVA</em>, as well as the <em>annotation</em> columns. For this particular dataset, there are 15923 rows of probesets, with 51 columns of <em>annotation</em>.</p>
+<p>Notice that this includes <em>annotation</em> columns for <em>Estimate</em> columns, <em>Fold Change</em> columns, <em>Raw p-value</em> columns, and <em>Adjusted p-value</em> columns for each comparison made by the <em>Two-way ANOVA</em>.</p>
+<p><img alt="microarray_data_table_png" src="../images/microarray_data_table.png" /></p>
+<p>Click <em>Specify Columns</em> in the <em>View Controller | Task</em> tab.</p>
+<p><img alt="image147_png" src="../images/image147.png" /></p>
+<p>A <em>Choose Columns</em> window allows the user to specify the columns for view in the table. This can be useful, as the user may want to create different <em>Table Views</em> for the report, each containing different information. Columns can be removed, added, or the order of the columns can be changed.</p>
+<p><img alt="image148_png" src="../images/image148.png" /></p>
+<p>Click <em>OK</em> to return to the <em>TableView</em> of the report.</p>
+<p>The <strong>View Controller | Row</strong> tab can be used, just as in the <em>VolcanoPlotView,</em> to filter the data. Expand the <em>RawPValue</em> filter section, then expand <em>1 DBP vs. Control.RawPValue</em> filter and enter <strong>&lt;.05</strong> to filter all probesets to only include those that have a <em>RawPValue</em> of less than 0.05 for <em>1 DBP vs. Control</em>.</p>
+<p><img alt="one_pval_filter_png" src="../images/one_pval_filter.png" /></p>
+<p>Do the same for the filter of <em>3 DBP vs. Control.RawPValue</em> filter, <em>6 DBP vs. control.RawPValue</em> and <em>18 DBP vs. Control.RawPValue</em>, filter. This will show only those genes with <em>p-values</em> less than 0.05 in four comparisons.</p>
+<p><img alt="four_pval_filters_png" src="../images/four_pval_filters.png" /></p>
+<p>Look at the top right of the table view to see the number of rows remaining after filtering (or just look at the top of the <em>View Controller</em>). In this case, 24 probesets have p-values less than 0.05 at all 4 time points.</p>
+<p><img alt="table_view_counts_after_filter_png" src="../images/table_view_counts_after_filter.png" /></p>
+<p>Go to the <em>Add Item</em> drop-down button in the tool strip. Choose <em>Add List From Visible rows</em> to add a new <em>List</em> containing only those rows visible from the filter.</p>
+<p><img alt="image152_png" src="../images/image152.png" /></p>
+<p>The <em>Choose List Source</em> window opens. This allows the user to create a list using any of the different columns in the <em>Table</em>. The name of the list can be set as well as the organized folder location for the list.</p>
+<p>Here we use <em>Probe Set ID</em> to generate the list, notice that each line has a unique Probe set ID so the list would not contain any repeated probe set IDs. However, if you choose other IDs such as Gene Name to build the list, it may have repeated IDs since mulitple rows may share the same gene name. In this case, users can check the <em>Make a unique list</em> so that the repeat IDs would only show up once in the list.</p>
+<p>Choose <em>Probe Set ID</em>, name the list <em>Significant at All Timepoints</em>, and click <em>OK</em> to continue.</p>
+<p><img alt="image153_png" src="../images/image153.png" /></p>
+<p>Notice that a new list has been created.</p>
+<p><img alt="List_sig_all_times_png" src="../images/List_sig_all_times.png" /></p>
+<h2 id="the-venn-diagram-view">The Venn diagram view<a class="headerlink" href="#the-venn-diagram-view" title="Permanent link">&para;</a></h2>
+<p>Array Studio also has the ability to easily create a <em>Venn Diagram</em>. The <em>Venn Diagram</em> could utilize the <em>Lists</em>, either created by the user or by <em>Array Studio</em> and the <em>Two Way ANOVA</em> (or other statistical inference module), to segment the data points.</p>
+<p>To add a <em>Venn Diagram View</em>, first go to the <em>Solution Explorer</em> and the <em>-Omic Data</em> section. Right click on <em>MicroarrayData</em> and select <strong>Add View</strong> from the menu.</p>
+<p><img alt="image155_png" src="../images/image155.png" /></p>
+<p>Select <em>VennDiagramView</em> from the list of choices. Notice that the <em>Preview</em> window automatically creates a simple <em>Venn Diagram</em>, using only the first <em>List</em> in the <em>Lists</em> tab of the <em>Solution Explorer</em>. This will be changed in the following steps. Click <em>OK</em> to add the <em>View</em>.</p>
+<p><img alt="image156_png" src="../images/image156.png" /></p>
+<p>Notice that a new view, called <em>Venn Diagram</em>, is now visible in the <em>Solution Explorer Window</em>, as well as in the main view window.</p>
+<p><img alt="image157_png" src="../images/image157.png" /></p>
+<p>Now the <em>Venn Diagram</em> view only contains one list.</p>
+<p>The user can add more lists by using the <strong>Specify Data Source</strong> option in the <em>Task</em> tab of the <em>View Controller</em>. However, it is much easier to do this using drag-and-drop.</p>
+<p>Note: Array Studio can handle up to six lists. However, only 4 lists can be shown in one chart at a time. So, if the user enters more than 4 lists, <em>Array Studio</em> will create every combination of those lists, and one chart for each combination will be shown in the <em>View</em>.</p>
+<p>To drag-and-drop to the Venn Diagram view, go to the <em>List</em> in <em>Solution Explorer</em>, and choose the lists of all four time points (use shift or control-click to choose multiple lists at the same time). Now, drag these lists into the main view window, which is then updated to include the four lists in the <em>Diagram</em>.</p>
+<p><img alt="venn_diagram_png" src="../images/venn_diagram.png" /></p>
+<p>Like every other view in Array Studio, the <em>Venn Diagram</em> view is also fully interactive. Click on the number 29 in the intersection of the 3 lists. First, note that parentheses now appears after the number 29 so that it looks like 29(29). This indicates that the user has selected the 29 genes found in that intersection.</p>
+<p><img alt="venn_diagram2_png" src="../images/venn_diagram2.png" /></p>
+<p>Look at the <em>Details Window</em> and notice that 29 probesets are now listed in the <em>Details Window</em>.</p>
+<p><img alt="details_venn_png" src="../images/details_venn.png" /></p>
+<p>Similar to every other view, the <em>Venn Diagram</em> view can be exported to other programs using the toolbar.</p>
+<p><img alt="image161_png" src="../images/image161.png" /></p>
+<h2 id="the-general-linear-model">The General Linear Model<a class="headerlink" href="#the-general-linear-model" title="Permanent link">&para;</a></h2>
+<p>If users have a complicated design table (such as some large clinical experiment) involving many factors, they can use General linear model function to build some complicated statistical model.</p>
+<p>Users can find the function of General linear model here:</p>
+<p><img alt="image161_1_png" src="../images/image161_1.png" /></p>
+<p>Or through windows here:</p>
+<p><img alt="general_linear_model_png" src="../images/general_linear_model.png" /></p>
+<p>Two-Way ANOVA is a specific case of General model, here we can get the same results using General linear model:</p>
+<p><img alt="image161_3_png" src="../images/image161_3.png" /></p>
+<p>Just like in Two Way ANOVA, users can specify the observations by list to do the analysis based the 23 observations.</p>
+<p><img alt="image161_4_png" src="../images/image161_4.png" /></p>
+<p>After that, users can specify the model by selecting the time and treatment and clicking <strong>Add</strong>. The interaction term "time:treatment" is made by selecting both classes and clicking the  Cross  button as shown below.</p>
+<p><img alt="constructing_linear_model_png" src="../images/constructing_linear_model.png" /></p>
+<p>Notice that array studio would automatically treat numeric variables such as time as continuous factor, so users have to check the <strong>Class</strong> box to convert time as categorical factor.
+After clicking <strong>OK</strong>, users can specify the Test. Here we choose the option <strong>Specify Test</strong>:</p>
+<p><img alt="image161_6_png" src="../images/image161_6.png" /></p>
+<p>Here we want to compare control to case for each time point, so users can specify the test by first checking the option <em>For each</em> and selecting <em>time</em> from the drop-down menu. Under the <em>Compare to</em> drop-down menu, select <em>control</em>. Once these options are entered, click the <strong>Add</strong> button and the four comparisons will be populated as below:</p>
+<p><img alt="image161_7_png" src="../images/image161_7.png" /></p>
+<p>After clicking <strong>OK</strong>, and <strong>Submit</strong>, users will get the same results with 2-way ANOVA.</p>
+<h2 id="summarize-inference-report">Summarize Inference Report<a class="headerlink" href="#summarize-inference-report" title="Permanent link">&para;</a></h2>
+<p>Sometimes, a user wishes to count the number of variables, or probesets, corresponding to a set of criteria for each comparison in an analysis.  For instance, the user might want to see how many variables have a p-value &lt;0.05/Fold change &gt;2, p-value&lt;0.05/Fold change &gt;3, p-value&lt;0.05/Fold change&gt;4,  p-value&lt;0.05/Fold change&lt;-2, p-value&lt;0.05/Fold change &lt;-3, and p-value&lt;0.05/Fold change &lt;-4 for each of the four comparisons.</p>
+<p>This can be done manually by creating filters for each of these different criteria and counting the number of genes fitting that criteria.</p>
+<p>Alternatively, and the faster approach, the user can use the <strong>Summarize Inference Report</strong> module, by switching from <em>Solution Explorer</em> to <em>Workflow</em> and clicking on <em>Summarize inference report</em>, or by going to the <strong>OmicData Menu | Inference | Summarize Inference Report</strong>.</p>
+<p><img alt="image162_png" src="../images/image162.png" /></p>
+<p>This opens the <em>Summarize Inference Report</em> window.</p>
+<p>In this window, the user needs to first set the <em>Project</em> and <em>Inference test</em> object, on which to run the module. Choose <strong>TutorialMicroArray</strong> and <strong>MicroArrayData.Tests</strong>. Ensure that <em>All rows</em> is selected for <em>Rows</em>, and that all 4 estimates are selected for <em>Estimates</em>.</p>
+<p>Under <em>Options</em>, the user just needs to add the conditions of interest. For example, in order to add a condition whereby the Raw Pvalue&lt;0.05 and the Fold change&gt;2, ensure that both of these boxes are checked, and that the <strong>Fold change &gt;</strong> box contains 2 while the <strong>&lt;</strong> box is empty.</p>
+<p>Click the <em>Add button</em> to add this to the <em>Conditions</em> section. Double-click the name of the condition to rename it (FC&gt;2).</p>
+<p>Repeat this process until conditions have been added, whereby all have Raw Pvalue&lt;0.05, but with FC&gt;2, FC&gt;3, FC&gt;4, FC&lt;-2, FC&lt;-3, and FC&lt;-4.</p>
+<p>There should be a total of 6 conditions in the <em>Conditions</em> box.</p>
+<p>The module will generate (interactive) counts of variables that meet these conditions for each of the 4 estimates/contrasts selected.</p>
+<p>Optionally, the user can select the <em>Generate lists based on conditions</em> checkbox (under the <strong>Advanced</strong> tab) to automatically generate one <em>List</em> for each condition/estimate. For this tutorial, leave this unchecked, as it will generate 19 <em>Lists</em>.</p>
+<p><img alt="image163_png" src="../images/image163.png" /></p>
+<p>Click <em>Submit</em> to run the module.</p>
+<p>A new <em>Table</em> will be generated in the <em>Solution Explorer</em>, called <em>MicroArray Data.Tests.SummaryReport</em>, as well as a <em>TableView</em>.</p>
+<p><img alt="image164_png" src="../images/image164.png" /></p>
+<p>The generated <em>TableView</em>, as shown below, contains the count, for each estimate, of the 6 different criteria.</p>
+<p><img alt="summary_table_png" src="../images/summary_table.png" /></p>
+<p>This <em>TableView</em> is fully interactive, as selecting one or multiple cells shows the associated variables in the <em>Details Window</em>. In addition, <em>Array Studio</em> automatically updates the <em>Details Window</em> to only show the results of the particular tests for the selected estimate(s). In other words, if the user selects a summary count for certain condition(s) for 1 DBP vs. Control, only 1 DBP vs. Control columns (and annotation) will be shown in the <em>Details Window</em>. This is done so that the user can easily export the results for that particular comparison.</p>
+<p><img alt="summary_table_select_png" src="../images/summary_table_select.png" /></p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Data_Visualization_and_Quality_Control/" title="Data Visualization and Quality Control" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Data Visualization and Quality Control
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Data_Exploration/" title="Data Exploration" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Data Exploration
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2008 - 2017 OmicSoft/QIAGEN Bioinformatics
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://omicsoft.github.io" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/omicsoft" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/company-beta/3531113/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application-84693e5e49.js"></script>
+      
+      <script>app.initialize({version:"0.17.1",url:{base:"../../.."}})</script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>

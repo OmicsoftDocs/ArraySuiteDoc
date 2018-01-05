@@ -1,0 +1,7 @@
+# Introduction
+
+*Array Studio* provides an integrated OmicSoft Project Environment for analyzing, visualizing and organizing high dimensional data. Its well-designed graphic user interface is convenient for complicated bioinformatics data processing. Besides running analysis within graphic user interface, advanced Array Studio users can also run analysis with OmicScript (Oscript). By building Oscript pipelines, user can run batch jobs automatically.
+
+*Array Studio* allows users to build two kinds of scripts: OmicScript (Oscript) and Pipeline Server Script (Pscript). Oscript is normally created, used and managed by individual advanced users to process their own data. Users may run oscripts either in a local machine or a server. Pscript is normally created by an administor of Array Server, and used by users as pipeline tools to work on large scale data processing on a server (as a standalone server or in cluster). The users may submit samples to the pscript pipelines via Array Server's sample registration system, and monitor the job status in Array Studio GUI. This tutorial will introduce both Oscript and Pscript in individual sections.
+
+It is highly recommended that the user complete the prerequisite for this tutorial: **the RNA-Seq Tutorial**, as a way to learn the basics in Array Studio. This tutorial assumes working knowledge of Array Studio, data structure, and different modules within the software.
