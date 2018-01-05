@@ -1,1 +1,1 @@
-# ArraySuitDoc
+# ArraySuiteDoc
