@@ -14,8 +14,7 @@ This Single Cell RNA-Seq (scRNA-Seq) tutorial will cover the importing and some 
 
 As described in the document (GSE85241_readme_demultiplexing_Cel-seq_data.pdf) downloaded from GEO database, read 1 should be parsed in the following manner: “the first 8 basepairs are the Cel-Seq cell barcodes (see list at the bottom of the same document). The following four basepairs are random basepairs of the unique molecular identifier, which can be used to count individual molecules for each transcript. The rest of read 1 consists of mostly polyT and is not used. Read two is then mapped to the reference genome of choice (hg19 in our case).”
 
-We will extract cell barcode and UMI information from read1, align read2 to human genome, and do the following analysis.
+Based on this description, in this tutorial we will extract the cell barcode and UMI information from read1, then align read2 to human genome, and perform downstream quantification and clustering analysis.
 
-
-If users are interested in testing with this project, the data can be download from NCBI: [SRP0809914](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=SRP080991). Or using our GUI for downloading SRA to download the fastq files: [Download SRA in ArrayStudio](http://www.arrayserver.com/wiki/index.php?title=DownloadSRAData.pdf).
+If users are interested in testing with this project, the data can be downloaded from NCBI: [SRP0809914](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=SRP080991), or using our GUI for downloading SRA to download the fastq files: [Download SRA in ArrayStudio](http://www.arrayserver.com/wiki/index.php?title=DownloadSRAData.pdf).
 After retrieving these data, you can begin the tutorial.
