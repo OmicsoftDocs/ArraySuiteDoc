@@ -721,6 +721,531 @@
             "title": "Customize Pscript and Expose it to Array Studio GUI"
         },
         {
+            "location": "/tutorials/LandPortal/Introduction/",
+            "text": "Introduction\n\u00b6\n\n\nLand Portal\n\u00b6\n\n\nOmicSoft uses ArrayLand framework to deliver large data service results. \nLand Portal\n is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, GeneticsLand, and Internal Lands). The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands.\n\n\n\n\nOnce users configured Land Portal on both Windows Server and ArrayServer internally, all ArrayStudio/ArrayLand users can log in to Land Portal and search all types of genomics profiles of a single gene or a set of genes instantly with rich visualizations.\n\n\nThis tutorial is mainly based on TCGA Land Portal. Please refer to the OncoLand Whitepaper, available through the Help menu item, for descriptions of all available land portals within Land Portal.\n\n\nLog in to Land Portal\n\u00b6\n\n\nOnce you connect to the \nLandPortal\n server, you can find the TCGA land data by default, users could switch to other Land portals by clicking \nSelect Land\n:\n\n\n\n\nThe default \nTCGA_B37 Land Portal\n view shows a histogram plot of samples grouped by tumor type. Other views are also available for users to query the sample data at a general level.\n\n\nSelect views\n\u00b6\n\n\nOverview\n\u00b6\n\n\nBesides the default Samples view which shows the number of samples in each tumor type. Other views like Data Avaliability and Table View are also available for users to query the sample data at a general level.\n\n\n\n\nGene level view\n\u00b6\n\n\nWhen one gene or a gene set has been inputted, there will be more views available, like DNA-Seq, Somatic Mutation Distribution, RNA-Seq, Gene FPKM, Transcript FPKM, etc.\n\n\n\n\nCustomize Views\n\u00b6\n\n\nUsers could also customize the view for a selected gene/transcript.",
+            "title": "Introduction"
+        },
+        {
+            "location": "/tutorials/LandPortal/Introduction/#introduction",
+            "text": "",
+            "title": "Introduction"
+        },
+        {
+            "location": "/tutorials/LandPortal/Introduction/#land-portal",
+            "text": "OmicSoft uses ArrayLand framework to deliver large data service results.  Land Portal  is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, GeneticsLand, and Internal Lands). The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands.   Once users configured Land Portal on both Windows Server and ArrayServer internally, all ArrayStudio/ArrayLand users can log in to Land Portal and search all types of genomics profiles of a single gene or a set of genes instantly with rich visualizations.  This tutorial is mainly based on TCGA Land Portal. Please refer to the OncoLand Whitepaper, available through the Help menu item, for descriptions of all available land portals within Land Portal.",
+            "title": "Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/Introduction/#log-in-to-land-portal",
+            "text": "Once you connect to the  LandPortal  server, you can find the TCGA land data by default, users could switch to other Land portals by clicking  Select Land :   The default  TCGA_B37 Land Portal  view shows a histogram plot of samples grouped by tumor type. Other views are also available for users to query the sample data at a general level.",
+            "title": "Log in to Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/Introduction/#select-views",
+            "text": "",
+            "title": "Select views"
+        },
+        {
+            "location": "/tutorials/LandPortal/Introduction/#overview",
+            "text": "Besides the default Samples view which shows the number of samples in each tumor type. Other views like Data Avaliability and Table View are also available for users to query the sample data at a general level.",
+            "title": "Overview"
+        },
+        {
+            "location": "/tutorials/LandPortal/Introduction/#gene-level-view",
+            "text": "When one gene or a gene set has been inputted, there will be more views available, like DNA-Seq, Somatic Mutation Distribution, RNA-Seq, Gene FPKM, Transcript FPKM, etc.",
+            "title": "Gene level view"
+        },
+        {
+            "location": "/tutorials/LandPortal/Introduction/#customize-views",
+            "text": "Users could also customize the view for a selected gene/transcript.",
+            "title": "Customize Views"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Sample Level Overview/Samples/",
+            "text": "Sample Distribution View\n\u00b6\n\n\nDefault View in Land Portal\n\u00b6\n\n\n\n\nThe sample distribution view is the default view of all Lands. The view will is a stacked bar graph which is displayed with the primary grouping column on the y-axis and samples colored on the x-axis using the secondary grouping column. In TCGA land, this will correspond to Tumor type on the Y-axis and Sample type on the X-axis:\n\n\nGeneral Options\n\n\nFiltering\n\n\n\nThis view, like all views in Array Suite, is highly customizable. Users can: 1. Filter to samples of interest using columns from the MetaData and Clinical Data. Additionally, Custom Queries and Sample Sets can be used. These columns can also be used to determine the primary grouping (what will be plotted on the Y-axis, as well as the secondary grouping (what will be plotted on the X-axis). For example, to see what skin cancer samples have RNA Seq data available in TCGA, users can filter to a specific tumor type (SKCM), and use Sample Type (Primary) and RnaSeq_Transcript (Secondary) for the grouping:\n\n\nChart Options\n\n\nUsers of Array Studio will notice the familiar task controller in the Sample Distribution view, which can be used customize the view (i.e. change color, labels, flip axes). In addition, users can export information (SampleID, Primary and Secondary Grouping information) by Opening in Editor or a summary of the chart by opening in Excel",
+            "title": "Samples"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Sample Level Overview/Samples/#sample-distribution-view",
+            "text": "",
+            "title": "Sample Distribution View"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Sample Level Overview/Samples/#default-view-in-land-portal",
+            "text": "The sample distribution view is the default view of all Lands. The view will is a stacked bar graph which is displayed with the primary grouping column on the y-axis and samples colored on the x-axis using the secondary grouping column. In TCGA land, this will correspond to Tumor type on the Y-axis and Sample type on the X-axis:  General Options  Filtering  \nThis view, like all views in Array Suite, is highly customizable. Users can: 1. Filter to samples of interest using columns from the MetaData and Clinical Data. Additionally, Custom Queries and Sample Sets can be used. These columns can also be used to determine the primary grouping (what will be plotted on the Y-axis, as well as the secondary grouping (what will be plotted on the X-axis). For example, to see what skin cancer samples have RNA Seq data available in TCGA, users can filter to a specific tumor type (SKCM), and use Sample Type (Primary) and RnaSeq_Transcript (Secondary) for the grouping:  Chart Options  Users of Array Studio will notice the familiar task controller in the Sample Distribution view, which can be used customize the view (i.e. change color, labels, flip axes). In addition, users can export information (SampleID, Primary and Secondary Grouping information) by Opening in Editor or a summary of the chart by opening in Excel",
+            "title": "Default View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Sample Level Overview/Comparisons/",
+            "text": "Comparison Distribution\n\u00b6\n\n\nComparisons View in Land Portal\n\u00b6\n\n\n\n\nOverview\n\n\nThis view shows all pre-computed comparisons present in the Land. In TCGA land, this will typically be all Tumor vs Normal (where available) comparisons. In DiseaseLands and OncoGEO, this can refer to multiple comparison types (i.e. Disease vs. Normal, Treatment vs. Control, Response vs no response, pre-treatment vs post-treatment). In this view, users can quickly query the different comparisons available within the Land, based on the category shown on the x-axis.",
+            "title": "Comparisons"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Sample Level Overview/Comparisons/#comparison-distribution",
+            "text": "",
+            "title": "Comparison Distribution"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Sample Level Overview/Comparisons/#comparisons-view-in-land-portal",
+            "text": "Overview  This view shows all pre-computed comparisons present in the Land. In TCGA land, this will typically be all Tumor vs Normal (where available) comparisons. In DiseaseLands and OncoGEO, this can refer to multiple comparison types (i.e. Disease vs. Normal, Treatment vs. Control, Response vs no response, pre-treatment vs post-treatment). In this view, users can quickly query the different comparisons available within the Land, based on the category shown on the x-axis.",
+            "title": "Comparisons View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Sample Level Overview/DataAvailability/",
+            "text": "Data Availability\n\u00b6\n\n\nData Availability View in Land Portal\n\u00b6\n\n\n\n\nOverview\n\n\nThis view shows all sample information and omic data available in the current Land. In TCGA land, this will typically show a table of all data available where each row represents one Tumor Type (ACC, BLCA, COAD, etc.), and each column shows -OmicData (CNV, DNA, MS, miRNA, etc.).\n\n\nIn DiseaseLands and OncoGEO, each row of the table would represent Disease Category (i.e. allergy, arthritis, autoimmune disease, benign neoplasm, etc.), each column would show -Omic data (i.e. Expression, Methylation, miRNA, RNA-seq, etc.). In this view, users can quickly check the sample category and the -Omic data available within the Land, based on the category shown on the rows and cols.",
+            "title": "DataAvailability"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Sample Level Overview/DataAvailability/#data-availability",
+            "text": "",
+            "title": "Data Availability"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Sample Level Overview/DataAvailability/#data-availability-view-in-land-portal",
+            "text": "Overview  This view shows all sample information and omic data available in the current Land. In TCGA land, this will typically show a table of all data available where each row represents one Tumor Type (ACC, BLCA, COAD, etc.), and each column shows -OmicData (CNV, DNA, MS, miRNA, etc.).  In DiseaseLands and OncoGEO, each row of the table would represent Disease Category (i.e. allergy, arthritis, autoimmune disease, benign neoplasm, etc.), each column would show -Omic data (i.e. Expression, Methylation, miRNA, RNA-seq, etc.). In this view, users can quickly check the sample category and the -Omic data available within the Land, based on the category shown on the rows and cols.",
+            "title": "Data Availability View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Sample Level Overview/TableView/",
+            "text": "Table View\n\u00b6\n\n\nTable View in Land Portal\n\u00b6\n\n\n\n\nOverview\n\n\nThis view shows all sample information and omic data available in the current Land. In TCGA land, this will typically show a table of all data available where each row represents one Sample, and each column shows metadata (Tumor Type, Sample Type, Disease, Disease State, etc.).\n\n\nIn this view, users can quickly check the sample category and the meta data available within the Land, based on the category shown on the rows and cols.",
+            "title": "TableView"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Sample Level Overview/TableView/#table-view",
+            "text": "",
+            "title": "Table View"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Sample Level Overview/TableView/#table-view-in-land-portal",
+            "text": "Overview  This view shows all sample information and omic data available in the current Land. In TCGA land, this will typically show a table of all data available where each row represents one Sample, and each column shows metadata (Tumor Type, Sample Type, Disease, Disease State, etc.).  In this view, users can quickly check the sample category and the meta data available within the Land, based on the category shown on the rows and cols.",
+            "title": "Table View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/ExpresionVSFPKM/",
+            "text": "Expression vs. FPKM\n\u00b6\n\n\nExpression Ration vs. Gene Expression (FPKM) View for genes in Land Portal\n\u00b6\n\n\n\n\nThis view shows a single chart, for each gene, comparing Gene Expression Ratio (Sample vs Universal Human Reference) vs Gene Expression (Log2(RPKM + 0.1)). A value of 0.1 has been added to every RPKM value in order to log the data and account for potential values of 0.",
+            "title": "ExpresionVSFPKM"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/ExpresionVSFPKM/#expression-vs-fpkm",
+            "text": "",
+            "title": "Expression vs. FPKM"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/ExpresionVSFPKM/#expression-ration-vs-gene-expression-fpkm-view-for-genes-in-land-portal",
+            "text": "This view shows a single chart, for each gene, comparing Gene Expression Ratio (Sample vs Universal Human Reference) vs Gene Expression (Log2(RPKM + 0.1)). A value of 0.1 has been added to every RPKM value in order to log the data and account for potential values of 0.",
+            "title": "Expression Ration vs. Gene Expression (FPKM) View for genes in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/CNVvsFPKM/",
+            "text": "CNV vs FPKM\n\u00b6\n\n\nAverage Copy Number Log2 Ration vs. Gene Expression (FPKM) for genes View in Land Portal\n\u00b6\n\n\n\n\nThis view shows a signle chart, for each gene, comparing Gene Expression Ratio (Sample vs Universal Human Reference) vs Average Copy Number Log2 Ratio. By default, all sample types (tumor and normal) are shown, users could visualize a geneset (multiple genes), and choose grouping by Tumor Type, Sample ID, Sample Type, Disease, etc.",
+            "title": "CNVvsFPKM"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/CNVvsFPKM/#cnv-vs-fpkm",
+            "text": "",
+            "title": "CNV vs FPKM"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/CNVvsFPKM/#average-copy-number-log2-ration-vs-gene-expression-fpkm-for-genes-view-in-land-portal",
+            "text": "This view shows a signle chart, for each gene, comparing Gene Expression Ratio (Sample vs Universal Human Reference) vs Average Copy Number Log2 Ratio. By default, all sample types (tumor and normal) are shown, users could visualize a geneset (multiple genes), and choose grouping by Tumor Type, Sample ID, Sample Type, Disease, etc.",
+            "title": "Average Copy Number Log2 Ration vs. Gene Expression (FPKM) for genes View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/AllComparisons/",
+            "text": "All Comparisons Views\n\u00b6\n\n\nComparison details for gene by Case.DiseaseCategory View in Land Portal\n\u00b6\n\n\n\n\nThe default view is a comparison details for one gene by Case.DiseaseCategory, X-Axis shows Log2 Fold Change, Y-Axis shows Case.DiseaseCategory, comparisions are groupped by tissue category.",
+            "title": "AllComparisons"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/AllComparisons/#all-comparisons-views",
+            "text": "",
+            "title": "All Comparisons Views"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/AllComparisons/#comparison-details-for-gene-by-casediseasecategory-view-in-land-portal",
+            "text": "The default view is a comparison details for one gene by Case.DiseaseCategory, X-Axis shows Log2 Fold Change, Y-Axis shows Case.DiseaseCategory, comparisions are groupped by tissue category.",
+            "title": "Comparison details for gene by Case.DiseaseCategory View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/DNASeqSomaticMutation/",
+            "text": "Somatic Mutation Distribution\n\u00b6\n\n\nDNA SEQ Somatic Mutation Distribution View in Land Portal\n\u00b6\n\n\nThis view displays histograms of DNA-SEQ Somatic Mutation Distribution.\n\n\n\n\nIntroduction\n\u00b6\n\n\nFor the queried gene, this view shows % of mutant samples organized by group (e.g. Tumor Type). Group is specified by Grouping, and is PrimaryGrouping by default.\n\n\nValues\n\u00b6\n\n\nThe integer in the parentheses next to the percentage is the number of mutant samples for each group. The percentage = ( # of mutant samples) / ( total # of samples with DNA-Seq somatic mutation data in this group)\n\n\nFilters\n\u00b6\n\n\nUsers can go to Add Filter tab to filter mutations, tumor types, and sample types etc.",
+            "title": "DNASeqSomaticMutation"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/DNASeqSomaticMutation/#somatic-mutation-distribution",
+            "text": "",
+            "title": "Somatic Mutation Distribution"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/DNASeqSomaticMutation/#dna-seq-somatic-mutation-distribution-view-in-land-portal",
+            "text": "This view displays histograms of DNA-SEQ Somatic Mutation Distribution.",
+            "title": "DNA SEQ Somatic Mutation Distribution View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/DNASeqSomaticMutation/#introduction",
+            "text": "For the queried gene, this view shows % of mutant samples organized by group (e.g. Tumor Type). Group is specified by Grouping, and is PrimaryGrouping by default.",
+            "title": "Introduction"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/DNASeqSomaticMutation/#values",
+            "text": "The integer in the parentheses next to the percentage is the number of mutant samples for each group. The percentage = ( # of mutant samples) / ( total # of samples with DNA-Seq somatic mutation data in this group)",
+            "title": "Values"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/DNASeqSomaticMutation/#filters",
+            "text": "Users can go to Add Filter tab to filter mutations, tumor types, and sample types etc.",
+            "title": "Filters"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/RNASeqTranscriptFPKM/",
+            "text": "RNA SEQ Quantification\n\u00b6\n\n\nRNASeq Quantification Transcript FPKM View in Land Portal\n\u00b6\n\n\n\n\nThis view shows the Transcript RPKM (Reads Per Kilobase per Million mapped reads) for the specified gene, organized by group (e.g. Tumor Type).\n\n\nEach transcript is shown in a separate chart. When visualizing more than one gene, each gene/transcript is show in its own plot.\nX-axis shows Transcript RPKM. Y-axis shows the group.\nUse the Sample Tab to further filter the data using any associated sample/subject meta data. Use Specify Profile (Task tab) to change the grouping. Use Specify Split Column (Task tab) to change the automatic coloring. Show on-the-fly p-value, indicating if the Gene RPKM is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize). Use the dropdown (1*1) to change how many charts are shown at once (i.e enter 2*3 to show 6 plots at once)\"",
+            "title": "RNASeqTranscriptFPKM"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/RNASeqTranscriptFPKM/#rna-seq-quantification",
+            "text": "",
+            "title": "RNA SEQ Quantification"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/RNASeqTranscriptFPKM/#rnaseq-quantification-transcript-fpkm-view-in-land-portal",
+            "text": "This view shows the Transcript RPKM (Reads Per Kilobase per Million mapped reads) for the specified gene, organized by group (e.g. Tumor Type).  Each transcript is shown in a separate chart. When visualizing more than one gene, each gene/transcript is show in its own plot.\nX-axis shows Transcript RPKM. Y-axis shows the group.\nUse the Sample Tab to further filter the data using any associated sample/subject meta data. Use Specify Profile (Task tab) to change the grouping. Use Specify Split Column (Task tab) to change the automatic coloring. Show on-the-fly p-value, indicating if the Gene RPKM is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize). Use the dropdown (1*1) to change how many charts are shown at once (i.e enter 2*3 to show 6 plots at once)\"",
+            "title": "RNASeq Quantification Transcript FPKM View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/SummaryGeneFPKM/",
+            "text": "Summary Gene FPKM\n\u00b6\n\n\nSummary Gene FPKM, RNASeq Transcript View in Land Portal\n\u00b6\n\n\n\n\nIntroduction\n\u00b6\n\n\nFor each gene, this view shows % of tumor samples whose RNA-Seq expression is 2x up-regulated or 2x down-regulated, compared to normal samples in each group (e.g. Tumor Type). Group is specified by Grouping, and is PrimaryGrouping by default.\n\n\nValues\n\u00b6\n\n\nFor each group, expression for normal samples is calculated as the average of Log2(FPKM + 0.1). For each tumor sample if its Log2(FPKM + 0.1) is larger than normal sample average by ExpressionUpRegulationCutoff or is smaller than normal average by ExpressionDownRegulationCutoff, this tumor sample is counted as up-regulated or down-regulated.\n\n\nThe percentage showing on Y axis = ( # of tumor samples up-regulated or down-regulated) / ( # of all tumor samples in this group).\n\n\nFilters\n\u00b6\n\n\nFold change cutoff can be changed under Expression in the left panel.",
+            "title": "SummaryGeneFPKM"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/SummaryGeneFPKM/#summary-gene-fpkm",
+            "text": "",
+            "title": "Summary Gene FPKM"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/SummaryGeneFPKM/#summary-gene-fpkm-rnaseq-transcript-view-in-land-portal",
+            "text": "",
+            "title": "Summary Gene FPKM, RNASeq Transcript View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/SummaryGeneFPKM/#introduction",
+            "text": "For each gene, this view shows % of tumor samples whose RNA-Seq expression is 2x up-regulated or 2x down-regulated, compared to normal samples in each group (e.g. Tumor Type). Group is specified by Grouping, and is PrimaryGrouping by default.",
+            "title": "Introduction"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/SummaryGeneFPKM/#values",
+            "text": "For each group, expression for normal samples is calculated as the average of Log2(FPKM + 0.1). For each tumor sample if its Log2(FPKM + 0.1) is larger than normal sample average by ExpressionUpRegulationCutoff or is smaller than normal average by ExpressionDownRegulationCutoff, this tumor sample is counted as up-regulated or down-regulated.  The percentage showing on Y axis = ( # of tumor samples up-regulated or down-regulated) / ( # of all tumor samples in this group).",
+            "title": "Values"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/SummaryGeneFPKM/#filters",
+            "text": "Fold change cutoff can be changed under Expression in the left panel.",
+            "title": "Filters"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/DNAAlterationDistribution/",
+            "text": "Alteration Distribution\n\u00b6\n\n\nDNA Alternation Distribution View in Land Portal\n\u00b6\n\n\n\n\nAlteration distribution view shows alterations of all genes searched in the current view, limited to DNAseq alterations (mutations and copy number).\n\n\nThere will be one bar for each combination of Group (e.g Tumor Type), gene and alteration type (mutation or CNV).\n\n\nSamples will be colored by alteration type (mutation, amplification, deletion, multiple alteration). Summary information (% samples mutated) will also be given. By default, Alteration.Omicprint and Alteration.Distribution are using GISTIC2 calling method with only \"Amplification\" and \"Homozygous Deletion\" checked. Multiple alteration represents more than one type of alteration type in the sample.",
+            "title": "DNAAlterationDistribution"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/DNAAlterationDistribution/#alteration-distribution",
+            "text": "",
+            "title": "Alteration Distribution"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/DNAAlterationDistribution/#dna-alternation-distribution-view-in-land-portal",
+            "text": "Alteration distribution view shows alterations of all genes searched in the current view, limited to DNAseq alterations (mutations and copy number).  There will be one bar for each combination of Group (e.g Tumor Type), gene and alteration type (mutation or CNV).  Samples will be colored by alteration type (mutation, amplification, deletion, multiple alteration). Summary information (% samples mutated) will also be given. By default, Alteration.Omicprint and Alteration.Distribution are using GISTIC2 calling method with only \"Amplification\" and \"Homozygous Deletion\" checked. Multiple alteration represents more than one type of alteration type in the sample.",
+            "title": "DNA Alternation Distribution View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/RNASeqSomaticMutation/",
+            "text": "RNA SEQ Somatic Mutation\n\u00b6\n\n\nRNASeq Somatic Mutation Distribution View in Land Portal\n\u00b6\n\n\n\n\nThis view shows Shows the RNA-Seq Somatic mutations, organized by Group (e.g. Tumor Type). Each chart is an individual site mutation.\n\n\nX-Axis shows percent of mutant samples, while Y-axis shows the group.\nUse the Sample Tab to change filtering options on the samples (or to change grouping).\nUse the Mutation tab to filter for specific Amino Acid mutation (OS_AAMutation), Annotation Type (i.e non-synonymous via OS_AnnotationType) and more.\nSelect one or more bars from the plot and choose Details for Selection to find out more details on the selected samples.\nChoose RNA-Seq Mutation Details to see a table of all selected mutations with annotation.",
+            "title": "RNASeqSomaticMutation"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/RNASeqSomaticMutation/#rna-seq-somatic-mutation",
+            "text": "",
+            "title": "RNA SEQ Somatic Mutation"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/RNASeqSomaticMutation/#rnaseq-somatic-mutation-distribution-view-in-land-portal",
+            "text": "This view shows Shows the RNA-Seq Somatic mutations, organized by Group (e.g. Tumor Type). Each chart is an individual site mutation.  X-Axis shows percent of mutant samples, while Y-axis shows the group.\nUse the Sample Tab to change filtering options on the samples (or to change grouping).\nUse the Mutation tab to filter for specific Amino Acid mutation (OS_AAMutation), Annotation Type (i.e non-synonymous via OS_AnnotationType) and more.\nSelect one or more bars from the plot and choose Details for Selection to find out more details on the selected samples.\nChoose RNA-Seq Mutation Details to see a table of all selected mutations with annotation.",
+            "title": "RNASeq Somatic Mutation Distribution View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/RNASeqFusion/",
+            "text": "RNA SEQ Fusion\n\u00b6\n\n\nRNASeq Somatic Mutation Distribution View in Land Portal\n\u00b6\n\n\n\n\nThis view shows a series of charts of potential fusions for the specified gene or genes.\n\n\nX-axis represents Fusion RPKM. RPKM is defined as seed reads per kilobase of seed region and per million mapped reads.\nY-axis is organized by grouping (e.g. Tumor Type).\nUse the Sample tab to further filter the data using any associated sample/subject meta data.\nUse the Fusion tab to filter the shown fusions. By default, all potential fusions are shown.\n\n\nSuggested filters would be SplicePatternClass (remove non-canonical junctions), FrameShiftClass (remove frame shift and undefined fusions) and OnExonBoundary (look for fusions where both ends of fusion are on the exon boundary).\n\n\nPotential real fusions are not likely to be in many normal samples. As a result, coloring has been automatically set to Sample Type.\nSelect Fusions in the plot and choose Fusion Details to see the full table for selected fusion.",
+            "title": "RNASeqFusion"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/RNASeqFusion/#rna-seq-fusion",
+            "text": "",
+            "title": "RNA SEQ Fusion"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/RNASeqFusion/#rnaseq-somatic-mutation-distribution-view-in-land-portal",
+            "text": "This view shows a series of charts of potential fusions for the specified gene or genes.  X-axis represents Fusion RPKM. RPKM is defined as seed reads per kilobase of seed region and per million mapped reads.\nY-axis is organized by grouping (e.g. Tumor Type).\nUse the Sample tab to further filter the data using any associated sample/subject meta data.\nUse the Fusion tab to filter the shown fusions. By default, all potential fusions are shown.  Suggested filters would be SplicePatternClass (remove non-canonical junctions), FrameShiftClass (remove frame shift and undefined fusions) and OnExonBoundary (look for fusions where both ends of fusion are on the exon boundary).  Potential real fusions are not likely to be in many normal samples. As a result, coloring has been automatically set to Sample Type.\nSelect Fusions in the plot and choose Fusion Details to see the full table for selected fusion.",
+            "title": "RNASeq Somatic Mutation Distribution View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/ExpressionRatio/",
+            "text": "Expression Ratio\n\u00b6\n\n\nGene Expression Ratio View for genes in Land Portal\n\u00b6\n\n\n\n\nThis view shows the Expression Ratio (Sample vs Universal Human Reference) for the specified gene, organized by group (e.g. Tumor Type).\n\n\nExpression data was generated on a two-color chip. When visualizing more than one gene, each gene is show in its own plot.\nX-axis shows Expression Ratio. Y-axis shows the group. Use the Sample Tab to further filter the data using any associated sample/subject meta data.\n\n\nUse Specify Profile (Task tab) to change the grouping.\nUse Specify Split Column (Task tab) to change the automatic coloring.\nShow on-the-fly p-value, indicating if the expression is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize).",
+            "title": "ExpressionRatio"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/ExpressionRatio/#expression-ratio",
+            "text": "",
+            "title": "Expression Ratio"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/ExpressionRatio/#gene-expression-ratio-view-for-genes-in-land-portal",
+            "text": "This view shows the Expression Ratio (Sample vs Universal Human Reference) for the specified gene, organized by group (e.g. Tumor Type).  Expression data was generated on a two-color chip. When visualizing more than one gene, each gene is show in its own plot.\nX-axis shows Expression Ratio. Y-axis shows the group. Use the Sample Tab to further filter the data using any associated sample/subject meta data.  Use Specify Profile (Task tab) to change the grouping.\nUse Specify Split Column (Task tab) to change the automatic coloring.\nShow on-the-fly p-value, indicating if the expression is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize).",
+            "title": "Gene Expression Ratio View for genes in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/CNVSummary/",
+            "text": "CNV Summary\n\u00b6\n\n\nCopy Number Summary View in Land Portal\n\u00b6\n\n\n\n\nIntroduction\n\u00b6\n\n\nThe summary view shows % of samples in a giving group.\n1. having amplified or deleted of tumor vs normal if using log2ratio calls\n2. having Amplification, Homozygous Deletion or other categories if using GISTIC calls",
+            "title": "CNVSummary"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/CNVSummary/#cnv-summary",
+            "text": "",
+            "title": "CNV Summary"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/CNVSummary/#copy-number-summary-view-in-land-portal",
+            "text": "",
+            "title": "Copy Number Summary View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/CNVSummary/#introduction",
+            "text": "The summary view shows % of samples in a giving group.\n1. having amplified or deleted of tumor vs normal if using log2ratio calls\n2. having Amplification, Homozygous Deletion or other categories if using GISTIC calls",
+            "title": "Introduction"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/CNVVariable/",
+            "text": "CNV Variable\n\u00b6\n\n\nCopy Number Variable View in Land Portal\n\u00b6\n\n\n\n\nIntroduction\n\u00b6\n\n\nThis view shows the Log2 Ratio (if a gene contains multiple segment, the most sigificant segment will be chosen) for the specified gene, organized by group (e.g. Tumor Type).\n\n\nWhen visualizing more than one gene, each gene is show in its own plot.\nX-axis shows Expression Ratio. Y-axis shows the group.\nUse the Sample Tab to further filter the data using any associated sample/subject meta data. Use Specify Profile (Task tab) to change the grouping.\nUse Specify Split Column (Task tab) to change the automatic coloring.\nShow on-the-fly p-value, indicating if the Log2 Ratio is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize).",
+            "title": "CNVVariable"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/CNVVariable/#cnv-variable",
+            "text": "",
+            "title": "CNV Variable"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/CNVVariable/#copy-number-variable-view-in-land-portal",
+            "text": "",
+            "title": "Copy Number Variable View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/CNVVariable/#introduction",
+            "text": "This view shows the Log2 Ratio (if a gene contains multiple segment, the most sigificant segment will be chosen) for the specified gene, organized by group (e.g. Tumor Type).  When visualizing more than one gene, each gene is show in its own plot.\nX-axis shows Expression Ratio. Y-axis shows the group.\nUse the Sample Tab to further filter the data using any associated sample/subject meta data. Use Specify Profile (Task tab) to change the grouping.\nUse Specify Split Column (Task tab) to change the automatic coloring.\nShow on-the-fly p-value, indicating if the Log2 Ratio is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize).",
+            "title": "Introduction"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/HeatmapFPKM/",
+            "text": "Heatmap FPKM\n\u00b6\n\n\nExpression Ratio Heatmap View in Land Portal\n\u00b6\n\n\n\n\nIntroduction\n\u00b6\n\n\nHeatmap showing Gene Expression ratio (Sample vs Universal Human Reference) for group (e.g. Tumor Type) for multiple genes.\n\n\nIn the demo screenshot, it's a Heatmap plot for pathway Extrinsic_to_Plasma_Membrane, with 13 genes in it, the X-axis is gene, while Y-axis is grouping (e.g. Tumor Type).\nExpression data was generated on a two-color chip. Use the Sample Tab to further filter the data using any associated sample/subject meta data.\nUse Specify Profile (Task tab) to change the grouping.",
+            "title": "HeatmapFPKM"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/HeatmapFPKM/#heatmap-fpkm",
+            "text": "",
+            "title": "Heatmap FPKM"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/HeatmapFPKM/#expression-ratio-heatmap-view-in-land-portal",
+            "text": "",
+            "title": "Expression Ratio Heatmap View in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandViews/Gene Level Views/HeatmapFPKM/#introduction",
+            "text": "Heatmap showing Gene Expression ratio (Sample vs Universal Human Reference) for group (e.g. Tumor Type) for multiple genes.  In the demo screenshot, it's a Heatmap plot for pathway Extrinsic_to_Plasma_Membrane, with 13 genes in it, the X-axis is gene, while Y-axis is grouping (e.g. Tumor Type).\nExpression data was generated on a two-color chip. Use the Sample Tab to further filter the data using any associated sample/subject meta data.\nUse Specify Profile (Task tab) to change the grouping.",
+            "title": "Introduction"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Introduction/",
+            "text": "Land Explore Introduction\n\u00b6\n\n\nLand Portal Explore\n\u00b6\n\n\nOmicSoft uses ArrayLand framework to deliver large data service results. \nLand Portal\n is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, GeneticsLand, and Internal Lands). The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands.\n\n\n\n\nLog in to Land Portal\n\u00b6\n\n\nOnce connected to the \nLandPortal\n server, users can Select which Land data they are intereted in, by default it is TCGA_B37, users could switch to other Land portals by clicking \nSelect Land\n, as pointed by \nArrow #1\n:\n\n\nIn the default \nCCLE_B37 Land Portal\n view, showing a histogram plot of samples grouped by \nPrimary Site\n. The View Controler, Sample Filter, Custom Query options, and distribution view are shown in the screenshot.",
+            "title": "Introduction"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Introduction/#land-explore-introduction",
+            "text": "",
+            "title": "Land Explore Introduction"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Introduction/#land-portal-explore",
+            "text": "OmicSoft uses ArrayLand framework to deliver large data service results.  Land Portal  is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, GeneticsLand, and Internal Lands). The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands.",
+            "title": "Land Portal Explore"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Introduction/#log-in-to-land-portal",
+            "text": "Once connected to the  LandPortal  server, users can Select which Land data they are intereted in, by default it is TCGA_B37, users could switch to other Land portals by clicking  Select Land , as pointed by  Arrow #1 :  In the default  CCLE_B37 Land Portal  view, showing a histogram plot of samples grouped by  Primary Site . The View Controler, Sample Filter, Custom Query options, and distribution view are shown in the screenshot.",
+            "title": "Log in to Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_controller/",
+            "text": "View Controller\n\u00b6\n\n\nView Controller in Land Portal Explore\n\u00b6\n\n\nThe \"View Controller\" is an extremely important feature for the visualizations in Land Portal View Explore. It provides the options for view customization, filtering on metadata and data, and legend.\n\n\nIn the \nChart Setting\n tab, there are 4 options, Pane, Series, Axis, and Legend.\n\n\n\n\nChat Setting\n\u00b6\n\n\nPane Settings\n\u00b6\n\n\n\n\nUsers could edit the Title, set the Width, Height, and Front color, size in the \nPane\n option setting window.\n\n\nSeries Settings\n\u00b6\n\n\n\n\nThe Color, shape, border, and opacity of each labeled group could be defined under \nSeries Settings\n.\n\n\nAxis Settings\n\u00b6\n\n\n\n\nThe X/Y labels, and scales could be defined in Axis Settings window.\n\n\nLegend Settings\n\u00b6\n\n\n\n\nThe color, position of figure legend couled be defined in \nLegend Settings\n window.\n\n\nGroup Setting\n\u00b6\n\n\n\n\nIn CCLE_B37 Land portal, there are several options for grouping, SampleID, SubjectID, Primary Site, Histology, Gender, Land Sample Type, Land Tissue, and Tumor Or Normal.\n\n\nSample Filters\n\u00b6",
+            "title": "View Controller"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_controller/#view-controller",
+            "text": "",
+            "title": "View Controller"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_controller/#view-controller-in-land-portal-explore",
+            "text": "The \"View Controller\" is an extremely important feature for the visualizations in Land Portal View Explore. It provides the options for view customization, filtering on metadata and data, and legend.  In the  Chart Setting  tab, there are 4 options, Pane, Series, Axis, and Legend.",
+            "title": "View Controller in Land Portal Explore"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_controller/#chat-setting",
+            "text": "",
+            "title": "Chat Setting"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_controller/#pane-settings",
+            "text": "Users could edit the Title, set the Width, Height, and Front color, size in the  Pane  option setting window.",
+            "title": "Pane Settings"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_controller/#series-settings",
+            "text": "The Color, shape, border, and opacity of each labeled group could be defined under  Series Settings .",
+            "title": "Series Settings"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_controller/#axis-settings",
+            "text": "The X/Y labels, and scales could be defined in Axis Settings window.",
+            "title": "Axis Settings"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_controller/#legend-settings",
+            "text": "The color, position of figure legend couled be defined in  Legend Settings  window.",
+            "title": "Legend Settings"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_controller/#group-setting",
+            "text": "In CCLE_B37 Land portal, there are several options for grouping, SampleID, SubjectID, Primary Site, Histology, Gender, Land Sample Type, Land Tissue, and Tumor Or Normal.",
+            "title": "Group Setting"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_controller/#sample-filters",
+            "text": "",
+            "title": "Sample Filters"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Distribution/",
+            "text": "Distribution\n\u00b6\n\n\nDistribution views in Land Portal Explore\n\u00b6\n\n\nOmicSoft uses ArrayLand framework to deliver large data service results. \nLand Portal\n is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, GeneticsLand, and Internal Lands). The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands.\n\n\nDNA Alteration Distribution\n\u00b6\n\n\n\n\nAlteration distribution view shows alterations of all genes searched in the current view, limited to DNAseq alterations (mutations and copy number).\n\n\nThere will be one bar for each combination of Group (e.g Tumor Type), gene and alteration type (mutation or CNV).\n\n\nSamples will be colored by alteration type (mutation, amplification, deletion, multiple alteration). Summary information (% samples mutated) will also be given. By default, Alteration.Omicprint and Alteration.Distribution are using GISTIC2 calling method with only \"Amplification\" and \"Homozygous Deletion\" checked. Multiple alteration represents more than one type of alteration type in the sample.\n\n\nDNA Seq Somatic Mutation Distribution\n\u00b6\n\n\n\n\nDNA Seq somatic mutation distribution view shows % of mutant samples organized by group (Tumor Type in this case) for a queried gene.\n\n\nRNA Seq Somatic Mutation Distribution\n\u00b6\n\n\n\n\nRNA Seq somatic mutation distribution view shows the RNA-Seq mutations, organized by group (Tumor Type in this case), each chart is an individual site mutation.\n\n\nX-Axis shows percent of mutant samples, while Y-axis shows the group.\n\n\nUse the Sample Tab to change filtering options on the samples (or to change grouping).\n\n\nUse the Mutation tab to filter for specific Amino Acid mutation (OS_AAMutation), Annotation Type (i.e non-synonymous via OS_AnnotationType) and more.\n\n\nSelect one or more bars from the plot and choose Details for Selection to find out more details on the selected samples.\n\n\nChoose RNA-Seq Mutation Details to see a table of all selected mutations with annotation.",
+            "title": "Distribution"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Distribution/#distribution",
+            "text": "",
+            "title": "Distribution"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Distribution/#distribution-views-in-land-portal-explore",
+            "text": "OmicSoft uses ArrayLand framework to deliver large data service results.  Land Portal  is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, GeneticsLand, and Internal Lands). The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands.",
+            "title": "Distribution views in Land Portal Explore"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Distribution/#dna-alteration-distribution",
+            "text": "Alteration distribution view shows alterations of all genes searched in the current view, limited to DNAseq alterations (mutations and copy number).  There will be one bar for each combination of Group (e.g Tumor Type), gene and alteration type (mutation or CNV).  Samples will be colored by alteration type (mutation, amplification, deletion, multiple alteration). Summary information (% samples mutated) will also be given. By default, Alteration.Omicprint and Alteration.Distribution are using GISTIC2 calling method with only \"Amplification\" and \"Homozygous Deletion\" checked. Multiple alteration represents more than one type of alteration type in the sample.",
+            "title": "DNA Alteration Distribution"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Distribution/#dna-seq-somatic-mutation-distribution",
+            "text": "DNA Seq somatic mutation distribution view shows % of mutant samples organized by group (Tumor Type in this case) for a queried gene.",
+            "title": "DNA Seq Somatic Mutation Distribution"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Distribution/#rna-seq-somatic-mutation-distribution",
+            "text": "RNA Seq somatic mutation distribution view shows the RNA-Seq mutations, organized by group (Tumor Type in this case), each chart is an individual site mutation.  X-Axis shows percent of mutant samples, while Y-axis shows the group.  Use the Sample Tab to change filtering options on the samples (or to change grouping).  Use the Mutation tab to filter for specific Amino Acid mutation (OS_AAMutation), Annotation Type (i.e non-synonymous via OS_AnnotationType) and more.  Select one or more bars from the plot and choose Details for Selection to find out more details on the selected samples.  Choose RNA-Seq Mutation Details to see a table of all selected mutations with annotation.",
+            "title": "RNA Seq Somatic Mutation Distribution"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Sample_Filter/",
+            "text": "Sample Filters\n\u00b6\n\n\nSample filters in Land Portal\n\u00b6\n\n\nAll Samples, Comparisons, and Projects within OmicSoft Land's are associated with extensive metadata, which can be used to filter Land data to find the samples users are interested in.\n\n\n\n\nBasickly, there are two types of sample filters users could apply to Land data, String filters, or check box options.\n\n\nApply String filter to Sample IDs in Land Portal\n\u00b6\n\n\n\n\nIn CCLE_B37 Land Portal, string filters could be used on Sample IDs, and Subject IDs, as shown in the demo, after applying \"HCC\" as the filter, only sample IDs started with \"HCC\" will show up in the scatter plot. After selecting all the data dots in the scatter plot, detail information about these samples could be found in the data table.\n\n\nApply Check Box filter to Primary Sites in Land Portal\n\u00b6\n\n\n\n\nCheck Box options are available for Primary Site, Histology, Gender, Land Sample Type, Land Tissuee, and Tumor Or Normal categories. As shown in the demo screenshot, after checking 5 primary sites, the samples with corresponding primary sites are shown in the scatter plot.\n\n\nAdd filters based on Meta Data and/or Data Aviailability\n\u00b6\n\n\n\n\nExtra filters could be added to the Sample Filter options, for example, after adding \nCNV\n and \nCellLineName\n, two extra filters showed up under \nSample\n tab, one string filter and one Check box filter:",
+            "title": "Sample Filter"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Sample_Filter/#sample-filters",
+            "text": "",
+            "title": "Sample Filters"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Sample_Filter/#sample-filters-in-land-portal",
+            "text": "All Samples, Comparisons, and Projects within OmicSoft Land's are associated with extensive metadata, which can be used to filter Land data to find the samples users are interested in.   Basickly, there are two types of sample filters users could apply to Land data, String filters, or check box options.",
+            "title": "Sample filters in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Sample_Filter/#apply-string-filter-to-sample-ids-in-land-portal",
+            "text": "In CCLE_B37 Land Portal, string filters could be used on Sample IDs, and Subject IDs, as shown in the demo, after applying \"HCC\" as the filter, only sample IDs started with \"HCC\" will show up in the scatter plot. After selecting all the data dots in the scatter plot, detail information about these samples could be found in the data table.",
+            "title": "Apply String filter to Sample IDs in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Sample_Filter/#apply-check-box-filter-to-primary-sites-in-land-portal",
+            "text": "Check Box options are available for Primary Site, Histology, Gender, Land Sample Type, Land Tissuee, and Tumor Or Normal categories. As shown in the demo screenshot, after checking 5 primary sites, the samples with corresponding primary sites are shown in the scatter plot.",
+            "title": "Apply Check Box filter to Primary Sites in Land Portal"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Sample_Filter/#add-filters-based-on-meta-data-andor-data-aviailability",
+            "text": "Extra filters could be added to the Sample Filter options, for example, after adding  CNV  and  CellLineName , two extra filters showed up under  Sample  tab, one string filter and one Check box filter:",
+            "title": "Add filters based on Meta Data and/or Data Aviailability"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Customer_Query/",
+            "text": "Custom Query\n\u00b6\n\n\nCustom Query in Land Portal Explore\n\u00b6\n\n\nOmicsoft Land users can add \nCustom Query\n in Land to categorize the samples by, for example, certain gene's mutation status, copy number status, fusion status, etc. The customized query can be used in many ways, such as filter, grouping factor, etc.\n\n\n\n\nThis tutorial is mainly based on CCLE_B37 Land Portal. Please refer to the OncoLand Whitepaper, available through the Help menu item, for descriptions of all available land portals within Land Portal.\n\n\nCNV Log2 Ratio\n\u00b6\n\n\nOmicsoft Land users can add CNV Call, CNV Log2 Ratio, DNA Somatic Mutation, and RNA-Seq Expression queries by clicking Custom icon in Land Portal.\n\n\n\n\nFour new filters will be available after users inputted the custom query:\n\n\n\n\nOnce the new Queries are available, users can filter the samples by input thresholds or set up a range for each filter, by clicking \nThree Dots Icon\n, and input the thresholds.\n\n\n\n\nTwo screenshots below show the difference between with and without applying filter in Custom Query.\n\n\nWithout applying the custom query filter:\n\n\n\nWith custom query filter applied:",
+            "title": "Customer Query"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Customer_Query/#custom-query",
+            "text": "",
+            "title": "Custom Query"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Customer_Query/#custom-query-in-land-portal-explore",
+            "text": "Omicsoft Land users can add  Custom Query  in Land to categorize the samples by, for example, certain gene's mutation status, copy number status, fusion status, etc. The customized query can be used in many ways, such as filter, grouping factor, etc.   This tutorial is mainly based on CCLE_B37 Land Portal. Please refer to the OncoLand Whitepaper, available through the Help menu item, for descriptions of all available land portals within Land Portal.",
+            "title": "Custom Query in Land Portal Explore"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/Customer_Query/#cnv-log2-ratio",
+            "text": "Omicsoft Land users can add CNV Call, CNV Log2 Ratio, DNA Somatic Mutation, and RNA-Seq Expression queries by clicking Custom icon in Land Portal.   Four new filters will be available after users inputted the custom query:   Once the new Queries are available, users can filter the samples by input thresholds or set up a range for each filter, by clicking  Three Dots Icon , and input the thresholds.   Two screenshots below show the difference between with and without applying filter in Custom Query.  Without applying the custom query filter:  With custom query filter applied:",
+            "title": "CNV Log2 Ratio"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_type/",
+            "text": "View Type\n\u00b6\n\n\nView types in Land Portal Explore\n\u00b6\n\n\nArray Studio Views\nArray Studio includes over 40 Views that can be customized for different data types. This page lists the View names, as would be used in both Array Lands and Array Land Portal Explore.\n\n\n\n\nBoxPlotView\n\n\nChromosomePValueView\n\n\nColumnProfileView\n\n\nCorrelationHeatmapView\n\n\nDendrogramView\n\n\nDensityView\n\n\nDispersionScatterView\n\n\nDotPlotView\n\n\nDoughnutView\n\n\nFactorView\n\n\nGeneralRegionView\n\n\nGenomeBlockView\n\n\nGenomeView\n\n\nGroupScatterView\n\n\nHeatmapTableView\n\n\nHeatmapView\n\n\nHistogramView\n\n\nLineScatterView\n\n\nLineView\n\n\nMAPlotView\n\n\nMVHistogramView\n\n\nMultipleSeriesScatterView\n\n\nMultivariateHistogramView\n\n\nNamedValueVariableView\n\n\nPValuePlotView\n\n\nPValueQQPlotView\n\n\nPairwiseScatterView\n\n\nPieView\n\n\nPlateView\n\n\nProfileView\n\n\nRBoxPlotView\n\n\nRegionView\n\n\nRowBoxPlotView\n\n\nScatterView\n\n\nSurvivalView\n\n\nTableView\n\n\nVariableView\n\n\nVennDiagramView",
+            "title": "View Type"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_type/#view-type",
+            "text": "",
+            "title": "View Type"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/View_type/#view-types-in-land-portal-explore",
+            "text": "Array Studio Views\nArray Studio includes over 40 Views that can be customized for different data types. This page lists the View names, as would be used in both Array Lands and Array Land Portal Explore.   BoxPlotView  ChromosomePValueView  ColumnProfileView  CorrelationHeatmapView  DendrogramView  DensityView  DispersionScatterView  DotPlotView  DoughnutView  FactorView  GeneralRegionView  GenomeBlockView  GenomeView  GroupScatterView  HeatmapTableView  HeatmapView  HistogramView  LineScatterView  LineView  MAPlotView  MVHistogramView  MultipleSeriesScatterView  MultivariateHistogramView  NamedValueVariableView  PValuePlotView  PValueQQPlotView  PairwiseScatterView  PieView  PlateView  ProfileView  RBoxPlotView  RegionView  RowBoxPlotView  ScatterView  SurvivalView  TableView  VariableView  VennDiagramView",
+            "title": "View types in Land Portal Explore"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/viewID/",
+            "text": "View ID\n\u00b6\n\n\nView IDs in Land Portal Explore\n\u00b6\n\n\nOmicSoft Lands contain dozens of Views to allow users to explore all aspects of Land data. However, the sheer number of Views can be daunting to the new user.\n\n\nArray Server admins can choose to hide a subset of Views from certain groups of users, such as new users.\n\n\nAdmins can customize the set of listed Views to only the most commonly used Views for each level of information.\n\n\nBasic Usage\n\u00b6\n\n\n\n\nView ID: The name of the View to be selectively displayed\n\n\nContextType: The Level of data, such as \"Gene\". If not provided, all matches to the View ID will be affected.\n\n\nIncludes/Excludes:A list of groups or users that should or should not see this View\n    Multiple users and user groups can be specified\n      a. UserIDs can be listed directly, separated by commas\n      b. UserGroups should be preceded by [usergroup]\n\n\nIf a user's ID or any associated group is included, the user will be affected.\n\n\nIn general, Excludes and Includes should not be specified at the same time. If both are specified, then\n      -If user belongs to a group in \"Excludes\" list, it will be excluded directly without checking \"Includes\";\n      -If user does not belong to a group in \"Excludes\" list, he/she can only have the view when the user belong to a group in \"Includes\" list.\n    administrators are also filtered based on this rule.",
+            "title": "ViewID"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/viewID/#view-id",
+            "text": "",
+            "title": "View ID"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/viewID/#view-ids-in-land-portal-explore",
+            "text": "OmicSoft Lands contain dozens of Views to allow users to explore all aspects of Land data. However, the sheer number of Views can be daunting to the new user.  Array Server admins can choose to hide a subset of Views from certain groups of users, such as new users.  Admins can customize the set of listed Views to only the most commonly used Views for each level of information.",
+            "title": "View IDs in Land Portal Explore"
+        },
+        {
+            "location": "/tutorials/LandPortal/LandExplore/viewID/#basic-usage",
+            "text": "View ID: The name of the View to be selectively displayed  ContextType: The Level of data, such as \"Gene\". If not provided, all matches to the View ID will be affected.  Includes/Excludes:A list of groups or users that should or should not see this View\n    Multiple users and user groups can be specified\n      a. UserIDs can be listed directly, separated by commas\n      b. UserGroups should be preceded by [usergroup]  If a user's ID or any associated group is included, the user will be affected.  In general, Excludes and Includes should not be specified at the same time. If both are specified, then\n      -If user belongs to a group in \"Excludes\" list, it will be excluded directly without checking \"Includes\";\n      -If user does not belong to a group in \"Excludes\" list, he/she can only have the view when the user belong to a group in \"Includes\" list.\n    administrators are also filtered based on this rule.",
+            "title": "Basic Usage"
+        },
+        {
             "location": "/tutorials/Microarray/Installing_Array_Studio/",
             "text": "Installing Array Studio\n\u00b6\n\n\nIntroduction update\n\u00b6\n\n\nArray Studio\n provides an integrated environment for analyzing and visualizing high dimensional data.\nIt is convenient for organizing and visualizing data with its \nSolution Explorer\n,\nwhich organizes each project into two main sections ( \n-Omic data\n and \nTable data\n),\nas well as different folders: \nQC, Inference, List, Cluster, Text, Attachments\n and other categories.\nMultiple projects can be opened simultaneously in the \nSolution Explorer\n,\nand data can be shared among projects.\nEach view is controlled by a \nView Controller\n,\nwhich performs view customization, applies filtering, and displays legends.\nFurthermore, its interactive visualization technique provides the details of data with the \nDetails Window\n and the \nWeb Details On-Demand\n.\n\n\nThis chapter will cover installation of Array Studio.\nThe next chapter will cover downloading of the data and chip normalization.\nIn the process, the user will become familiar with some of the features of the \nWorkflow Window\n and \nSolution Explorer\n, as well as getting acquainted with the \nTableView\n in \nArray Studio\n.\n\n\nPrerequisites and installation of Array Studio\n\u00b6\n\n\nWhile Array Studio does not have any specific requirements for memory or processor speed, the following are suggested for successfully finishing this tutorial:\n\n\n\n\n\n\n2.0GHz 32-bit (x86) or 64-bit (x64) processor\n\n\n\n\n\n\n512MB of RAM (1GB recommended)\n\n\n\n\n2GB of RAM for ExonArray, SNP/Genotyping, and CNV analysis\n\n\n\n\n\n\n\n\n2GB hard drive (4GB recommended)\n\n\n\n\n\n\n800*600 display resolution (1024*768 recommended)\n\n\n\n\n\n\nTo install Array Studio, (in Internet Explorer) proceed to \nlink\n\n\n\n\nClick \nInstall\n to install \nArray Studio Launcher\n.\n\n\nNote:\n\n\n\n\n\n\nThe version number listed here is  for Array Studio Launcher, not the Array Studio program. Array Studio Launcher is a tool to download Array Studio online.\n\n\n\n\n\n\nIf you have not previously installed the .NET Framework Version 3.5 on your machine, the website will prompt you to do so.\n\n\n\n\n\n\nThe next time you would like to access Array Studio, you can double click the Array Studio Launcher icon file that was automatically created on your desktop (and in the start menu). Alternatively, you can go to the same website (you can easily bookmark the page) and click the \nInstall\n button again. If the Array Studio has been updated since your last use, the software will automatically update itself before launching. In other words, you will be able to immediately access the software. \nNote\n: Bioinformatics is a fast evolving field. We are developing new analysis functions and options every day. The latest version is updated frequently.\n\n\nIf the installation of the .NET Framework 3.5 is required, a dialog box will appear with a security warning after installing .NET Framework. Click \nRun\n again to proceed and the application will install. Next time you use Array Studio, you can easily launch the program by just clicking the \nRun\n button.\n\n\n\n\nMicroarray Data and other Data types\n\u00b6\n\n\nIn Bioinformatics research, there are many different data sources such as microarray, sequence data, CNV data, etc. In Array Studio, we divide genetic data into two groups:\nOne is called -Omic data, which is basically a data matrix with annotation for both columns (sample information) and rows (gene/probe set/transcript information),\nand NGS data, which contains reads data. Microarray data is a standard example of -Omic data.\n\n\nWe have provided additional tutorials to analyze the multiple types of data that users may obtain, but in this tutorial we will focus on microarray data. Microarray data can be further categorized into many sub-classes according to the chip or platform. It is also important to know that many methods mentioned in this tutorial can also be applied to other -Omic data, such as RNAseq quantification data. For example, when users load RNAseq data as NGS data, Array Studio provides modules to compute gene/transcription quantification, which is also stored as -Omic data.  It shares the same views as microarray data, and users can apply many methods mentioned in this tutorial to such -Omic data. Therefore, we recommend all users begin with this microarray tutorial to understand the basics of how to analyze -Omic data in Array Studio before exploring other tutorials.",
             "title": "Installing Array Studio"
@@ -3412,7 +3937,7 @@
         },
         {
             "location": "/example/",
-            "text": "First\n\u00b6\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\u00b6\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\u00b6\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\n\n\n\n\n\nImages, videos and table\n\u00b6\n\n\nSimple image\n\u00b6\n\n\n\n\nTest a large image\n\n\n\n\nlightbox image\n\u00b6\n\n\nTest large image with lightbox using extend theme_dir\n\n\n\n    \n\n\n\n\nlightbox gallery\n\u00b6\n\n\n\n    \n\n        \n\n            \n\n                \n\n            \n\n            \n\n                \n\n            \n\n            \n\n                \n\n            \n\n        \n\n        \n\n            \n\n                \n\n            \n\n            \n\n                \n\n            \n\n            \n\n                \n\n            \n\n        \n\n    \n\n\n\n\n\nlightbox Youtube\n\u00b6\n\n\nJustin Bieber - Love Yourself\n\n\nTestTable\n\u00b6\n\n\n\n\n\n\n\n\nHeader One\n\n\nHeader Two\n\n\nHeader One\n\n\nHeader Two\n\n\n\n\n\n\n\n\n\n\nItem One\n\n\nItem Two\n\n\nItem One\n\n\nItem Two\n\n\n\n\n\n\n\n\nExtensions\n\u00b6\n\n\nAdmonition\n\u00b6\n\n\nuse below\n\n\n!!! note\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\nwill have:\n\n\n\n\nNote\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n\n\nTip\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\nmore to find in \nsquidfunk\n\n\n\n\n\n\nOpen styled details\n\n\n\n\nNested details!\n\n\nAnd more content again.\n\n\n\n\n\n\n\n\nTip: we can add code here\n\n\n\"\"\" Bubble sort \"\"\"\n\n\ndef\n \nbubble_sort\n(\nitems\n):\n\n\n    \nfor\n \ni\n \nin\n \nrange\n(\nlen\n(\nitems\n)):\n\n\n        \nfor\n \nj\n \nin\n \nrange\n(\nlen\n(\nitems\n)\n \n-\n \n1\n \n-\n \ni\n):\n\n\n            \nif\n \nitems\n[\nj\n]\n \n>\n \nitems\n[\nj\n \n+\n \n1\n]:\n\n                \nitems\n[\nj\n],\n \nitems\n[\nj\n \n+\n \n1\n]\n \n=\n \nitems\n[\nj\n \n+\n \n1\n],\n \nitems\n[\nj\n]\n\n\n\n\n\n\n\n\n\nSeealso\n\n\nRef1:\nRef2:\n\n\n\n\n\n\nSummary\n\n\nSummary style\n\n\n\n\n\n\nDone\n\n\nI am done\n\n\n\n\n\n\nWarning\n\n\nmy warning\n\n\n\n\n\n\nFailure\n\n\nA fail case\n\n\n\n\n\n\nDanger\n\n\nbe careful\n\n\n\n\n\n\nBug\n\n\nIt is a bug\n\n\n\n\n\n\nQuote\n\n\nsomeone said so.\n\n\n\n\nMore details\n\n\nDetails\n\u00b6\n\n\nOpen styled details\nNested details!\nAnd more content again.\nstyled details\n\n\n\n\nNote\n\n\nOpen styled details\nHello1\nHello2\n\n\nDanger\n\n\nNested details!\nAnd more content again.\n\n\n\n\nFootnotes\n\u00b6\n\n\nExample:\n\n\nLorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]\n\n\n\n\nResult:\n\n\nLorem ipsum\n1\n dolor sit amet, consectetur adipiscing elit.\n2\n\n\nCode highlight\n\u00b6\n\n\nimport\n \ntensorflow\n \nas\n \ntf\n\n\n\n\n\nCode highlight the 3\nrd\n and 4\nth\n lines\n\n\n\"\"\" Bubble sort \"\"\"\n\n\ndef\n \nbubble_sort\n(\nitems\n):\n\n\n    \nfor\n \ni\n \nin\n \nrange\n(\nlen\n(\nitems\n)):\n\n\n        \nfor\n \nj\n \nin\n \nrange\n(\nlen\n(\nitems\n)\n \n-\n \n1\n \n-\n \ni\n):\n\n\n            \nif\n \nitems\n[\nj\n]\n \n>\n \nitems\n[\nj\n \n+\n \n1\n]:\n\n                \nitems\n[\nj\n],\n \nitems\n[\nj\n \n+\n \n1\n]\n \n=\n \nitems\n[\nj\n \n+\n \n1\n],\n \nitems\n[\nj\n]\n\n\n\n\n\nMore examples of code highlight\n\n\nsmart symbols\n\u00b6\n\n\n\n\n\u2122\n\n\n\u00ae\n\n\nmore\n\n\n\n\nmeta\n\u00b6\n\n\nSee the meta and description above.\n\n\nTask list\n\u00b6\n\n\nTask List\n\n\n\n\n item 1\n\n\n item A\n\n\n item B\n\n\n item a\n\n\n item b\n\n\n item c\n\n\n\n\n\n\n item C\n\n\n\n\n\n\n item 2\n\n\n item 3\n\n\n\n\nemoji\n\u00b6\n\n\nEmojiOne \n emoji are very useful \n.\n\n\nYou can also escape \n:\n characters to escape the emoji: :smile:.\n\n\nSuper and sub using caret and tilde, and mark\n\u00b6\n\n\n\n\nunderline me\n\n\nH\n2\n0\n\n\ntext\na superscript\n\n\ndelete me\n\n\nCH\n3\nCH\n2\nOH\n\n\ntext\na subscript\n\n\nmark me\n\n\nmark\n \nme\n\n\n\n\nKeyboard using keys\n\u00b6\n\n\nTo copy, press \nCtrl\n+\nAlt\n+\nC\n for Windows or Linux or \nCmd\n+\nAlt\n+\nC\n for Mac.\n\n\nYou can also use custom key labels: \nCtrl\n+\nAlt\n+\n\u00dc\n.\n\n\nMathjax\n\u00b6\n\n\nSome Block Equations:\n\n\n\\[\n\\frac{n!}{k!(n-k)!} = \\binom{n}{k}\n\\]\n\\[\nE(\\mathbf{v}, \\mathbf{h}) = -\\sum_{i,j}w_{ij}v_i h_j - \\sum_i b_i v_i - \\sum_j c_j h_j\n\\]\n\\[3 < 4\\]\n\\[\\begin{align}\n    p(v_i=1|\\mathbf{h}) & = \\sigma\\left(\\sum_j w_{ij}h_j + b_i\\right) \\\\\n    p(h_j=1|\\mathbf{v}) & = \\sigma\\left(\\sum_i w_{ij}v_i + c_j\\right)\n\\end{align}\\]\nInline equations: \n\\(p(x|y) = \\frac{p(y|x)p(x)}{p(y)}\\)\n, \n\\(p(x|y) = \\frac{p(y|x)p(x)}{p(y)}\\)\n.\n\n\nReference\n\u00b6\n\n\nhttp://squidfunk.github.io/mkdocs-material/extensions/pymdown/\n\n\n\n\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\u00a0\n\u21a9\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\u00a0\n\u21a9",
+            "text": "First\n\u00b6\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\u00b6\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\u00b6\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\n\n\n\n\n\nImages, videos and table\n\u00b6\n\n\nSimple image\n\u00b6\n\n\n\n\nTest a large image\n\n\n\n\nlightbox image\n\u00b6\n\n\nTest large image with lightbox using extend theme_dir\n\n\n\n    \n\n\n\n\nlightbox gallery\n\u00b6\n\n\n\n    \n\n        \n\n            \n\n                \n\n            \n\n            \n\n                \n\n            \n\n            \n\n                \n\n            \n\n        \n\n        \n\n            \n\n                \n\n            \n\n            \n\n                \n\n            \n\n            \n\n                \n\n            \n\n        \n\n    \n\n\n\n\n\nlightbox Youtube\n\u00b6\n\n\nJustin Bieber - Love Yourself\n\n\nTestTable\n\u00b6\n\n\n\n\n\n\n\n\nHeader One\n\n\nHeader Two\n\n\nHeader One\n\n\nHeader Two\n\n\n\n\n\n\n\n\n\n\nItem One\n\n\nItem Two\n\n\nItem One\n\n\nItem Two\n\n\n\n\n\n\n\n\nExtensions\n\u00b6\n\n\nAdmonition\n\u00b6\n\n\nuse below\n\n\n!!! note\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\nwill have:\n\n\n\n\nNote\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n\n\nTip\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\nmore to find in \nsquidfunk\n\n\n\n\n\n\nOpen styled details\n\n\n\n\nNested details!\n\n\nAnd more content again.\n\n\n\n\n\n\n\n\nTip: we can add code here\n\n\n\"\"\" Bubble sort \"\"\"\n\n\ndef\n \nbubble_sort\n(\nitems\n):\n\n\n    \nfor\n \ni\n \nin\n \nrange\n(\nlen\n(\nitems\n)):\n\n\n        \nfor\n \nj\n \nin\n \nrange\n(\nlen\n(\nitems\n)\n \n-\n \n1\n \n-\n \ni\n):\n\n\n            \nif\n \nitems\n[\nj\n]\n \n>\n \nitems\n[\nj\n \n+\n \n1\n]:\n\n                \nitems\n[\nj\n],\n \nitems\n[\nj\n \n+\n \n1\n]\n \n=\n \nitems\n[\nj\n \n+\n \n1\n],\n \nitems\n[\nj\n]\n\n\n\n\n\n\n\n\n\nSeealso\n\n\nRef1:\nRef2:\n\n\n\n\n\n\nSummary\n\n\nSummary style\n\n\n\n\n\n\nDone\n\n\nI am done\n\n\n\n\n\n\nWarning\n\n\nmy warning\n\n\n\n\n\n\nFailure\n\n\nA fail case\n\n\n\n\n\n\nDanger\n\n\nbe careful\n\n\n\n\n\n\nBug\n\n\nIt is a bug\n\n\n\n\n\n\nQuote\n\n\nsomeone said so.\n\n\n\n\nMore details\n\n\nDetails\n\u00b6\n\n\nOpen styled details\nNested details!\nAnd more content again.\nstyled details\n\n\n\n\nNote\n\n\nOpen styled details\nHello1\nHello2\n\n\nDanger\n\n\nNested details!\nAnd more content again.\n\n\n\n\nFootnotes\n\u00b6\n\n\nExample:\n\n\nLorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]\n\n\n\n\nResult:\n\n\nLorem ipsum\n1\n dolor sit amet, consectetur adipiscing elit.\n2\n\n\nCode highlight\n\u00b6\n\n\nimport\n \ntensorflow\n \nas\n \ntf\n\n\n\n\n\nCode highlight the 3\nrd\n and 4\nth\n lines\n\n\n\"\"\" Bubble sort \"\"\"\n\n\ndef\n \nbubble_sort\n(\nitems\n):\n\n\n    \nfor\n \ni\n \nin\n \nrange\n(\nlen\n(\nitems\n)):\n\n\n        \nfor\n \nj\n \nin\n \nrange\n(\nlen\n(\nitems\n)\n \n-\n \n1\n \n-\n \ni\n):\n\n\n            \nif\n \nitems\n[\nj\n]\n \n>\n \nitems\n[\nj\n \n+\n \n1\n]:\n\n                \nitems\n[\nj\n],\n \nitems\n[\nj\n \n+\n \n1\n]\n \n=\n \nitems\n[\nj\n \n+\n \n1\n],\n \nitems\n[\nj\n]\n\n\n\n\n\nMore examples of code highlight\n\n\nsmart symbols\n\u00b6\n\n\n\n\n\u2122\n\n\n\u00ae\n\n\nmore\n\n\n\n\nmeta\n\u00b6\n\n\nSee the meta and description above.\n\n\nTask list\n\u00b6\n\n\nTask List\n\n\n\n\n item 1\n\n\n item A\n\n\n item B\n\n\n item a\n\n\n item b\n\n\n item c\n\n\n\n\n\n\n item C\n\n\n\n\n\n\n item 2\n\n\n item 3\n\n\n\n\nemoji\n\u00b6\n\n\nEmojiOne \n emoji are very useful \n.\n\n\nYou can also escape \n:\n characters to escape the emoji: :smile:.\n\n\nSuper and sub using caret and tilde, and mark\n\u00b6\n\n\n\n\nunderline me\n\n\nH\n2\n0\n\n\ntext\na superscript\n\n\ndelete me\n\n\nCH\n3\nCH\n2\nOH\n\n\ntext\na subscript\n\n\nmark me\n\n\nmark\n \nme\n\n\n\n\nKeyboard using keys\n\u00b6\n\n\nTo copy, press \nCtrl\n+\nAlt\n+\nC\n for Windows or Linux or \nCmd\n+\nAlt\n+\nC\n for Mac.\n\n\nYou can also use custom key labels: \nCtrl\n+\nAlt\n+\n\u00dc\n.\n\n\nMathjax\n\u00b6\n\n\nSome Block Equations:\n\n\n\\[\n\\frac{n!}{k!(n-k)!} = \\binom{n}{k}\n\\]\n\\[\n#E(\\mathbf{v}, \\mathbf{h}) = -\\sum_{i,j}w_{ij}v_i h_j - \\sum_i b_i v_i - \\sum_j c_j h_j\n\\]\n\\[3 < 4\\]\n\\[\\begin{align}\n    p(v_i=1|\\mathbf{h}) & = \\sigma\\left(\\sum_j w_{ij}h_j + b_i\\right) \\\\\n    p(h_j=1|\\mathbf{v}) & = \\sigma\\left(\\sum_i w_{ij}v_i + c_j\\right)\n\\end{align}\\]\nInline equations: \n\\(p(x|y) = \\frac{p(y|x)p(x)}{p(y)}\\)\n, \n\\(p(x|y) = \\frac{p(y|x)p(x)}{p(y)}\\)\n.\n\n\nReference\n\u00b6\n\n\nhttp://squidfunk.github.io/mkdocs-material/extensions/pymdown/\n\n\n\n\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\u00a0\n\u21a9\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\u00a0\n\u21a9",
             "title": "Example"
         },
         {
@@ -3517,7 +4042,7 @@
         },
         {
             "location": "/example/#mathjax",
-            "text": "Some Block Equations:  \\[\n\\frac{n!}{k!(n-k)!} = \\binom{n}{k}\n\\] \\[\nE(\\mathbf{v}, \\mathbf{h}) = -\\sum_{i,j}w_{ij}v_i h_j - \\sum_i b_i v_i - \\sum_j c_j h_j\n\\] \\[3 < 4\\] \\[\\begin{align}\n    p(v_i=1|\\mathbf{h}) & = \\sigma\\left(\\sum_j w_{ij}h_j + b_i\\right) \\\\\n    p(h_j=1|\\mathbf{v}) & = \\sigma\\left(\\sum_i w_{ij}v_i + c_j\\right)\n\\end{align}\\] Inline equations:  \\(p(x|y) = \\frac{p(y|x)p(x)}{p(y)}\\) ,  \\(p(x|y) = \\frac{p(y|x)p(x)}{p(y)}\\) .",
+            "text": "Some Block Equations:  \\[\n\\frac{n!}{k!(n-k)!} = \\binom{n}{k}\n\\] \\[\n#E(\\mathbf{v}, \\mathbf{h}) = -\\sum_{i,j}w_{ij}v_i h_j - \\sum_i b_i v_i - \\sum_j c_j h_j\n\\] \\[3 < 4\\] \\[\\begin{align}\n    p(v_i=1|\\mathbf{h}) & = \\sigma\\left(\\sum_j w_{ij}h_j + b_i\\right) \\\\\n    p(h_j=1|\\mathbf{v}) & = \\sigma\\left(\\sum_i w_{ij}v_i + c_j\\right)\n\\end{align}\\] Inline equations:  \\(p(x|y) = \\frac{p(y|x)p(x)}{p(y)}\\) ,  \\(p(x|y) = \\frac{p(y|x)p(x)}{p(y)}\\) .",
             "title": "Mathjax"
         },
         {
