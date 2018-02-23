@@ -76,6 +76,36 @@ pages:
       - Introduction: tutorials/Oscript/Introduction.md
       - Run Oscript: tutorials/Oscript/RunOscript.md
       - Pipeline Script: tutorials/Oscript/PipelineScript.md
+    - LandPortal:
+      - Introduction: tutorials/LandPortal/Introduction.md
+      - Land Views:
+        - Sample Level Overview:
+            - Samples: tutorials/LandPortal/LandViews/Sample Level Overview/Samples.md
+            - Comparisons: tutorials/LandPortal/LandViews/Sample Level Overview/Comparisons.md
+            - DataAvailability: tutorials/LandPortal/LandViews/Sample Level Overview/DataAvailability.md
+            - TableView: tutorials/LandPortal/LandViews/Sample Level Overview/TableView.md
+        - Gene Level Views:
+            - ExpresionVSFPKM: tutorials/LandPortal/LandViews/Gene Level Views/ExpresionVSFPKM.md
+            - CNVvsFPKM: tutorials/LandPortal/LandViews/Gene Level Views/CNVvsFPKM.md
+            - AllComparisons: tutorials/LandPortal/LandViews/Gene Level Views/AllComparisons.md
+            - DNASeqSomaticMutation: tutorials/LandPortal/LandViews/Gene Level Views/DNASeqSomaticMutation.md
+            - RNASeqTranscriptFPKM: tutorials/LandPortal/LandViews/Gene Level Views/RNASeqTranscriptFPKM.md
+            - SummaryGeneFPKM: tutorials/LandPortal/LandViews/Gene Level Views/SummaryGeneFPKM.md
+            - DNAAlterationDistribution: tutorials/LandPortal/LandViews/Gene Level Views/DNAAlterationDistribution.md
+            - RNASeqSomaticMutation: tutorials/LandPortal/LandViews/Gene Level Views/RNASeqSomaticMutation.md
+            - RNASeqFusion: tutorials/LandPortal/LandViews/Gene Level Views/RNASeqFusion.md
+            - ExpressionRatio: tutorials/LandPortal/LandViews/Gene Level Views/ExpressionRatio.md
+            - CNVSummary: tutorials/LandPortal/LandViews/Gene Level Views/CNVSummary.md
+            - CNVVariable: tutorials/LandPortal/LandViews/Gene Level Views/CNVVariable.md
+            - HeatmapFPKM: tutorials/LandPortal/LandViews/Gene Level Views/HeatmapFPKM.md
+      - Land Explore:
+        - Introduction: tutorials/LandPortal/LandExplore/Introduction.md
+        - View Controller: tutorials/LandPortal/LandExplore/View_controller.md
+        - Distribution: tutorials/LandPortal/LandExplore/Distribution.md
+        - Sample Filter: tutorials/LandPortal/LandExplore/Sample_Filter.md
+        - Customer Query: tutorials/LandPortal/LandExplore/Customer_Query.md
+        - View Type: tutorials/LandPortal/LandExplore/View_type.md
+        - ViewID: tutorials/LandPortal/LandExplore/viewID.md
 - OmicData:
     - Microarray:
       - Installing Array Studio: tutorials/Microarray/Installing_Array_Studio.md

@@ -59,6 +59,18 @@ pages:
       - Introduction: tutorials/Oscript/Introduction.md
       - Run Oscript: tutorials/Oscript/RunOscript.md
       - Pipeline Script: tutorials/Oscript/PipelineScript.md
+    - LandPortal:
+      - Introduction: tutorials/LandPortal/Introduction.md
+      - Land Views:
+        -Select View: tutorials/LandPortal/SelectLandViews.md
+      - Land Explore:
+        - Introduction: tutorials/LandPortal/LandExplore/Introduction.md
+        - View Controller: tutorials/LandPortal/LandExplore/View_controller.md
+        - Distribution: tutorials/LandPortal/LandExplore/Distribution.md
+        - Sample Filter: tutorials/LandPortal/LandExplore/Sample_Filter.md
+        - Customer Query: tutorials/LandPortal/LandExplore/Customer_Query.md
+        - View Type: tutorials/LandPortal/LandExplore/View_type.md
+        - ViewID: tutorials/LandPortal/LandExplore/viewID.md
 - OmicData:
     - Microarray:
       - Installing Array Studio: tutorials/Microarray/Installing_Array_Studio.md
