@@ -76,36 +76,36 @@ pages:
       - Introduction: tutorials/Oscript/Introduction.md
       - Run Oscript: tutorials/Oscript/RunOscript.md
       - Pipeline Script: tutorials/Oscript/PipelineScript.md
-    - LandPortal:
-      - Introduction: tutorials/LandPortal/Introduction.md
+    - Land Explorer:
+      - Introduction: tutorials/Land Explorer/Introduction.md
       - Land Views:
         - Sample Level Overview:
-            - Samples: tutorials/LandPortal/LandViews/Sample Level Overview/Samples.md
-            - Comparisons: tutorials/LandPortal/LandViews/Sample Level Overview/Comparisons.md
-            - DataAvailability: tutorials/LandPortal/LandViews/Sample Level Overview/DataAvailability.md
-            - TableView: tutorials/LandPortal/LandViews/Sample Level Overview/TableView.md
+            - Samples: tutorials/Land Explorer/Land Views/Sample Level Overview/Samples.md
+            - Comparisons: tutorials/Land Explorer/Land Views/Sample Level Overview/Comparisons.md
+            - Data Availability: tutorials/Land Explorer/Land Views/Sample Level Overview/Data Availability.md
+            - TableView: tutorials/Land Explorer/Land Views/Sample Level Overview/TableView.md
         - Gene Level Views:
-            - ExpresionVSFPKM: tutorials/LandPortal/LandViews/Gene Level Views/ExpresionVSFPKM.md
-            - CNVvsFPKM: tutorials/LandPortal/LandViews/Gene Level Views/CNVvsFPKM.md
-            - AllComparisons: tutorials/LandPortal/LandViews/Gene Level Views/AllComparisons.md
-            - DNASeqSomaticMutation: tutorials/LandPortal/LandViews/Gene Level Views/DNASeqSomaticMutation.md
-            - RNASeqTranscriptFPKM: tutorials/LandPortal/LandViews/Gene Level Views/RNASeqTranscriptFPKM.md
-            - SummaryGeneFPKM: tutorials/LandPortal/LandViews/Gene Level Views/SummaryGeneFPKM.md
-            - DNAAlterationDistribution: tutorials/LandPortal/LandViews/Gene Level Views/DNAAlterationDistribution.md
-            - RNASeqSomaticMutation: tutorials/LandPortal/LandViews/Gene Level Views/RNASeqSomaticMutation.md
-            - RNASeqFusion: tutorials/LandPortal/LandViews/Gene Level Views/RNASeqFusion.md
-            - ExpressionRatio: tutorials/LandPortal/LandViews/Gene Level Views/ExpressionRatio.md
-            - CNVSummary: tutorials/LandPortal/LandViews/Gene Level Views/CNVSummary.md
-            - CNVVariable: tutorials/LandPortal/LandViews/Gene Level Views/CNVVariable.md
-            - HeatmapFPKM: tutorials/LandPortal/LandViews/Gene Level Views/HeatmapFPKM.md
-      - Land Explore:
-        - Introduction: tutorials/LandPortal/LandExplore/Introduction.md
-        - View Controller: tutorials/LandPortal/LandExplore/View_controller.md
-        - Distribution: tutorials/LandPortal/LandExplore/Distribution.md
-        - Sample Filter: tutorials/LandPortal/LandExplore/Sample_Filter.md
-        - Customer Query: tutorials/LandPortal/LandExplore/Customer_Query.md
-        - View Type: tutorials/LandPortal/LandExplore/View_type.md
-        - ViewID: tutorials/LandPortal/LandExplore/viewID.md
+            - Expresion vs FPKM: tutorials/Land Explorer/Land Views/Gene Level Views/ExpresionVSFPKM.md
+            - CNV vs FPKM: tutorials/Land Explorer/Land Views/Gene Level Views/CNVvsFPKM.md
+            - All Comparisons: tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons.md
+            - DNASeq Somatic Mutation: tutorials/Land Explorer/Land Views/Gene Level Views/DNASeqSomaticMutation.md
+            - RNASeq Transcript FPKM: tutorials/Land Explorer/Land Views/Gene Level Views/RNASeqTranscriptFPKM.md
+            - Summary Gene FPKM: tutorials/Land Explorer/Land Views/Gene Level Views/SummaryGeneFPKM.md
+            - DNA Alteration Distribution: tutorials/Land Explorer/Land Views/Gene Level Views/DNAAlterationDistribution.md
+            - RNASeq Somatic Mutation: tutorials/Land Explorer/Land Views/Gene Level Views/RNASeqSomaticMutation.md
+            - RNASeq Fusion: tutorials/Land Explorer/Land Views/Gene Level Views/RNASeqFusion.md
+            - Expression Ratio: tutorials/Land Explorer/Land Views/Gene Level Views/ExpressionRatio.md
+            - CNV Summary: tutorials/Land Explorer/Land Views/Gene Level Views/CNVSummary.md
+            - CNV Variable: tutorials/Land Explorer/Land Views/Gene Level Views/CNVVariable.md
+            - Heatmap FPKM: tutorials/Land Explorer/Land Views/Gene Level Views/HeatmapFPKM.md
+      - Using Land Explorer:
+        - Introduction: tutorials/Land Explorer/Using Land Explorer/Introduction.md
+        - View Controller: tutorials/Land Explorer/Using Land Explorer/View_controller.md
+        - Distribution: tutorials/Land Explorer/Using Land Explorer/Distribution.md
+        - Sample Filter: tutorials/Land Explorer/Using Land Explorer/Sample_Filter.md
+        - Customer Query: tutorials/Land Explorer/Using Land Explorer/Customer_Query.md
+        - View Type: tutorials/Land Explorer/Using Land Explorer/View_type.md
+        - ViewID: tutorials/Land Explorer/Using Land Explorer/viewID.md
 - OmicData:
     - Microarray:
       - Installing Array Studio: tutorials/Microarray/Installing_Array_Studio.md
