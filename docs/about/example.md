@@ -24,12 +24,11 @@ For full documentation visit [mkdocs.org](http://mkdocs.org).
 ## Images, videos and table
 
 ### Simple image
-![logo](docs/images/logo.png)
-![logo](docs/images/omicsoft.png)
+![logo](images/logo.png)
 
 Test a large image
 
-![logo](docs/images/test1.png)
+![logo](images/test1.png)
 
 ### lightbox image
 Test large image with lightbox using extend theme_dir
@@ -68,7 +67,11 @@ Test large image with lightbox using extend theme_dir
 </div>
 
 ### lightbox Youtube
-<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-toggle="lightbox">Justin Bieber - Love Yourself</a></p>
+<p><a href="https://www.youtube.com/watch?v=gJKXo_2LWDQ" data-toggle="lightbox"> OmicSoft Single Cell RNASeq Analysis </a></p>
+
+<div class="video-wrapper">
+  <iframe width="900" height="600" src="https://www.youtube.com/embed/gJKXo_2LWDQ" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ### TestTable
 | Header One     | Header Two     | Header One     | Header Two     |
@@ -242,6 +245,16 @@ You can also use custom key labels: ++ctrl+alt+"&Uuml;"++.
 ### Mathjax
 Some Block Equations:
 
+When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) 
+
+and they are
+
+$$
+	x = {-b \pm \sqrt{b^2-4ac} \over 2a}.
+$$
+
+Where
+
 $$
 \frac{n!}{k!(n-k)!} = \binom{n}{k}
 $$
@@ -253,11 +266,11 @@ $$
 \[3 < 4\]
 
 \begin{align}
-    p(v_i=1|\mathbf{h}) & = \sigma\left(\sum_j w_{ij}h_j + b_i\right) \\
+    p(v_i=1|\mathbf{h}) & = \sigma\left(\sum_j w_{ij}h_j + b_i\right)\\
     p(h_j=1|\mathbf{v}) & = \sigma\left(\sum_i w_{ij}v_i + c_j\right)
 \end{align}
 
-Inline equations: $p(x|y) = \frac{p(y|x)p(x)}{p(y)}$, \(p(x|y) = \frac{p(y|x)p(x)}{p(y)}\).
+Inline equations: $p(x|y) = \frac{p(y|x)p(x)}{p(y)}$ 
 
 ## Reference
 http://squidfunk.github.io/mkdocs-material/extensions/pymdown/

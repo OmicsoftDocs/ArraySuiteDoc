@@ -26,13 +26,9 @@ theme:
   #custom_dir: 'theme/material-extend'
 
 extra_javascript:
-  #- 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTM'
-  #- 'javascripts\mathjax.js'
-  - 'javascripts\extra.js'
-  #- 'javascripts\mathjax-config.js'
-  #- 'javascripts\config.js'
-  #- 'javascripts\jax.js'
-  #- 'javascripts\MathJax.js?config=TeX-MML-AM_CHTM'
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    #- 'javascripts\extra.js'
+
 
 extra_css:
   - 'stylesheets/extra.css'
@@ -231,7 +227,7 @@ pages:
 - About:
     - Release Notes: about/Release-notes.md
     - Contributing: about/Contributing.md
-    - Example: example.md
+    - Example: about/example.md
 
 # Options
 extra:
@@ -280,3 +276,5 @@ markdown_extensions:
   - pymdownx.tasklist(custom_checkbox=true)
   - pymdownx.tilde
   - pymdownx.details
+  - mdx_math
+
