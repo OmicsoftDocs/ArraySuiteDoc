@@ -767,7 +767,7 @@
         },
         {
             "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Samples/",
-            "text": "Sample Distribution View\n\u00b6\n\n\nDefault View in Land Portal\n\u00b6\n\n\n\n\nThe sample distribution view is the default view of all Lands. The view will is a stacked bar graph which is displayed with the primary grouping column on the y-axis and samples colored on the x-axis using the secondary grouping column. In TCGA land, this will correspond to Tumor type on the Y-axis and Sample type on the X-axis:\n\n\nGeneral Options\n\n\nFiltering\n\n\n\nThis view, like all views in Array Suite, is highly customizable. Users can: 1. Filter to samples of interest using columns from the MetaData and Clinical Data. Additionally, Custom Queries and Sample Sets can be used. These columns can also be used to determine the primary grouping (what will be plotted on the Y-axis, as well as the secondary grouping (what will be plotted on the X-axis). For example, to see what skin cancer samples have RNA Seq data available in TCGA, users can filter to a specific tumor type (SKCM), and use Sample Type (Primary) and RnaSeq_Transcript (Secondary) for the grouping:\n\n\nChart Options\n\n\nUsers of Array Studio will notice the familiar task controller in the Sample Distribution view, which can be used customize the view (i.e. change color, labels, flip axes). In addition, users can export information (SampleID, Primary and Secondary Grouping information) by Opening in Editor or a summary of the chart by opening in Excel",
+            "text": "Sample Distribution View\n\u00b6\n\n\nDefault View in Land Portal\n\u00b6\n\n\n\n\nThe sample distribution view is the default view of all Lands. The view will is a stacked bar graph which is displayed with the primary grouping column on the y-axis and samples colored on the x-axis using the secondary grouping column. In TCGA land, this will correspond to Tumor type on the Y-axis and Sample type on the X-axis:\n\n\nGeneral Options\n\n\n\n\nThis view, like all views in Array Suite, is highly customizable. Users can: filter to samples of interest using columns from the MetaData and Clinical Data. Additionally, Custom Queries and Sample Sets can be used. These columns can also be used to determine the primary grouping (what will be plotted on the Y-axis, as well as the secondary grouping (what will be plotted on the X-axis). For example, to see what skin cancer samples have RNA Seq data available in TCGA, users can filter to a specific tumor type (SKCM), and use Sample Type (Primary) and RnaSeq_Transcript (Secondary) for the grouping:\n\n\nChart Options\n\n\nUsers of Array Studio will notice the familiar task controller in the Sample Distribution view, which can be used customize the view (i.e. change color, labels, flip axes). In addition, users can export information (SampleID, Primary and Secondary Grouping information) by Opening in Editor or a summary of the chart by opening in Excel",
             "title": "Samples"
         },
         {
@@ -777,53 +777,68 @@
         },
         {
             "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Samples/#default-view-in-land-portal",
-            "text": "The sample distribution view is the default view of all Lands. The view will is a stacked bar graph which is displayed with the primary grouping column on the y-axis and samples colored on the x-axis using the secondary grouping column. In TCGA land, this will correspond to Tumor type on the Y-axis and Sample type on the X-axis:  General Options  Filtering  \nThis view, like all views in Array Suite, is highly customizable. Users can: 1. Filter to samples of interest using columns from the MetaData and Clinical Data. Additionally, Custom Queries and Sample Sets can be used. These columns can also be used to determine the primary grouping (what will be plotted on the Y-axis, as well as the secondary grouping (what will be plotted on the X-axis). For example, to see what skin cancer samples have RNA Seq data available in TCGA, users can filter to a specific tumor type (SKCM), and use Sample Type (Primary) and RnaSeq_Transcript (Secondary) for the grouping:  Chart Options  Users of Array Studio will notice the familiar task controller in the Sample Distribution view, which can be used customize the view (i.e. change color, labels, flip axes). In addition, users can export information (SampleID, Primary and Secondary Grouping information) by Opening in Editor or a summary of the chart by opening in Excel",
+            "text": "The sample distribution view is the default view of all Lands. The view will is a stacked bar graph which is displayed with the primary grouping column on the y-axis and samples colored on the x-axis using the secondary grouping column. In TCGA land, this will correspond to Tumor type on the Y-axis and Sample type on the X-axis:  General Options   This view, like all views in Array Suite, is highly customizable. Users can: filter to samples of interest using columns from the MetaData and Clinical Data. Additionally, Custom Queries and Sample Sets can be used. These columns can also be used to determine the primary grouping (what will be plotted on the Y-axis, as well as the secondary grouping (what will be plotted on the X-axis). For example, to see what skin cancer samples have RNA Seq data available in TCGA, users can filter to a specific tumor type (SKCM), and use Sample Type (Primary) and RnaSeq_Transcript (Secondary) for the grouping:  Chart Options  Users of Array Studio will notice the familiar task controller in the Sample Distribution view, which can be used customize the view (i.e. change color, labels, flip axes). In addition, users can export information (SampleID, Primary and Secondary Grouping information) by Opening in Editor or a summary of the chart by opening in Excel",
             "title": "Default View in Land Portal"
         },
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Comparisons/",
-            "text": "Comparison Distribution\n\u00b6\n\n\nComparisons View in Land Portal\n\u00b6\n\n\n\n\nOverview\n\n\nThis view shows all pre-computed comparisons present in the Land. In TCGA land, this will typically be all Tumor vs Normal (where available) comparisons. In DiseaseLands and OncoGEO, this can refer to multiple comparison types (i.e. Disease vs. Normal, Treatment vs. Control, Response vs no response, pre-treatment vs post-treatment). In this view, users can quickly query the different comparisons available within the Land, based on the category shown on the x-axis.",
-            "title": "Comparisons"
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Sample_Details/",
+            "text": "Sample Details View\n\u00b6\n\n\nA Table View in Land Portal\n\u00b6\n\n\n\n\nOverview\n\n\nThis view shows all sample information and -Omic data available in the current Land. In TCGA land for example, this view will typically show a table of all data available where each row represents one Sample, and each column shows metadata (Tumor Type, Sample Type, Disease, Disease State, etc.).\n\n\nIn this view, users can quickly check the sample category and the meta data available within the Land, based on the category shown on the rows and cols.",
+            "title": "Sample Details"
         },
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Comparisons/#comparison-distribution",
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Sample_Details/#sample-details-view",
             "text": "",
-            "title": "Comparison Distribution"
+            "title": "Sample Details View"
         },
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Comparisons/#comparisons-view-in-land-portal",
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Sample_Details/#a-table-view-in-land-portal",
+            "text": "Overview  This view shows all sample information and -Omic data available in the current Land. In TCGA land for example, this view will typically show a table of all data available where each row represents one Sample, and each column shows metadata (Tumor Type, Sample Type, Disease, Disease State, etc.).  In this view, users can quickly check the sample category and the meta data available within the Land, based on the category shown on the rows and cols.",
+            "title": "A Table View in Land Portal"
+        },
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Comparison_Availability/",
+            "text": "Comparison Availability\n\u00b6\n\n\nComparisons Availability View in Land Portal\n\u00b6\n\n\n\n\nOverview\n\n\nThis view shows all pre-computed comparisons present in the Land. In TCGA land, this will typically be all Tumor vs Normal (where available) comparisons. In DiseaseLands and OncoGEO, this can refer to multiple comparison types (i.e. Disease vs. Normal, Treatment vs. Control, Response vs no response, pre-treatment vs post-treatment). In this view, users can quickly query the different comparisons available within the Land, based on the category shown on the x-axis.",
+            "title": "Comparison Availability"
+        },
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Comparison_Availability/#comparison-availability",
+            "text": "",
+            "title": "Comparison Availability"
+        },
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Comparison_Availability/#comparisons-availability-view-in-land-portal",
             "text": "Overview  This view shows all pre-computed comparisons present in the Land. In TCGA land, this will typically be all Tumor vs Normal (where available) comparisons. In DiseaseLands and OncoGEO, this can refer to multiple comparison types (i.e. Disease vs. Normal, Treatment vs. Control, Response vs no response, pre-treatment vs post-treatment). In this view, users can quickly query the different comparisons available within the Land, based on the category shown on the x-axis.",
-            "title": "Comparisons View in Land Portal"
+            "title": "Comparisons Availability View in Land Portal"
         },
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Data Availability/",
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Data_Availability/",
             "text": "Data Availability\n\u00b6\n\n\nData Availability View in Land Portal\n\u00b6\n\n\n\n\nOverview\n\n\nThis view shows all sample information and omic data available in the current Land. In TCGA land, this will typically show a table of all data available where each row represents one Tumor Type (ACC, BLCA, COAD, etc.), and each column shows -OmicData (CNV, DNA, MS, miRNA, etc.).\n\n\nIn DiseaseLands and OncoGEO, each row of the table would represent Disease Category (i.e. allergy, arthritis, autoimmune disease, benign neoplasm, etc.), each column would show -Omic data (i.e. Expression, Methylation, miRNA, RNA-seq, etc.). In this view, users can quickly check the sample category and the -Omic data available within the Land, based on the category shown on the rows and cols.",
             "title": "Data Availability"
         },
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Data Availability/#data-availability",
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Data_Availability/#data-availability",
             "text": "",
             "title": "Data Availability"
         },
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Data Availability/#data-availability-view-in-land-portal",
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Data_Availability/#data-availability-view-in-land-portal",
             "text": "Overview  This view shows all sample information and omic data available in the current Land. In TCGA land, this will typically show a table of all data available where each row represents one Tumor Type (ACC, BLCA, COAD, etc.), and each column shows -OmicData (CNV, DNA, MS, miRNA, etc.).  In DiseaseLands and OncoGEO, each row of the table would represent Disease Category (i.e. allergy, arthritis, autoimmune disease, benign neoplasm, etc.), each column would show -Omic data (i.e. Expression, Methylation, miRNA, RNA-seq, etc.). In this view, users can quickly check the sample category and the -Omic data available within the Land, based on the category shown on the rows and cols.",
             "title": "Data Availability View in Land Portal"
         },
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/TableView/",
-            "text": "Table View\n\u00b6\n\n\nTable View in Land Portal\n\u00b6\n\n\n\n\nOverview\n\n\nThis view shows all sample information and omic data available in the current Land. In TCGA land, this will typically show a table of all data available where each row represents one Sample, and each column shows metadata (Tumor Type, Sample Type, Disease, Disease State, etc.).\n\n\nIn this view, users can quickly check the sample category and the meta data available within the Land, based on the category shown on the rows and cols.",
-            "title": "TableView"
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Survival_Data/",
+            "text": "Survival Data View\n\u00b6\n\n\nSurvival Data View in Land Portal\n\u00b6\n\n\n\n\nOverview\n\n\nThis view shows plot of percent survival across time (Kaplan-meier Survival Curve) using a specified grouping (e.g. Tumor Type or Disease).",
+            "title": "Survival Data"
         },
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/TableView/#table-view",
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Survival_Data/#survival-data-view",
             "text": "",
-            "title": "Table View"
+            "title": "Survival Data View"
         },
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/TableView/#table-view-in-land-portal",
-            "text": "Overview  This view shows all sample information and omic data available in the current Land. In TCGA land, this will typically show a table of all data available where each row represents one Sample, and each column shows metadata (Tumor Type, Sample Type, Disease, Disease State, etc.).  In this view, users can quickly check the sample category and the meta data available within the Land, based on the category shown on the rows and cols.",
-            "title": "Table View in Land Portal"
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Survival_Data/#survival-data-view-in-land-portal",
+            "text": "Overview  This view shows plot of percent survival across time (Kaplan-meier Survival Curve) using a specified grouping (e.g. Tumor Type or Disease).",
+            "title": "Survival Data View in Land Portal"
         },
         {
             "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/ExpresionVSFPKM/",
