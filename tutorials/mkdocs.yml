@@ -2,7 +2,7 @@
 site_name: 'omicsoft doc'
 site_description: 'OmicSoft Doc'
 site_author: 'OmicSoft Support'
-site_url: 'http://192.168.3.222/WikiBigFiles/doc/v10.3/'
+site_url: 'http://192.168.3.222/WikiBigFiles/doc/v10/mkdocs/'
 
 # Repository
 # repo_name: 'omicsoft.github.io'
@@ -11,28 +11,11 @@ site_url: 'http://192.168.3.222/WikiBigFiles/doc/v10.3/'
 # Copyright
 copyright: 'Copyright &copy; 2008 - 2017 OmicSoft/QIAGEN Bioinformatics'
 
-#theme_dir: 'theme/material-extend'
-#theme: mkdocs #material # material-extend #mkdocs readthedocs
-theme:
-  name: 'material'
-  palette:
-    primary: 'Blue'
-    accent: 'teal'
-  font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
-  feature:
-    tabs: true
-  #custom_dir: 'theme/material-extend'
+theme_dir: 'theme/material-extend'
+
 
 extra_javascript:
-  #- 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTM'
-  #- 'javascripts\mathjax.js'
-  - 'javascripts\extra.js'
-  #- 'javascripts\mathjax-config.js'
-  #- 'javascripts\config.js'
-  #- 'javascripts\jax.js'
-  #- 'javascripts\MathJax.js?config=TeX-MML-AM_CHTM'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
 extra_css:
   - 'stylesheets/extra.css'
@@ -79,25 +62,7 @@ pages:
     - LandPortal:
       - Introduction: tutorials/LandPortal/Introduction.md
       - Land Views:
-        - Sample Level Overview:
-            - Samples: tutorials/LandPortal/LandViews/Sample Level Overview/Samples.md
-            - Comparisons: tutorials/LandPortal/LandViews/Sample Level Overview/Comparisons.md
-            - DataAvailability: tutorials/LandPortal/LandViews/Sample Level Overview/DataAvailability.md
-            - TableView: tutorials/LandPortal/LandViews/Sample Level Overview/TableView.md
-        - Gene Level Views:
-            - ExpresionVSFPKM: tutorials/LandPortal/LandViews/Gene Level Views/ExpresionVSFPKM.md
-            - CNVvsFPKM: tutorials/LandPortal/LandViews/Gene Level Views/CNVvsFPKM.md
-            - AllComparisons: tutorials/LandPortal/LandViews/Gene Level Views/AllComparisons.md
-            - DNASeqSomaticMutation: tutorials/LandPortal/LandViews/Gene Level Views/DNASeqSomaticMutation.md
-            - RNASeqTranscriptFPKM: tutorials/LandPortal/LandViews/Gene Level Views/RNASeqTranscriptFPKM.md
-            - SummaryGeneFPKM: tutorials/LandPortal/LandViews/Gene Level Views/SummaryGeneFPKM.md
-            - DNAAlterationDistribution: tutorials/LandPortal/LandViews/Gene Level Views/DNAAlterationDistribution.md
-            - RNASeqSomaticMutation: tutorials/LandPortal/LandViews/Gene Level Views/RNASeqSomaticMutation.md
-            - RNASeqFusion: tutorials/LandPortal/LandViews/Gene Level Views/RNASeqFusion.md
-            - ExpressionRatio: tutorials/LandPortal/LandViews/Gene Level Views/ExpressionRatio.md
-            - CNVSummary: tutorials/LandPortal/LandViews/Gene Level Views/CNVSummary.md
-            - CNVVariable: tutorials/LandPortal/LandViews/Gene Level Views/CNVVariable.md
-            - HeatmapFPKM: tutorials/LandPortal/LandViews/Gene Level Views/HeatmapFPKM.md
+        -Select View: tutorials/LandPortal/SelectLandViews.md
       - Land Explore:
         - Introduction: tutorials/LandPortal/LandExplore/Introduction.md
         - View Controller: tutorials/LandPortal/LandExplore/View_controller.md
@@ -177,18 +142,16 @@ pages:
       - QC of Aligned Data: tutorials/miRNAseq/QC_of_Aligned_Data.md
       - miRNA-Seq Quantification: tutorials/miRNAseq/miRNA-Seq_Quantification.md
       - Others: tutorials/miRNAseq/Others.md
-      - Save and Close Project: tutorials/miRNAseq/Save_Close_Project.md
     - scRNA-Seq:
       - Introduction: tutorials/scRNAseq/Introduction.md
       - CreateArray Studio Project: tutorials/scRNAseq/Create_ArrayStudio_Project.md
-      - scRNA analysis workflow: tutorials/scRNAseq/scRNA_Analysis_Workflow.md
-      - Pre-process of scRNA-Seq data: tutorials/scRNAseq/Preprocess_scRNA_Data.md
-      - TAG Based QC: tutorials/scRNAseq/Tag_based_QC.md
+      - workflow and pipeline: tutorials/scRNAseq/workflow_and_pipeline.md
+      - QC of Raw Data Files: tutorials/scRNAseq/QC_ofRaw_Data_Files.md
+      - Filtering Trimming Reads: tutorials/scRNAseq/Filtering_Trimming_Reads.md
       - Alignment to the Genome: tutorials/scRNAseq/Alignment_to_the_Genome.md
-      - Remove Duplicate: tutorials/scRNAseq/Remove_Duplicate.md
-      - scRNA-Seq Quantification: tutorials/scRNAseq/scRNASeq_Quantification.md
-      - Other Downstream Analysis: tutorials/scRNAseq/Other_Downstream_Analysis.md
-      - Save and Close Project: tutorials/scRNAseq/Save_Close_Project.md
+      - QC of Aligned Data: tutorials/scRNAseq/QC_of_Aligned_Data.md
+      - miRNA-Seq Quantification: tutorials/scRNAseq/miRNA-Seq_Quantification.md
+      - Others: tutorials/scRNAseq/Others.md
     - GWAS:
       - Introduction: tutorials/GWAS/Introduction.md
       - Connecting To A Server And Uploading Files: tutorials/GWAS/Connecting_To_A_Server_And_Uploading_Files.md
