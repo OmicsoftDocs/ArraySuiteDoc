@@ -10,9 +10,9 @@ The sample distribution view is the default view of all Lands. The view will is 
 
 **General Options**
 
-*Filtering*
 ![LandPortal_sampleviewTCGA_png](../../images/SampleViewTCGAB37.png)
-This view, like all views in Array Suite, is highly customizable. Users can: 1. Filter to samples of interest using columns from the MetaData and Clinical Data. Additionally, Custom Queries and Sample Sets can be used. These columns can also be used to determine the primary grouping (what will be plotted on the Y-axis, as well as the secondary grouping (what will be plotted on the X-axis). For example, to see what skin cancer samples have RNA Seq data available in TCGA, users can filter to a specific tumor type (SKCM), and use Sample Type (Primary) and RnaSeq_Transcript (Secondary) for the grouping:
+
+This view, like all views in Array Suite, is highly customizable. Users can: filter to samples of interest using columns from the MetaData and Clinical Data. Additionally, Custom Queries and Sample Sets can be used. These columns can also be used to determine the primary grouping (what will be plotted on the Y-axis, as well as the secondary grouping (what will be plotted on the X-axis). For example, to see what skin cancer samples have RNA Seq data available in TCGA, users can filter to a specific tumor type (SKCM), and use Sample Type (Primary) and RnaSeq_Transcript (Secondary) for the grouping:
 
 
 **Chart Options**

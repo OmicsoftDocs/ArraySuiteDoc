@@ -81,9 +81,10 @@ pages:
       - Land Views:
         - Sample Level Overview:
             - Samples: tutorials/Land Explorer/Land Views/Sample Level Overview/Samples.md
-            - Comparisons: tutorials/Land Explorer/Land Views/Sample Level Overview/Comparisons.md
-            - Data Availability: tutorials/Land Explorer/Land Views/Sample Level Overview/Data Availability.md
-            - TableView: tutorials/Land Explorer/Land Views/Sample Level Overview/TableView.md
+            - Sample Details: tutorials/Land Explorer/Land Views/Sample Level Overview/Sample_Details.md
+            - Comparison Availability: tutorials/Land Explorer/Land Views/Sample Level Overview/Comparison_Availability.md
+            - Data Availability: tutorials/Land Explorer/Land Views/Sample Level Overview/Data_Availability.md
+            - Survival Data: tutorials/Land Explorer/Land Views/Sample Level Overview/Survival_Data.md
         - Gene Level Views:
             - Expresion vs FPKM: tutorials/Land Explorer/Land Views/Gene Level Views/ExpresionVSFPKM.md
             - CNV vs FPKM: tutorials/Land Explorer/Land Views/Gene Level Views/CNVvsFPKM.md
