@@ -24,11 +24,11 @@ For full documentation visit [mkdocs.org](http://mkdocs.org).
 ## Images, videos and table
 
 ### Simple image
-![logo](images/logo.png)
+![logo](../images/logo.png)
 
 Test a large image
 
-![logo](images/test1.png)
+![logo](../images/test1.png)
 
 ### lightbox image
 Test large image with lightbox using extend theme_dir
