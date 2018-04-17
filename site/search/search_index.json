@@ -722,7 +722,7 @@
         }, 
         {
             "location": "/tutorials/Land Explorer/Introduction/", 
-            "text": "Introduction\n\n\nLand Portal\n\n\nOmicSoft uses ArrayLand framework to deliver large data service results. \nLand Portal\n is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, GeneticsLand, and Internal Lands). The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands.\n\n\n\n\nOnce users configured Land Portal on both Windows Server and ArrayServer internally, all ArrayStudio/ArrayLand users can log in to Land Portal and search all types of genomics profiles of a single gene or a set of genes instantly with rich visualizations.\n\n\nThis tutorial is mainly based on TCGA Land Portal. Please refer to the OncoLand Whitepaper, available through the Help menu item, for descriptions of all available land portals within Land Portal.\n\n\nLog in to Land Portal\n\n\nOnce you connect to the \nLandPortal\n server, you can find the TCGA land data by default, users could switch to other Land portals by clicking \nSelect Land\n:\n\n\n\n\nThe default \nTCGA_B37 Land Portal\n view shows a histogram plot of samples grouped by tumor type. Other views are also available for users to query the sample data at a general level.\n\n\nSelect views\n\n\nOverview\n\n\nBesides the default Samples view which shows the number of samples in each tumor type. Other views like Data Avaliability and Table View are also available for users to query the sample data at a general level.\n\n\n\n\nGene level view\n\n\nWhen one gene or a gene set has been inputted, there will be more views available, like DNA-Seq, Somatic Mutation Distribution, RNA-Seq, Gene FPKM, Transcript FPKM, etc.\n\n\n\n\nCustomize Views\n\n\nUsers could also customize the available views for selected genes/transcripts.\n\n\n\nFilter samples for the view\n\n\nUsers could also customize the view for a selected gene/transcript by filtering samples.", 
+            "text": "Introduction\n\n\nLand Explorer\n\n\nOmicSoft uses ArrayLand framework to deliver large data service results. \nLand Explorer\n is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, GeneticsLand, and Internal Lands). The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands.\n\n\n\n\nOnce users configured Land Explorer on both Windows Server and ArrayServer internally, all ArrayStudio/ArrayLand users can log in to Land Explorer and search all types of genomics profiles of a single gene or a set of genes instantly with rich visualizations.\n\n\nThis tutorial is mainly based on TCGA Land Portal. Please refer to the OncoLand Whitepaper, available through the Help menu item, for descriptions of all available Lands within Land Explorer.\n\n\nLog in to Land Explorer\n\n\nOnce you connect to the \nLandExplorer\n server, the default land chosen by the administrator (TCGA by default) will appear. Users can switch to other Lands by simply clicking \nSelect Land\n:\n\n\n\n\nThe default \nTCGA_B37 Land Explorer\n view shows a histogram plot of samples grouped on the y-axis by Tumor Type, and colored on the x-axis by Sample Type. Other views are also available for users to query the sample data at a general level.\n\n\nSelect views\n\n\nOverview\n\n\nIn addition to the default \nSamples\n view above, other views like \nData Avaliability\n and \nTable View\n are also available for users to query the sample data at a general level.\n\n\n\n\nGene level view\n\n\nWhen a user searches a gene or a gene set (multiple genes), there will be more views available, like DNA-Seq, Somatic Mutation Distribution, RNA-Seq, Gene FPKM, Transcript FPKM, etc.\n\n\n\n\nCustomize Views\n\n\nUsers could also customize the available views for selected genes/transcripts.\n\n\n\nFilter samples for the view\n\n\nUsers could also customize the view for a selected gene/transcript by filtering samples.", 
             "title": "Introduction"
         }, 
         {
@@ -731,14 +731,14 @@
             "title": "Introduction"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Introduction/#land-portal", 
-            "text": "OmicSoft uses ArrayLand framework to deliver large data service results.  Land Portal  is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, GeneticsLand, and Internal Lands). The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands.   Once users configured Land Portal on both Windows Server and ArrayServer internally, all ArrayStudio/ArrayLand users can log in to Land Portal and search all types of genomics profiles of a single gene or a set of genes instantly with rich visualizations.  This tutorial is mainly based on TCGA Land Portal. Please refer to the OncoLand Whitepaper, available through the Help menu item, for descriptions of all available land portals within Land Portal.", 
-            "title": "Land Portal"
+            "location": "/tutorials/Land Explorer/Introduction/#land-explorer", 
+            "text": "OmicSoft uses ArrayLand framework to deliver large data service results.  Land Explorer  is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, GeneticsLand, and Internal Lands). The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands.   Once users configured Land Explorer on both Windows Server and ArrayServer internally, all ArrayStudio/ArrayLand users can log in to Land Explorer and search all types of genomics profiles of a single gene or a set of genes instantly with rich visualizations.  This tutorial is mainly based on TCGA Land Portal. Please refer to the OncoLand Whitepaper, available through the Help menu item, for descriptions of all available Lands within Land Explorer.", 
+            "title": "Land Explorer"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Introduction/#log-in-to-land-portal", 
-            "text": "Once you connect to the  LandPortal  server, you can find the TCGA land data by default, users could switch to other Land portals by clicking  Select Land :   The default  TCGA_B37 Land Portal  view shows a histogram plot of samples grouped by tumor type. Other views are also available for users to query the sample data at a general level.", 
-            "title": "Log in to Land Portal"
+            "location": "/tutorials/Land Explorer/Introduction/#log-in-to-land-explorer", 
+            "text": "Once you connect to the  LandExplorer  server, the default land chosen by the administrator (TCGA by default) will appear. Users can switch to other Lands by simply clicking  Select Land :   The default  TCGA_B37 Land Explorer  view shows a histogram plot of samples grouped on the y-axis by Tumor Type, and colored on the x-axis by Sample Type. Other views are also available for users to query the sample data at a general level.", 
+            "title": "Log in to Land Explorer"
         }, 
         {
             "location": "/tutorials/Land Explorer/Introduction/#select-views", 
@@ -747,12 +747,12 @@
         }, 
         {
             "location": "/tutorials/Land Explorer/Introduction/#overview", 
-            "text": "Besides the default Samples view which shows the number of samples in each tumor type. Other views like Data Avaliability and Table View are also available for users to query the sample data at a general level.", 
+            "text": "In addition to the default  Samples  view above, other views like  Data Avaliability  and  Table View  are also available for users to query the sample data at a general level.", 
             "title": "Overview"
         }, 
         {
             "location": "/tutorials/Land Explorer/Introduction/#gene-level-view", 
-            "text": "When one gene or a gene set has been inputted, there will be more views available, like DNA-Seq, Somatic Mutation Distribution, RNA-Seq, Gene FPKM, Transcript FPKM, etc.", 
+            "text": "When a user searches a gene or a gene set (multiple genes), there will be more views available, like DNA-Seq, Somatic Mutation Distribution, RNA-Seq, Gene FPKM, Transcript FPKM, etc.", 
             "title": "Gene level view"
         }, 
         {
@@ -766,124 +766,169 @@
             "title": "Filter samples for the view"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Samples/", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Samples/", 
             "text": "Sample Distribution View\n\n\nDefault View in Land Portal\n\n\n\n\nThe sample distribution view is the default view of all Lands. The view will is a stacked bar graph which is displayed with the primary grouping column on the y-axis and samples colored on the x-axis using the secondary grouping column. In TCGA land, this will correspond to Tumor type on the Y-axis and Sample type on the X-axis:\n\n\nGeneral Options\n\n\n\n\nThis view, like all views in Array Suite, is highly customizable. Users can: filter to samples of interest using columns from the MetaData and Clinical Data. Additionally, Custom Queries and Sample Sets can be used. These columns can also be used to determine the primary grouping (what will be plotted on the Y-axis, as well as the secondary grouping (what will be plotted on the X-axis). For example, to see what skin cancer samples have RNA Seq data available in TCGA, users can filter to a specific tumor type (SKCM), and use Sample Type (Primary) and RnaSeq_Transcript (Secondary) for the grouping:\n\n\nChart Options\n\n\nUsers of Array Studio will notice the familiar task controller in the Sample Distribution view, which can be used customize the view (i.e. change color, labels, flip axes). In addition, users can export information (SampleID, Primary and Secondary Grouping information) by Opening in Editor or a summary of the chart by opening in Excel", 
             "title": "Samples"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Samples/#sample-distribution-view", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Samples/#sample-distribution-view", 
             "text": "", 
             "title": "Sample Distribution View"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Samples/#default-view-in-land-portal", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Samples/#default-view-in-land-portal", 
             "text": "The sample distribution view is the default view of all Lands. The view will is a stacked bar graph which is displayed with the primary grouping column on the y-axis and samples colored on the x-axis using the secondary grouping column. In TCGA land, this will correspond to Tumor type on the Y-axis and Sample type on the X-axis:  General Options   This view, like all views in Array Suite, is highly customizable. Users can: filter to samples of interest using columns from the MetaData and Clinical Data. Additionally, Custom Queries and Sample Sets can be used. These columns can also be used to determine the primary grouping (what will be plotted on the Y-axis, as well as the secondary grouping (what will be plotted on the X-axis). For example, to see what skin cancer samples have RNA Seq data available in TCGA, users can filter to a specific tumor type (SKCM), and use Sample Type (Primary) and RnaSeq_Transcript (Secondary) for the grouping:  Chart Options  Users of Array Studio will notice the familiar task controller in the Sample Distribution view, which can be used customize the view (i.e. change color, labels, flip axes). In addition, users can export information (SampleID, Primary and Secondary Grouping information) by Opening in Editor or a summary of the chart by opening in Excel", 
             "title": "Default View in Land Portal"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Sample_Details/", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Sample_Details/", 
             "text": "Sample Details View\n\n\nA Table View in Land Portal\n\n\n\n\nOverview\n\n\nThis view shows all sample information and -Omic data available in the current Land. In TCGA land for example, this view will typically show a table of all data available where each row represents one Sample, and each column shows metadata (Tumor Type, Sample Type, Disease, Disease State, etc.).\n\n\nIn this view, users can quickly check the sample category and the meta data available within the Land, based on the category shown on the rows and cols.", 
             "title": "Sample Details"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Sample_Details/#sample-details-view", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Sample_Details/#sample-details-view", 
             "text": "", 
             "title": "Sample Details View"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Sample_Details/#a-table-view-in-land-portal", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Sample_Details/#a-table-view-in-land-portal", 
             "text": "Overview  This view shows all sample information and -Omic data available in the current Land. In TCGA land for example, this view will typically show a table of all data available where each row represents one Sample, and each column shows metadata (Tumor Type, Sample Type, Disease, Disease State, etc.).  In this view, users can quickly check the sample category and the meta data available within the Land, based on the category shown on the rows and cols.", 
             "title": "A Table View in Land Portal"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Comparison_Availability/", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Comparison_Availability/", 
             "text": "Comparison Availability\n\n\nComparisons Availability View in Land Portal\n\n\n\n\nOverview\n\n\nThis view shows all pre-computed comparisons present in the Land. In TCGA land, this will typically be all Tumor vs Normal (where available) comparisons. In DiseaseLands and OncoGEO, this can refer to multiple comparison types (i.e. Disease vs. Normal, Treatment vs. Control, Response vs no response, pre-treatment vs post-treatment). In this view, users can quickly query the different comparisons available within the Land, based on the category shown on the x-axis.", 
             "title": "Comparison Availability"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Comparison_Availability/#comparison-availability", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Comparison_Availability/#comparison-availability", 
             "text": "", 
             "title": "Comparison Availability"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Comparison_Availability/#comparisons-availability-view-in-land-portal", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Comparison_Availability/#comparisons-availability-view-in-land-portal", 
             "text": "Overview  This view shows all pre-computed comparisons present in the Land. In TCGA land, this will typically be all Tumor vs Normal (where available) comparisons. In DiseaseLands and OncoGEO, this can refer to multiple comparison types (i.e. Disease vs. Normal, Treatment vs. Control, Response vs no response, pre-treatment vs post-treatment). In this view, users can quickly query the different comparisons available within the Land, based on the category shown on the x-axis.", 
             "title": "Comparisons Availability View in Land Portal"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Data_Availability/", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Data_Availability/", 
             "text": "Data Availability\n\n\nData Availability View in Land Portal\n\n\n\n\nOverview\n\n\nThis view shows all sample information and omic data available in the current Land. In TCGA land, this will typically show a table of all data available where each row represents one Tumor Type (ACC, BLCA, COAD, etc.), and each column shows -OmicData (CNV, DNA, MS, miRNA, etc.).\n\n\nIn DiseaseLands and OncoGEO, each row of the table would represent Disease Category (i.e. allergy, arthritis, autoimmune disease, benign neoplasm, etc.), each column would show -Omic data (i.e. Expression, Methylation, miRNA, RNA-seq, etc.). In this view, users can quickly check the sample category and the -Omic data available within the Land, based on the category shown on the rows and cols.", 
             "title": "Data Availability"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Data_Availability/#data-availability", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Data_Availability/#data-availability", 
             "text": "", 
             "title": "Data Availability"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Data_Availability/#data-availability-view-in-land-portal", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Data_Availability/#data-availability-view-in-land-portal", 
             "text": "Overview  This view shows all sample information and omic data available in the current Land. In TCGA land, this will typically show a table of all data available where each row represents one Tumor Type (ACC, BLCA, COAD, etc.), and each column shows -OmicData (CNV, DNA, MS, miRNA, etc.).  In DiseaseLands and OncoGEO, each row of the table would represent Disease Category (i.e. allergy, arthritis, autoimmune disease, benign neoplasm, etc.), each column would show -Omic data (i.e. Expression, Methylation, miRNA, RNA-seq, etc.). In this view, users can quickly check the sample category and the -Omic data available within the Land, based on the category shown on the rows and cols.", 
             "title": "Data Availability View in Land Portal"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Survival_Data/", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Survival_Data/", 
             "text": "Survival Data View\n\n\nSurvival Data View in Land Portal\n\n\n\n\nOverview\n\n\nThis view shows plot of percent survival across time (Kaplan-meier Survival Curve) using a specified grouping (e.g. Tumor Type or Disease).", 
             "title": "Survival Data"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Survival_Data/#survival-data-view", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Survival_Data/#survival-data-view", 
             "text": "", 
             "title": "Survival Data View"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Sample Level Overview/Survival_Data/#survival-data-view-in-land-portal", 
+            "location": "/tutorials/Land Explorer/Land Views/Sample Level Views/Survival_Data/#survival-data-view-in-land-portal", 
             "text": "Overview  This view shows plot of percent survival across time (Kaplan-meier Survival Curve) using a specified grouping (e.g. Tumor Type or Disease).", 
             "title": "Survival Data View in Land Portal"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/ExpresionVSFPKM/", 
-            "text": "Expression vs. FPKM\n\n\nExpression Ration vs. Gene Expression (FPKM) View for genes in Land Portal\n\n\n\n\nThis view shows a single chart, for each gene, comparing Gene Expression Ratio (Sample vs Universal Human Reference) vs Gene Expression (Log2(RPKM + 0.1)). A value of 0.1 has been added to every RPKM value in order to log the data and account for potential values of 0.", 
-            "title": "Expresion vs FPKM"
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/OmicDataIntegrationViews/", 
+            "text": "Integration views\n\n\nOmicsoft Lands have a number of OmicData types (such as copy number variation, expression and mutation data). In addition to viewing individual data types for samples, users can easily integrate these data types in integration views in Land Explorer.\n\n\nExpression vs. FPKM\n\n\nMicorarray Expression vs. Gene Expression (FPKM) View for genes in Land Portal\n\n\n\n\nThis view shows a single chart, for each gene, comparing Gene Expression Ratio (Sample vs Universal Human Reference) vs Gene Expression (Log2(RPKM + 0.1)). A value of 0.1 has been added to every RPKM value in order to log the data and account for potential values of 0.\n\n\nCNV vs FPKM\n\n\nAverage Copy Number Log2 Ration vs. Gene Expression (FPKM) for genes View in Land Portal\n\n\n\n\nThis view shows a signle chart, for each gene, comparing Gene Expression Ratio (Sample vs Universal Human Reference) vs Average Copy Number Log2 Ratio. By default, all sample types (tumor and normal) are shown, users could visualize a geneset (multiple genes), and choose grouping by Tumor Type, Sample ID, Sample Type, Disease, etc.", 
+            "title": "Integration Views"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/ExpresionVSFPKM/#expression-vs-fpkm", 
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/OmicDataIntegrationViews/#integration-views", 
+            "text": "Omicsoft Lands have a number of OmicData types (such as copy number variation, expression and mutation data). In addition to viewing individual data types for samples, users can easily integrate these data types in integration views in Land Explorer.", 
+            "title": "Integration views"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/OmicDataIntegrationViews/#expression-vs-fpkm", 
             "text": "", 
             "title": "Expression vs. FPKM"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/ExpresionVSFPKM/#expression-ration-vs-gene-expression-fpkm-view-for-genes-in-land-portal", 
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/OmicDataIntegrationViews/#micorarray-expression-vs-gene-expression-fpkm-view-for-genes-in-land-portal", 
             "text": "This view shows a single chart, for each gene, comparing Gene Expression Ratio (Sample vs Universal Human Reference) vs Gene Expression (Log2(RPKM + 0.1)). A value of 0.1 has been added to every RPKM value in order to log the data and account for potential values of 0.", 
-            "title": "Expression Ration vs. Gene Expression (FPKM) View for genes in Land Portal"
+            "title": "Micorarray Expression vs. Gene Expression (FPKM) View for genes in Land Portal"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CNVvsFPKM/", 
-            "text": "CNV vs FPKM\n\n\nAverage Copy Number Log2 Ration vs. Gene Expression (FPKM) for genes View in Land Portal\n\n\n\n\nThis view shows a signle chart, for each gene, comparing Gene Expression Ratio (Sample vs Universal Human Reference) vs Average Copy Number Log2 Ratio. By default, all sample types (tumor and normal) are shown, users could visualize a geneset (multiple genes), and choose grouping by Tumor Type, Sample ID, Sample Type, Disease, etc.", 
-            "title": "CNV vs FPKM"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CNVvsFPKM/#cnv-vs-fpkm", 
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/OmicDataIntegrationViews/#cnv-vs-fpkm", 
             "text": "", 
             "title": "CNV vs FPKM"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CNVvsFPKM/#average-copy-number-log2-ration-vs-gene-expression-fpkm-for-genes-view-in-land-portal", 
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/OmicDataIntegrationViews/#average-copy-number-log2-ration-vs-gene-expression-fpkm-for-genes-view-in-land-portal", 
             "text": "This view shows a signle chart, for each gene, comparing Gene Expression Ratio (Sample vs Universal Human Reference) vs Average Copy Number Log2 Ratio. By default, all sample types (tumor and normal) are shown, users could visualize a geneset (multiple genes), and choose grouping by Tumor Type, Sample ID, Sample Type, Disease, etc.", 
             "title": "Average Copy Number Log2 Ration vs. Gene Expression (FPKM) for genes View in Land Portal"
         }, 
         {
             "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/", 
-            "text": "All Comparisons Views\n\n\nComparison details for gene by Case.DiseaseCategory View in Land Portal\n\n\n\n\nThe default view is a comparison details for one gene by Case.DiseaseCategory, X-Axis shows Log2 Fold Change, Y-Axis shows Case.DiseaseCategory, comparisions are groupped by tissue category.", 
+            "text": "Comparison views\n\n\nThe OmicSoft Land curation teams carefully curate samples in the Land using a controlled vocabulary for each project. For each project containing RNA-seq or microarray data, the curation team will generate sample groupings (often matching the ones used by the authors, as well as other meaningful ones) such as Disease vs Normal samples, or Treatment vs. Control samples. The Land Explorer allows users to browse gene level information for these types of comparisons in a simple \"bubble plot\" view. When searching a gene, and choosing this view, the fold change of the gene will be plotted (each bubble, or dot represents a single comparison). The y-axis will group the comparisons by the primary grouping category, while the x-axis will represent the Log2 Fold change of that gene. The size of the dots will reflect the p value from the comparison (DESeq2 for RNA-seq and General Linear Model for microarray). Selecting dot(s) in this view will populate a Details table at the bottom of the view showing some key metadata from the comparison(s)\n\n\nThe views below can be filtered to comparisons of interest. For information on customizing comparison views, please see: Jeff- create Link to UsingLandExplorer (new page - Comparison filters.md)\n\n\nAll Comparisons\n\n\nThis view combines all comparisons for a gene into one view. In this view, all of the different types of comparisons in the select Land will be plotted:\n\n\n---Update Screenshot (without sample tab) \n\n\nDisease vs Normal\n\n\nThis view shows all comparisons where samples from affected subjects (i.e. Tumors or Disease) are compared to samples from normal subjects in the same project:\n\n\n---Screenshot\n\n\nTreatment vs Control\n\n\nThis view shows all comparisons where samples from affected subjects (treated with drug or other therapy) are compared to samples from untreated subjects in the same project:\n\n\n---Screenshot\n\n\nResponder vs NonResponder\n\n\nThis view shows all comparisons where samples from subjects that show favorable response to a treatment are compared to samples from subjects with no response to the same treatment in the same project:\n\n\n---Screenshot\n\n\nResistant vs Sensitive\n\n\nThis view shows all comparisons where samples from subjects that show resistance to a treatment are compared to samples from subjects showing significant difference in outcome to the same treatment in the same project:\n\n\n---Screenshot\n\n\nCell Type1 vs Cell Type2\n\n\nThis view shows all comparisons where samples of one cell type from a subject are compared to samples another cell type from these subjects in the same project:\n\n\n---Screenshot\n\n\nDisease1 vs Disease2\n\n\nThis view shows all comparisons where samples from subjects presenting one disease are compared to samples from other subjects presenting another disease in the same project:\n\n\n---Screenshot\n\n\nTreatment1 vs Treatment2\n\n\nThis view shows all comparisons where samples from subjects undergoing one treatment are compared to samples from other subjects undergoing a different treatment in the same project:\n\n\n---Screenshot\n\n\nTissue1 vs Tissue2\n\n\nThis view shows all comparisons where samples of one tissue from a subject are compared to samples another tissue from these subjects in the same project:\n\n\n---Screenshot\n\n\nOtherComparisons\n\n\nThis view shows all comparisons that do not fall under the standard categories above:\n\n\n---Screenshot", 
+            "title": "Comparisons"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#comparison-views", 
+            "text": "The OmicSoft Land curation teams carefully curate samples in the Land using a controlled vocabulary for each project. For each project containing RNA-seq or microarray data, the curation team will generate sample groupings (often matching the ones used by the authors, as well as other meaningful ones) such as Disease vs Normal samples, or Treatment vs. Control samples. The Land Explorer allows users to browse gene level information for these types of comparisons in a simple \"bubble plot\" view. When searching a gene, and choosing this view, the fold change of the gene will be plotted (each bubble, or dot represents a single comparison). The y-axis will group the comparisons by the primary grouping category, while the x-axis will represent the Log2 Fold change of that gene. The size of the dots will reflect the p value from the comparison (DESeq2 for RNA-seq and General Linear Model for microarray). Selecting dot(s) in this view will populate a Details table at the bottom of the view showing some key metadata from the comparison(s)  The views below can be filtered to comparisons of interest. For information on customizing comparison views, please see: Jeff- create Link to UsingLandExplorer (new page - Comparison filters.md)", 
+            "title": "Comparison views"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#all-comparisons", 
+            "text": "This view combines all comparisons for a gene into one view. In this view, all of the different types of comparisons in the select Land will be plotted:  ---Update Screenshot (without sample tab)", 
             "title": "All Comparisons"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#all-comparisons-views", 
-            "text": "", 
-            "title": "All Comparisons Views"
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#disease-vs-normal", 
+            "text": "This view shows all comparisons where samples from affected subjects (i.e. Tumors or Disease) are compared to samples from normal subjects in the same project:  ---Screenshot", 
+            "title": "Disease vs Normal"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#comparison-details-for-gene-by-casediseasecategory-view-in-land-portal", 
-            "text": "The default view is a comparison details for one gene by Case.DiseaseCategory, X-Axis shows Log2 Fold Change, Y-Axis shows Case.DiseaseCategory, comparisions are groupped by tissue category.", 
-            "title": "Comparison details for gene by Case.DiseaseCategory View in Land Portal"
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#treatment-vs-control", 
+            "text": "This view shows all comparisons where samples from affected subjects (treated with drug or other therapy) are compared to samples from untreated subjects in the same project:  ---Screenshot", 
+            "title": "Treatment vs Control"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#responder-vs-nonresponder", 
+            "text": "This view shows all comparisons where samples from subjects that show favorable response to a treatment are compared to samples from subjects with no response to the same treatment in the same project:  ---Screenshot", 
+            "title": "Responder vs NonResponder"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#resistant-vs-sensitive", 
+            "text": "This view shows all comparisons where samples from subjects that show resistance to a treatment are compared to samples from subjects showing significant difference in outcome to the same treatment in the same project:  ---Screenshot", 
+            "title": "Resistant vs Sensitive"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#cell-type1-vs-cell-type2", 
+            "text": "This view shows all comparisons where samples of one cell type from a subject are compared to samples another cell type from these subjects in the same project:  ---Screenshot", 
+            "title": "Cell Type1 vs Cell Type2"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#disease1-vs-disease2", 
+            "text": "This view shows all comparisons where samples from subjects presenting one disease are compared to samples from other subjects presenting another disease in the same project:  ---Screenshot", 
+            "title": "Disease1 vs Disease2"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#treatment1-vs-treatment2", 
+            "text": "This view shows all comparisons where samples from subjects undergoing one treatment are compared to samples from other subjects undergoing a different treatment in the same project:  ---Screenshot", 
+            "title": "Treatment1 vs Treatment2"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#tissue1-vs-tissue2", 
+            "text": "This view shows all comparisons where samples of one tissue from a subject are compared to samples another tissue from these subjects in the same project:  ---Screenshot", 
+            "title": "Tissue1 vs Tissue2"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons/#othercomparisons", 
+            "text": "This view shows all comparisons that do not fall under the standard categories above:  ---Screenshot", 
+            "title": "OtherComparisons"
         }, 
         {
             "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/DNASeqSomaticMutation/", 
@@ -916,51 +961,6 @@
             "title": "Filters"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RNASeqTranscriptFPKM/", 
-            "text": "RNA SEQ Quantification\n\n\nRNASeq Quantification Transcript FPKM View in Land Portal\n\n\n\n\nThis view shows the Transcript RPKM (Reads Per Kilobase per Million mapped reads) for the specified gene, organized by group (e.g. Tumor Type).\n\n\nEach transcript is shown in a separate chart. When visualizing more than one gene, each gene/transcript is show in its own plot.\nX-axis shows Transcript RPKM. Y-axis shows the group.\nUse the Sample Tab to further filter the data using any associated sample/subject meta data. Use Specify Profile (Task tab) to change the grouping. Use Specify Split Column (Task tab) to change the automatic coloring. Show on-the-fly p-value, indicating if the Gene RPKM is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize). Use the dropdown (1*1) to change how many charts are shown at once (i.e enter 2*3 to show 6 plots at once)\"", 
-            "title": "RNASeq Transcript FPKM"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RNASeqTranscriptFPKM/#rna-seq-quantification", 
-            "text": "", 
-            "title": "RNA SEQ Quantification"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RNASeqTranscriptFPKM/#rnaseq-quantification-transcript-fpkm-view-in-land-portal", 
-            "text": "This view shows the Transcript RPKM (Reads Per Kilobase per Million mapped reads) for the specified gene, organized by group (e.g. Tumor Type).  Each transcript is shown in a separate chart. When visualizing more than one gene, each gene/transcript is show in its own plot.\nX-axis shows Transcript RPKM. Y-axis shows the group.\nUse the Sample Tab to further filter the data using any associated sample/subject meta data. Use Specify Profile (Task tab) to change the grouping. Use Specify Split Column (Task tab) to change the automatic coloring. Show on-the-fly p-value, indicating if the Gene RPKM is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize). Use the dropdown (1*1) to change how many charts are shown at once (i.e enter 2*3 to show 6 plots at once)\"", 
-            "title": "RNASeq Quantification Transcript FPKM View in Land Portal"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/SummaryGeneFPKM/", 
-            "text": "Summary Gene FPKM\n\n\nSummary Gene FPKM, RNASeq Transcript View in Land Portal\n\n\n\n\nIntroduction\n\n\nFor each gene, this view shows % of tumor samples whose RNA-Seq expression is 2x up-regulated or 2x down-regulated, compared to normal samples in each group (e.g. Tumor Type). Group is specified by Grouping, and is PrimaryGrouping by default.\n\n\nValues\n\n\nFor each group, expression for normal samples is calculated as the average of Log2(FPKM + 0.1). For each tumor sample if its Log2(FPKM + 0.1) is larger than normal sample average by ExpressionUpRegulationCutoff or is smaller than normal average by ExpressionDownRegulationCutoff, this tumor sample is counted as up-regulated or down-regulated.\n\n\nThe percentage showing on Y axis = ( # of tumor samples up-regulated or down-regulated) / ( # of all tumor samples in this group).\n\n\nFilters\n\n\nFold change cutoff can be changed under Expression in the left panel.", 
-            "title": "Summary Gene FPKM"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/SummaryGeneFPKM/#summary-gene-fpkm", 
-            "text": "", 
-            "title": "Summary Gene FPKM"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/SummaryGeneFPKM/#summary-gene-fpkm-rnaseq-transcript-view-in-land-portal", 
-            "text": "", 
-            "title": "Summary Gene FPKM, RNASeq Transcript View in Land Portal"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/SummaryGeneFPKM/#introduction", 
-            "text": "For each gene, this view shows % of tumor samples whose RNA-Seq expression is 2x up-regulated or 2x down-regulated, compared to normal samples in each group (e.g. Tumor Type). Group is specified by Grouping, and is PrimaryGrouping by default.", 
-            "title": "Introduction"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/SummaryGeneFPKM/#values", 
-            "text": "For each group, expression for normal samples is calculated as the average of Log2(FPKM + 0.1). For each tumor sample if its Log2(FPKM + 0.1) is larger than normal sample average by ExpressionUpRegulationCutoff or is smaller than normal average by ExpressionDownRegulationCutoff, this tumor sample is counted as up-regulated or down-regulated.  The percentage showing on Y axis = ( # of tumor samples up-regulated or down-regulated) / ( # of all tumor samples in this group).", 
-            "title": "Values"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/SummaryGeneFPKM/#filters", 
-            "text": "Fold change cutoff can be changed under Expression in the left panel.", 
-            "title": "Filters"
-        }, 
-        {
             "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/DNAAlterationDistribution/", 
             "text": "Alteration Distribution\n\n\nDNA Alternation Distribution View in Land Portal\n\n\n\n\nAlteration distribution view shows alterations of all genes searched in the current view, limited to DNAseq alterations (mutations and copy number).\n\n\nThere will be one bar for each combination of Group (e.g Tumor Type), gene and alteration type (mutation or CNV).\n\n\nSamples will be colored by alteration type (mutation, amplification, deletion, multiple alteration). Summary information (% samples mutated) will also be given. By default, Alteration.Omicprint and Alteration.Distribution are using GISTIC2 calling method with only \"Amplification\" and \"Homozygous Deletion\" checked. Multiple alteration represents more than one type of alteration type in the sample.", 
             "title": "DNA Alteration Distribution"
@@ -974,6 +974,96 @@
             "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/DNAAlterationDistribution/#dna-alternation-distribution-view-in-land-portal", 
             "text": "Alteration distribution view shows alterations of all genes searched in the current view, limited to DNAseq alterations (mutations and copy number).  There will be one bar for each combination of Group (e.g Tumor Type), gene and alteration type (mutation or CNV).  Samples will be colored by alteration type (mutation, amplification, deletion, multiple alteration). Summary information (% samples mutated) will also be given. By default, Alteration.Omicprint and Alteration.Distribution are using GISTIC2 calling method with only \"Amplification\" and \"Homozygous Deletion\" checked. Multiple alteration represents more than one type of alteration type in the sample.", 
             "title": "DNA Alternation Distribution View in Land Portal"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CopyNumberViews/", 
+            "text": "CNV Summary\n\n\nCopy Number Summary View in Land Portal\n\n\n\n\nIntroduction\n\n\nThe summary view shows % of samples in a giving group.\n1. having amplified or deleted of tumor vs normal if using log2ratio calls\n2. having Amplification, Homozygous Deletion or other categories if using GISTIC calls\n\n\nCNV Variable\n\n\nCopy Number Variable View in Land Portal\n\n\n\n\nIntroduction\n\n\nThis view shows the Log2 Ratio (if a gene contains multiple segment, the most sigificant segment will be chosen) for the specified gene, organized by group (e.g. Tumor Type).\n\n\nWhen visualizing more than one gene, each gene is show in its own plot.\nX-axis shows Expression Ratio. Y-axis shows the group.\nUse the Sample Tab to further filter the data using any associated sample/subject meta data. Use Specify Profile (Task tab) to change the grouping.\nUse Specify Split Column (Task tab) to change the automatic coloring.\nShow on-the-fly p-value, indicating if the Log2 Ratio is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize).", 
+            "title": "Copy Number Views"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CopyNumberViews/#cnv-summary", 
+            "text": "", 
+            "title": "CNV Summary"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CopyNumberViews/#copy-number-summary-view-in-land-portal", 
+            "text": "", 
+            "title": "Copy Number Summary View in Land Portal"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CopyNumberViews/#introduction", 
+            "text": "The summary view shows % of samples in a giving group.\n1. having amplified or deleted of tumor vs normal if using log2ratio calls\n2. having Amplification, Homozygous Deletion or other categories if using GISTIC calls", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CopyNumberViews/#cnv-variable", 
+            "text": "", 
+            "title": "CNV Variable"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CopyNumberViews/#copy-number-variable-view-in-land-portal", 
+            "text": "", 
+            "title": "Copy Number Variable View in Land Portal"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CopyNumberViews/#introduction_1", 
+            "text": "This view shows the Log2 Ratio (if a gene contains multiple segment, the most sigificant segment will be chosen) for the specified gene, organized by group (e.g. Tumor Type).  When visualizing more than one gene, each gene is show in its own plot.\nX-axis shows Expression Ratio. Y-axis shows the group.\nUse the Sample Tab to further filter the data using any associated sample/subject meta data. Use Specify Profile (Task tab) to change the grouping.\nUse Specify Split Column (Task tab) to change the automatic coloring.\nShow on-the-fly p-value, indicating if the Log2 Ratio is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize).", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/", 
+            "text": "RNA-Seq Quantification Views\n\n\nRNA-Seq data that has been processed into land can be visualized to determine expression of a gene across various sample types, as well as differential transcript usage, and survival data (when available).\n\n\nSummary Gene FPKM\n\n\n\n\nEasily search samples in Land that have a minimal up- or down-regulation for a gene of interest. For each gene, this view shows % of disease samples whose RNA-Seq expression is 2x up-regulated or 2x down-regulated, compared to normal samples in each group (e.g. Tumor Type). Samples are grouped by the primary grouping category by default.\n\n\nView Navigation\n\n\nFor each group, expression for normal samples is calculated as the average of Log2(FPKM + 0.1). For each tumor (disease) sample, when the Log2(FPKM + 0.1) value is larger than normal sample average by ExpressionUpRegulationCutoff or is smaller than normal average by ExpressionDownRegulationCutoff, this tumor sample is counted as up-regulated or down-regulated.\n\n\nThe percentage showing on X axis = ( # of tumor samples up-regulated or down-regulated) / ( # of all tumor samples in this group).\n\n\nKey Filters\n\n\nFold change cutoff can be changed under Expression in the left panel.\n\n\nGene FPKM View\n\n\nThe Log2(FPKM + 0.1) expression of any gene can be visualized in this view. Expression is plotted on the x-axis and samples grouped on the y-axis by the chosen Grouping column in the metadata.\n\n\n--screenshot\n\n\nTranscript FPKM View\n\n\nThis view shows the Transcript RPKM (Reads Per Kilobase per Million mapped reads) for the specified gene, organized by group (e.g. Tumor Type).\n\n\n\n\nEach transcript is shown in a separate chart. When visualizing more than one gene, all transcripts (all genes) will be represented in individual plots. The X-axis shows Transcript RPKM while the Y-axis shows the group.\n\n\nRNA-Seq Survival View\n\n\nIn this view, when survival data is available and attributed to samples within the land, such as within OncoLand studies (TCGA, OncoGEO, etc.), a survival view will be generated. Samples will be grouped into quartiles (Up, upper 25% (Q1) expression of gene, Down, lower 25% (Q4), Mid (all remaining samples, Q2 and Q3)). Survival will be plotted on the Y-axis and time on the X-axis.\n\n\n--screenshot\n\n\nAverage FPKM View\n\n\nWhen a user searches multiple genes, the default expression view will be the average FPKM view, where the expression of all genes searched is averaged for each sample. Each dot in the plot will represent a single sample, with expression plotted on the x-axis and samples grouped on the y-axis by the designated grouping category.\n\n\n--Screenshot\n\n\nMulti-gene Variable (FPKM) View\n\n\nSimilar to the gene FPKM view when searching a single gene, this view will generate plot expression on the x-axis and samples grouped on the y-axis by the GeneID. This grouping can be changed to reflect gene metadata. Trellising the view by metadata may provide better visualization of the gene expression. Values plotted are Log2(FPKM + 0.1).\n\n\n--Screenshot\n\n\nMulti-gene search: Heatmap FPKM View\n\n\nAnother way to visualize the expression of multiple genes is in a  heatmap view. The Heatmap FPKM view allows users to visualize the expression of all genes (columns) by all samples filtered (rows). Unbiased heirarchial clustering of genes and samples allows userss to find genes or samples that may exhibit similar gene signatures.", 
+            "title": "RNA-Seq Quantification Views"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/#rna-seq-quantification-views", 
+            "text": "RNA-Seq data that has been processed into land can be visualized to determine expression of a gene across various sample types, as well as differential transcript usage, and survival data (when available).", 
+            "title": "RNA-Seq Quantification Views"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/#summary-gene-fpkm", 
+            "text": "Easily search samples in Land that have a minimal up- or down-regulation for a gene of interest. For each gene, this view shows % of disease samples whose RNA-Seq expression is 2x up-regulated or 2x down-regulated, compared to normal samples in each group (e.g. Tumor Type). Samples are grouped by the primary grouping category by default.", 
+            "title": "Summary Gene FPKM"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/#view-navigation", 
+            "text": "For each group, expression for normal samples is calculated as the average of Log2(FPKM + 0.1). For each tumor (disease) sample, when the Log2(FPKM + 0.1) value is larger than normal sample average by ExpressionUpRegulationCutoff or is smaller than normal average by ExpressionDownRegulationCutoff, this tumor sample is counted as up-regulated or down-regulated.  The percentage showing on X axis = ( # of tumor samples up-regulated or down-regulated) / ( # of all tumor samples in this group).", 
+            "title": "View Navigation"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/#key-filters", 
+            "text": "Fold change cutoff can be changed under Expression in the left panel.", 
+            "title": "Key Filters"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/#gene-fpkm-view", 
+            "text": "The Log2(FPKM + 0.1) expression of any gene can be visualized in this view. Expression is plotted on the x-axis and samples grouped on the y-axis by the chosen Grouping column in the metadata.  --screenshot", 
+            "title": "Gene FPKM View"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/#transcript-fpkm-view", 
+            "text": "This view shows the Transcript RPKM (Reads Per Kilobase per Million mapped reads) for the specified gene, organized by group (e.g. Tumor Type).   Each transcript is shown in a separate chart. When visualizing more than one gene, all transcripts (all genes) will be represented in individual plots. The X-axis shows Transcript RPKM while the Y-axis shows the group.", 
+            "title": "Transcript FPKM View"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/#rna-seq-survival-view", 
+            "text": "In this view, when survival data is available and attributed to samples within the land, such as within OncoLand studies (TCGA, OncoGEO, etc.), a survival view will be generated. Samples will be grouped into quartiles (Up, upper 25% (Q1) expression of gene, Down, lower 25% (Q4), Mid (all remaining samples, Q2 and Q3)). Survival will be plotted on the Y-axis and time on the X-axis.  --screenshot", 
+            "title": "RNA-Seq Survival View"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/#average-fpkm-view", 
+            "text": "When a user searches multiple genes, the default expression view will be the average FPKM view, where the expression of all genes searched is averaged for each sample. Each dot in the plot will represent a single sample, with expression plotted on the x-axis and samples grouped on the y-axis by the designated grouping category.  --Screenshot", 
+            "title": "Average FPKM View"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/#multi-gene-variable-fpkm-view", 
+            "text": "Similar to the gene FPKM view when searching a single gene, this view will generate plot expression on the x-axis and samples grouped on the y-axis by the GeneID. This grouping can be changed to reflect gene metadata. Trellising the view by metadata may provide better visualization of the gene expression. Values plotted are Log2(FPKM + 0.1).  --Screenshot", 
+            "title": "Multi-gene Variable (FPKM) View"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/#multi-gene-search-heatmap-fpkm-view", 
+            "text": "Another way to visualize the expression of multiple genes is in a  heatmap view. The Heatmap FPKM view allows users to visualize the expression of all genes (columns) by all samples filtered (rows). Unbiased heirarchial clustering of genes and samples allows userss to find genes or samples that may exhibit similar gene signatures.", 
+            "title": "Multi-gene search: Heatmap FPKM View"
         }, 
         {
             "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/RNASeqSomaticMutation/", 
@@ -1021,64 +1111,9 @@
             "title": "Gene Expression Ratio View for genes in Land Portal"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CNVSummary/", 
-            "text": "CNV Summary\n\n\nCopy Number Summary View in Land Portal\n\n\n\n\nIntroduction\n\n\nThe summary view shows % of samples in a giving group.\n1. having amplified or deleted of tumor vs normal if using log2ratio calls\n2. having Amplification, Homozygous Deletion or other categories if using GISTIC calls", 
-            "title": "CNV Summary"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CNVSummary/#cnv-summary", 
+            "location": "/tutorials/Land Explorer/Land Views/Comparison Level Views/Volcano_Plot/", 
             "text": "", 
-            "title": "CNV Summary"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CNVSummary/#copy-number-summary-view-in-land-portal", 
-            "text": "", 
-            "title": "Copy Number Summary View in Land Portal"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CNVSummary/#introduction", 
-            "text": "The summary view shows % of samples in a giving group.\n1. having amplified or deleted of tumor vs normal if using log2ratio calls\n2. having Amplification, Homozygous Deletion or other categories if using GISTIC calls", 
-            "title": "Introduction"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CNVVariable/", 
-            "text": "CNV Variable\n\n\nCopy Number Variable View in Land Portal\n\n\n\n\nIntroduction\n\n\nThis view shows the Log2 Ratio (if a gene contains multiple segment, the most sigificant segment will be chosen) for the specified gene, organized by group (e.g. Tumor Type).\n\n\nWhen visualizing more than one gene, each gene is show in its own plot.\nX-axis shows Expression Ratio. Y-axis shows the group.\nUse the Sample Tab to further filter the data using any associated sample/subject meta data. Use Specify Profile (Task tab) to change the grouping.\nUse Specify Split Column (Task tab) to change the automatic coloring.\nShow on-the-fly p-value, indicating if the Log2 Ratio is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize).", 
-            "title": "CNV Variable"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CNVVariable/#cnv-variable", 
-            "text": "", 
-            "title": "CNV Variable"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CNVVariable/#copy-number-variable-view-in-land-portal", 
-            "text": "", 
-            "title": "Copy Number Variable View in Land Portal"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/CNVVariable/#introduction", 
-            "text": "This view shows the Log2 Ratio (if a gene contains multiple segment, the most sigificant segment will be chosen) for the specified gene, organized by group (e.g. Tumor Type).  When visualizing more than one gene, each gene is show in its own plot.\nX-axis shows Expression Ratio. Y-axis shows the group.\nUse the Sample Tab to further filter the data using any associated sample/subject meta data. Use Specify Profile (Task tab) to change the grouping.\nUse Specify Split Column (Task tab) to change the automatic coloring.\nShow on-the-fly p-value, indicating if the Log2 Ratio is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize).", 
-            "title": "Introduction"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/HeatmapFPKM/", 
-            "text": "Heatmap FPKM\n\n\nExpression Ratio Heatmap View in Land Portal\n\n\n\n\nIntroduction\n\n\nHeatmap showing Gene Expression ratio (Sample vs Universal Human Reference) for group (e.g. Tumor Type) for multiple genes.\n\n\nIn the demo screenshot, it's a Heatmap plot for pathway Extrinsic_to_Plasma_Membrane, with 13 genes in it, the X-axis is gene, while Y-axis is grouping (e.g. Tumor Type).\nExpression data was generated on a two-color chip. Use the Sample Tab to further filter the data using any associated sample/subject meta data.\nUse Specify Profile (Task tab) to change the grouping.", 
-            "title": "Heatmap FPKM"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/HeatmapFPKM/#heatmap-fpkm", 
-            "text": "", 
-            "title": "Heatmap FPKM"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/HeatmapFPKM/#expression-ratio-heatmap-view-in-land-portal", 
-            "text": "", 
-            "title": "Expression Ratio Heatmap View in Land Portal"
-        }, 
-        {
-            "location": "/tutorials/Land Explorer/Land Views/Gene Level Views/HeatmapFPKM/#introduction", 
-            "text": "Heatmap showing Gene Expression ratio (Sample vs Universal Human Reference) for group (e.g. Tumor Type) for multiple genes.  In the demo screenshot, it's a Heatmap plot for pathway Extrinsic_to_Plasma_Membrane, with 13 genes in it, the X-axis is gene, while Y-axis is grouping (e.g. Tumor Type).\nExpression data was generated on a two-color chip. Use the Sample Tab to further filter the data using any associated sample/subject meta data.\nUse Specify Profile (Task tab) to change the grouping.", 
-            "title": "Introduction"
+            "title": "Volcano Plot"
         }, 
         {
             "location": "/tutorials/Land Explorer/Using Land Explorer/Introduction/", 
@@ -1181,34 +1216,74 @@
             "title": "RNA Seq Somatic Mutation Distribution"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Using Land Explorer/Sample_Filter/", 
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Sample_Filters/", 
             "text": "Sample Filters\n\n\nSample filters in Land Portal\n\n\nAll Samples, Comparisons, and Projects within OmicSoft Land's are associated with extensive metadata, which can be used to filter Land data to find the samples users are interested in.\n\n\n\n\nBasickly, there are two types of sample filters users could apply to Land data, String filters, or check box options.\n\n\nApply String filter to Sample IDs in Land Portal\n\n\n\n\nIn CCLE_B37 Land Portal, string filters could be used on Sample IDs, and Subject IDs, as shown in the demo, after applying \"HCC\" as the filter, only sample IDs started with \"HCC\" will show up in the scatter plot. After selecting all the data dots in the scatter plot, detail information about these samples could be found in the data table.\n\n\nApply Check Box filter to Primary Sites in Land Portal\n\n\n\n\nCheck Box options are available for Primary Site, Histology, Gender, Land Sample Type, Land Tissuee, and Tumor Or Normal categories. As shown in the demo screenshot, after checking 5 primary sites, the samples with corresponding primary sites are shown in the scatter plot.\n\n\nAdd filters based on Meta Data and/or Data Aviailability\n\n\n\n\nExtra filters could be added to the Sample Filter options, for example, after adding \nCNV\n and \nCellLineName\n, two extra filters showed up under \nSample\n tab, one string filter and one Check box filter:", 
-            "title": "Sample Filter"
+            "title": "Sample Filters"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Using Land Explorer/Sample_Filter/#sample-filters", 
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Sample_Filters/#sample-filters", 
             "text": "", 
             "title": "Sample Filters"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Using Land Explorer/Sample_Filter/#sample-filters-in-land-portal", 
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Sample_Filters/#sample-filters-in-land-portal", 
             "text": "All Samples, Comparisons, and Projects within OmicSoft Land's are associated with extensive metadata, which can be used to filter Land data to find the samples users are interested in.   Basickly, there are two types of sample filters users could apply to Land data, String filters, or check box options.", 
             "title": "Sample filters in Land Portal"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Using Land Explorer/Sample_Filter/#apply-string-filter-to-sample-ids-in-land-portal", 
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Sample_Filters/#apply-string-filter-to-sample-ids-in-land-portal", 
             "text": "In CCLE_B37 Land Portal, string filters could be used on Sample IDs, and Subject IDs, as shown in the demo, after applying \"HCC\" as the filter, only sample IDs started with \"HCC\" will show up in the scatter plot. After selecting all the data dots in the scatter plot, detail information about these samples could be found in the data table.", 
             "title": "Apply String filter to Sample IDs in Land Portal"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Using Land Explorer/Sample_Filter/#apply-check-box-filter-to-primary-sites-in-land-portal", 
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Sample_Filters/#apply-check-box-filter-to-primary-sites-in-land-portal", 
             "text": "Check Box options are available for Primary Site, Histology, Gender, Land Sample Type, Land Tissuee, and Tumor Or Normal categories. As shown in the demo screenshot, after checking 5 primary sites, the samples with corresponding primary sites are shown in the scatter plot.", 
             "title": "Apply Check Box filter to Primary Sites in Land Portal"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Using Land Explorer/Sample_Filter/#add-filters-based-on-meta-data-andor-data-aviailability", 
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Sample_Filters/#add-filters-based-on-meta-data-andor-data-aviailability", 
             "text": "Extra filters could be added to the Sample Filter options, for example, after adding  CNV  and  CellLineName , two extra filters showed up under  Sample  tab, one string filter and one Check box filter:", 
             "title": "Add filters based on Meta Data and/or Data Aviailability"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Comparison_filters/", 
+            "text": "Comparison Filters\n\n\nAll Samples, Comparisons, and Projects within OmicSoft Land's are associated with extensive metadata, which can be used to filter Land data to find the samples users are interested in. This page describes some filters that can be used to pare down to comparisons of interest. The most common comparison filters are shown here:\n\n\n\n\nUsers can add additional filters from the comparison metadata using the Add Filter button:\n\n\n\n\nKey Comparison Filters\n\n\nThe comparison metadata can come in different forms, numeric, categoric, and string.\n\n\nFold Change Cutoff\n\n\nUsers can filter to comparisons in which a gene is differentially regulated by typing in fold changes, or using predefined filters:\n\n\n\n\nPValue Cutoff\n\n\nFind where a gene's differentially expression is below a certain p value threshold\n\n\nComparisonCategory\n\n\nDefine the type of contrast that was performed (e.g. Disease vs. Normal or Treatment vs. Control)\n\n\nCase.DiseaseCategory\n\n\nFind comparisons where the test subject had a specified disease:\n\n\n--Screenshot\n\n\nCase.Treatment\n\n\nFind comparisons when the subject had a specified treatment:\n\n\n--Screenshot", 
+            "title": "Comparison Filters"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Comparison_filters/#comparison-filters", 
+            "text": "All Samples, Comparisons, and Projects within OmicSoft Land's are associated with extensive metadata, which can be used to filter Land data to find the samples users are interested in. This page describes some filters that can be used to pare down to comparisons of interest. The most common comparison filters are shown here:   Users can add additional filters from the comparison metadata using the Add Filter button:", 
+            "title": "Comparison Filters"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Comparison_filters/#key-comparison-filters", 
+            "text": "The comparison metadata can come in different forms, numeric, categoric, and string.", 
+            "title": "Key Comparison Filters"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Comparison_filters/#fold-change-cutoff", 
+            "text": "Users can filter to comparisons in which a gene is differentially regulated by typing in fold changes, or using predefined filters:", 
+            "title": "Fold Change Cutoff"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Comparison_filters/#pvalue-cutoff", 
+            "text": "Find where a gene's differentially expression is below a certain p value threshold", 
+            "title": "PValue Cutoff"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Comparison_filters/#comparisoncategory", 
+            "text": "Define the type of contrast that was performed (e.g. Disease vs. Normal or Treatment vs. Control)", 
+            "title": "ComparisonCategory"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Comparison_filters/#casediseasecategory", 
+            "text": "Find comparisons where the test subject had a specified disease:  --Screenshot", 
+            "title": "Case.DiseaseCategory"
+        }, 
+        {
+            "location": "/tutorials/Land Explorer/Using Land Explorer/Comparison_filters/#casetreatment", 
+            "text": "Find comparisons when the subject had a specified treatment:  --Screenshot", 
+            "title": "Case.Treatment"
         }, 
         {
             "location": "/tutorials/Land Explorer/Using Land Explorer/Customer_Query/", 
