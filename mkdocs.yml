@@ -1,0 +1,279 @@
+# Project information
+site_name: 'omicsoft doc'
+site_description: 'OmicSoft Doc'
+site_author: 'OmicSoft Support'
+site_url: 'http://192.168.3.222/WikiBigFiles/doc/v10.3/'
+
+# Repository
+# repo_name: 'omicsoft.github.io'
+# repo_url: 'https://omicsoft.github.io'
+
+# Copyright
+copyright: 'Copyright &copy; 2008 - 2017 OmicSoft/QIAGEN Bioinformatics'
+
+#theme_dir: 'theme/material-extend'
+#theme: mkdocs #material # material-extend #mkdocs readthedocs
+theme:
+  name: 'material'
+  palette:
+    primary: 'Blue'
+    accent: 'teal'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  feature:
+    tabs: true
+  #custom_dir: 'theme/material-extend'
+
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    #- 'javascripts\extra.js'
+
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+# page tree
+pages:
+- Home: index.md
+- Framework:
+    - Array Studio: tutorials/ArrayStudio/ArrayStudio.md
+    - Array Server:
+      - Introduction: tutorials/ServerAnalysisBasics/Introduction.md
+      - Connecting to a Server and Uploading Files: tutorials/ServerAnalysisBasics/Connecting_to_a_Server_and_Uploading_Files.md
+      - Creating and Publishing a Server Project: tutorials/ServerAnalysisBasics/Creating_and_Publishing_a_Server_Project.md
+      - Array Server on Cluster: tutorials/ServerAnalysisBasics/Array_Server_on_Cluster.md
+      - Array Server on Cloud: tutorials/ServerAnalysisBasics/Array_Server_on_Cloud.md
+    - Server Explorer:
+      - Getting Started: tutorials/ServerExplorer/Getting_Started.md
+      - Searching Projects: tutorials/ServerExplorer/Searching_Projects.md
+      - Publishing Data: tutorials/ServerExplorer/Publishing_Data.md
+      - Server File Management: tutorials/ServerExplorer/Server_FileManagement.md
+      - Server Sample Management: tutorials/ServerExplorer/Server_Sample_Management.md
+      - Server Administration: tutorials/ServerExplorer/Server_Administration.md
+    - GenomeBrowser:
+      - Introduction: tutorials/GenomeBrowser/Introduction.md
+      - Create Genome Browser: tutorials/GenomeBrowser/Create_Genome_Browser.md
+      - Adding Tracks: tutorials/GenomeBrowser/Adding_Tracks.md
+      - Browsing Data: tutorials/GenomeBrowser/Browsing_Data.md
+      - Browsing Data from Local Analysis: tutorials/GenomeBrowser/Browsing_Data_from_Local_Analysis.md
+      - Others: tutorials/GenomeBrowser/Others.md
+    - Sample Management:
+      - Introduction: tutorials/SampleManagement/Introduction.md
+      - Sample Management: tutorials/SampleManagement/SampleManagement.md
+      - Integration: tutorials/SampleManagement/Integration.md
+      - Others: tutorials/SampleManagement/Others.md
+    - Studio on the Cloud:
+      - Introduction: tutorials/Cloud/Introduction.md
+      - Cloud Connection: tutorials/Cloud/Connecting_to_Cloud_and_Uploading_Files.md
+      - Cloud Project: tutorials/Cloud/Creatinga_Cloud_Project.md
+      - Proxy Instance: tutorials/Cloud/Managing_Cloud_Instance_and_Proxy.md
+    - Oscript:
+      - Introduction: tutorials/Oscript/Introduction.md
+      - Run Oscript: tutorials/Oscript/RunOscript.md
+      - Pipeline Script: tutorials/Oscript/PipelineScript.md
+    - Land Explorer:
+      - Introduction: tutorials/Land Explorer/Introduction.md
+      - Land Views:
+        - Sample Level Overview:
+            - Samples: tutorials/Land Explorer/Land Views/Sample Level Overview/Samples.md
+            - Sample Details: tutorials/Land Explorer/Land Views/Sample Level Overview/Sample_Details.md
+            - Comparison Availability: tutorials/Land Explorer/Land Views/Sample Level Overview/Comparison_Availability.md
+            - Data Availability: tutorials/Land Explorer/Land Views/Sample Level Overview/Data_Availability.md
+            - Survival Data: tutorials/Land Explorer/Land Views/Sample Level Overview/Survival_Data.md
+        - Gene Level Views:
+            - Expresion vs FPKM: tutorials/Land Explorer/Land Views/Gene Level Views/ExpresionVSFPKM.md
+            - CNV vs FPKM: tutorials/Land Explorer/Land Views/Gene Level Views/CNVvsFPKM.md
+            - All Comparisons: tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons.md
+            - DNASeq Somatic Mutation: tutorials/Land Explorer/Land Views/Gene Level Views/DNASeqSomaticMutation.md
+            - RNASeq Transcript FPKM: tutorials/Land Explorer/Land Views/Gene Level Views/RNASeqTranscriptFPKM.md
+            - Summary Gene FPKM: tutorials/Land Explorer/Land Views/Gene Level Views/SummaryGeneFPKM.md
+            - DNA Alteration Distribution: tutorials/Land Explorer/Land Views/Gene Level Views/DNAAlterationDistribution.md
+            - RNASeq Somatic Mutation: tutorials/Land Explorer/Land Views/Gene Level Views/RNASeqSomaticMutation.md
+            - RNASeq Fusion: tutorials/Land Explorer/Land Views/Gene Level Views/RNASeqFusion.md
+            - Expression Ratio: tutorials/Land Explorer/Land Views/Gene Level Views/ExpressionRatio.md
+            - CNV Summary: tutorials/Land Explorer/Land Views/Gene Level Views/CNVSummary.md
+            - CNV Variable: tutorials/Land Explorer/Land Views/Gene Level Views/CNVVariable.md
+            - Heatmap FPKM: tutorials/Land Explorer/Land Views/Gene Level Views/HeatmapFPKM.md
+      - Using Land Explorer:
+        - Introduction: tutorials/Land Explorer/Using Land Explorer/Introduction.md
+        - View Controller: tutorials/Land Explorer/Using Land Explorer/View_controller.md
+        - Distribution: tutorials/Land Explorer/Using Land Explorer/Distribution.md
+        - Sample Filter: tutorials/Land Explorer/Using Land Explorer/Sample_Filter.md
+        - Customer Query: tutorials/Land Explorer/Using Land Explorer/Customer_Query.md
+        - View Type: tutorials/Land Explorer/Using Land Explorer/View_type.md
+        - ViewID: tutorials/Land Explorer/Using Land Explorer/viewID.md
+- OmicData:
+    - Microarray:
+      - Installing Array Studio: tutorials/Microarray/Installing_Array_Studio.md
+      - Data Visualization and Quality Control: tutorials/Microarray/Data_Visualization_and_Quality_Control.md
+      - Differential Expression: tutorials/Microarray/Differential_Expression.md
+      - Data Exploration: tutorials/Microarray/Data_Exploration.md
+      - Audit trail: tutorials/Microarray/Audit_trail.md
+      - References: tutorials/Microarray/References.md
+    - CNV:
+      - Introduction: tutorials/CNV/Introduction.md
+      - Data Visulization: tutorials/CNV/Visualization_of_Data.md
+      - Data Summarization: tutorials/CNV/Summarization_of_CNV_Data.md
+      - Advanced Visulization: tutorials/CNV/Advanced_Visualization.md
+      - Analysis: tutorials/CNV/Analysis_Modules.md
+      - Save/Close Project: tutorials/CNV/Save_Close_Project.md
+    - ExonArray:
+      - Introduction: tutorials/ExonArray/Introduction.md
+      - Importing a Dataset: tutorials/ExonArray/Importing_a_Dataset.md
+      - Visualization of Data: tutorials/ExonArray/Visualization_of_Data.md
+      - Data Visualization and Quality Control: tutorials/ExonArray/Data_Visualization_and_Quality_Control.md
+      - Differential Expression Probeset Level : tutorials/ExonArray/Differential_Expression__Probeset_Level_.md
+      - Exon Level Differtial Expression : tutorials/ExonArray/Exon_Level_ANOVA_ExonDiffertialExpression_.md
+      - Alternative Splicing ANOVA: tutorials/ExonArray/Alternative_Splicing_ANOVA.md
+      - Generate Transcript Level Data: tutorials/ExonArray/Generate_Transcript_Level_Data.md
+      - Save/Close Project: tutorials/ExonArray/Save_Close_Project.md
+    - RT-PCR:
+      - Introduction: tutorials/RTPCR/Introduction.md
+      - Manage RT-PCR Raw Data: tutorials/RTPCR/Manage_RT-PCR_Raw_Data.md
+      - Import RT-PCR Wizard: tutorials/RTPCR/Import_RT-PCR_Wizard.md
+      - Downstream Analysis of RT-PCR data: tutorials/RTPCR/Downstream_Analysis_of_RT-PCR_data.md
+    - SNP:
+      - Introduction: tutorials/SNP/Introduction.md
+      - Visualization of Data: tutorials/SNP/Visualization_of_Data.md
+      - Marker Statistics Data Filtering and Population Structure: tutorials/SNP/Marker_Statistics__Data_Filtering__and_Population_Structure.md
+      - Association Analysis: tutorials/SNP/Association_Analysis.md
+      - Visualizationof pValues: tutorials/SNP/Visualizationof_pValues.md
+      - Save/Close Project: tutorials/SNP/Save_Close_Project.md
+- NGS:
+    - RNA-Seq:
+      - Introduction: tutorials/RNASeq/Introduction.md
+      - Create ArrayStudio Project: tutorials/RNASeq/CreateArray_Studio_Project.md
+      - Add From RNA-Seq Pipeline: tutorials/RNASeq/Add From RNA-Seq Pipeline.md
+      - QC of RawData Files: tutorials/RNASeq/QC_ofRawData_Files.md
+      - Alignment to the Genome: tutorials/RNASeq/Alignment_to_the_Genome.md
+      - QC of AlignedData: tutorials/RNASeq/QC_of_AlignedData.md
+      - RNA-Seq Quantification: tutorials/RNASeq/RNA-Seq_Quantification.md
+      - RNA-Seq Fusion Gene Detection: tutorials/RNASeq/RNA-Seq_Fusion_Gene_Detection.md
+      - RNA-Seq Mutation Detection: tutorials/RNASeq/RNA-Seq_Mutation_Detection.md
+      - Others: tutorials/RNASeq/Others.md
+      - Save/Close Project: tutorials/RNASeq/Save___Close_Project.md
+    - DNA-Seq:
+      - Introduction: tutorials/DNASeq/Introduction.md
+      - Create Project: tutorials/DNASeq/Create_Array_Studio_Project.md
+      - Raw Data QC: tutorials/DNASeq/QC_of_Raw_Data_Files.md
+      - Alignment: tutorials/DNASeq/Alignment_to_the_Genome.md
+      - Aligned QC: tutorials/DNASeq/QC_of_Aligned_Data.md
+      - Fusion Detection: tutorials/DNASeq/DNA-Seq_Fusion_Gene_Detection.md
+      - Variant Detection: tutorials/DNASeq/DNA-SeqMutation_Detection.md
+      - Copy Number Analysis: tutorials/DNASeq/DNA-Seq_Copy_Number_Analysis.md
+      - Save/Close Project: tutorials/DNASeq/Save___Close_Project.md
+    - miRNA-Seq:
+      - Introduction: tutorials/miRNAseq/Introduction.md
+      - CreateArray Studio Project: tutorials/miRNAseq/CreateArray_Studio_Project.md
+      - workflow and pipeline: tutorials/miRNAseq/workflow_and_pipeline.md
+      - QC of Raw Data Files: tutorials/miRNAseq/QC_ofRaw_Data_Files.md
+      - Filtering Trimming Reads: tutorials/miRNAseq/Filtering_Trimming_Reads.md
+      - Alignment to the Genome: tutorials/miRNAseq/Alignment_to_the_Genome.md
+      - QC of Aligned Data: tutorials/miRNAseq/QC_of_Aligned_Data.md
+      - miRNA-Seq Quantification: tutorials/miRNAseq/miRNA-Seq_Quantification.md
+      - Others: tutorials/miRNAseq/Others.md
+      - Save and Close Project: tutorials/miRNAseq/Save_Close_Project.md
+    - scRNA-Seq:
+      - Introduction: tutorials/scRNAseq/Introduction.md
+      - CreateArray Studio Project: tutorials/scRNAseq/Create_ArrayStudio_Project.md
+      - scRNA analysis workflow: tutorials/scRNAseq/scRNA_Analysis_Workflow.md
+      - Pre-process of scRNA-Seq data: tutorials/scRNAseq/Preprocess_scRNA_Data.md
+      - TAG Based QC: tutorials/scRNAseq/Tag_based_QC.md
+      - Alignment to the Genome: tutorials/scRNAseq/Alignment_to_the_Genome.md
+      - Remove Duplicate: tutorials/scRNAseq/Remove_Duplicate.md
+      - scRNA-Seq Quantification: tutorials/scRNAseq/scRNASeq_Quantification.md
+      - Other Downstream Analysis: tutorials/scRNAseq/Other_Downstream_Analysis.md
+      - Save and Close Project: tutorials/scRNAseq/Save_Close_Project.md
+    - GWAS:
+      - Introduction: tutorials/GWAS/Introduction.md
+      - Connecting To A Server And Uploading Files: tutorials/GWAS/Connecting_To_A_Server_And_Uploading_Files.md
+      - Preprocessing: tutorials/GWAS/Preprocessing.md
+      - QC of GWAS data: tutorials/GWAS/QC_of_GWAS_data.md
+      - Imputation: tutorials/GWAS/Imputation.md
+      - Association: tutorials/GWAS/Association.md
+      - Annotation: tutorials/GWAS/Annotation.md
+      - Save/Close Project: tutorials/GWAS/Save_Close_Project.md
+    - Transgene:
+      - Introduction: tutorials/Transgene/Introduction.md
+      - Analysis Workflow: tutorials/Transgene/DataAnalysis.md
+      - Others: tutorials/Transgene/Others.md
+- Land:
+    - OncoLand:
+      - Introduction: tutorials/OncoLand/Introduction.md
+      - Basic Search: tutorials/OncoLand/Search_Basics.md
+      - Advanced Analytics: tutorials/OncoLand/Advanced_Analytics.md
+      - Measurement Data: tutorials/OncoLand/Measurement_Data.md
+      - Land Tools: tutorials/OncoLand/Land_Tools.md
+      - Virtual Land: tutorials/OncoLand/Virtual_Land.md
+    - DiseaseLand:
+      - Introduction: tutorials/DiseaseLand/Introduction.md
+      - Body Map: tutorials/DiseaseLand/BodyMap.md
+      - DiseaseLand: tutorials/DiseaseLand/DiseaseLand.md
+      - LINCs: tutorials/DiseaseLand/LINCS.md
+      - Single Cell Lands: tutorials/DiseaseLand/scLand.md
+    - ComparisonLand from External Inferences:
+      - Introduction: tutorials/ComparisonLand/Introduction.md
+      - Add Expression Data: tutorials/ComparisonLand/AddExpressionData.md
+      - Convert Inference Data: tutorials/ComparisonLand/ConvertInferenceData.md
+      - Create Land: tutorials/ComparisonLand/CreateLand.md
+      - Explore ComparisonLand: tutorials/ComparisonLand/ExploreComparisonLand.md
+    - GeneticsLand:
+      - Introduction: tutorials/GeneticsLand/Introduction_to_GeneticsLand.md
+      - Adding Data to GeneticsLand: tutorials/GeneticsLand/Adding_Data_to_GeneticsLand.md
+      - Explore Your Data in GeneticsLand: tutorials/GeneticsLand/Explore_Your_Data_in_GeneticsLand.md
+      - Delete your GeneticsLand: tutorials/GeneticsLand/Delete_your_GeneticsLand.md
+- About:
+    - Release Notes: about/Release-notes.md
+    - Contributing: about/Contributing.md
+    - Example: about/example.md
+
+# Options
+extra:
+  logo: 'images/omicsoft.png'
+  palette:
+    primary: 'light blue'
+    accent: 'teal'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  feature:
+    tabs: true
+  social:
+    - type: 'github'
+      link: 'https://omicsoft.github.io'
+    - type: 'twitter'
+      link: 'https://twitter.com/omicsoft'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company-beta/3531113/'
+
+# Google Analytics
+google_analytics:
+  - 'UA-XXXXXXXX-X'
+  - 'auto'
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite(guess_lang=false)
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc(permalink=true)
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
+  - pymdownx.details
+  - mdx_math
+
