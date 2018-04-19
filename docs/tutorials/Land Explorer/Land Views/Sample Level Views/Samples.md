@@ -1,11 +1,8 @@
 # Sample Distribution View
 
-## Default View in Land Portal
-
-
 ![SelectSampleView_png](../../images/SampleView.png)
 
-The sample distribution view is the default view of all Lands. The view will is a stacked bar graph which is displayed with the primary grouping column on the y-axis and samples colored on the x-axis using the secondary grouping column. In TCGA land, this will correspond to Tumor type on the Y-axis and Sample type on the X-axis:
+The sample distribution view is the default view of all Lands. The view is a stacked bar graph plotting all samples within the Land, grouping the samples on the y-axis by the primary grouping column and coloring the samples on the x-axis using the secondary grouping column. In TCGA land, this will correspond to Tumor type on the Y-axis and Sample type on the X-axis:
 
 
 **General Options**

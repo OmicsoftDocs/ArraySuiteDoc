@@ -1,6 +1,6 @@
 # View ID
 
-## View IDs in Land Portal Explore
+## View IDs in Land Explorer
 
 OmicSoft Lands contain dozens of Views to allow users to explore all aspects of Land data. However, the sheer number of Views can be daunting to the new user.
 

@@ -64,3 +64,9 @@ This view shows all comparisons where samples of one tissue from a subject are c
 This view shows all comparisons that do not fall under the standard categories above:
 
  ![Other_comparisons_png](../../images/othercomparisons.png)
+
+## Multi-gene comparisons
+
+This view is similar to the comparison bubble plots above, but will be grouped on the y-axis by each gene.
+
+![multi-gene_comparisons_png](../../images/multicomparisons.png)

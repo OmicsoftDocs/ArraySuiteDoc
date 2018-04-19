@@ -1,6 +1,6 @@
 # View Type
 
-## View types in Land Portal Explore
+## View types in Land Explorer
 
 Array Studio Views
 Array Studio includes over 40 Views that can be customized for different data types. This page lists the View names, as would be used in both Array Lands and Array Land Portal Explore.

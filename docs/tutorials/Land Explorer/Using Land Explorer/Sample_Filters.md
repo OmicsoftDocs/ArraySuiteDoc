@@ -1,29 +1,28 @@
 # Sample Filters
 
-## Sample filters in Land Portal
+## Sample filters in Land Explorer
 
-All Samples, Comparisons, and Projects within OmicSoft Land's are associated with extensive metadata, which can be used to filter Land data to find the samples users are interested in.
+All Samples, Comparisons, and Projects within Omicsoft Lands are associated with extensive metadata, which can be used to filter Land data to find the samples users are interested in.
 
 
 ![LandPortal001_png](../images/SampleFilters.png)
 
-Basickly, there are two types of sample filters users could apply to Land data, String filters, or check box options.
-
+There are three main types of sample filters users could apply to Land data: 1) String, 2) Checkbox and 3) Numeric.
 
 ### Apply String filter to Sample IDs in Land Portal
 
 ![SampleFIlter_string](../images/SampleIDfilter.png)
 
-In CCLE_B37 Land Portal, string filters could be used on Sample IDs, and Subject IDs, as shown in the demo, after applying "HCC" as the filter, only sample IDs started with "HCC" will show up in the scatter plot. After selecting all the data dots in the scatter plot, detail information about these samples could be found in the data table.
+String filters could be on various metadata columns, such as Sample IDs, and Subject IDs, as shown above after applying "HCC" as the filter, only sample IDs started with "HCC" will show up in the scatter plot. After selecting all the data dots in the scatter plot, detail information about these samples could be found in the data table.
 
 
-### Apply Check Box filter to Primary Sites in Land Portal
+### Apply Check Box filter to Primary Sites in Explorer
 
 ![LandPortal_login_png](../images/SampleCheckBox.png)
 
 Check Box options are available for Primary Site, Histology, Gender, Land Sample Type, Land Tissuee, and Tumor Or Normal categories. As shown in the demo screenshot, after checking 5 primary sites, the samples with corresponding primary sites are shown in the scatter plot.
 
-## Add filters based on Meta Data and/or Data Aviailability
+## Add filters based on Meta Data and/or Data Availability
 
 ![AddFilter_meta_data_png](../images/AddFilterMeta.png)
 
