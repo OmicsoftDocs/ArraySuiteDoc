@@ -1076,6 +1076,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#multi-gene-comparisons" title="Multi-gene comparisons" class="md-nav__link">
+    Multi-gene comparisons
+  </a>
+  
+</li>
+      
       
       
       
@@ -3165,6 +3172,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#multi-gene-comparisons" title="Multi-gene comparisons" class="md-nav__link">
+    Multi-gene comparisons
+  </a>
+  
+</li>
+      
       
       
       
@@ -3184,37 +3198,40 @@
                 
                 <h1 id="comparison-views">Comparison views<a class="headerlink" href="#comparison-views" title="Permanent link">&para;</a></h1>
 <p>The OmicSoft Land curation teams carefully curate samples in the Land using a controlled vocabulary for each project. For each project containing RNA-seq or microarray data, the curation team will generate sample groupings (often matching the ones used by the authors, as well as other meaningful ones) such as Disease vs Normal samples, or Treatment vs. Control samples. The Land Explorer allows users to browse gene level information for these types of comparisons in a simple "bubble plot" view. When searching a gene, and choosing this view, the fold change of the gene will be plotted (each bubble, or dot represents a single comparison). The y-axis will group the comparisons by the primary grouping category, while the x-axis will represent the Log2 Fold change of that gene. The size of the dots will reflect the p value from the comparison (DESeq2 for RNA-seq and General Linear Model for microarray). Selecting dot(s) in this view will populate a Details table at the bottom of the view showing some key metadata from the comparison(s)</p>
-<p>The views below can be filtered to comparisons of interest. For information on customizing comparison views, please see: Jeff- create Link to UsingLandExplorer (new page - Comparison filters.md)</p>
+<p>The views below can be filtered to comparisons of interest. For information on customizing comparison views, please see: <a href="../../../Using Land Explorer/Comparison_filters/">Comparison Filter</a></p>
 <h2 id="all-comparisons">All Comparisons<a class="headerlink" href="#all-comparisons" title="Permanent link">&para;</a></h2>
 <p>This view combines all comparisons for a gene into one view. In this view, all of the different types of comparisons in the select Land will be plotted:</p>
-<p>---Update Screenshot (without sample tab) <img alt="LandPortal_login_png" src="../../../images/AllComparison.png" /></p>
+<p><img alt="LandPortal_login_png" src="../../../images/AllComparison.png" /></p>
 <h2 id="disease-vs-normal">Disease vs Normal<a class="headerlink" href="#disease-vs-normal" title="Permanent link">&para;</a></h2>
 <p>This view shows all comparisons where samples from affected subjects (i.e. Tumors or Disease) are compared to samples from normal subjects in the same project:</p>
-<p>---Screenshot</p>
+<p><img alt="Disease_vs_Normal_png" src="../../../images/DiseasevsNormal.png" /></p>
 <h2 id="treatment-vs-control">Treatment vs Control<a class="headerlink" href="#treatment-vs-control" title="Permanent link">&para;</a></h2>
 <p>This view shows all comparisons where samples from affected subjects (treated with drug or other therapy) are compared to samples from untreated subjects in the same project:</p>
-<p>---Screenshot</p>
+<p><img alt="Treatment_Vs_control_png" src="../../../images/treatmentvscontrol.png" /></p>
 <h2 id="responder-vs-nonresponder">Responder vs NonResponder<a class="headerlink" href="#responder-vs-nonresponder" title="Permanent link">&para;</a></h2>
 <p>This view shows all comparisons where samples from subjects that show favorable response to a treatment are compared to samples from subjects with no response to the same treatment in the same project:</p>
-<p>---Screenshot</p>
+<p><img alt="responder_vs_nonresponder_png" src="../../../images/respondervsnonresponder.png" /></p>
 <h2 id="resistant-vs-sensitive">Resistant vs Sensitive<a class="headerlink" href="#resistant-vs-sensitive" title="Permanent link">&para;</a></h2>
 <p>This view shows all comparisons where samples from subjects that show resistance to a treatment are compared to samples from subjects showing significant difference in outcome to the same treatment in the same project:</p>
-<p>---Screenshot</p>
+<p><img alt="resistant_vs_sensitive_png" src="../../../images/resistantvssensitive.png" /></p>
 <h2 id="cell-type1-vs-cell-type2">Cell Type1 vs Cell Type2<a class="headerlink" href="#cell-type1-vs-cell-type2" title="Permanent link">&para;</a></h2>
 <p>This view shows all comparisons where samples of one cell type from a subject are compared to samples another cell type from these subjects in the same project:</p>
-<p>---Screenshot</p>
+<p><img alt="Celltype1_vs_Celltype2_png" src="../../../images/celltype1vscelltype2.png" /></p>
 <h2 id="disease1-vs-disease2">Disease1 vs Disease2<a class="headerlink" href="#disease1-vs-disease2" title="Permanent link">&para;</a></h2>
 <p>This view shows all comparisons where samples from subjects presenting one disease are compared to samples from other subjects presenting another disease in the same project:</p>
-<p>---Screenshot</p>
+<p><img alt="Desease1_vs_deasease2_png" src="../../../images/desease1vsdisease2.png" /></p>
 <h2 id="treatment1-vs-treatment2">Treatment1 vs Treatment2<a class="headerlink" href="#treatment1-vs-treatment2" title="Permanent link">&para;</a></h2>
 <p>This view shows all comparisons where samples from subjects undergoing one treatment are compared to samples from other subjects undergoing a different treatment in the same project:</p>
-<p>---Screenshot</p>
+<p><img alt="Treatment1_vs_treatment2_png" src="../../../images/treatment1vstreatment2.png" /></p>
 <h2 id="tissue1-vs-tissue2">Tissue1 vs Tissue2<a class="headerlink" href="#tissue1-vs-tissue2" title="Permanent link">&para;</a></h2>
 <p>This view shows all comparisons where samples of one tissue from a subject are compared to samples another tissue from these subjects in the same project:</p>
-<p>---Screenshot</p>
+<p><img alt="Tissue1_vs_tissue2_png" src="../../../images/tissue1vstissue2.png" /></p>
 <h2 id="othercomparisons">OtherComparisons<a class="headerlink" href="#othercomparisons" title="Permanent link">&para;</a></h2>
 <p>This view shows all comparisons that do not fall under the standard categories above:</p>
-<p>---Screenshot</p>
+<p><img alt="Other_comparisons_png" src="../../../images/othercomparisons.png" /></p>
+<h2 id="multi-gene-comparisons">Multi-gene comparisons<a class="headerlink" href="#multi-gene-comparisons" title="Permanent link">&para;</a></h2>
+<p>This view is similar to the comparison bubble plots above, but will be grouped on the y-axis by each gene.</p>
+<p><img alt="multi-gene_comparisons_png" src="../../../images/multicomparisons.png" /></p>
                 
                   
                 
