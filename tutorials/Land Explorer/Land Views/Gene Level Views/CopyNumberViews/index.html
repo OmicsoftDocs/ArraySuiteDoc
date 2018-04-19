@@ -862,15 +862,27 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="../../Views/" title="Views" class="md-nav__link">
+      Views
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-1" type="checkbox" id="nav-2-8-2-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-2" type="checkbox" id="nav-2-8-2-2">
     
-    <label class="md-nav__link" for="nav-2-8-2-1">
+    <label class="md-nav__link" for="nav-2-8-2-2">
       Sample Level Views
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-      <label class="md-nav__title" for="nav-2-8-2-1">
+      <label class="md-nav__title" for="nav-2-8-2-2">
         Sample Level Views
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -950,13 +962,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-2" type="checkbox" id="nav-2-8-2-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-3" type="checkbox" id="nav-2-8-2-3" checked>
     
-    <label class="md-nav__link" for="nav-2-8-2-2">
+    <label class="md-nav__link" for="nav-2-8-2-3">
       Gene Level Views
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-      <label class="md-nav__title" for="nav-2-8-2-2">
+      <label class="md-nav__title" for="nav-2-8-2-3">
         Gene Level Views
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1049,13 +1061,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#introduction" title="Introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
       
       
       
@@ -1127,13 +1132,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-3" type="checkbox" id="nav-2-8-2-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-4" type="checkbox" id="nav-2-8-2-4">
     
-    <label class="md-nav__link" for="nav-2-8-2-3">
+    <label class="md-nav__link" for="nav-2-8-2-4">
       Comparison Level Views
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-      <label class="md-nav__title" for="nav-2-8-2-3">
+      <label class="md-nav__title" for="nav-2-8-2-4">
         Comparison Level Views
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1186,8 +1191,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/Introduction/" title="Introduction" class="md-nav__link">
-      Introduction
+    <a href="../../../Using Land Explorer/Customizations/" title="Customizations" class="md-nav__link">
+      Customizations
     </a>
   </li>
 
@@ -3046,13 +3051,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#introduction" title="Introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
       
       
       
@@ -3073,20 +3071,16 @@
                 <h1 id="cnv-summary">CNV Summary<a class="headerlink" href="#cnv-summary" title="Permanent link">&para;</a></h1>
 <h2 id="copy-number-summary-view-in-land-portal">Copy Number Summary View in Land Portal<a class="headerlink" href="#copy-number-summary-view-in-land-portal" title="Permanent link">&para;</a></h2>
 <p><img alt="LandPortal_login_png" src="../../../images/CNVSummary.png" /></p>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p>The summary view shows % of samples in a giving group.
-1. having amplified or deleted of tumor vs normal if using log2ratio calls
+<p>The summary view shows % of samples in a given group:
+1. amplified or deleted of tumor vs normal if using log2ratio calls
 2. having Amplification, Homozygous Deletion or other categories if using GISTIC calls</p>
 <h1 id="cnv-variable">CNV Variable<a class="headerlink" href="#cnv-variable" title="Permanent link">&para;</a></h1>
 <h2 id="copy-number-variable-view-in-land-portal">Copy Number Variable View in Land Portal<a class="headerlink" href="#copy-number-variable-view-in-land-portal" title="Permanent link">&para;</a></h2>
 <p><img alt="LandPortal_login_png" src="../../../images/CNVVariable.png" /></p>
-<h3 id="introduction_1">Introduction<a class="headerlink" href="#introduction_1" title="Permanent link">&para;</a></h3>
-<p>This view shows the Log2 Ratio (if a gene contains multiple segment, the most sigificant segment will be chosen) for the specified gene, organized by group (e.g. Tumor Type).</p>
-<p>When visualizing more than one gene, each gene is show in its own plot.
-X-axis shows Expression Ratio. Y-axis shows the group.
-Use the Sample Tab to further filter the data using any associated sample/subject meta data. Use Specify Profile (Task tab) to change the grouping.
-Use Specify Split Column (Task tab) to change the automatic coloring.
-Show on-the-fly p-value, indicating if the Log2 Ratio is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize).</p>
+<p>This view shows the Log2 Ratio (if a gene contains multiple segments, the most significant segment will be chosen) for the specified gene, organized by group (e.g. Tumor Type).</p>
+<p>When visualizing more than one gene, each gene is shown in its own plot.
+X-axis shows copy number (Log2) Ratio. Y-axis shows the group.
+Use the Sample Tab to further filter the data using any associated sample/subject meta data. </p>
                 
                   
                 
