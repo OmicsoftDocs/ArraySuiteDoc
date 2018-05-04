@@ -1,0 +1,3499 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="OmicSoft Doc">
+      
+      
+        <link rel="canonical" href="http://192.168.3.222/WikiBigFiles/doc/v10.3/tutorials/SNP/Association_Analysis/">
+      
+      
+        <meta name="author" content="OmicSoft Support">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.1">
+    
+    
+      
+        <title>Association Analysis - omicsoft doc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="teal">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#association-analysis" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="http://192.168.3.222/WikiBigFiles/doc/v10.3/" title="omicsoft doc" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                omicsoft doc
+              </span>
+              <span class="md-header-nav__topic">
+                Association Analysis
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../ArrayStudio/ArrayStudio/" title="Framework" class="md-tabs__link">
+          Framework
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Microarray/Installing_Array_Studio/" title="OmicData" class="md-tabs__link">
+          OmicData
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../RNASeq/Introduction/" title="NGS" class="md-tabs__link">
+          NGS
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../OncoLand/Introduction/" title="Land" class="md-tabs__link">
+          Land
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../about/Release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    omicsoft doc
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Framework
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Framework
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ArrayStudio/ArrayStudio/" title="Array Studio" class="md-nav__link">
+      Array Studio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Array Server
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Array Server
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Connecting_to_a_Server_and_Uploading_Files/" title="Connecting to a Server and Uploading Files" class="md-nav__link">
+      Connecting to a Server and Uploading Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Creating_and_Publishing_a_Server_Project/" title="Creating and Publishing a Server Project" class="md-nav__link">
+      Creating and Publishing a Server Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Array_Server_on_Cluster/" title="Array Server on Cluster" class="md-nav__link">
+      Array Server on Cluster
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Array_Server_on_Cloud/" title="Array Server on Cloud" class="md-nav__link">
+      Array Server on Cloud
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Server Explorer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Server Explorer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Getting_Started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Searching_Projects/" title="Searching Projects" class="md-nav__link">
+      Searching Projects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Publishing_Data/" title="Publishing Data" class="md-nav__link">
+      Publishing Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Server_FileManagement/" title="Server File Management" class="md-nav__link">
+      Server File Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Server_Sample_Management/" title="Server Sample Management" class="md-nav__link">
+      Server Sample Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Server_Administration/" title="Server Administration" class="md-nav__link">
+      Server Administration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      GenomeBrowser
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        GenomeBrowser
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Create_Genome_Browser/" title="Create Genome Browser" class="md-nav__link">
+      Create Genome Browser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Adding_Tracks/" title="Adding Tracks" class="md-nav__link">
+      Adding Tracks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Browsing_Data/" title="Browsing Data" class="md-nav__link">
+      Browsing Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Browsing_Data_from_Local_Analysis/" title="Browsing Data from Local Analysis" class="md-nav__link">
+      Browsing Data from Local Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      Sample Management
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        Sample Management
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/SampleManagement/" title="Sample Management" class="md-nav__link">
+      Sample Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/Integration/" title="Integration" class="md-nav__link">
+      Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      Studio on the Cloud
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        Studio on the Cloud
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Connecting_to_Cloud_and_Uploading_Files/" title="Cloud Connection" class="md-nav__link">
+      Cloud Connection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Creatinga_Cloud_Project/" title="Cloud Project" class="md-nav__link">
+      Cloud Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Managing_Cloud_Instance_and_Proxy/" title="Proxy Instance" class="md-nav__link">
+      Proxy Instance
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      Oscript
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        Oscript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oscript/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oscript/RunOscript/" title="Run Oscript" class="md-nav__link">
+      Run Oscript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oscript/PipelineScript/" title="Pipeline Script" class="md-nav__link">
+      Pipeline Script
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8" type="checkbox" id="nav-2-8">
+    
+    <label class="md-nav__link" for="nav-2-8">
+      Land Explorer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-8">
+        Land Explorer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2" type="checkbox" id="nav-2-8-2">
+    
+    <label class="md-nav__link" for="nav-2-8-2">
+      Land Views
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-8-2">
+        Land Views
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Views/" title="Views" class="md-nav__link">
+      Views
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-2" type="checkbox" id="nav-2-8-2-2">
+    
+    <label class="md-nav__link" for="nav-2-8-2-2">
+      Sample Level Views
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-2-2">
+        Sample Level Views
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Sample Level Views/Samples/" title="Distribution Views" class="md-nav__link">
+      Distribution Views
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Sample Level Views/Sample_Details/" title="Sample Details" class="md-nav__link">
+      Sample Details
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Sample Level Views/Comparison_Availability/" title="Comparison Availability" class="md-nav__link">
+      Comparison Availability
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Sample Level Views/Data_Availability/" title="Data Availability" class="md-nav__link">
+      Data Availability
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Sample Level Views/Survival_Data/" title="Survival Data" class="md-nav__link">
+      Survival Data
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-3" type="checkbox" id="nav-2-8-2-3">
+    
+    <label class="md-nav__link" for="nav-2-8-2-3">
+      Gene Level Views
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-2-3">
+        Gene Level Views
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/OmicDataIntegrationViews/" title="Integration" class="md-nav__link">
+      Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/AllComparisons/" title="Comparisons" class="md-nav__link">
+      Comparisons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/DNAAlterationDistribution/" title="DNA-Seq" class="md-nav__link">
+      DNA-Seq
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/CopyNumberViews/" title="Copy Number" class="md-nav__link">
+      Copy Number
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/" title="RNA-Seq Quantification" class="md-nav__link">
+      RNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/RNASeqSomaticMutation/" title="RNA-Seq Mutation" class="md-nav__link">
+      RNA-Seq Mutation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/ExpressionRatio/" title="Microarray Expression" class="md-nav__link">
+      Microarray Expression
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/miRNA_views/" title="miRNA-Seq" class="md-nav__link">
+      miRNA-Seq
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/Proteomics/" title="Proteomics" class="md-nav__link">
+      Proteomics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/Methylation/" title="Methylation" class="md-nav__link">
+      Methylation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-4" type="checkbox" id="nav-2-8-2-4">
+    
+    <label class="md-nav__link" for="nav-2-8-2-4">
+      Comparison Level Views
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-2-4">
+        Comparison Level Views
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Comparison Level Views/Volcano_Plot/" title="Volcano Plot" class="md-nav__link">
+      Volcano Plot
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-3" type="checkbox" id="nav-2-8-3">
+    
+    <label class="md-nav__link" for="nav-2-8-3">
+      Using Land Explorer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-8-3">
+        Using Land Explorer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/LandExplorerInterface/" title="Land Explorer Interface" class="md-nav__link">
+      Land Explorer Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-3-2" type="checkbox" id="nav-2-8-3-2">
+    
+    <label class="md-nav__link" for="nav-2-8-3-2">
+      Filters
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-3-2">
+        Filters
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/Filters/" title="Filtering" class="md-nav__link">
+      Filtering
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/Sample_Filters/" title="Sample Filters" class="md-nav__link">
+      Sample Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/Comparison_filters/" title="Comparison Filters" class="md-nav__link">
+      Comparison Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/Project_filters/" title="Project Filters" class="md-nav__link">
+      Project Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/Gene/" title="Gene Filters" class="md-nav__link">
+      Gene Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/Mutation/" title="Mutation Filters" class="md-nav__link">
+      Mutation Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/CNV/" title="CNV Filters" class="md-nav__link">
+      CNV Filters
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-3-3" type="checkbox" id="nav-2-8-3-3">
+    
+    <label class="md-nav__link" for="nav-2-8-3-3">
+      Queries
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-3-3">
+        Queries
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Queries/Custom_Query/" title="Custom Query" class="md-nav__link">
+      Custom Query
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Queries/Searching_Genes/" title="Search Bar" class="md-nav__link">
+      Search Bar
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Customizations/" title="Customizations" class="md-nav__link">
+      Customizations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/View_controller/" title="View Controller" class="md-nav__link">
+      View Controller
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      OmicData
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        OmicData
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Microarray
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Microarray
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/Installing_Array_Studio/" title="Installing Array Studio" class="md-nav__link">
+      Installing Array Studio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/Importing_a_Dataset/" title="Importing a Dataset" class="md-nav__link">
+      Importing a Dataset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/Data_Visualization_and_Quality_Control/" title="Data Visualization and Quality Control" class="md-nav__link">
+      Data Visualization and Quality Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/Differential_Expression/" title="Differential Expression" class="md-nav__link">
+      Differential Expression
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/Data_Exploration/" title="Data Exploration" class="md-nav__link">
+      Data Exploration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/Audit_trail/" title="Audit trail" class="md-nav__link">
+      Audit trail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Microarray/References/" title="References" class="md-nav__link">
+      References
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      CNV
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        CNV
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Visualization_of_Data/" title="Data Visulization" class="md-nav__link">
+      Data Visulization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Summarization_of_CNV_Data/" title="Data Summarization" class="md-nav__link">
+      Data Summarization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Advanced_Visualization/" title="Advanced Visulization" class="md-nav__link">
+      Advanced Visulization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Analysis_Modules/" title="Analysis" class="md-nav__link">
+      Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      ExonArray
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        ExonArray
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Importing_a_Dataset/" title="Importing a Dataset" class="md-nav__link">
+      Importing a Dataset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Visualization_of_Data/" title="Visualization of Data" class="md-nav__link">
+      Visualization of Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Data_Visualization_and_Quality_Control/" title="Data Visualization and Quality Control" class="md-nav__link">
+      Data Visualization and Quality Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Differential_Expression__Probeset_Level_/" title="Differential Expression Probeset Level" class="md-nav__link">
+      Differential Expression Probeset Level
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Exon_Level_ANOVA_ExonDiffertialExpression_/" title="Exon Level Differtial Expression" class="md-nav__link">
+      Exon Level Differtial Expression
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Alternative_Splicing_ANOVA/" title="Alternative Splicing ANOVA" class="md-nav__link">
+      Alternative Splicing ANOVA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Generate_Transcript_Level_Data/" title="Generate Transcript Level Data" class="md-nav__link">
+      Generate Transcript Level Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      RT-PCR
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        RT-PCR
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Manage_RT-PCR_Raw_Data/" title="Manage RT-PCR Raw Data" class="md-nav__link">
+      Manage RT-PCR Raw Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Import_RT-PCR_Wizard/" title="Import RT-PCR Wizard" class="md-nav__link">
+      Import RT-PCR Wizard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Downstream_Analysis_of_RT-PCR_data/" title="Downstream Analysis of RT-PCR data" class="md-nav__link">
+      Downstream Analysis of RT-PCR data
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" checked>
+    
+    <label class="md-nav__link" for="nav-3-5">
+      SNP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-5">
+        SNP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Visualization_of_Data/" title="Visualization of Data" class="md-nav__link">
+      Visualization of Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Marker_Statistics__Data_Filtering__and_Population_Structure/" title="Marker Statistics Data Filtering and Population Structure" class="md-nav__link">
+      Marker Statistics Data Filtering and Population Structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Association Analysis
+      </label>
+    
+    <a href="./" title="Association Analysis" class="md-nav__link md-nav__link--active">
+      Association Analysis
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-association-single-marker" title="Basic Association Single Marker" class="md-nav__link">
+    Basic Association Single Marker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categorical-trait-single-marker" title="Categorical Trait Single Marker" class="md-nav__link">
+    Categorical Trait Single Marker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quantitative-trait-single-markergeneral" title="Quantitative Trait Single Marker(General)" class="md-nav__link">
+    Quantitative Trait Single Marker(General)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#survival-trait-single-marker" title="Survival Trait Single Marker" class="md-nav__link">
+    Survival Trait Single Marker
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Visualizationof_pValues/" title="Visualizationof pValues" class="md-nav__link">
+      Visualizationof pValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      NGS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        NGS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      RNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        RNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/CreateArray_Studio_Project/" title="Create ArrayStudio Project" class="md-nav__link">
+      Create ArrayStudio Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Add From RNA-Seq Pipeline/" title="Add From RNA-Seq Pipeline" class="md-nav__link">
+      Add From RNA-Seq Pipeline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/QC_ofRawData_Files/" title="QC of RawData Files" class="md-nav__link">
+      QC of RawData Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Alignment_to_the_Genome/" title="Alignment to the Genome" class="md-nav__link">
+      Alignment to the Genome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/QC_of_AlignedData/" title="QC of AlignedData" class="md-nav__link">
+      QC of AlignedData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/RNA-Seq_Quantification/" title="RNA-Seq Quantification" class="md-nav__link">
+      RNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/RNA-Seq_Fusion_Gene_Detection/" title="RNA-Seq Fusion Gene Detection" class="md-nav__link">
+      RNA-Seq Fusion Gene Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/RNA-Seq_Mutation_Detection/" title="RNA-Seq Mutation Detection" class="md-nav__link">
+      RNA-Seq Mutation Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Save___Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      DNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        DNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Create_Array_Studio_Project/" title="Create Project" class="md-nav__link">
+      Create Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/QC_of_Raw_Data_Files/" title="Raw Data QC" class="md-nav__link">
+      Raw Data QC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Alignment_to_the_Genome/" title="Alignment" class="md-nav__link">
+      Alignment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/QC_of_Aligned_Data/" title="Aligned QC" class="md-nav__link">
+      Aligned QC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/DNA-Seq_Fusion_Gene_Detection/" title="Fusion Detection" class="md-nav__link">
+      Fusion Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/DNA-SeqMutation_Detection/" title="Variant Detection" class="md-nav__link">
+      Variant Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/DNA-Seq_Copy_Number_Analysis/" title="Copy Number Analysis" class="md-nav__link">
+      Copy Number Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Save___Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      miRNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        miRNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/CreateArray_Studio_Project/" title="CreateArray Studio Project" class="md-nav__link">
+      CreateArray Studio Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/workflow_and_pipeline/" title="workflow and pipeline" class="md-nav__link">
+      workflow and pipeline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/QC_ofRaw_Data_Files/" title="QC of Raw Data Files" class="md-nav__link">
+      QC of Raw Data Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Filtering_Trimming_Reads/" title="Filtering Trimming Reads" class="md-nav__link">
+      Filtering Trimming Reads
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Alignment_to_the_Genome/" title="Alignment to the Genome" class="md-nav__link">
+      Alignment to the Genome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/QC_of_Aligned_Data/" title="QC of Aligned Data" class="md-nav__link">
+      QC of Aligned Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/miRNA-Seq_Quantification/" title="miRNA-Seq Quantification" class="md-nav__link">
+      miRNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Save_Close_Project/" title="Save and Close Project" class="md-nav__link">
+      Save and Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      scRNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        scRNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Create_ArrayStudio_Project/" title="CreateArray Studio Project" class="md-nav__link">
+      CreateArray Studio Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/scRNA_Analysis_Workflow/" title="scRNA analysis workflow" class="md-nav__link">
+      scRNA analysis workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Preprocess_scRNA_Data/" title="Pre-process of scRNA-Seq data" class="md-nav__link">
+      Pre-process of scRNA-Seq data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Tag_based_QC/" title="TAG Based QC" class="md-nav__link">
+      TAG Based QC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Alignment_to_the_Genome/" title="Alignment to the Genome" class="md-nav__link">
+      Alignment to the Genome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Remove_Duplicate/" title="Remove Duplicate" class="md-nav__link">
+      Remove Duplicate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/scRNASeq_Quantification/" title="scRNA-Seq Quantification" class="md-nav__link">
+      scRNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Other_Downstream_Analysis/" title="Other Downstream Analysis" class="md-nav__link">
+      Other Downstream Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Save_Close_Project/" title="Save and Close Project" class="md-nav__link">
+      Save and Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      GWAS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        GWAS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Connecting_To_A_Server_And_Uploading_Files/" title="Connecting To A Server And Uploading Files" class="md-nav__link">
+      Connecting To A Server And Uploading Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Preprocessing/" title="Preprocessing" class="md-nav__link">
+      Preprocessing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/QC_of_GWAS_data/" title="QC of GWAS data" class="md-nav__link">
+      QC of GWAS data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Imputation/" title="Imputation" class="md-nav__link">
+      Imputation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Association/" title="Association" class="md-nav__link">
+      Association
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Annotation/" title="Annotation" class="md-nav__link">
+      Annotation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Transgene
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Transgene
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Transgene/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Transgene/DataAnalysis/" title="Analysis Workflow" class="md-nav__link">
+      Analysis Workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Transgene/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Land
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Land
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      OncoLand
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        OncoLand
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Search_Basics/" title="Basic Search" class="md-nav__link">
+      Basic Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Advanced_Analytics/" title="Advanced Analytics" class="md-nav__link">
+      Advanced Analytics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Measurement_Data/" title="Measurement Data" class="md-nav__link">
+      Measurement Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Land_Tools/" title="Land Tools" class="md-nav__link">
+      Land Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Virtual_Land/" title="Virtual Land" class="md-nav__link">
+      Virtual Land
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      DiseaseLand
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        DiseaseLand
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/BodyMap/" title="Body Map" class="md-nav__link">
+      Body Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/DiseaseLand/" title="DiseaseLand" class="md-nav__link">
+      DiseaseLand
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/LINCS/" title="LINCs" class="md-nav__link">
+      LINCs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/scLand/" title="Single Cell Lands" class="md-nav__link">
+      Single Cell Lands
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      ComparisonLand from External Inferences
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        ComparisonLand from External Inferences
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/AddExpressionData/" title="Add Expression Data" class="md-nav__link">
+      Add Expression Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/ConvertInferenceData/" title="Convert Inference Data" class="md-nav__link">
+      Convert Inference Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/CreateLand/" title="Create Land" class="md-nav__link">
+      Create Land
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/ExploreComparisonLand/" title="Explore ComparisonLand" class="md-nav__link">
+      Explore ComparisonLand
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
+    
+    <label class="md-nav__link" for="nav-5-4">
+      GeneticsLand
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-4">
+        GeneticsLand
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Introduction_to_GeneticsLand/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Adding_Data_to_GeneticsLand/" title="Adding Data to GeneticsLand" class="md-nav__link">
+      Adding Data to GeneticsLand
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Explore_Your_Data_in_GeneticsLand/" title="Explore Your Data in GeneticsLand" class="md-nav__link">
+      Explore Your Data in GeneticsLand
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Delete_your_GeneticsLand/" title="Delete your GeneticsLand" class="md-nav__link">
+      Delete your GeneticsLand
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/Release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/Contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/example/" title="Example" class="md-nav__link">
+      Example
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-association-single-marker" title="Basic Association Single Marker" class="md-nav__link">
+    Basic Association Single Marker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categorical-trait-single-marker" title="Categorical Trait Single Marker" class="md-nav__link">
+    Categorical Trait Single Marker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quantitative-trait-single-markergeneral" title="Quantitative Trait Single Marker(General)" class="md-nav__link">
+    Quantitative Trait Single Marker(General)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#survival-trait-single-marker" title="Survival Trait Single Marker" class="md-nav__link">
+    Survival Trait Single Marker
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="association-analysis">Association Analysis<a class="headerlink" href="#association-analysis" title="Permanent link">&para;</a></h1>
+<p>Besides visualization, summarization, and QC data, <em>Array Studio</em> contains a powerful set of tools for SNP association analysis. Users can analyze data using <em>Single-Marker Association</em> tests or <em>Two-Marker Association</em> tests. Available tests include <em>Basic Association</em>, <strong>Stratified Association</strong> (single marker only),  <strong>Quantitative Trait</strong>, <strong>Categorical Trait</strong>, <strong>Survival Trait</strong>, <strong>Repeated Measure Trait</strong>, as well as <strong>Dose Data</strong> and <strong>Probability Data Association</strong> tests (also CNV analysis modules are available).</p>
+<p>In this tutorial, we will cover basic association, categorical trait, quantitative trait, and survival trait analysis.</p>
+<h2 id="basic-association-single-marker">Basic Association Single Marker<a class="headerlink" href="#basic-association-single-marker" title="Permanent link">&para;</a></h2>
+<p>Single marker-basic association analysis is based on Fisher s Exact test to test the allele frequency difference between Case/Control traits. To start a single marker-basic association analysis, go to <em>Genotyping Menu | Single Marker Association | Basic Association</em> to open the <em>Basic Association</em> window.</p>
+<p><img alt="image67_png" src="../images/image67.png" /></p>
+<p>As usual, ensure that the <em>Project</em> is <em>Tutorial</em> and <em>Data</em> is <em>GenotypeData</em> and the <em>Variables</em> are set to customized variables using the list <strong>GenotypeData.Variable31008</strong>. For all of our association analyses, we only have design information for the <em>JPT</em> group, so use the <em>Observation</em> list <strong>GenotypeData.Observation45</strong> that was created in the last chapter during the <em>Filter</em> step (use customized observation list).</p>
+<p><img alt="image68_png" src="../images/image68.png" /></p>
+<p>Under <em>Options</em>,</p>
+<ul>
+<li>
+<p>We need to set the design column containing the <strong>Trait</strong> we wish to analyze, in this case <strong>Phenotype</strong> (Note: By default, <em>Array Studio</em> should have chosen this as the <em>Trait</em>, due to the selection of <em>Group</em> as the <em>Phenotype</em> column when importing the <em>Design Table</em>).</p>
+</li>
+<li>
+<p>Next, we need to set the <strong>Case</strong> level. As the levels of <em>Group</em> are named case and control, we should choose <strong>Case</strong> as our <em>Case</em> level.</p>
+</li>
+</ul>
+<p>User can use following options to decide which statistics to include in the result:</p>
+<ul>
+<li>
+<p>Generate the <em>Minor allele</em> (make sure it s checked)</p>
+</li>
+<li>
+<p><em>Minor allele count</em></p>
+</li>
+<li>
+<p><em>Allelic test p-value and odds ratio</em> (make sure it s checked)</p>
+</li>
+<li>
+<p><em>Genotypic test p-value</em> (uncheck this box)</p>
+</li>
+<li>
+<p><em>Dominant test p-value</em></p>
+</li>
+<li>
+<p><em>Recessive test p-value</em></p>
+</li>
+<li>
+<p><em>Additive test p-value</em></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While it is possible to run this analysis and test for a genotypic p-value, dominant test p-value, recessive test p-value, additive test p-value, and use Fisher Exact test instead of Chi-square test, for the purposes of this tutorial we will only investigate the allelic test Chi-square p-value and asymptotic odds ratio (Fisher Exact test will give exact odds ratio).</p>
+</div>
+<hr />
+<p>We can set the Multiplicity adjustment for the test (leave as is with <em>FDR_BH</em>, an Alpha level of <em>0.05</em>, and a Confidence interval of <em>0.95</em>).</p>
+<p>Finally, change the <strong>Output name</strong> to <em>Basic Association</em> and click <strong>Submit</strong> to run the basic association test.</p>
+<p>A new <em>Table</em> will be created in the <em>Solution Explorer</em> under the <em>Inference</em> section. All association analyses in <em>Array Studio</em> will generate <strong>Inference Reports</strong>. Notice the name of the report, <em>Basic Association.Tests</em> (as this is the name we specified above), and the type the report <em>InferenceReport Data</em>.</p>
+<p><img alt="image69_png" src="../images/image69.png" /></p>
+<p>A <em>TableView</em> called <em>Report</em> will be generated by default and immediately visible in the main view window (make sure filters are cleared to see all variables). All of the requested information is now available for each marker, including the MinorAllele, Allelic.RawPvalue, Allelic.AdjustedPValue, and Allelic.OddsRatio. The Odds Ratio also includes the confidence interval. The last 5 columns are the appended annotation table.</p>
+<p><img alt="image70_png" src="../images/image70.png" /></p>
+<p>Right click in the header of the <em>Allelic.RawPvalue</em> column and select <strong>Sort Ascending</strong>.</p>
+<p><img alt="image71_png" src="../images/image71.png" /></p>
+<p>The <em>TableView</em> is sorted, showing the most significant markers based on this analysis.</p>
+<p>We can also choose to filter this view, and we can do so using any of the generated columns (p-value, adjusted p-value etc.) or any of the annotation columns. As we are going to run three more similar analyses (categorical, quantitative and survival traits), we will do some filtering by p-value in later chapters.</p>
+<h2 id="categorical-trait-single-marker">Categorical Trait Single Marker<a class="headerlink" href="#categorical-trait-single-marker" title="Permanent link">&para;</a></h2>
+<p>To run a single marker-categorical trait analysis, go to the <strong>Genotyping Menu | Single Marker Analysis | Categorical Trait</strong>.</p>
+<p><img alt="image72_png" src="../images/image72.png" /></p>
+<p>As always, ensure that <em>Tutorial</em> is chosen for <em>Project, GenotypeData</em> is chosen for <em>Data</em>, <strong>GenotypeData.Variable31008</strong> is chosen for <em>Customized Variables</em>. As we only have categorical trait information on the JPT subjects, make sure that our subject list, <strong>GenotypeData.Observation45</strong>, is chosen for <em>Customized Observations</em>.</p>
+<p><img alt="image73_png" src="../images/image73.png" /></p>
+<p>Click the <strong>Specify Model</strong> button to open the <em>Specify Model</em> window:</p>
+<p><img alt="image74_png" src="../images/image74.png" /></p>
+<p>Set the <strong>Trait</strong> to <em>Group2</em>.
+Notice that the type of trait is now recognized as a <em>Categorical Trait</em>, and lists the three categories. Note: for categorical traits, the user can specify whether the data is ordered. If it is ordered, it should be analyzed differently (using cumulative odds logistic regression instead of generalized logistic regression), and the <em>Levels are ordered</em> checkbox should be checked when running the model for this dataset. Check the <strong>Levels are ordered</strong> checkbox now (Array Studio has the ability to deal with nominal traits or ordinal traits).</p>
+<p>Additional covariates could be added to the model at this point, including potential principal component analysis components. However, for this tutorial, leave the model as is (<em>Categorical Trait</em> is <em>Group2</em>, <em>ordered</em>, model only includes <em>Genotype</em>).</p>
+<p>Click <em>OK</em> to return to the <em>Categorical Trait</em> window.</p>
+<p>At this point, the updated model should be reflected in the window.</p>
+<p><img alt="image75_png" src="../images/image75.png" /></p>
+<p>Ensure that <strong>Generate odds ratio data</strong> and <strong>Generate odds data</strong> is selected. Ensure that <strong>Genotypic</strong> is chosen for the <strong>Disease model</strong>. Other available diseases models include <em>Additive</em>, <em>Dominant</em>, and <em>Recessive</em>.</p>
+<p><strong>Multiplicity</strong> should be set to <strong>FDR_BH</strong>, with an <strong>Alpha level</strong> of 0.05 and a <strong>Confidence interval</strong> of 0.95.</p>
+<p>Set the <em>Anova type</em> to Type3, and set the <em>Test type</em> to <em>WaldTest</em> (the other option is <em>LikelihoodRatio</em> test).</p>
+<p>Finally, set <em>Output name</em> to <strong>Categorical Trait</strong>.</p>
+<p>If the user is interested, the equivalent SAS code can be generated after all options are set, by clicking the <strong>Show SAS code</strong> button.</p>
+<p>Click <em>Submit</em> to run the Categorical Trait association analysis.</p>
+<p>Three new <em>Tables</em> will be generated under the <em>Inference</em> section of the <em>Solution Explorer</em>: the standard <em>Tests</em> table, as well as the requested Odds and OddsRatio <em>Tables</em>.</p>
+<p><img alt="image76_png" src="../images/image76.png" /></p>
+<p>Double click on the <strong>Categorical Trait.Tests Report</strong> to display the <em>TableView</em> in the main view window. If this data is filtered, reset all filters to see all variables.</p>
+<p><img alt="image77_png" src="../images/image77.png" /></p>
+<p>Notice that the <em>Categorical Trait.OddsRatio</em> table contains two views: an <em>OddsRatio</em> view and a <em>Table</em> view. Switch to the <em>OddsRatio</em> view now by double-clicking it.</p>
+<p>The <em>OddsRatio</em> table will only be generated for significant genotypes. Remove any filters on this view, and notice that there are 3 charts that were generated. To view all 3 charts in the same time, change to <strong>2*2</strong> in the drop down list.</p>
+<p><img alt="image78_png" src="../images/image78.png" /></p>
+<p>The user can also see the <strong>TableView</strong> information for the <em>OddsRatio</em> by double-clicking the generated table view.</p>
+<p>In this <em>TableView</em>, each row contains the marker ID, the group that is being compared, and the p-value, as well as the odds ratio and confidence intervals. Annotation information is also included.</p>
+<p><img alt="image79_png" src="../images/image79.png" /></p>
+<p>Finally, a Table has been created for viewing the Odds. This includes a visualization of the <em>Odds</em>, as well as a <em>TableView</em>. Double-click on the <strong>Odds</strong> view now to open it in the main view window.</p>
+<p><img alt="image80_png" src="../images/image80.png" /></p>
+<p>Double-click on the <strong>TableView</strong> of <strong>Odds</strong> now to see the generated Odds for each group.</p>
+<p><img alt="image81_png" src="../images/image81.png" /></p>
+<h2 id="quantitative-trait-single-markergeneral">Quantitative Trait Single Marker(General)<a class="headerlink" href="#quantitative-trait-single-markergeneral" title="Permanent link">&para;</a></h2>
+<p>To run a single marker-quantitative trait, go to <strong>Genotyping | Single Marker Analysis | Quantitative Trait (General)</strong>, which opens the <em>Quantitative Trait</em> window.</p>
+<p><img alt="image82_png" src="../images/image82.png" /></p>
+<p>As always, ensure that <em>Tutorial</em> is chosen for <em>Project</em>, <em>GenotypeData</em> is chosen for <em>Data</em>, and <strong>GenotypeData.Variable31008</strong> is chosen for <em>Customized Variables</em>. As we only have categorical trait information on the JPT subjects, make sure that our subject list, <strong>GenotypeData.Observation45</strong>, is chosen for*Customized Observations.*</p>
+<p><img alt="image83_png" src="../images/image83.png" /></p>
+<p>Click the <strong>Specify Model</strong> button to open the <em>Specify Model</em> window:</p>
+<p><img alt="image84_png" src="../images/image84.png" /></p>
+<p>The first step in this window is to select the quantitative trait to be used for analysis. For <strong>Trait</strong>, choose the column <strong>Qtrait</strong>, as this contains our quantitative trait information. If the correct column is selected, the box to the right will indicate that the type of trait is indeed a quantitative trait.</p>
+<p>Next, we can add any covariates to our model. Normally, this may include generated components from a principal component analysis.</p>
+<p>For this tutorial, we will just add the columns labeled <strong>Covariate 1</strong> and <strong>Covariate 2</strong>. They can be added by selecting both of these columns (under <em>Columns</em>), and clicking the <strong>Add</strong> button to add them to the model.
+Notice that <strong>Qtrait</strong>, <strong>Covariate 1</strong> and <strong>Covariate 2</strong> are set to <strong>Class</strong>, uncheck the box for them.</p>
+<p>Click <strong>OK</strong> to return to the <em>Quantitative Trait</em> window. At this point, the updated model should be reflected in the window.</p>
+<p><img alt="image85_png" src="../images/image85.png" /></p>
+<p>Under <em>Options</em>, ensure that <strong>Generate LSMeans data</strong> is selected, as well as <strong>Generate contrast data</strong>, and that <strong>Genotypic</strong> is chosen for the <strong>Disease model</strong>. Other available diseases models include <em>Additive</em>, <em>Dominant</em>, and <em>Recessive</em>.</p>
+<p><strong>Multiplicity</strong> should be set to <strong>FDR_BH</strong>, with an <strong>Alpha level</strong> of 0.05 and a <strong>Confidence interval</strong> of 0.95.</p>
+<p>Set the <em>Anova type</em> to Type3, and set the <em>Test type</em> to <em>WaldTest</em> (the other option is <em>LikelihoodRatio</em> test).</p>
+<p>Finally, set <em>Output name</em> to <strong>Categorical Trait</strong>.</p>
+<p>Click <strong>Submit</strong> to run the Quantitative Trait association analysis.</p>
+<p>Three new <em>Tables</em> will be generated under the <em>Inference</em> tab of the <em>Solution Explorer</em>: an <em>LSMeans</em> (least square mean) <em>Table,</em> a <em>Contrasts Table</em> and a <em>Tests</em> table. The <em>Tests</em> table is similar to the <em>Table</em> encountered with the <em>Basic Association</em> analysis and with the categorical association analysis.</p>
+<p><img alt="image86_png" src="../images/image86.png" /></p>
+<p>Ensure that the <em>Report TableView</em> for <strong>Quantitative Trait.Tests</strong> is showing in the main view window. Reset any filters if need.</p>
+<p>Next, let s filter the table, to only show us markers where the <strong>GENOTYPE.FDR_BH</strong> (adjusted p-value) is less than <strong>0.05</strong> (enter "&lt;0.05" into the <em>GENOTYPE.FDR_BH</em> filter).</p>
+<p><img alt="image87_png" src="../images/image87.png" /></p>
+<p>This should show a <em>TableView</em> containing 12 rows. Let s further sort these rows by the adjusted p-value column, so that the most significant markers are shown first, as shown below.</p>
+<p><img alt="image88_png" src="../images/image88.png" /></p>
+<p>Select the top three markers now, by clicking on the header row names in the ID column.</p>
+<p><img alt="image89_png" src="../images/image89.png" /></p>
+<p>Now, let s generate a <em>ChromosomeView</em> for this data. To add a <em>ChromosomeView</em>, right click <em>Quantitative Trait.Tests</em>, click on <strong>Add View</strong> and then choose <strong>ChromosomeView</strong>. When added, it should look similar to the following screenshot.</p>
+<p>Only two chromosomes are shown, because the data was previously filtered. We will un-filter this data in one minute, but first, let s check to see whether the three selected markers (with the same p-values) are in linkage disequilibrium.</p>
+<p><img alt="image90_png" src="../images/image90.png" /></p>
+<p>To generate Linkage Disequilibrium results on demand, click the <strong>LD On Demand</strong> button in the <em>Task</em> tab of the <em>View Controller</em>.</p>
+<p><img alt="image91_png" src="../images/image91.png" /></p>
+<p>This generates a correlation heatmap of our selected rows, with a red color indicating higher correlation. The coloring scheme can be changed by clicking the <em>Customize View</em> window in this window</p>
+<p><img alt="image92_png" src="../images/image92.png" /></p>
+<p>If the Correlation Heatmap does not look similar to the screen shot above, click the <strong>Customize View</strong> button and remove any <em>Variable</em> filters.</p>
+<p>It is clear from the perfect correlation values (=1), that these three markers are in complete linkage disequilibrium.</p>
+<p>Close the window and return to the <em>ChromosomeView</em>.</p>
+<p>Now, remove the previously set p-value filter. Your <em>ChromosomeView</em> should now look similar to below. In this view, you can see all of the Chromosomes in your experiment, and then each chromosome has lines colored, based on a certain criteria.</p>
+<p><img alt="image93_png" src="../images/image93.png" /></p>
+<p>Click the <strong>Specify Data Source</strong> option in the <em>Task</em> tab of the <em>View Controller</em>. Note that the <strong>Genotype.RawPValue</strong> option is chosen. This means that the color is based on this column. Click <em>OK</em> to return to the view.</p>
+<p><img alt="image94_png" src="../images/image94.png" /></p>
+<p>Now click the <strong>Change Color Properties</strong> option in the <em>Task</em> tab of the <em>View Controller</em>. This dialog box shows you how the chart is colored. In this case, high p-values are colored as a clear color, while low p-values are colored as blue. The user can also specify what counts as a high and low p-value.</p>
+<p>Feel free to change the colors, and/or the high and low p-values, and reflect the changes on the chart.</p>
+<p><img alt="image95_png" src="../images/image95.png" /></p>
+<p>The user also has the option of looking at each individual chromosome in its own chart. This can be accomplished by clicking the <strong>Trellis by Chromosome</strong> option in the <em>Task</em> tab of the <em>View Controller</em>. Click this option now and the view should reflect the screenshot below.</p>
+<p><img alt="image96_png" src="../images/image96.png" /></p>
+<p>Scroll through the charts, to see all of the chromosomes. Notice that the Y-axis of the chart represents the  log10 (p-value). This is a fully interactive view as well, so individual data points can be selected and viewed in the <em>Details Window</em>. When selected, points turn a red color.</p>
+<p><em>Array Studio</em> also generated <em>LSMeans</em> table and charts for the quantitative data.</p>
+<p>Switch to the <em>LSMeans</em> view for the Table <strong>Quantitative Trait.LSMeans</strong>. By default, LSMeans data was generated for each significant marker (as we noted earlier, there are 12 significant markers, with an adjusted p-value&lt;0.05). Scroll through the charts and take a look at the data (unfilter the data if necessary). It is clear that for each significant marker, the different genotypes have different least square mean values for the quantitative trait.</p>
+<p><img alt="image97_png" src="../images/image97.png" /></p>
+<p>A Table view of the <em>LSMeans</em> data was also generated and can be opened and viewed at any time.</p>
+<p>Finally, a <em>Contrasts Table</em> was generated, with a <em>Contrasts</em> view, as well as a Table view. Double-click the <strong>Contrasts</strong> view now.</p>
+<p><img alt="image98_png" src="../images/image98.png" /></p>
+<p>On the X-axis is each contrast (i.e. A_T vs. A_A, T_T vs. A_A), with the Y-axis the value of the estimate.</p>
+<p><img alt="image99_png" src="../images/image99.png" /></p>
+<p>A Table view was created for the <em>Contrasts</em> dataset. This can be opened and viewed at any time.</p>
+<h2 id="survival-trait-single-marker">Survival Trait Single Marker<a class="headerlink" href="#survival-trait-single-marker" title="Permanent link">&para;</a></h2>
+<p>Survival Trait analysis could be an important component of any SNP study from clinical trials. As we noted earlier, it is possible to generate a <em>SurvivalView</em> in <em>Array Studio</em>. However, we can also perform single-marker and two-marker survival trait association analysis.</p>
+<p>Single-Marker Survival Trait analysis will be demonstrated in this tutorial. To perform this analysis, go to the menu <strong>Genotyping | Single Marker Association | Survival Trait</strong>.</p>
+<p><img alt="image100_png" src="../images/image100.png" /></p>
+<p><img alt="image101_png" src="../images/image101.png" /></p>
+<p>As always, ensure that <em>Tutorial</em> is chosen for <em>Project</em>, <em>GenotypeData</em> is chosen for <em>Data</em>, <strong>GenotypeData.Variable31008</strong> is chosen for <em>Customized Variables</em>. As we only have categorical trait information on the JPT subjects, make sure that our subject list, <strong>GenotypeData.Observation45</strong>, is chosen for <em>Customized Observations.</em></p>
+<p>Click the <strong>Specify Model</strong> button to open the <em>Specify Model</em> window:</p>
+<p><img alt="image102_png" src="../images/image102.png" /></p>
+<p>For Survival Analysis, the user needs to have design columns containing at least three pieces of information. First, the <strong>Time</strong> column must be set (in this case, use the <strong>SurvivalTime</strong> column). Second, the <strong>Status</strong> column must be set (in this case, use the column <strong>Status</strong>). Finally, the <strong>Event</strong> must be set (using <strong>Death</strong> from the <em>Status</em> column).</p>
+<p><strong>Strata</strong> and other covariate factors can also be added to the model at this stage as well. However, for this tutorial, just leave <strong>Genotype</strong> in the model.</p>
+<p>Click <strong>OK</strong> to return to the <em>Quantitative Trait</em> window. At this point, the updated model should be reflected in the window.</p>
+<p><img alt="image103_png" src="../images/image103.png" /></p>
+<p>Under <em>Options</em>, ensure that the <strong>Generate hazard ratio data</strong> is selected, and that <strong>Genotypic</strong> is chosen for the <strong>Disease model</strong>. Other available diseases models include <em>Additive</em>, <em>Dominant</em>, and <em>Recessive</em>.</p>
+<p><strong>Multiplicity</strong> should be set to <strong>FDR_BH</strong>, with an <strong>Alpha level</strong> of 0.05 and a <strong>Confidence interval</strong> of 0.95.</p>
+<p>Set the <em>Anova type</em> to Type3, and set the <em>Test type</em> to <em>WaldTest</em> (the other option is <em>LikelihoodRatio</em> test).</p>
+<p>Finally, set <em>Output name</em> to <strong>Survival Trait</strong>.</p>
+<p>Click <strong>Submit</strong> to run the Quantitative Trait association analysis.</p>
+<p>Two tables will be generated in the <em>Inference</em> section of the <em>Solution Explorer</em>, <em>Survival Trait.HazrdRatios</em> and <em>Survival Trait.Tests data</em>.</p>
+<p><img alt="image104_png" src="../images/image104.png" /></p>
+<p><img alt="image105_png" src="../images/image105.png" /></p>
+<p>Finally, notice in the <em>Lists</em> section of the <em>Solution Explorer</em>, that each of our analyses has generated lists of significant genes, based on our criteria of an FDR-BH adjusted p-value of 0.05.</p>
+<p><img alt="image106_png" src="../images/image106.png" /></p>
+<p>Let s use our survival analysis <em>List</em> with the previously generated <em>SurvivalView</em> in the GenotypeData dataset to see what these markers look like.</p>
+<p>First, reopen the <strong>SurvivalView</strong> of the <em>GenotypeData</em> dataset by double-clicking it in the <em>Solution Explorer</em>.</p>
+<p><img alt="image107_png" src="../images/image107.png" /></p>
+<p>Next, once the <em>SurvivalView</em> is opened, go to the <strong>Variables</strong> filter in the <em>View Controller</em>.</p>
+<p>Select the <em>ID</em> column of the filter, and expand it.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the main view window shows an error message, stating that there is missing or negative information in Y, you will need to re-filter the <em>Observations</em> to ONLY include the <strong>JPT</strong> subjects as the remaining subjects do not include survival time information, and this filter had been previously removed.</p>
+</div>
+<p><img alt="image108_png" src="../images/image108.png" /></p>
+<p>To add a filter based on a list, right click on ID and choose <strong>Add List Filter</strong>. Select the <em>Survival Trait.Association.Sig6</em> which contains the six significant markers in the survival trait analysis, and then click <em>OK</em>.</p>
+<p><img alt="image109_png" src="../images/image109.png" /></p>
+<p>The main view window is updated to only show the 6 charts from the significant markers.</p>
+<p><img alt="image110_png" src="../images/image110.png" /></p>
+<p>Congratulations! You have completed four different association analyses in <em>Array Studio</em>. Save your project file, in case you want to go back to it in the future. In the next chapter, we will look at further visualizations that can be used on the analysis results.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Marker_Statistics__Data_Filtering__and_Population_Structure/" title="Marker Statistics Data Filtering and Population Structure" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Marker Statistics Data Filtering and Population Structure
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Visualizationof_pValues/" title="Visualizationof pValues" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Visualizationof pValues
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2008 - 2017 OmicSoft/QIAGEN Bioinformatics
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://omicsoft.github.io" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/omicsoft" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/company-beta/3531113/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.8eb9be28.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

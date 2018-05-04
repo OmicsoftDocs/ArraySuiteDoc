@@ -42,7 +42,7 @@
     
     
       
-        <title>RNA-Seq Quantification Views - omicsoft doc</title>
+        <title>RNA-Seq Quantification - omicsoft doc</title>
       
     
     
@@ -108,7 +108,7 @@
                 omicsoft doc
               </span>
               <span class="md-header-nav__topic">
-                RNA-Seq Quantification Views
+                RNA-Seq Quantification
               </span>
             
           
@@ -862,15 +862,27 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="../../Views/" title="Views" class="md-nav__link">
+      Views
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-1" type="checkbox" id="nav-2-8-2-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-2" type="checkbox" id="nav-2-8-2-2">
     
-    <label class="md-nav__link" for="nav-2-8-2-1">
+    <label class="md-nav__link" for="nav-2-8-2-2">
       Sample Level Views
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-      <label class="md-nav__title" for="nav-2-8-2-1">
+      <label class="md-nav__title" for="nav-2-8-2-2">
         Sample Level Views
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -882,8 +894,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Sample Level Views/Samples/" title="Samples" class="md-nav__link">
-      Samples
+    <a href="../../Sample Level Views/Samples/" title="Distribution Views" class="md-nav__link">
+      Distribution Views
     </a>
   </li>
 
@@ -950,13 +962,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-2" type="checkbox" id="nav-2-8-2-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-3" type="checkbox" id="nav-2-8-2-3" checked>
     
-    <label class="md-nav__link" for="nav-2-8-2-2">
+    <label class="md-nav__link" for="nav-2-8-2-3">
       Gene Level Views
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-      <label class="md-nav__title" for="nav-2-8-2-2">
+      <label class="md-nav__title" for="nav-2-8-2-3">
         Gene Level Views
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -968,8 +980,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../OmicDataIntegrationViews/" title="Integration Views" class="md-nav__link">
-      Integration Views
+    <a href="../OmicDataIntegrationViews/" title="Integration" class="md-nav__link">
+      Integration
     </a>
   </li>
 
@@ -992,8 +1004,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../DNASeqSomaticMutation/" title="DNASeq Somatic Mutation" class="md-nav__link">
-      DNASeq Somatic Mutation
+    <a href="../DNAAlterationDistribution/" title="DNA-Seq" class="md-nav__link">
+      DNA-Seq
     </a>
   </li>
 
@@ -1004,20 +1016,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../DNAAlterationDistribution/" title="DNA Alteration Distribution" class="md-nav__link">
-      DNA Alteration Distribution
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../CopyNumberViews/" title="Copy Number Views" class="md-nav__link">
-      Copy Number Views
+    <a href="../CopyNumberViews/" title="Copy Number" class="md-nav__link">
+      Copy Number
     </a>
   </li>
 
@@ -1033,28 +1033,39 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        RNA-Seq Quantification Views
+        RNA-Seq Quantification
       </label>
     
-    <a href="./" title="RNA-Seq Quantification Views" class="md-nav__link md-nav__link--active">
-      RNA-Seq Quantification Views
+    <a href="./" title="RNA-Seq Quantification" class="md-nav__link md-nav__link--active">
+      RNA-Seq Quantification
     </a>
     
       
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#rna-seq-quantification-views" title="RNA-Seq Quantification Views" class="md-nav__link">
+    RNA-Seq Quantification Views
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-gene-rna-seq-quantification-views" title="Single gene RNA-seq Quantification views" class="md-nav__link">
+    Single gene RNA-seq Quantification views
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#summary-gene-fpkm" title="Summary Gene FPKM" class="md-nav__link">
     Summary Gene FPKM
   </a>
@@ -1080,46 +1091,64 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#gene-fpkm-view" title="Gene FPKM View" class="md-nav__link">
     Gene FPKM View
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#transcript-fpkm-view" title="Transcript FPKM View" class="md-nav__link">
     Transcript FPKM View
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#rna-seq-survival-view" title="RNA-Seq Survival View" class="md-nav__link">
     RNA-Seq Survival View
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
+  <a href="#multi-gene-rna-seq-quantification-views" title="Multi-gene RNA-seq Quantification views" class="md-nav__link">
+    Multi-gene RNA-seq Quantification views
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#average-fpkm-view" title="Average FPKM View" class="md-nav__link">
     Average FPKM View
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#multi-gene-variable-fpkm-view" title="Multi-gene Variable (FPKM) View" class="md-nav__link">
     Multi-gene Variable (FPKM) View
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#multi-gene-search-heatmap-fpkm-view" title="Multi-gene search: Heatmap FPKM View" class="md-nav__link">
     Multi-gene search: Heatmap FPKM View
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1140,8 +1169,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../RNASeqSomaticMutation/" title="RNASeq Somatic Mutation" class="md-nav__link">
-      RNASeq Somatic Mutation
+    <a href="../RNASeqSomaticMutation/" title="RNA-Seq Mutation" class="md-nav__link">
+      RNA-Seq Mutation
     </a>
   </li>
 
@@ -1152,8 +1181,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../RNASeqFusion/" title="RNASeq Fusion" class="md-nav__link">
-      RNASeq Fusion
+    <a href="../ExpressionRatio/" title="Microarray Expression" class="md-nav__link">
+      Microarray Expression
     </a>
   </li>
 
@@ -1164,8 +1193,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../ExpressionRatio/" title="Expression Ratio" class="md-nav__link">
-      Expression Ratio
+    <a href="../miRNA_views/" title="miRNA-Seq" class="md-nav__link">
+      miRNA-Seq
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Proteomics/" title="Proteomics" class="md-nav__link">
+      Proteomics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Methylation/" title="Methylation" class="md-nav__link">
+      Methylation
     </a>
   </li>
 
@@ -1182,13 +1235,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-3" type="checkbox" id="nav-2-8-2-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-4" type="checkbox" id="nav-2-8-2-4">
     
-    <label class="md-nav__link" for="nav-2-8-2-3">
+    <label class="md-nav__link" for="nav-2-8-2-4">
       Comparison Level Views
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
-      <label class="md-nav__title" for="nav-2-8-2-3">
+      <label class="md-nav__title" for="nav-2-8-2-4">
         Comparison Level Views
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1241,8 +1294,176 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/Introduction/" title="Introduction" class="md-nav__link">
-      Introduction
+    <a href="../../../Using Land Explorer/LandExplorerInterface/" title="Land Explorer Interface" class="md-nav__link">
+      Land Explorer Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-3-2" type="checkbox" id="nav-2-8-3-2">
+    
+    <label class="md-nav__link" for="nav-2-8-3-2">
+      Filters
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-3-2">
+        Filters
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/Filters/" title="Filtering" class="md-nav__link">
+      Filtering
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/Sample_Filters/" title="Sample Filters" class="md-nav__link">
+      Sample Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/Comparison_filters/" title="Comparison Filters" class="md-nav__link">
+      Comparison Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/Project_filters/" title="Project Filters" class="md-nav__link">
+      Project Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/Gene/" title="Gene Filters" class="md-nav__link">
+      Gene Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/Mutation/" title="Mutation Filters" class="md-nav__link">
+      Mutation Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/CNV/" title="CNV Filters" class="md-nav__link">
+      CNV Filters
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-3-3" type="checkbox" id="nav-2-8-3-3">
+    
+    <label class="md-nav__link" for="nav-2-8-3-3">
+      Queries
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-3-3">
+        Queries
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Queries/Custom_Query/" title="Custom Query" class="md-nav__link">
+      Custom Query
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Queries/Searching_Genes/" title="Search Bar" class="md-nav__link">
+      Search Bar
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Customizations/" title="Customizations" class="md-nav__link">
+      Customizations
     </a>
   </li>
 
@@ -1255,78 +1476,6 @@
   <li class="md-nav__item">
     <a href="../../../Using Land Explorer/View_controller/" title="View Controller" class="md-nav__link">
       View Controller
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/Distribution/" title="Distribution" class="md-nav__link">
-      Distribution
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/Sample_Filters/" title="Sample Filters" class="md-nav__link">
-      Sample Filters
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/Comparison_filters/" title="Comparison Filters" class="md-nav__link">
-      Comparison Filters
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/Customer_Query/" title="Customer Query" class="md-nav__link">
-      Customer Query
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/View_type/" title="View Type" class="md-nav__link">
-      View Type
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/viewID/" title="ViewID" class="md-nav__link">
-      ViewID
     </a>
   </li>
 
@@ -3088,13 +3237,26 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#rna-seq-quantification-views" title="RNA-Seq Quantification Views" class="md-nav__link">
+    RNA-Seq Quantification Views
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-gene-rna-seq-quantification-views" title="Single gene RNA-seq Quantification views" class="md-nav__link">
+    Single gene RNA-seq Quantification views
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#summary-gene-fpkm" title="Summary Gene FPKM" class="md-nav__link">
     Summary Gene FPKM
   </a>
@@ -3120,46 +3282,64 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#gene-fpkm-view" title="Gene FPKM View" class="md-nav__link">
     Gene FPKM View
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#transcript-fpkm-view" title="Transcript FPKM View" class="md-nav__link">
     Transcript FPKM View
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#rna-seq-survival-view" title="RNA-Seq Survival View" class="md-nav__link">
     RNA-Seq Survival View
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
+  <a href="#multi-gene-rna-seq-quantification-views" title="Multi-gene RNA-seq Quantification views" class="md-nav__link">
+    Multi-gene RNA-seq Quantification views
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#average-fpkm-view" title="Average FPKM View" class="md-nav__link">
     Average FPKM View
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#multi-gene-variable-fpkm-view" title="Multi-gene Variable (FPKM) View" class="md-nav__link">
     Multi-gene Variable (FPKM) View
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#multi-gene-search-heatmap-fpkm-view" title="Multi-gene search: Heatmap FPKM View" class="md-nav__link">
     Multi-gene search: Heatmap FPKM View
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3180,34 +3360,38 @@
               
                 
                 
-                <h1 id="rna-seq-quantification-views">RNA-Seq Quantification Views<a class="headerlink" href="#rna-seq-quantification-views" title="Permanent link">&para;</a></h1>
-<p>RNA-Seq data that has been processed into land can be visualized to determine expression of a gene across various sample types, as well as differential transcript usage, and survival data (when available).</p>
-<h2 id="summary-gene-fpkm">Summary Gene FPKM<a class="headerlink" href="#summary-gene-fpkm" title="Permanent link">&para;</a></h2>
+                  <h1>RNA-Seq Quantification</h1>
+                
+                <h2 id="rna-seq-quantification-views">RNA-Seq Quantification Views<a class="headerlink" href="#rna-seq-quantification-views" title="Permanent link">&para;</a></h2>
+<p>RNA-Seq data that has been processed into land can be visualized to determine expression of a gene across various sample types, as well as differential transcript usage, and survival data (when available). Users can search for the expression of a single gene or multiple genes. Land Explorer will generate views specific to these types of searches.</p>
+<h2 id="single-gene-rna-seq-quantification-views">Single gene RNA-seq Quantification views<a class="headerlink" href="#single-gene-rna-seq-quantification-views" title="Permanent link">&para;</a></h2>
+<h3 id="summary-gene-fpkm">Summary Gene FPKM<a class="headerlink" href="#summary-gene-fpkm" title="Permanent link">&para;</a></h3>
 <p><img alt="SummaryGeneFPKM_png" src="../../../images/SummaryGeneFPKM.png" /></p>
 <p>Easily search samples in Land that have a minimal up- or down-regulation for a gene of interest. For each gene, this view shows % of disease samples whose RNA-Seq expression is 2x up-regulated or 2x down-regulated, compared to normal samples in each group (e.g. Tumor Type). Samples are grouped by the primary grouping category by default.</p>
-<h3 id="view-navigation">View Navigation<a class="headerlink" href="#view-navigation" title="Permanent link">&para;</a></h3>
+<h4 id="view-navigation">View Navigation<a class="headerlink" href="#view-navigation" title="Permanent link">&para;</a></h4>
 <p>For each group, expression for normal samples is calculated as the average of Log2(FPKM + 0.1). For each tumor (disease) sample, when the Log2(FPKM + 0.1) value is larger than normal sample average by ExpressionUpRegulationCutoff or is smaller than normal average by ExpressionDownRegulationCutoff, this tumor sample is counted as up-regulated or down-regulated.</p>
 <p>The percentage showing on X axis = ( # of tumor samples up-regulated or down-regulated) / ( # of all tumor samples in this group).</p>
-<h3 id="key-filters">Key Filters<a class="headerlink" href="#key-filters" title="Permanent link">&para;</a></h3>
+<h4 id="key-filters">Key Filters<a class="headerlink" href="#key-filters" title="Permanent link">&para;</a></h4>
 <p>Fold change cutoff can be changed under Expression in the left panel.</p>
-<h2 id="gene-fpkm-view">Gene FPKM View<a class="headerlink" href="#gene-fpkm-view" title="Permanent link">&para;</a></h2>
+<h3 id="gene-fpkm-view">Gene FPKM View<a class="headerlink" href="#gene-fpkm-view" title="Permanent link">&para;</a></h3>
 <p>The Log2(FPKM + 0.1) expression of any gene can be visualized in this view. Expression is plotted on the x-axis and samples grouped on the y-axis by the chosen Grouping column in the metadata. In the below screenshot fgf2 expression is plotted on the x-axis and samples are grouped by Sample Type (Tumor or Normal). Each dot represents a single sample:</p>
 <p><img alt="GeneFPKM_png" src="../../../images/geneFPKM.png" /></p>
-<h2 id="transcript-fpkm-view">Transcript FPKM View<a class="headerlink" href="#transcript-fpkm-view" title="Permanent link">&para;</a></h2>
+<h3 id="transcript-fpkm-view">Transcript FPKM View<a class="headerlink" href="#transcript-fpkm-view" title="Permanent link">&para;</a></h3>
 <p>This view shows the Transcript RPKM (Reads Per Kilobase per Million mapped reads) for the specified gene, organized by group (e.g. Tumor Type).</p>
 <p><img alt="RNA-seqTranscript_png" src="../../../images/RNASeqTranscript.png" /></p>
 <p>Each transcript is shown in a separate chart. When visualizing more than one gene, all transcripts (all genes) will be represented in individual plots. The X-axis shows Transcript RPKM while the Y-axis shows the group.</p>
-<h2 id="rna-seq-survival-view">RNA-Seq Survival View<a class="headerlink" href="#rna-seq-survival-view" title="Permanent link">&para;</a></h2>
+<h3 id="rna-seq-survival-view">RNA-Seq Survival View<a class="headerlink" href="#rna-seq-survival-view" title="Permanent link">&para;</a></h3>
 <p>In this view, when survival data is available and attributed to samples within the land, such as within OncoLand studies (TCGA, OncoGEO, etc.), a survival view will be generated. Samples will be grouped into quartiles (Up, upper 25% (Q1) expression of gene, Down, lower 25% (Q4), Mid (all remaining samples, Q2 and Q3)). Survival will be plotted on the Y-axis and time on the X-axis.</p>
 <p><img alt="Survival_png" src="../../../images/survival_view_RNAseq.png" /></p>
-<h2 id="average-fpkm-view">Average FPKM View<a class="headerlink" href="#average-fpkm-view" title="Permanent link">&para;</a></h2>
+<h2 id="multi-gene-rna-seq-quantification-views">Multi-gene RNA-seq Quantification views<a class="headerlink" href="#multi-gene-rna-seq-quantification-views" title="Permanent link">&para;</a></h2>
+<h3 id="average-fpkm-view">Average FPKM View<a class="headerlink" href="#average-fpkm-view" title="Permanent link">&para;</a></h3>
 <p>When a user searches multiple genes, the default expression view will be the average FPKM view, where the expression of all genes searched is averaged for each sample. Each dot in the plot will represent a single sample, with expression plotted on the x-axis and samples grouped on the y-axis by the designated grouping category.</p>
 <p><img alt="average_FPKM_png" src="../../../images/average_FPKM.png" /></p>
-<h2 id="multi-gene-variable-fpkm-view">Multi-gene Variable (FPKM) View<a class="headerlink" href="#multi-gene-variable-fpkm-view" title="Permanent link">&para;</a></h2>
+<h3 id="multi-gene-variable-fpkm-view">Multi-gene Variable (FPKM) View<a class="headerlink" href="#multi-gene-variable-fpkm-view" title="Permanent link">&para;</a></h3>
 <p>Similar to the gene FPKM view when searching a single gene, this view will generate plot expression on the x-axis and samples grouped on the y-axis by the GeneID. This grouping can be changed to reflect gene metadata. Trellising the view by metadata may provide better visualization of the gene expression. Values plotted are Log2(FPKM + 0.1).</p>
 <p><img alt="multi-gene_png" src="../../../images/multi-gene_FPKM.png" /></p>
-<h2 id="multi-gene-search-heatmap-fpkm-view">Multi-gene search: Heatmap FPKM View<a class="headerlink" href="#multi-gene-search-heatmap-fpkm-view" title="Permanent link">&para;</a></h2>
-<p>Another way to visualize the expression of multiple genes is in a  heatmap view. The Heatmap FPKM view allows users to visualize the expression of all genes (columns) by all samples filtered (rows). Unbiased heirarchial clustering of genes and samples allows userss to find genes or samples that may exhibit similar gene signatures.</p>
+<h3 id="multi-gene-search-heatmap-fpkm-view">Multi-gene search: Heatmap FPKM View<a class="headerlink" href="#multi-gene-search-heatmap-fpkm-view" title="Permanent link">&para;</a></h3>
+<p>Another way to visualize the expression of multiple genes is in a  heatmap view. The Heatmap FPKM view allows users to visualize the expression of all genes (columns) by all samples filtered (rows). Unbiased heirarchial clustering of genes and samples allows users to find genes or samples that may exhibit similar gene signatures.</p>
 <p><img alt="LandPortal_login_png" src="../../../images/HeatmapFPKM.png" /></p>
                 
                   
@@ -3229,7 +3413,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../CopyNumberViews/" title="Copy Number Views" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../CopyNumberViews/" title="Copy Number" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -3238,19 +3422,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Copy Number Views
+                Copy Number
               </span>
             </div>
           </a>
         
         
-          <a href="../RNASeqSomaticMutation/" title="RNASeq Somatic Mutation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../RNASeqSomaticMutation/" title="RNA-Seq Mutation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                RNASeq Somatic Mutation
+                RNA-Seq Mutation
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

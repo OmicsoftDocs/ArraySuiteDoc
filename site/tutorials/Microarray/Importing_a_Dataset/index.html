@@ -1,0 +1,3661 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="OmicSoft Doc">
+      
+      
+        <link rel="canonical" href="http://192.168.3.222/WikiBigFiles/doc/v10.3/tutorials/Microarray/Importing_a_Dataset/">
+      
+      
+        <meta name="author" content="OmicSoft Support">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.1">
+    
+    
+      
+        <title>Importing a Dataset - omicsoft doc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="teal">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#importing-a-dataset" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="http://192.168.3.222/WikiBigFiles/doc/v10.3/" title="omicsoft doc" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                omicsoft doc
+              </span>
+              <span class="md-header-nav__topic">
+                Importing a Dataset
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../ArrayStudio/ArrayStudio/" title="Framework" class="md-tabs__link">
+          Framework
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Installing_Array_Studio/" title="OmicData" class="md-tabs__link md-tabs__link--active">
+          OmicData
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../RNASeq/Introduction/" title="NGS" class="md-tabs__link">
+          NGS
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../OncoLand/Introduction/" title="Land" class="md-tabs__link">
+          Land
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../about/Release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    omicsoft doc
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Framework
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Framework
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ArrayStudio/ArrayStudio/" title="Array Studio" class="md-nav__link">
+      Array Studio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Array Server
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Array Server
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Connecting_to_a_Server_and_Uploading_Files/" title="Connecting to a Server and Uploading Files" class="md-nav__link">
+      Connecting to a Server and Uploading Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Creating_and_Publishing_a_Server_Project/" title="Creating and Publishing a Server Project" class="md-nav__link">
+      Creating and Publishing a Server Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Array_Server_on_Cluster/" title="Array Server on Cluster" class="md-nav__link">
+      Array Server on Cluster
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerAnalysisBasics/Array_Server_on_Cloud/" title="Array Server on Cloud" class="md-nav__link">
+      Array Server on Cloud
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Server Explorer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Server Explorer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Getting_Started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Searching_Projects/" title="Searching Projects" class="md-nav__link">
+      Searching Projects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Publishing_Data/" title="Publishing Data" class="md-nav__link">
+      Publishing Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Server_FileManagement/" title="Server File Management" class="md-nav__link">
+      Server File Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Server_Sample_Management/" title="Server Sample Management" class="md-nav__link">
+      Server Sample Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServerExplorer/Server_Administration/" title="Server Administration" class="md-nav__link">
+      Server Administration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      GenomeBrowser
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        GenomeBrowser
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Create_Genome_Browser/" title="Create Genome Browser" class="md-nav__link">
+      Create Genome Browser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Adding_Tracks/" title="Adding Tracks" class="md-nav__link">
+      Adding Tracks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Browsing_Data/" title="Browsing Data" class="md-nav__link">
+      Browsing Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Browsing_Data_from_Local_Analysis/" title="Browsing Data from Local Analysis" class="md-nav__link">
+      Browsing Data from Local Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GenomeBrowser/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      Sample Management
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        Sample Management
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/SampleManagement/" title="Sample Management" class="md-nav__link">
+      Sample Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/Integration/" title="Integration" class="md-nav__link">
+      Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SampleManagement/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      Studio on the Cloud
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        Studio on the Cloud
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Connecting_to_Cloud_and_Uploading_Files/" title="Cloud Connection" class="md-nav__link">
+      Cloud Connection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Creatinga_Cloud_Project/" title="Cloud Project" class="md-nav__link">
+      Cloud Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Cloud/Managing_Cloud_Instance_and_Proxy/" title="Proxy Instance" class="md-nav__link">
+      Proxy Instance
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      Oscript
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        Oscript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oscript/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oscript/RunOscript/" title="Run Oscript" class="md-nav__link">
+      Run Oscript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Oscript/PipelineScript/" title="Pipeline Script" class="md-nav__link">
+      Pipeline Script
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8" type="checkbox" id="nav-2-8">
+    
+    <label class="md-nav__link" for="nav-2-8">
+      Land Explorer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-8">
+        Land Explorer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2" type="checkbox" id="nav-2-8-2">
+    
+    <label class="md-nav__link" for="nav-2-8-2">
+      Land Views
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-8-2">
+        Land Views
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Views/" title="Views" class="md-nav__link">
+      Views
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-2" type="checkbox" id="nav-2-8-2-2">
+    
+    <label class="md-nav__link" for="nav-2-8-2-2">
+      Sample Level Views
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-2-2">
+        Sample Level Views
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Sample Level Views/Samples/" title="Distribution Views" class="md-nav__link">
+      Distribution Views
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Sample Level Views/Sample_Details/" title="Sample Details" class="md-nav__link">
+      Sample Details
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Sample Level Views/Comparison_Availability/" title="Comparison Availability" class="md-nav__link">
+      Comparison Availability
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Sample Level Views/Data_Availability/" title="Data Availability" class="md-nav__link">
+      Data Availability
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Sample Level Views/Survival_Data/" title="Survival Data" class="md-nav__link">
+      Survival Data
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-3" type="checkbox" id="nav-2-8-2-3">
+    
+    <label class="md-nav__link" for="nav-2-8-2-3">
+      Gene Level Views
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-2-3">
+        Gene Level Views
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/OmicDataIntegrationViews/" title="Integration" class="md-nav__link">
+      Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/AllComparisons/" title="Comparisons" class="md-nav__link">
+      Comparisons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/DNAAlterationDistribution/" title="DNA-Seq" class="md-nav__link">
+      DNA-Seq
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/CopyNumberViews/" title="Copy Number" class="md-nav__link">
+      Copy Number
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification/" title="RNA-Seq Quantification" class="md-nav__link">
+      RNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/RNASeqSomaticMutation/" title="RNA-Seq Mutation" class="md-nav__link">
+      RNA-Seq Mutation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/ExpressionRatio/" title="Microarray Expression" class="md-nav__link">
+      Microarray Expression
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/miRNA_views/" title="miRNA-Seq" class="md-nav__link">
+      miRNA-Seq
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/Proteomics/" title="Proteomics" class="md-nav__link">
+      Proteomics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Gene Level Views/Methylation/" title="Methylation" class="md-nav__link">
+      Methylation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-2-4" type="checkbox" id="nav-2-8-2-4">
+    
+    <label class="md-nav__link" for="nav-2-8-2-4">
+      Comparison Level Views
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-2-4">
+        Comparison Level Views
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Land Views/Comparison Level Views/Volcano_Plot/" title="Volcano Plot" class="md-nav__link">
+      Volcano Plot
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-3" type="checkbox" id="nav-2-8-3">
+    
+    <label class="md-nav__link" for="nav-2-8-3">
+      Using Land Explorer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-8-3">
+        Using Land Explorer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/LandExplorerInterface/" title="Land Explorer Interface" class="md-nav__link">
+      Land Explorer Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-3-2" type="checkbox" id="nav-2-8-3-2">
+    
+    <label class="md-nav__link" for="nav-2-8-3-2">
+      Filters
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-3-2">
+        Filters
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/Filters/" title="Filtering" class="md-nav__link">
+      Filtering
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/Sample_Filters/" title="Sample Filters" class="md-nav__link">
+      Sample Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/Comparison_filters/" title="Comparison Filters" class="md-nav__link">
+      Comparison Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/Project_filters/" title="Project Filters" class="md-nav__link">
+      Project Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/Gene/" title="Gene Filters" class="md-nav__link">
+      Gene Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/Mutation/" title="Mutation Filters" class="md-nav__link">
+      Mutation Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Filters/CNV/" title="CNV Filters" class="md-nav__link">
+      CNV Filters
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-3-3" type="checkbox" id="nav-2-8-3-3">
+    
+    <label class="md-nav__link" for="nav-2-8-3-3">
+      Queries
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-3-3">
+        Queries
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Queries/Custom_Query/" title="Custom Query" class="md-nav__link">
+      Custom Query
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Queries/Searching_Genes/" title="Search Bar" class="md-nav__link">
+      Search Bar
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/Customizations/" title="Customizations" class="md-nav__link">
+      Customizations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Land Explorer/Using Land Explorer/View_controller/" title="View Controller" class="md-nav__link">
+      View Controller
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      OmicData
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        OmicData
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Microarray
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Microarray
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Installing_Array_Studio/" title="Installing Array Studio" class="md-nav__link">
+      Installing Array Studio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Importing a Dataset
+      </label>
+    
+    <a href="./" title="Importing a Dataset" class="md-nav__link md-nav__link--active">
+      Importing a Dataset
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-the-dbpts-dataset" title="Downloading the DBPTS dataset" class="md-nav__link">
+    Downloading the DBPTS dataset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-workflow-window-the-solution-explorer" title="The Workflow Window/ The Solution Explorer" class="md-nav__link">
+    The Workflow Window/ The Solution Explorer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-microarray-datachip-normalization" title="Adding Microarray Data/Chip Normalization" class="md-nav__link">
+    Adding Microarray Data/Chip Normalization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-tableview" title="The TableView" class="md-nav__link">
+    The TableView
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#details-windowweb-details" title="Details Window/Web Details" class="md-nav__link">
+    Details Window/Web Details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-mas5-report-and-intensity-report" title="The MAS5 Report and Intensity Report" class="md-nav__link">
+    The MAS5 Report and Intensity Report
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-view-controller" title="The View Controller" class="md-nav__link">
+    The View Controller
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Data_Visualization_and_Quality_Control/" title="Data Visualization and Quality Control" class="md-nav__link">
+      Data Visualization and Quality Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Differential_Expression/" title="Differential Expression" class="md-nav__link">
+      Differential Expression
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Data_Exploration/" title="Data Exploration" class="md-nav__link">
+      Data Exploration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Audit_trail/" title="Audit trail" class="md-nav__link">
+      Audit trail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../References/" title="References" class="md-nav__link">
+      References
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      CNV
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        CNV
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Visualization_of_Data/" title="Data Visulization" class="md-nav__link">
+      Data Visulization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Summarization_of_CNV_Data/" title="Data Summarization" class="md-nav__link">
+      Data Summarization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Advanced_Visualization/" title="Advanced Visulization" class="md-nav__link">
+      Advanced Visulization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Analysis_Modules/" title="Analysis" class="md-nav__link">
+      Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../CNV/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      ExonArray
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        ExonArray
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Importing_a_Dataset/" title="Importing a Dataset" class="md-nav__link">
+      Importing a Dataset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Visualization_of_Data/" title="Visualization of Data" class="md-nav__link">
+      Visualization of Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Data_Visualization_and_Quality_Control/" title="Data Visualization and Quality Control" class="md-nav__link">
+      Data Visualization and Quality Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Differential_Expression__Probeset_Level_/" title="Differential Expression Probeset Level" class="md-nav__link">
+      Differential Expression Probeset Level
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Exon_Level_ANOVA_ExonDiffertialExpression_/" title="Exon Level Differtial Expression" class="md-nav__link">
+      Exon Level Differtial Expression
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Alternative_Splicing_ANOVA/" title="Alternative Splicing ANOVA" class="md-nav__link">
+      Alternative Splicing ANOVA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Generate_Transcript_Level_Data/" title="Generate Transcript Level Data" class="md-nav__link">
+      Generate Transcript Level Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ExonArray/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      RT-PCR
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        RT-PCR
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Manage_RT-PCR_Raw_Data/" title="Manage RT-PCR Raw Data" class="md-nav__link">
+      Manage RT-PCR Raw Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Import_RT-PCR_Wizard/" title="Import RT-PCR Wizard" class="md-nav__link">
+      Import RT-PCR Wizard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RTPCR/Downstream_Analysis_of_RT-PCR_data/" title="Downstream Analysis of RT-PCR data" class="md-nav__link">
+      Downstream Analysis of RT-PCR data
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
+    
+    <label class="md-nav__link" for="nav-3-5">
+      SNP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-5">
+        SNP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Visualization_of_Data/" title="Visualization of Data" class="md-nav__link">
+      Visualization of Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Marker_Statistics__Data_Filtering__and_Population_Structure/" title="Marker Statistics Data Filtering and Population Structure" class="md-nav__link">
+      Marker Statistics Data Filtering and Population Structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Association_Analysis/" title="Association Analysis" class="md-nav__link">
+      Association Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Visualizationof_pValues/" title="Visualizationof pValues" class="md-nav__link">
+      Visualizationof pValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SNP/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      NGS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        NGS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      RNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        RNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/CreateArray_Studio_Project/" title="Create ArrayStudio Project" class="md-nav__link">
+      Create ArrayStudio Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Add From RNA-Seq Pipeline/" title="Add From RNA-Seq Pipeline" class="md-nav__link">
+      Add From RNA-Seq Pipeline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/QC_ofRawData_Files/" title="QC of RawData Files" class="md-nav__link">
+      QC of RawData Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Alignment_to_the_Genome/" title="Alignment to the Genome" class="md-nav__link">
+      Alignment to the Genome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/QC_of_AlignedData/" title="QC of AlignedData" class="md-nav__link">
+      QC of AlignedData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/RNA-Seq_Quantification/" title="RNA-Seq Quantification" class="md-nav__link">
+      RNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/RNA-Seq_Fusion_Gene_Detection/" title="RNA-Seq Fusion Gene Detection" class="md-nav__link">
+      RNA-Seq Fusion Gene Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/RNA-Seq_Mutation_Detection/" title="RNA-Seq Mutation Detection" class="md-nav__link">
+      RNA-Seq Mutation Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../RNASeq/Save___Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      DNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        DNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Create_Array_Studio_Project/" title="Create Project" class="md-nav__link">
+      Create Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/QC_of_Raw_Data_Files/" title="Raw Data QC" class="md-nav__link">
+      Raw Data QC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Alignment_to_the_Genome/" title="Alignment" class="md-nav__link">
+      Alignment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/QC_of_Aligned_Data/" title="Aligned QC" class="md-nav__link">
+      Aligned QC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/DNA-Seq_Fusion_Gene_Detection/" title="Fusion Detection" class="md-nav__link">
+      Fusion Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/DNA-SeqMutation_Detection/" title="Variant Detection" class="md-nav__link">
+      Variant Detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/DNA-Seq_Copy_Number_Analysis/" title="Copy Number Analysis" class="md-nav__link">
+      Copy Number Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DNASeq/Save___Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      miRNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        miRNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/CreateArray_Studio_Project/" title="CreateArray Studio Project" class="md-nav__link">
+      CreateArray Studio Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/workflow_and_pipeline/" title="workflow and pipeline" class="md-nav__link">
+      workflow and pipeline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/QC_ofRaw_Data_Files/" title="QC of Raw Data Files" class="md-nav__link">
+      QC of Raw Data Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Filtering_Trimming_Reads/" title="Filtering Trimming Reads" class="md-nav__link">
+      Filtering Trimming Reads
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Alignment_to_the_Genome/" title="Alignment to the Genome" class="md-nav__link">
+      Alignment to the Genome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/QC_of_Aligned_Data/" title="QC of Aligned Data" class="md-nav__link">
+      QC of Aligned Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/miRNA-Seq_Quantification/" title="miRNA-Seq Quantification" class="md-nav__link">
+      miRNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../miRNAseq/Save_Close_Project/" title="Save and Close Project" class="md-nav__link">
+      Save and Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      scRNA-Seq
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        scRNA-Seq
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Create_ArrayStudio_Project/" title="CreateArray Studio Project" class="md-nav__link">
+      CreateArray Studio Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/scRNA_Analysis_Workflow/" title="scRNA analysis workflow" class="md-nav__link">
+      scRNA analysis workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Preprocess_scRNA_Data/" title="Pre-process of scRNA-Seq data" class="md-nav__link">
+      Pre-process of scRNA-Seq data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Tag_based_QC/" title="TAG Based QC" class="md-nav__link">
+      TAG Based QC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Alignment_to_the_Genome/" title="Alignment to the Genome" class="md-nav__link">
+      Alignment to the Genome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Remove_Duplicate/" title="Remove Duplicate" class="md-nav__link">
+      Remove Duplicate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/scRNASeq_Quantification/" title="scRNA-Seq Quantification" class="md-nav__link">
+      scRNA-Seq Quantification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Other_Downstream_Analysis/" title="Other Downstream Analysis" class="md-nav__link">
+      Other Downstream Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../scRNAseq/Save_Close_Project/" title="Save and Close Project" class="md-nav__link">
+      Save and Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      GWAS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        GWAS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Connecting_To_A_Server_And_Uploading_Files/" title="Connecting To A Server And Uploading Files" class="md-nav__link">
+      Connecting To A Server And Uploading Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Preprocessing/" title="Preprocessing" class="md-nav__link">
+      Preprocessing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/QC_of_GWAS_data/" title="QC of GWAS data" class="md-nav__link">
+      QC of GWAS data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Imputation/" title="Imputation" class="md-nav__link">
+      Imputation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Association/" title="Association" class="md-nav__link">
+      Association
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Annotation/" title="Annotation" class="md-nav__link">
+      Annotation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GWAS/Save_Close_Project/" title="Save/Close Project" class="md-nav__link">
+      Save/Close Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Transgene
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Transgene
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Transgene/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Transgene/DataAnalysis/" title="Analysis Workflow" class="md-nav__link">
+      Analysis Workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Transgene/Others/" title="Others" class="md-nav__link">
+      Others
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Land
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Land
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      OncoLand
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        OncoLand
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Search_Basics/" title="Basic Search" class="md-nav__link">
+      Basic Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Advanced_Analytics/" title="Advanced Analytics" class="md-nav__link">
+      Advanced Analytics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Measurement_Data/" title="Measurement Data" class="md-nav__link">
+      Measurement Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Land_Tools/" title="Land Tools" class="md-nav__link">
+      Land Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OncoLand/Virtual_Land/" title="Virtual Land" class="md-nav__link">
+      Virtual Land
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      DiseaseLand
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        DiseaseLand
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/BodyMap/" title="Body Map" class="md-nav__link">
+      Body Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/DiseaseLand/" title="DiseaseLand" class="md-nav__link">
+      DiseaseLand
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/LINCS/" title="LINCs" class="md-nav__link">
+      LINCs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DiseaseLand/scLand/" title="Single Cell Lands" class="md-nav__link">
+      Single Cell Lands
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      ComparisonLand from External Inferences
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        ComparisonLand from External Inferences
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/AddExpressionData/" title="Add Expression Data" class="md-nav__link">
+      Add Expression Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/ConvertInferenceData/" title="Convert Inference Data" class="md-nav__link">
+      Convert Inference Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/CreateLand/" title="Create Land" class="md-nav__link">
+      Create Land
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ComparisonLand/ExploreComparisonLand/" title="Explore ComparisonLand" class="md-nav__link">
+      Explore ComparisonLand
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
+    
+    <label class="md-nav__link" for="nav-5-4">
+      GeneticsLand
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-4">
+        GeneticsLand
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Introduction_to_GeneticsLand/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Adding_Data_to_GeneticsLand/" title="Adding Data to GeneticsLand" class="md-nav__link">
+      Adding Data to GeneticsLand
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Explore_Your_Data_in_GeneticsLand/" title="Explore Your Data in GeneticsLand" class="md-nav__link">
+      Explore Your Data in GeneticsLand
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GeneticsLand/Delete_your_GeneticsLand/" title="Delete your GeneticsLand" class="md-nav__link">
+      Delete your GeneticsLand
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/Release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/Contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/example/" title="Example" class="md-nav__link">
+      Example
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-the-dbpts-dataset" title="Downloading the DBPTS dataset" class="md-nav__link">
+    Downloading the DBPTS dataset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-workflow-window-the-solution-explorer" title="The Workflow Window/ The Solution Explorer" class="md-nav__link">
+    The Workflow Window/ The Solution Explorer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-microarray-datachip-normalization" title="Adding Microarray Data/Chip Normalization" class="md-nav__link">
+    Adding Microarray Data/Chip Normalization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-tableview" title="The TableView" class="md-nav__link">
+    The TableView
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#details-windowweb-details" title="Details Window/Web Details" class="md-nav__link">
+    Details Window/Web Details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-mas5-report-and-intensity-report" title="The MAS5 Report and Intensity Report" class="md-nav__link">
+    The MAS5 Report and Intensity Report
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-view-controller" title="The View Controller" class="md-nav__link">
+    The View Controller
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="importing-a-dataset">Importing a Dataset<a class="headerlink" href="#importing-a-dataset" title="Permanent link">&para;</a></h1>
+<h2 id="downloading-the-dbpts-dataset">Downloading the DBPTS dataset<a class="headerlink" href="#downloading-the-dbpts-dataset" title="Permanent link">&para;</a></h2>
+<p>For this tutorial, the following materials will be required: 24 .CEL files from the DBPTS Time Series dataset (Platform: Affymetrix RAE230A), as well as the included dbpts.design file, derived from the sample information for this dataset. The DBPTS dataset is available at:
+<a href="http://omicsoft.com/downloads/data/tutorial/Microarray_dbpts.zip"><sup>link</sup></a></p>
+<p>After downloading the single .zip file, unzip the file to a folder to be used for this tutorial. The DBP Time Series data set contains information for 15923 probesets in a 2 by 4 factorial experiment. There are treatment (DBP) and control groups, measured at four different times (1 hr, 3 hr, 6 hr, and 18 hr). The experiment measures the intensity of gene expression level of 15923 probesets, with three replicates for each combination of treatment and time. This is NOT a repeated measure experiment, as different samples were used for different time points. The primary interest of this experiment is to find probesets that are differentially expressed under two conditions (treatment and control) at the 4 different time points.</p>
+<p>The dbpts.design file contains the design information for the study, including columns for <em>chip, time, treatment, and group.</em> A design table can be created at any time by a user, using Microsoft Excel or Array Studio. As a rule, the design table must contain a first column, usually deemed <em>Chip</em> for Affymetrix platforms, that contains the exact file names of the chips used in the experiment, without the .CEL file extensions. Additional columns usually include <em>treatment, time, etc.</em> (anything pertinent to the experiment). If you forget to include a particular column at the time of the creation of the design table, it can be edited later on.</p>
+<p><img alt="image5_png" src="../images/image5.png" /></p>
+<h2 id="the-workflow-window-the-solution-explorer">The Workflow Window/ The Solution Explorer<a class="headerlink" href="#the-workflow-window-the-solution-explorer" title="Permanent link">&para;</a></h2>
+<p>When Array Studio is first installed, it will be similar to below.</p>
+<p>If you have previously opened projects in Array Studio, you will see the <strong>Last Opened Projects</strong> window. If so, just click cancel so that Array Studio looks similar to below.</p>
+<p>Notice at the top there will be four tabs: Analysis, Server, Land and Browser. This tutorial will focus on Analysis.</p>
+<p>The <strong>Workflow Window</strong> should be visible on the left side of the screen. If the <strong>Workflow Window</strong> is not visible, go to the <strong>View Menu | Show Workflow</strong> or click on <strong>Workflow</strong> at the bottom left. The <strong>Workflow Window</strong> should appear similar to the screenshot below.</p>
+<p><img alt="image6_png" src="../images/image6.png" /></p>
+<p>Tips: One can always go back to windows in the original setting by selecting the Menu <strong>View | Reset Windows</strong>.</p>
+<p><img alt="image7_png" src="../images/image7.png" /></p>
+<p>The <strong>Workflow Window</strong> provides users, especially new users, with a  guide  to running different types of analysis. Clicking the <strong>Workflow</strong> dropdown box shows all available workflows (Microarray, Single Channel Expression, Two Channel Expression, Exon Array, RT-PCR, Genotype, CNV, DNA-Seq, RNA-Seq, and miRNA-Seq:</p>
+<p><img alt="image8_png" src="../images/image8.png" /></p>
+<p>Make sure that Microarray is selected now.</p>
+<p>Notice that the Microarray Workflow is separated into different categories, including <strong>Getting started</strong>, <strong>Manage data</strong>, <strong>Preprocess</strong>, <strong>Quality control</strong>, <strong>Statistical inference</strong>, and <strong>Pattern recognition</strong>.</p>
+<p>While it is possible to access all of these functions via the menu commands in <em>Array Studio</em>, the <em>Workflows</em> are designed to make it easier for new users to work through their data.</p>
+<p>The first section of the Microarray Workflow is the <strong>Getting Started</strong> section. In this section, it is suggested that the user either create a new project or open a previously created project.</p>
+<p>To create a new project, click the <strong>New Project</strong> button in the Workflow, or the <em>New</em> button on the toolbar, or go to <strong>File</strong> Menu, then click <strong>New Project</strong>. This opens the <em>New Project</em> window:</p>
+<p><img alt="image9_png" src="../images/image9.png" /></p>
+<p><em>Array Studio</em> allows the user to create two different project types. A simple project, in which all the outputs are saved in a single file (recommended for microarray and RT-PCR projects), and a distributed project, where output are saved in separate files (recommended for exon array, CNV, genotyping and NGS projects).</p>
+<p>Since this project is a microarray project, choose <strong>Create a simple project</strong> now. Then, click the <strong>Browse</strong> button to select a location and enter the name for the project. Once this is complete, click <em>OK</em> to continue.</p>
+<p>Besides the <em>Workflow Window</em> on the left hand side of the screen, <em>Array Studio</em> also contains the <em>Solution Explorer</em>. The <em>Solution Explorer</em> is used to organize each project, and within each project, dataset, results table, etc., that is generated while analyzing and visualizing a project.</p>
+<p>Another way to create a new project is by this icon in the Analysis tab:</p>
+<p><img alt="image9_1_png" src="../images/image9_1.png" /></p>
+<p>Note that users can choose to create different projects: Local project as mentioned above and server project. A server project is a distributed project saved on server. Once the user is connected to server, the option of creating a new server project will become available.</p>
+<p>When users want to create a server project, some basic metadata need to be provided:</p>
+<p><img alt="image9_2_png" src="../images/image9_2.png" /></p>
+<p>The interface of creating of new local project is different from creating a new server project, but the rest of the steps such as data import, data analysis share the same interface. Different project types would tell Array Studio where to run the analysis, if it is a local project, Array Studio would run the analysis in local machine; if it is a server project, Array Studio would run the analysis on server. Server projects are recommended when dealing with larger datasets as server-based analyses allows the user to run jobs on a remote server (Linux or Windows), which usually has more computing power than a desktop computer.</p>
+<p>The analyses in this tutorial are performed under local project, but can also be followed as a server project if connected to ArrayServer.</p>
+<p>To switch to the <em>Solution Explorer</em>, choose the <em>Solution Explorer</em> tab, which should be found at the bottom of the <em>Workflow Window</em> . If the <em>Solution Explorer</em> tab is not visible, switch to it by going to the <strong>View Menu | Show Solution Explorer</strong>.</p>
+<p><img alt="image10_png" src="../images/image10.png" /></p>
+<p>The <em>Solution Explorer</em> will be empty, containing slots for <em>List, Cluster, Text</em> and <em>Attachment</em>. You can right-click on <em>List, Cluster, Text</em> and <em>Attachment</em> for additional options for each. For instance, right-clicking on <em>List</em> will bring up options to add a new List, add list from file, etc. A <em>List</em> can be used to filter the data, by either <em>Variables</em> (in the case of microarray data, this would be probesets), or <em>Observations</em> (in the case of microarray data, this would be chips or samples).</p>
+<p><img alt="image11_png" src="../images/image11.png" /></p>
+<p>Right Clicking on List brings up this menu:</p>
+<p><img alt="image12_png" src="../images/image12.png" /></p>
+<h2 id="adding-microarray-datachip-normalization">Adding Microarray Data/Chip Normalization<a class="headerlink" href="#adding-microarray-datachip-normalization" title="Permanent link">&para;</a></h2>
+<p>At this point, we are ready to add microarray data to the <em>Solution Explorer</em>. This can be done in a variety of ways, but the easiest way is to first switch back to the <em>Workflow Window</em>, by selecting the <em>Workflow</em> tab at the bottom of the <em>Solution Explorer</em>. Alternatively, go to <strong>View Menu | Show Workflow</strong> to show the <em>Workflow Window</em>.</p>
+<p><img alt="image13_png" src="../images/image13.png" /></p>
+<p>Next, choose <strong>Add Expression Data</strong>, from the <strong>Manage Data</strong> section of the workflow. Alternatively, data can be added by going to the <strong>File Menu | Add Data |Add Omic Data | Add Expression Data</strong> or by clicking the <strong>Add Data</strong> button on the tool strip, and choosing <strong>Add Omic Data | Add Expression Data</strong>.</p>
+<p>A dialog box will open asking the user to specify the expression data source. Many different sources of data are available to choose from in Array Studio and can be seen in the dialog window below.</p>
+<p>For this tutorial, the 24 Affymetrix .CEL files downloaded earlier will be used. Select <strong>Affymetrix .CEL files (3 IVT, or Gene Arrays)</strong> and click <em>OK</em>.</p>
+<p><img alt="image14_png" src="../images/image14.png" /></p>
+<p>The <em>Extract Affymetrix CEL file</em> window appears:</p>
+<p><img alt="ExtractAffy_021716_1" src="../images/ExtractAffy_021716_1.png" /></p>
+<p>Click the <strong>Add</strong> button to select the CEL files for extraction. Navigate to the location of the CEL files, and then click <em>Open</em> to continue.</p>
+<p><img alt="image16_png" src="../images/image16.png" /></p>
+<p>Check that there are 24 .CEL files listed for extraction by looking in the upper left corner of the dialog box.</p>
+<p><img alt="ExtractAffy_021716_2" src="../images/ExtractAffy_021716_2.png" /></p>
+<p>Under <em>Options</em> , the user will be shown the <em>Array type</em> of the CEL files that are being imported. The user has the option to select an alternative CDF (Affymetrix Library) file.</p>
+<p>The user can also select from the following Options:</p>
+<ul>
+<li>
+<p>The choice of analysis methods include: <strong>RMA, GCRMA2, MAS5</strong> and <strong>OMICSOFT</strong> (see reference for details).</p>
+</li>
+<li>
+<p>For experiments performed at different times, the <strong>Scale RMA/GCRMA signals</strong> can be used to scale all chips to a particular <strong>Target intensity</strong>.</p>
+</li>
+<li>
+<p>For MAS5 extractions, as well as when the <strong>Scale RMA/GCRMA signals</strong> box is checked, a number can be entered into the <strong>Target intensity</strong> box.</p>
+</li>
+<li>
+<p>A log-2 transformation can be performed on the signal matrix data upon extraction. If the user unchecks the <strong>Perform log-2 transformation on the signal matrix</strong> box, a log-2 transformation can still be performed at a later stage.</p>
+</li>
+<li>
+<p>If checked, the <strong>Import Sample Information from ARR files</strong> option will automatically import sample information (design table) from any ARR files found in the same directory as the selected CEL files if they were generated by Affymetrix's <em>Expression Console</em>.</p>
+</li>
+<li>
+<p>The <strong>Generate MAS5 QC Report</strong> checkbox (available after adding CEL files), allows the user to automatically generate a MAS5 Report, without going through the separate menu option (<strong>Tools |Affymetrix | Generate Affymetrix MAS5 QC Report</strong>), however it offers fewer options than the regular menu item. The <strong>Select controls</strong> button allows the user to select the control genes for calculating 3 /5  ratios in the report (i.e. GAPDH, beta-actin, etc.).</p>
+</li>
+<li>
+<p>The <strong>Generate detection flag with p-value &lt;</strong> checkbox allows the user to automatically generate a detection flag value based on a cutoff value specified (default of &lt;0.05). Selecting this option will generate a table with values of 0 (meaning not present with a p-value &lt;0.05) or 1 (present with a p-value &lt;0.05). The resulting "FlagTable" view is hidden, but can be added by right click on <strong>MicroArrayData | Add View | FlagTableView</strong>. The detection flag table can be used in <strong>MicroArray | Preprocess | Filter By Flags</strong>.</p>
+</li>
+<li>
+<p>Selecting <strong>Report intensity + detection p-values</strong> will automatically generate an "IntensityReport" data object with an associated "Intensity_Detection" view and table.</p>
+</li>
+<li>
+<p>A CEL Report (Probe level) can also be generated, if Generate CEL Report box is checked. This can be done with the separate menu option <strong>Tools | Affymetrix |Generate Affymetrix CEL report</strong>.</p>
+</li>
+<li>
+<p>Optionally, a model based QC report can be generated as well. This is discussed further in the online help.</p>
+</li>
+<li>
+<p>Finally, the user can generate CHP files while extraction takes place, using the <strong>Write CHP files</strong> checkbox.</p>
+</li>
+</ul>
+<p>Click on the <strong>Help</strong> button on the bottom left of the window to open the wiki page for <em>Extract Affymetrix CEL Files</em>. The wiki page describes the function input and output of this module, and explains all the options and parameters used in this module. Every analysis module in Array Studio has this <em>Help</em> button to link to the corresponding wiki page.</p>
+<p>When complete, the window should look similar to the following screenshot.</p>
+<p><img alt="ExtractAffy_021716_3" src="../images/ExtractAffy_021716_3.png" /></p>
+<p>Click <strong>Submit</strong> to start the RMA intensity signal matrix extraction. Data extraction will begin and take approximately 30 seconds.</p>
+<p>When complete, <em>Array Studio</em> will prompt the user to attach a design table. Click <strong>Yes</strong> now to attach the design table that was packaged with the CEL files. If <strong>No</strong> was selected instead, the design table can always be attached by right clicking on the design node for the project in the <em>Solution Explorer</em> and choosing <strong>Import</strong> to attach/reattach the design.</p>
+<p><img alt="image19_png" src="../images/image19.png" /></p>
+<p>The <em>Specify Table Source</em> window will open. As <em>dbpts.design.txt</em> is a tab-delimited text file, choose <em>Tab delimited file</em> and click <em>OK</em> to continue.</p>
+<p><img alt="image20_png" src="../images/image20.png" /></p>
+<p>Choose <em>dbpts.design</em> and click <em>Open</em> to continue the attachment process.</p>
+<p><img alt="image21_png" src="../images/image21.png" /></p>
+<p>Specify the location of the Design table file. Once the design table is imported, a "Specify Options" window will appear. Here the user can select the options to <strong>Append to the existing covariate table</strong> (if one exists) and to <strong>Use the name order in the new covariate table</strong>. Leave these options as default.</p>
+<p><img alt="image22_png" src="../images/image22.png" /></p>
+<p>Selecting "OK" will then proceed with the data parsing and creation of the Design table.</p>
+<h2 id="the-tableview">The TableView<a class="headerlink" href="#the-tableview" title="Permanent link">&para;</a></h2>
+<p>At this point, the screen should look similar to below. On the left, the <em>Solution Explorer</em> will show an Annotation (automatically downloaded according to chip type) and Design Table (just imported) along with the Microarray Data type in Table format. Also, in the Table Data type, there will be a Mas5Report (under QC) and IntensityReport as chosen in the output of the previous command. In the center of the screen, a table view called <em>Table</em> should be visible. Scroll through the dataset to see how quickly <em>Array Studio</em> is able to scroll. <em>Array Studio</em> is able to easily handle millions of rows and columns in the <em>TableView</em>.</p>
+<p><img alt="image23_png" src="../images/image23.png" /></p>
+<p>Now switch back to the <em>Solution Explorer</em>.</p>
+<p>In Array Studio, the Solution Explorer will contain two types of data (-Omic data and Table data). These are organized separately in the Solution Explorer for each project. Open the  Omic data node now, followed by the MicroArrayData node.</p>
+<p>In the main view window, click on the <img alt="image24_png" src="../images/image24.png" /> button on the right top corner to close the current view, <strong>MicroarrayData|Table.</strong> Then double-click in the <strong>Solution Explorer | Tutorial | -Omic Data |MicroArrayData | Table</strong> to reopen the <em>TableView</em>.</p>
+<p><img alt="image25_png" src="../images/image25.png" /></p>
+<p>Moving the mouse over any of the icons in the toolbar will give a short description of the button.</p>
+<p><img alt="image26_png" src="../images/image26.png" /></p>
+<p><strong>Open as Text</strong>: will open current visible table in the default text editor (e.g. Notepad)</p>
+<p><img alt="image27_png" src="../images/image27.png" /></p>
+<p><strong>Open in Excel</strong>: will open current visible table in Microsoft Excel</p>
+<p><img alt="image28_png" src="../images/image28.png" /></p>
+<p><strong>Save as Text/object</strong>: will open dialog box to save current visible table as Text, Excel or Omicsoft object</p>
+<p><img alt="image31_png" src="../images/image31.png" /></p>
+<p><strong>Sort Table</strong>: will sort the view, opening the Sort window. The Sort window allows the user to sort by up to four different columns, in either ascending or descending order.</p>
+<p><img alt="image32_png" src="../images/image32.png" /></p>
+<p>Note that the sorting mentioned above only applies to the current view, and not the actual data. So if the current Table View is closed, it would need to be sorted again.</p>
+<p>For more advanced features including sorting of the actual data instead of the view, use the menu, <strong>Omic</strong> <strong>Data | Manipulation | Sort Variables</strong>.</p>
+<p><img alt="image28_3_png" src="../images/image28_3.png" /></p>
+<p><strong>Filter</strong>: Filter table by different rows</p>
+<p><img alt="image29_png" src="../images/image29.png" /></p>
+<p><strong>Copy Table to Clipboard</strong>: will copy current visible table to clipboard.</p>
+<p><img alt="image30_png" src="../images/image30.png" /></p>
+<p><strong>Additional Tools</strong>: contains a popup menu for additional tools:</p>
+<p><strong>Find/Replace</strong>: find or replace cells in the table (this is not allowed with  Omic data but can be used with regular table data.</p>
+<p><strong>Match Selected Cells</strong>: select one or multiple cells in the table. Then click Match Selected Cells to find all of the other cells in the table that match the selected cells.</p>
+<p><strong>Next Selected Row</strong>: finds the next row in the table from that of the currently selected row.</p>
+<p><strong>Previous Selected Row</strong>: finds the previous row in the table from that of the previously selected row.</p>
+<p><strong>Go to Row</strong>: allows the user to input either the row name or the row index (starting from 1) and Array Studio will automatically scroll to the row in the table.</p>
+<p><img alt="image33_png" src="../images/image33.png" /></p>
+<p><strong>Zoom out</strong>: will zoom out the table.</p>
+<p><img alt="image34_png" src="../images/image34.png" /></p>
+<p><strong>Specify Zoom Factor</strong>: click to specific zoom factor</p>
+<p><img alt="image35_png" src="../images/image35.png" /></p>
+<p><strong>Zoom in</strong>: will zoom in the table.</p>
+<p><img alt="fit_to_page_png" src="../images/fit_to_page.png" /></p>
+<p><strong>Fit window to full screen</strong></p>
+<h2 id="details-windowweb-details">Details Window/Web Details<a class="headerlink" href="#details-windowweb-details" title="Permanent link">&para;</a></h2>
+<p>The <em>TableView</em>, and all other views in <em>Array Studio</em>, are fully interactive. Clicking on particular column headers or row headers will bring up details about those observations or variables in the <em>Details Window</em>.</p>
+<p>In the <em>TableView</em>, click the column header cell for 02A. The green color here shows that this field has been selected. To remove the selection, click the toolbar "Clear" <img alt="image36_png" src="../images/image36.png" /></p>
+<p><img alt="image37_png" src="../images/image37.png" /></p>
+<p>If the <em>Details Window</em> is not shown at the bottom of the screen, go to <strong>View Menu | Show Details Window</strong> now to show it.</p>
+<p>Once visible, the <em>Details Window</em> should update with information about the selected observation, 02A.</p>
+<p><img alt="image38_png" src="../images/image38.png" /></p>
+<p>The user can also click on the header cell for any variable. Do this now, and notice that the <em>Details Window</em> updates with the automatically downloaded gene annotation for that particular probeset.</p>
+<p><img alt="image39_png" src="../images/image39.png" /></p>
+<p>Besides the <em>Details Window</em>, <em>Array Studio</em> also contains <strong>Web Details On-Demand</strong>. <em>Web Details</em> allow the user to connect to online websites for further information about a particular variable or probeset.</p>
+<p>In the <em>Details Window</em>, right-click on the row header cell that was previously selected.</p>
+<p>This should bring up a list of different <em>Web Details</em> that are available. Depending on the probeset picked, this list could be longer or shorter than that shown below.</p>
+<p>Scroll to a probeID that does not begin with AFFX, right click and choose the UCSC link.</p>
+<p><img alt="image40_png" src="../images/image40.png" /></p>
+<p>This should open a new window in <em>Internet Explorer</em>.</p>
+<p><img alt="image41_png" src="../images/image41.png" /></p>
+<h2 id="the-mas5-report-and-intensity-report">The MAS5 Report and Intensity Report<a class="headerlink" href="#the-mas5-report-and-intensity-report" title="Permanent link">&para;</a></h2>
+<p>Under the <strong>Table | QC</strong> folder of the <em>Solution Explorer</em>, there is a MAS5 report telling us the <em>RawQ, ScaleFactor, Background, BackgroundStdDev, PresentPercentage</em> and <em>AverageSignal</em> of each chip.</p>
+<p><img alt="image42_png" src="../images/image42.png" /></p>
+<p>The <strong>IntensityReport</strong> under <em>Table</em> folder of the <em>Solution Explorer</em> gives a visualization of detection pvalue against probe set intensity.</p>
+<p><img alt="image43_png" src="../images/image43.png" /></p>
+<h2 id="the-view-controller">The View Controller<a class="headerlink" href="#the-view-controller" title="Permanent link">&para;</a></h2>
+<p>The <em>View Controller</em> is an extremely important feature for the visualizations in Array Studio. Its purpose is to allow the user to customize the views on the screen. If you do not see <em>View Controller</em>, go to the menu <strong>View | Show View Controller</strong>.</p>
+<p><img alt="image44_png" src="../images/image44.png" /></p>
+<p>The view controller should now be visible on the right side of the screen.</p>
+<p><img alt="image45_png" src="../images/image45.png" /></p>
+<p>Click the pin button <img alt="image46_png" src="../images/image46.png" /> so that it is facing downwards. <img alt="image47_png" src="../images/image47.png" /> This ensures that the <em>View Controller</em> remains in constant view. If the pin is facing to the left, the <em>View Controller</em> (and any other window i.e. <em>Solution Explorer, Details Window, etc.</em> ) will auto hide itself when it loses the mouse focus. When the user rolls the mouse pointer over the hidden view, it will reappear. Keep the <em>View Controller</em> with the pin facing downwards so that the <em>View Controller</em> is visible at all times.</p>
+<p>As can be seen from the picture above, the <em>View Controller</em> contains three tabs. The <em>Task</em> tab contains all the settings for modifying the properties of the current view. For the <em>TableView</em>, this includes <strong>Show Row Numbers</strong>, <strong>Specify Columns</strong>, <strong>Reset Columns</strong>, <strong>Generate Data From View and Export With Customized Column Headers</strong>. Click <em>Specify Columns</em> to specify which columns of the dataset are visible.</p>
+<p><img alt="image48_png" src="../images/image48.png" /></p>
+<p>Move columns to the left or right using the left and right arrows, and organize the order that the columns appear by using the up and down arrows. Click <em>OK</em> to return to <em>View Controller | Task</em>.</p>
+<p>Click on the <strong>Observation</strong> tab.</p>
+<p><img alt="image49_png" src="../images/image49.png" /></p>
+<p>For the <em>TableView</em>, the <em>Observation</em> tab contains the name of every column in the attached Design Table by default. The toolbar icons for the Variable and Observation views are defined as follows:</p>
+<p><img alt="image50_png" src="../images/image50.png" /></p>
+<p><em>Collapse All</em>: will collapse all the filters to return the user to the view above.</p>
+<p><img alt="image51_png" src="../images/image51.png" /></p>
+<p><em>Expand All</em>: will expand all the filters.</p>
+<p><img alt="image52_png" src="../images/image52.png" /></p>
+<p><em>Reset All Filters</em>: will reset all filters to the default states (no filter).</p>
+<p><img alt="image53_png" src="../images/image53.png" /></p>
+<p><em>Clear All Filters</em>: will clear all filters, including removing any added filters.</p>
+<p><img alt="image54_png" src="../images/image54.png" /></p>
+<p><em>Show/Hide Columns</em>: will bring up a dialog box to determine which columns, and in what order, will be displayed in the <em>Filter</em> tab.</p>
+<p><img alt="image55_png" src="../images/image55.png" /></p>
+<p><em>Add List Filter</em>: will add a list filter to the currently selected column in the <em>Filter</em> tab. At this point in the tutorial, the user does not yet have a <em>List</em> so this will be discussed in more detail later.</p>
+<p><img alt="image56_png" src="../images/image56.png" /></p>
+<p><em>Options</em> - allows the user to group the filters. This is useful when looking at filters for an <em>Inference Report</em>, but has no real use for the <em>Observation</em> tab of a data object.</p>
+<p>In addition, the user can set Match All Columns (default) or Match Any Columns for the filters (this is the equivalent of AND or OR for multiple filters).</p>
+<p><img alt="image57_png" src="../images/image57.png" /></p>
+<p><em>The "+"</em> icon will expand the entire filter group.</p>
+<p><em>The "-"</em> icon will collapse the filter group.</p>
+<p>At this point, click the <em>Expand All</em> button to expand all column filters.</p>
+<p><img alt="image58_png" src="../images/image58.png" /></p>
+<p>There are four different types of filters visible in this view. The first type is referred as a <em>String Filter</em>. Clicking there allows the user to type in a filter for the column.</p>
+<p>For instance, typing in <strong>2A</strong> under chip column will filter the <em>chip</em> column for any row that contains <em>2A</em>.</p>
+<p><img alt="image59_png" src="../images/image59.png" /></p>
+<p>When a filter is selected, it is highlighted by the radio checkbox next to it. In addition, the filter informs the user how many variables or observations passed filtering.</p>
+<p>. <img alt="image60_png" src="../images/image60.png" /></p>
+<p>Taking a look at the <em>TableView</em> in the center of the screen, it is clear that the only observations remaining visible are those containing <em>2A</em>.</p>
+<p><img alt="image61_png" src="../images/image61.png" /></p>
+<p>The second type of filter visible with this table can be seen with the <em>treatment</em> and <em>group</em> columns. This is referred to as the <em>Radio filter</em> in which the filters are automatically created, each with its own button. Array Studio defaults to the <em>Radio filter</em> when there are a limited number of choices (if that does not appear to be the case, the column type will need to be set to <em>Factor</em>; the user can change any columns to a factor column by choosing <strong>Table | Columns | Column Properties</strong> Next, right click on the factor in the <em>View Controller</em> and select <em>Radio Filter</em>). The <em>Radio filter</em> is not available on columns with larger numbers of options than limit.</p>
+<p>First, remove the previous filter by switching it from <em>02A</em> to <em>(no filter)</em>.</p>
+<p>Next, the data can be filtered with the <em>Radio filter</em> by clicking on the desired filter. Select <em>control</em> from the options under the <em>treatment</em> filter.</p>
+<p><img alt="image62_png" src="../images/image62.png" /></p>
+<p>Again, take a look at the <em>TableView</em> and select the column headers to see that the only samples in the table are in control group.</p>
+<p>A third type of filter is the <em>Checkbox</em> filter. If this type of filter is not shown, it can easily be added by changing the filter type. Simply right-click on the name of the column filter and choose the "CheckBox" option as shown below:</p>
+<p><img alt="image63_png" src="../images/image63.png" /></p>
+<p>Clicking <em>CheckBox</em> will then allow the user to check off each option available for filtering. In the example below, only those rows that contain a <em>group</em> control.t3 or DBP.t3 will be visible in the <em>TableView</em>.</p>
+<p><img alt="checkbox_filters_png" src="../images/checkbox_filters.png" /></p>
+<p>There is a fourth type of filter: <em>numeric filter</em>, which is available only for numeric columns. This type of filter will be discussed later in the inference report view.</p>
+<p>At this point, clear all filters by clicking the <em>Clear All</em> button.</p>
+<p><img alt="image65_png" src="../images/image65.png" /></p>
+<p>Click on the <em>Variable</em> tab in the <em>View Controller</em>. Notice that Array Studio automatically adds potential filters for every column of chip annotation. The buttons on the <em>View Controller | Variable</em> are exactly the same as that found in the <em>View Controller | Observation</em>. Expand the <em>Gene Symbol</em> filter, and type <strong>^Egr1$</strong>, or <strong>"Egr1"</strong> (with quote) to find all <em>Variables</em> that match exactly <strong>Egr1</strong> (the ^ and $ symbols are used in the same way as regular expression).</p>
+<p>Supported filter syntax in Array Studio:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Syntax</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">&gt;N</td>
+<td align="left">Greater than N</td>
+</tr>
+<tr>
+<td align="left">&lt;N</td>
+<td align="left">Less than N</td>
+</tr>
+<tr>
+<td align="left">=N</td>
+<td align="left">Equal to N</td>
+</tr>
+<tr>
+<td align="left">&gt;=N</td>
+<td align="left">Greater than or equal to N</td>
+</tr>
+<tr>
+<td align="left">&lt;=N</td>
+<td align="left">Less than or equal to N</td>
+</tr>
+<tr>
+<td align="left">a&amp;b</td>
+<td align="left">Matching a and b</td>
+</tr>
+<tr>
+<td align="left">a</td>
+<td align="left">Matching a a</td>
+</tr>
+<tr>
+<td align="left">a AND b</td>
+<td align="left">a and b</td>
+</tr>
+<tr>
+<td align="left">a</td>
+<td align="left">b</td>
+</tr>
+<tr>
+<td align="left">a OR b</td>
+<td align="left">Matching a or b</td>
+</tr>
+<tr>
+<td align="left">^abc</td>
+<td align="left">Starts with abc</td>
+</tr>
+<tr>
+<td align="left">abc$</td>
+<td align="left">Ends with abc</td>
+</tr>
+<tr>
+<td align="left">abc</td>
+<td align="left">Matches exactly abc</td>
+</tr>
+<tr>
+<td align="left">^abc$</td>
+<td align="left">Matches exactly abc</td>
+</tr>
+<tr>
+<td align="left">NOT</td>
+<td align="left">Includes everything not in the filter</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">To keep only empty strings</td>
+</tr>
+<tr>
+<td align="left">~</td>
+<td align="left">To keep only non-empty strings</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="image66_png" src="../images/image66.png" /></p>
+<p>Notice that this then filters the dataset. 1 row is found that exactly matches <strong>Egr1</strong> for <em>Gene Symbol</em>. Again, dimensions of the filtered table can be found by looking at the top right of the center <em>table view</em></p>
+<p><img alt="image67_png" src="../images/image67.png" /></p>
+<p>Notice that when a filter is applied to a parameter, it changes to a red color in the <em>View Controller</em>. This can be used to quickly track what filters are in place on a heavily filtered dataset.</p>
+<p><img alt="image68_png" src="../images/image68.png" /></p>
+<p>Remove the filter by either clicking the <strong>Clear All</strong> button or right-clicking on the <em>Gene Symbol</em> Filter <strong>^Egr1$</strong> and clicking <em>Remove Filter</em>.</p>
+<p><img alt="image69_png" src="../images/image69.png" /></p>
+<p>Click on <strong>Save</strong> button from the toolbar to save the current project.</p>
+<p><img alt="image70_png" src="../images/image70.png" /></p>
+<p>Congratulations! The dataset from DBPTS is successfully loaded into Array Studio and is ready for downstream visualization and analysis.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Installing_Array_Studio/" title="Installing Array Studio" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Installing Array Studio
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Data_Visualization_and_Quality_Control/" title="Data Visualization and Quality Control" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Data Visualization and Quality Control
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2008 - 2017 OmicSoft/QIAGEN Bioinformatics
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://omicsoft.github.io" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/omicsoft" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/company-beta/3531113/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.8eb9be28.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>
