@@ -2,7 +2,8 @@
 site_name: 'omicsoft doc'
 site_description: 'OmicSoft Doc'
 site_author: 'OmicSoft Support'
-site_url: 'http://192.168.3.222/WikiBigFiles/doc/v10.3/'
+site_url: 'https://omicsoftdocs.github.io/ArraySuiteDoc/'
+#site_url: 'http://192.168.3.222/WikiBigFiles/doc/v10.3/'
 
 # Repository
 # repo_name: 'omicsoft.github.io'
