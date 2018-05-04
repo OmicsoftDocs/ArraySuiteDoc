@@ -42,7 +42,7 @@
     
     
       
-        <title>Expression Ratio - omicsoft doc</title>
+        <title>Microarray Expression - omicsoft doc</title>
       
     
     
@@ -82,7 +82,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#expression-ratio" tabindex="1" class="md-skip">
+      <a href="#microarray-views" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -108,7 +108,7 @@
                 omicsoft doc
               </span>
               <span class="md-header-nav__topic">
-                Expression Ratio
+                Microarray Expression
               </span>
             
           
@@ -894,8 +894,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Sample Level Views/Samples/" title="Samples" class="md-nav__link">
-      Samples
+    <a href="../../Sample Level Views/Samples/" title="Distribution Views" class="md-nav__link">
+      Distribution Views
     </a>
   </li>
 
@@ -980,8 +980,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../OmicDataIntegrationViews/" title="Integration Views" class="md-nav__link">
-      Integration Views
+    <a href="../OmicDataIntegrationViews/" title="Integration" class="md-nav__link">
+      Integration
     </a>
   </li>
 
@@ -1004,8 +1004,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../DNASeqSomaticMutation/" title="DNASeq Somatic Mutation" class="md-nav__link">
-      DNASeq Somatic Mutation
+    <a href="../DNAAlterationDistribution/" title="DNA-Seq" class="md-nav__link">
+      DNA-Seq
     </a>
   </li>
 
@@ -1016,8 +1016,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../DNAAlterationDistribution/" title="DNA Alteration Distribution" class="md-nav__link">
-      DNA Alteration Distribution
+    <a href="../CopyNumberViews/" title="Copy Number" class="md-nav__link">
+      Copy Number
     </a>
   </li>
 
@@ -1028,8 +1028,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../CopyNumberViews/" title="Copy Number Views" class="md-nav__link">
-      Copy Number Views
+    <a href="../RnaSeqQuantification/" title="RNA-Seq Quantification" class="md-nav__link">
+      RNA-Seq Quantification
     </a>
   </li>
 
@@ -1040,32 +1040,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../RnaSeqQuantification/" title="RNA-Seq Quantification Views" class="md-nav__link">
-      RNA-Seq Quantification Views
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../RNASeqSomaticMutation/" title="RNASeq Somatic Mutation" class="md-nav__link">
-      RNASeq Somatic Mutation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../RNASeqFusion/" title="RNASeq Fusion" class="md-nav__link">
-      RNASeq Fusion
+    <a href="../RNASeqSomaticMutation/" title="RNA-Seq Mutation" class="md-nav__link">
+      RNA-Seq Mutation
     </a>
   </li>
 
@@ -1085,11 +1061,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Expression Ratio
+        Microarray Expression
       </label>
     
-    <a href="./" title="Expression Ratio" class="md-nav__link md-nav__link--active">
-      Expression Ratio
+    <a href="./" title="Microarray Expression" class="md-nav__link md-nav__link--active">
+      Microarray Expression
     </a>
     
       
@@ -1103,8 +1079,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gene-expression-ratio-view-for-genes-in-land-portal" title="Gene Expression Ratio View for genes in Land Portal" class="md-nav__link">
-    Gene Expression Ratio View for genes in Land Portal
+  <a href="#expression-ratio" title="Expression Ratio" class="md-nav__link">
+    Expression Ratio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expression-intensity-gene-level" title="Expression Intensity (Gene Level)" class="md-nav__link">
+    Expression Intensity (Gene Level)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expression-intensity-probeset-level" title="Expression Intensity (ProbeSet Level)" class="md-nav__link">
+    Expression Intensity (ProbeSet Level)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-gene-variable-expression-intensity" title="Multi-Gene Variable (Expression Intensity)" class="md-nav__link">
+    Multi-Gene Variable (Expression Intensity)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#average-expression" title="Average Expression" class="md-nav__link">
+    Average Expression
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heatmap-expression" title="Heatmap Expression" class="md-nav__link">
+    Heatmap Expression
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expression-survival" title="Expression Survival" class="md-nav__link">
+    Expression Survival
   </a>
   
 </li>
@@ -1117,6 +1135,42 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../miRNA_views/" title="miRNA-Seq" class="md-nav__link">
+      miRNA-Seq
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Proteomics/" title="Proteomics" class="md-nav__link">
+      Proteomics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Methylation/" title="Methylation" class="md-nav__link">
+      Methylation
+    </a>
   </li>
 
         
@@ -1191,6 +1245,174 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/LandExplorerInterface/" title="Land Explorer Interface" class="md-nav__link">
+      Land Explorer Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-3-2" type="checkbox" id="nav-2-8-3-2">
+    
+    <label class="md-nav__link" for="nav-2-8-3-2">
+      Filters
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-3-2">
+        Filters
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/Filters/" title="Filtering" class="md-nav__link">
+      Filtering
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/Sample_Filters/" title="Sample Filters" class="md-nav__link">
+      Sample Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/Comparison_filters/" title="Comparison Filters" class="md-nav__link">
+      Comparison Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/Project_filters/" title="Project Filters" class="md-nav__link">
+      Project Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/Gene/" title="Gene Filters" class="md-nav__link">
+      Gene Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/Mutation/" title="Mutation Filters" class="md-nav__link">
+      Mutation Filters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Filters/CNV/" title="CNV Filters" class="md-nav__link">
+      CNV Filters
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8-3-3" type="checkbox" id="nav-2-8-3-3">
+    
+    <label class="md-nav__link" for="nav-2-8-3-3">
+      Queries
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-8-3-3">
+        Queries
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Queries/Custom_Query/" title="Custom Query" class="md-nav__link">
+      Custom Query
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Using Land Explorer/Queries/Searching_Genes/" title="Search Bar" class="md-nav__link">
+      Search Bar
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../Using Land Explorer/Customizations/" title="Customizations" class="md-nav__link">
       Customizations
     </a>
@@ -1205,78 +1427,6 @@
   <li class="md-nav__item">
     <a href="../../../Using Land Explorer/View_controller/" title="View Controller" class="md-nav__link">
       View Controller
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/Distribution/" title="Distribution" class="md-nav__link">
-      Distribution
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/Sample_Filters/" title="Sample Filters" class="md-nav__link">
-      Sample Filters
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/Comparison_filters/" title="Comparison Filters" class="md-nav__link">
-      Comparison Filters
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/Customer_Query/" title="Customer Query" class="md-nav__link">
-      Customer Query
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/View_type/" title="View Type" class="md-nav__link">
-      View Type
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Using Land Explorer/viewID/" title="ViewID" class="md-nav__link">
-      ViewID
     </a>
   </li>
 
@@ -3045,8 +3195,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gene-expression-ratio-view-for-genes-in-land-portal" title="Gene Expression Ratio View for genes in Land Portal" class="md-nav__link">
-    Gene Expression Ratio View for genes in Land Portal
+  <a href="#expression-ratio" title="Expression Ratio" class="md-nav__link">
+    Expression Ratio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expression-intensity-gene-level" title="Expression Intensity (Gene Level)" class="md-nav__link">
+    Expression Intensity (Gene Level)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expression-intensity-probeset-level" title="Expression Intensity (ProbeSet Level)" class="md-nav__link">
+    Expression Intensity (ProbeSet Level)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-gene-variable-expression-intensity" title="Multi-Gene Variable (Expression Intensity)" class="md-nav__link">
+    Multi-Gene Variable (Expression Intensity)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#average-expression" title="Average Expression" class="md-nav__link">
+    Average Expression
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heatmap-expression" title="Heatmap Expression" class="md-nav__link">
+    Heatmap Expression
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expression-survival" title="Expression Survival" class="md-nav__link">
+    Expression Survival
   </a>
   
 </li>
@@ -3068,15 +3260,30 @@
               
                 
                 
-                <h1 id="expression-ratio">Expression Ratio<a class="headerlink" href="#expression-ratio" title="Permanent link">&para;</a></h1>
-<h2 id="gene-expression-ratio-view-for-genes-in-land-portal">Gene Expression Ratio View for genes in Land Portal<a class="headerlink" href="#gene-expression-ratio-view-for-genes-in-land-portal" title="Permanent link">&para;</a></h2>
+                <h1 id="microarray-views">Microarray Views<a class="headerlink" href="#microarray-views" title="Permanent link">&para;</a></h1>
+<p>Microarray data from various platforms are supported in the Land framework, including many Affymetrix, as well as some Illumina and Agilent Microarrays. For Omicsoft Lands in the OncoLand and DiseaseLand collections, Omicsoft re-processed the raw data and normalizes the data using <a href="http://www.arrayserver.com/wiki/index.php?title=Land_normalization_of_expression_data">standardized pipelines</a> to improve cross-project comparisons.</p>
+<p>Depending on the type of arrays used in a specific Land, when searching a gene in the Land Explorer, two Microarray Variable views will be available: <strong>Expression Ratio</strong> or <strong>Expression Intensity Probes</strong>:</p>
+<h2 id="expression-ratio">Expression Ratio<a class="headerlink" href="#expression-ratio" title="Permanent link">&para;</a></h2>
+<p>The Expression Ratio view is available in TCGA lands and plots the expression values from Agilent Expression Arrays (Agilent G4502A). When a user searches a gene and selects this view, the Expression value in the Sample compared to the Universal Human reference will be plotted on the x-axis and the samples will be grouped on the y-axis by the Grouping column (e.g. Tumor Type):</p>
 <p><img alt="LandPortal_login_png" src="../../../images/ExpressionRatio.png" /></p>
-<p>This view shows the Expression Ratio (Sample vs Universal Human Reference) for the specified gene, organized by group (e.g. Tumor Type).</p>
-<p>Expression data was generated on a two-color chip. When visualizing more than one gene, each gene is show in its own plot.
-X-axis shows Expression Ratio. Y-axis shows the group. Use the Sample Tab to further filter the data using any associated sample/subject meta data.</p>
-<p>Use Specify Profile (Task tab) to change the grouping.
-Use Specify Split Column (Task tab) to change the automatic coloring.
-Show on-the-fly p-value, indicating if the expression is significantly changed, of selected group (and split column) using Show Summary Information (Task Tab | Customize).</p>
+<h2 id="expression-intensity-gene-level">Expression Intensity (Gene Level)<a class="headerlink" href="#expression-intensity-gene-level" title="Permanent link">&para;</a></h2>
+<p>In other Lands, such as the GEO-based HumanDisease and MouseDisease Lands, microarray data from a number of platorms is <a href="http://www.arrayserver.com/wiki/index.php?title=Omicsoft_Affymetrix_Microarray_Preprocessing">re-processed and normalized</a>, and the probes used in the arrays are mapped to the gene models used in the Land. When a gene is searched an the Expression Intensity view is selected, users can browse the expression data that gene. Expression of a gene is averaged across all probes mapping to that gene for each sample.</p>
+<p><img alt="LandPortal_login_png" src="../../../images/landportal_view.png" /></p>
+<h2 id="expression-intensity-probeset-level">Expression Intensity (ProbeSet Level)<a class="headerlink" href="#expression-intensity-probeset-level" title="Permanent link">&para;</a></h2>
+<p>In addition to summarizing expression at the gene level for microarray studies, the Expression Intensity (ProbeSet Level) allows users to browse the expression data for all probes that mapped to that gene. One chart will be generated per probe that maps to this gene:</p>
+<p><img alt="LandPortal_login_png" src="../../../images/expression_probeset.png" /></p>
+<h2 id="multi-gene-variable-expression-intensity">Multi-Gene Variable (Expression Intensity)<a class="headerlink" href="#multi-gene-variable-expression-intensity" title="Permanent link">&para;</a></h2>
+<p>When multiple genes are searched, the multi-gene variable view allows users to visualize the expression of all genes searched in a single view. Here, the genes are grouped on the y-axis, and the expression of the gene in each sample is represented by the dots on the x-axis:</p>
+<p><img alt="LandPortal_login_png" src="../../../images/multi-gene_probes.png" /></p>
+<h2 id="average-expression">Average Expression<a class="headerlink" href="#average-expression" title="Permanent link">&para;</a></h2>
+<p>When multiple genes are searched, the average expression view allows users to visualize the average expression of the gene set (i.e. gene signature) in the filtered samples. Samples are grouped on the y-axis by the grouping category and expression is plotted on the x-axis.</p>
+<p><img alt="LandPortal_login_png" src="../../../images/average_probes.png" /></p>
+<h2 id="heatmap-expression">Heatmap Expression<a class="headerlink" href="#heatmap-expression" title="Permanent link">&para;</a></h2>
+<p>When multiple genes are searched, another view users can use is the Heat map view. In this view, expression of each gene will shown as a heatmap, where each row represents a sample, and the columns represent the gene. Filtering to fewer samples will aid in visualization of the unbiased clustering of the heatmap and the expression values of each gene:</p>
+<p><img alt="LandPortal_login_png" src="../../../images/heatmap_expression.png" /></p>
+<h2 id="expression-survival">Expression Survival<a class="headerlink" href="#expression-survival" title="Permanent link">&para;</a></h2>
+<p>In this view, when survival data is available and attributed to samples within the land, such as within OncoLand studies (TCGA, OncoGEO, etc.), a survival view will be generated. Samples will be grouped into quartiles (Up, upper 25% (Q1) expression of gene, Down, lower 25% (Q4), Mid (all remaining samples, Q2 and Q3)) based on microarray expression values. Survival will be plotted on the Y-axis and time on the X-axis.</p>
+<p><img alt="Survival_png" src="../../../images/expression_survival.png" /></p>
                 
                   
                 
@@ -3097,7 +3304,7 @@ Show on-the-fly p-value, indicating if the expression is significantly changed, 
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../RNASeqFusion/" title="RNASeq Fusion" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../RNASeqSomaticMutation/" title="RNA-Seq Mutation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -3106,19 +3313,19 @@ Show on-the-fly p-value, indicating if the expression is significantly changed, 
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                RNASeq Fusion
+                RNA-Seq Mutation
               </span>
             </div>
           </a>
         
         
-          <a href="../../Comparison Level Views/Volcano_Plot/" title="Volcano Plot" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../miRNA_views/" title="miRNA-Seq" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Volcano Plot
+                miRNA-Seq
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
