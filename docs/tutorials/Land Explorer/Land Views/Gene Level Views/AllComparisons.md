@@ -2,7 +2,7 @@
 
 The OmicSoft Land curation teams carefully curate samples in the Land using a controlled vocabulary for each project. For each project containing RNA-seq or microarray data, the curation team will generate sample groupings (often matching the ones used by the authors, as well as other meaningful ones) such as Disease vs Normal samples, or Treatment vs. Control samples. The Land Explorer allows users to browse gene level information for these types of comparisons in a simple "bubble plot" view. When searching a gene, and choosing this view, the fold change of the gene will be plotted (each bubble, or dot represents a single comparison). The y-axis will group the comparisons by the primary grouping category, while the x-axis will represent the Log2 Fold change of that gene. The size of the dots will reflect the p value from the comparison (DESeq2 for RNA-seq and General Linear Model for microarray). Selecting dot(s) in this view will populate a Details table at the bottom of the view showing some key metadata from the comparison(s)
 
-The views below can be filtered to comparisons of interest. For information on customizing comparison views, please see: [Comparison Filter](../../Using Land Explorer/Comparison_filters.md)
+The views below can be filtered to comparisons of interest. For information on customizing comparison views, please see: [Comparison Filter](../../Using Land Explorer/Filters/Comparison_filters.md)
 
 ## All Comparisons
 

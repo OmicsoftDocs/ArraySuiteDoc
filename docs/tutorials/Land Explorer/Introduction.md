@@ -10,7 +10,7 @@ OmicSoft uses ArrayLand framework to deliver large amounts of clinica and "omic"
 
 Land Explorer is hosted on a Windows machine which connects to ArrayServer to provide access to rich visualization of Omic-data, directly in a user's web browser, meaning no extra software required. Land Explorer can used as a companion product to Omicsoft's ArraySuite (to use with internal Lands and OmicSoft Lands), or as a standalone product hosted by Qiagen/Omicsoft. Like ArraySuite, Land Explorer is fully customizable to meet the needs of its users.
 
-These tutorial pages demonstrate the utility of Land Explorer, including a description of the many [views](./Land Views/Views.md) available, as well as the [general usage and customizations](./Using Land Explorer/Customizations.md) of these views.
+These tutorial pages demonstrate the utility of Land Explorer, including a description of the many [views](./Land Views/Views.md) available, as well as the [general usage and customizations](./Using Land Explorer/LandExplorerInterface.md) of these views.
 
 ## Log in to Land Explorer
 
