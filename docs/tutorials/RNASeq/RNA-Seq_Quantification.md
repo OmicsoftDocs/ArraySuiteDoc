@@ -52,7 +52,7 @@ There are two modules for exon level counting:
 
 By default, **Perform RPKM normalization** option is checked. Normalized counts in RPKM fashion are reported for known exons and exon junctions based on the specified gene model. In the output report, each row is one *known* exon or exon junction annotated by genome coordinates, gene and transcript name.
 
-|exon_exon_output_png|
+![exon_exon_output_png](images/exon_exon_output.png)
 
 ### Report All Exon Junctions
 
