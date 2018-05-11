@@ -67,7 +67,7 @@ Test large image with lightbox using extend theme_dir
 </div>
 
 ### lightbox Youtube
-<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-toggle="lightbox">Justin Bieber - Love Yourself</a></p>
+<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-toggle="lightbox">SingleCell RNA - Presentation</a></p>
 
 ### TestTable
 | Header One     | Header Two     | Header One     | Header Two     |
@@ -245,7 +245,7 @@ Some Block Equations:
 When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
-Another: 
+Another:
 
 $$
 \frac{n!}{k!(n-k)!} = \binom{n}{k}
