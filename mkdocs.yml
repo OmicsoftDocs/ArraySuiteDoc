@@ -250,7 +250,7 @@ extra:
     tabs: true
   social:
     - type: 'github'
-      link: 'https://omicsoft.github.io'
+      link: 'https://github.com/OmicsoftDocs'
     - type: 'twitter'
       link: 'https://twitter.com/omicsoft'
     - type: 'linkedin'
