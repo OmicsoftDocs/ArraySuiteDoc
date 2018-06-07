@@ -4,7 +4,7 @@
 
 ## Land Explorer
 
-OmicSoft uses ArrayLand framework to deliver large amounts of clinica and "omic"-data to biologists with simplistic visualization. ***Land Explorer*** is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, GeneticsLand, and Internal Lands). Users of Array Studio may be familiar with the content provided within the Land Explorer framework. The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands. ![](images/LandPortal_001_png)
+OmicSoft uses ArrayLand framework to deliver large amounts of clinical and "omic"-data to biologists with simplistic visualization. ***Land Explorer*** is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, GeneticsLand, and Internal Lands). Users of Array Studio may be familiar with the content provided within the Land Explorer framework. The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands. ![](images/LandPortal_001_png)
 
 ### Expression views on YouTube
 
