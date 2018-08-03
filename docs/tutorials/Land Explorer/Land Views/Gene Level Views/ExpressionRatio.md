@@ -4,6 +4,14 @@ Microarray data from various platforms are supported in the Land framework, incl
 
 Depending on the type of arrays used in a specific Land, when searching a gene in the Land Explorer, two Microarray Variable views will be available: **Expression Ratio** or **Expression Intensity Probes**:
 
+## Heatmap (Expression Ratio)
+
+Heatmap showing Gene Expression ratio (Sample vs Universal Human Reference) for group (e.g. Tumor Type) for multiple genes.
+
+![Expression_ratio_heatmap_png](../../images/Expression_ratio_heatmap.png)
+Y-axis is gene, while X-axis is grouping (e.g. Tumor Type).
+Expression data was generated on a two-color chip. Use the Sample Tab to further filter the data using any associated sample/subject meta data.
+
 ## Expression Ratio
 
 The Expression Ratio view is available in TCGA lands and plots the expression values from Agilent Expression Arrays (Agilent G4502A). When a user searches a gene and selects this view, the Expression value in the Sample compared to the Universal Human reference will be plotted on the x-axis and the samples will be grouped on the y-axis by the Grouping column (e.g. Tumor Type):
@@ -22,11 +30,21 @@ In addition to summarizing expression at the gene level for microarray studies, 
 
 ![LandPortal_login_png](../../images/expression_probeset.png)
 
-## Multi-Gene Variable (Expression Intensity)
+## Multi-Gene Variable (Expression Ratio)
 
 When multiple genes are searched, the multi-gene variable view allows users to visualize the expression of all genes searched in a single view. Here, the genes are grouped on the y-axis, and the expression of the gene in each sample is represented by the dots on the x-axis:
 
-![LandPortal_login_png](../../images/multi-gene_probes.png)
+![LandPortal_login_png](../../images/Multi_gene_variable_ExpressionRatio.png)
+
+## Multi-Gene Correlation (Expression Ratio)
+
+Shows a scatter view comparing the Expression Ratio (Sample vs Universal Human Reference) for two or more genes.
+
+![multi_gene_correlation_ExpressionRation_png](../../images/multi_gene_correlation_ExpressionRation.png)
+For two genes, the x-axis will be the first gene, while the y-axis will be the second gene.
+Use Change Regression Line Settings to automatically show the correlation values. Use the Automatic grouping to automatically change the coloring of the plot.
+For 3 or more genes, shows a multi-chart correlation plot.
+
 
 ## Average Expression
 

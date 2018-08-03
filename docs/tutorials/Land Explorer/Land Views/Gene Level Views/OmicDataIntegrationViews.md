@@ -20,3 +20,18 @@ This view shows a single chart, for each gene, comparing Gene Expression Ratio (
 Similar to the CNV vs RNA-Seq Expression view, when CNV and Microarray data is available for a gene, pairwise comparison of the two data points (y- and x-axis, respectively) can be done to see if there is a correlation between copy number and expression:
 
 ![CNVvsMicroarray](../../images/cnv_microarray.png)
+
+
+
+## CNV Expression Ratio
+
+CNV Expression Ratio view shows a single chart, for each gene, comparing Gene Expression (e.g. Sample vs Universal Human Reference) vs Average Copy Number Log2Ratio.
+
+![CNV_expression_ratio_png](../../images/CNV_expression_ratio.png)
+
+
+## CNV RNA-Seq Expression
+
+CNV RNA-Seq expression view shows a single chart, for each gene, comparing Gene Expression (RPKM) vs Average Copy Number Log2 Ratio.
+
+![CNV_RNA_Seq_Expression_png](../../images/CNV_RNASeq_Expression.png)

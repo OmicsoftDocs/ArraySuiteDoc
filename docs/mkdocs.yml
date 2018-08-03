@@ -2,7 +2,8 @@
 site_name: 'omicsoft doc'
 site_description: 'OmicSoft Doc'
 site_author: 'OmicSoft Support'
-site_url: 'http://192.168.3.222/WikiBigFiles/doc/v10.3/'
+site_url: 'https://omicsoftdocs.github.io/ArraySuiteDoc/'
+#site_url: 'http://192.168.3.222/WikiBigFiles/doc/v10.3/'
 
 # Repository
 # repo_name: 'omicsoft.github.io'
@@ -74,10 +75,13 @@ pages:
       - Pipeline Script: tutorials/Oscript/PipelineScript.md
     - Land Explorer:
       - Introduction: tutorials/Land Explorer/Introduction.md
+      - FrontPage: 
+        - FrontPage: tutorials/Land Explorer/FrontPage/FrontPage.md
       - Land Views:
         - Views: tutorials/Land Explorer/Land Views/Views.md
         - Sample Level Views:
             - Distribution Views: tutorials/Land Explorer/Land Views/Sample Level Views/Samples.md 
+            - Comparisons: tutorials/Land Explorer/Land Views/Sample Level Views/Comparisons.md 
             - Sample Details: tutorials/Land Explorer/Land Views/Sample Level Views/Sample_Details.md
             - Comparison Availability: tutorials/Land Explorer/Land Views/Sample Level Views/Comparison_Availability.md
             - Data Availability: tutorials/Land Explorer/Land Views/Sample Level Views/Data_Availability.md
@@ -89,6 +93,7 @@ pages:
             - Copy Number: tutorials/Land Explorer/Land Views/Gene Level Views/CopyNumberViews.md
             - RNA-Seq Quantification: tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification.md
             - RNA-Seq Mutation: tutorials/Land Explorer/Land Views/Gene Level Views/RNASeqSomaticMutation.md
+            - RNA-Seq Fusion: tutorials/Land Explorer/Land Views/Gene Level Views/RNASeqFusion.md
             - Microarray Expression: tutorials/Land Explorer/Land Views/Gene Level Views/ExpressionRatio.md
             - miRNA-Seq: tutorials/Land Explorer/Land Views/Gene Level Views/miRNA_views.md
             - Proteomics: tutorials/Land Explorer/Land Views/Gene Level Views/Proteomics.md
@@ -108,8 +113,10 @@ pages:
         - Queries: 
             - Custom Query: tutorials/Land Explorer/Using Land Explorer/Queries/Custom_Query.md
             - Search Bar: tutorials/Land Explorer/Using Land Explorer/Queries/Searching_Genes.md
+        - Generate View Link: tutorials/Land Explorer/Using Land Explorer/GenerateViewLink.md
         - Customizations: tutorials/Land Explorer/Using Land Explorer/Customizations.md
         - View Controller: tutorials/Land Explorer/Using Land Explorer/View_controller.md
+        
 - OmicData:
     - Microarray:
       - Installing Array Studio: tutorials/Microarray/Installing_Array_Studio.md
@@ -249,7 +256,7 @@ extra:
     tabs: true
   social:
     - type: 'github'
-      link: 'https://omicsoft.github.io'
+      link: 'https://github.com/OmicsoftDocs'
     - type: 'twitter'
       link: 'https://twitter.com/omicsoft'
     - type: 'linkedin'

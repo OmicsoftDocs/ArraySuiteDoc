@@ -14,6 +14,22 @@ Copy number calls are derived from GISTIC2 calls, and only represent samples wit
 
 For multi-gene searches, all mutation and CNV data will be compounded for the genes in the search to identify samples with an alteration in any of the genes queried using the DNA Alteration Distribution View. If a user is interested in the per-gene distribution of samples (rather than compounded distribution), the "DNA Alteration Distribution By Gene" will generate one chart per gene queried.
 
+![DNA_alteration_dist_bygene_png](../../images/DNA_alteration_dist_bygene.png)
+
+
+## Somatic Co-Mutation Frequencies
+
+DNA Seq somatic co-mutation frequencies shows a bar plot of # genes with mutation vs frequency of mutation. For instance, for a gene set of BRAF and PTEN, a bar will be shown for samples exhibiting 0, 1, or 2 mutations.
+
+![DNA_somatic_comutation_frequencies_png](../../images/DNA_somatic_comutation_frequencies.png)
+
+## Somatic Mutation Pattern
+
+DNA Seq somatic mutation pattern view shows a bar plot showing the number of mutations matching a particular pattern for the specified gene set across a grouping (e.g. Tumor Type).
+
+![DNA_somatic_mutation_pattern_png](../../images/DNA_somatic_mutation_pattern.png)
+
+
 ## Somatic Mutation Distribution
 
 Similar to the DNA Alteration Distribution View, this view displays histograms of DNA-Seq Somatic Mutation Distribution. In this view, only mutation events will be taken into consideration when calculating the percentage of affected samples in each group. As you can see in the view below, for the gene BCL2, only mutations are plotted. In the legend, a full description of the type of mutation (Indel, Deletion, Substitution) will be displayed.
@@ -24,6 +40,7 @@ Similar to the DNA Alteration Distribution View, this view displays histograms o
 
 For multi-gene searches, all mutation data will be compounded for the genes in the search to identify samples with a mutation in any of the genes queried using the Somatic Mutation Distribution View. If a user is interested in the per-gene distribution of samples (rather than compounded distribution), the "Somatic Mutation Distribution By Gene" will generate one chart per gene queried.
 
+![DNASeq_Somatic_mut_dist_bygene_png](../../images/DNASeq_Somatic_mut_dist_bygene.png)
 
 ## Somatic Mutation Site Distribution
 
