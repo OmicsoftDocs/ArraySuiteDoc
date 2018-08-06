@@ -75,8 +75,8 @@ pages:
       - Pipeline Script: tutorials/Oscript/PipelineScript.md
     - Land Explorer:
       - Introduction: tutorials/Land Explorer/Introduction.md
-      - FrontPage: 
-        - FrontPage: tutorials/Land Explorer/FrontPage/FrontPage.md
+      - Explorer: 
+        - Sample Explorer: tutorials/Land Explorer/Explorer/SampleExplorer.md
       - Land Views:
         - Views: tutorials/Land Explorer/Land Views/Views.md
         - Sample Level Views:

@@ -20,20 +20,20 @@ These tutorial pages demonstrate the utility of Land Explorer, including a descr
 
 ## Land Explorer usage
 
-Users can login to Land Explorer using their ArrayServer credentials. Please contact your ArrayServer adminstrator or support@omicsoft.com if you are having issues logging in. Once you connect to the LandExplorer, there are two options for a landing page that can be customized for each LandExplorer installation: An Optional FrontPage or a Land View.
+Users can login to Land Explorer using their ArrayServer credentials. Please contact your ArrayServer adminstrator or support@omicsoft.com if you are having issues logging in. Once you connect to the LandExplorer, there are two options for a landing page that can be customized for each LandExplorer installation: An Optional SampleExplorer or a Land View.
 
-### FrontPage Option
+### SampleExplorer Option
 
 This option allows users to query data across all Lands related to specific Sample Types. For example, the view below shows a distribution of all samples represented with the OncoLand, DiseaseLand, BodyMap, Cell Line and Single Cell collections, including sample counts, counts of data types and how these samples are distributed across all Lands.
 
 
-For more information on how the FrontPages are configured and used, please visit the FrontPage [help](./FrontPage/FrontPage.md) menu.
+For more information on how the SampleExplorer are configured and used, please visit the SampleExplorer [help](./Explorer/SampleExplorer.md) menu.
 
 ![Front_Page](images/FrontPageNirav.png)
 
 ### Land View Option
 
-If a FrontPage option is not defined in Land Explorer, the default view will be a Land View. In this view, the default land chosen by the administrator (TCGA by default) will appear. Users can switch to other Lands by simply clicking **Select Land**:
+If a SampleExplorer option is not defined in Land Explorer, the default view will be a Land View. In this view, the default land chosen by the administrator (TCGA by default) will appear. Users can switch to other Lands by simply clicking **Select Land**:
 
 ![LandPortal_login_png](images/LandPortal_login.png)
 
