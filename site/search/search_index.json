@@ -722,7 +722,7 @@
         }, 
         {
             "location": "/tutorials/Land Explorer/Introduction/", 
-            "text": "Introduction\n\n\nNote to reader\n: The tutorial pages are actively being written to describe the usage of the Land Explorer and the recent 2018Q2 release. Please check back for updates or e-mail \n if you have specific questions not addressed here.\n\n\nLand Explorer\n\n\nOmicSoft uses ArrayLand framework to deliver large amounts of clinical and \"omic\"-data to biologists with simplistic visualization. \nLand Explorer\n is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, and Internal Lands). Users of Array Studio may be familiar with the content provided within the Land Explorer framework. The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands.\n\n\nVideo introduction to Land Explorer\n\n\nPlease see our video for a basic introduction to Land Explorer:\n\n\n\n  \n\n\n\n\n\nLand Explorer is hosted on a Windows machine which connects to ArrayServer to provide access to rich visualization of Omic-data, directly in a user's web browser, meaning no extra software required. Land Explorer can by used as a companion product to OmicSoft's ArraySuite (to use with internal Lands and OmicSoft Lands), or as a standalone product hosted by QIAGEN/OmicSoft. Like ArraySuite, Land Explorer is fully customizable to meet the needs of its users.\n\n\nThese tutorial pages demonstrate the utility of Land Explorer, including a description of the many \nviews\n available, as well as the \ngeneral usage and customizations\n of these views.\n\n\nLand Explorer usage\n\n\nUsers can login to Land Explorer using their ArrayServer credentials. Please contact your ArrayServer adminstrator or \n if you are having issues logging in. Once you connect to the LandExplorer, there are two options for a landing page that can be customized for each LandExplorer installation: An Optional FrontPage or a Land View.\n\n\nFrontPage Option\n\n\nThis option allows users to query data across all Lands related to specific Sample Types. For example, the view below shows a distribution of all samples represented with the OncoLand, DiseaseLand, BodyMap, Cell Line and Single Cell collections, including sample counts, counts of data types and how these samples are distributed across all Lands.\n\n\nFor more information on how the FrontPages are configured and used, please visit the FrontPage \nhelp\n menu.\n\n\n\n\nLand View Option\n\n\nIf a FrontPage option is not defined in Land Explorer, the default view will be a Land View. In this view, the default land chosen by the administrator (TCGA by default) will appear. Users can switch to other Lands by simply clicking \nSelect Land\n:\n\n\n\n\nThe default \nTCGA_B37 Land Explorer\n view shows a histogram plot of samples grouped on the y-axis by Tumor Type, and colored on the x-axis by Sample Type. Other views are also available for users to query the sample data at a general level.", 
+            "text": "Introduction\n\n\nNote to reader\n: The tutorial pages are actively being written to describe the usage of the Land Explorer and the recent 2018Q2 release. Please check back for updates or e-mail \n if you have specific questions not addressed here.\n\n\nLand Explorer\n\n\nOmicSoft uses ArrayLand framework to deliver large amounts of clinical and \"omic\"-data to biologists with simplistic visualization. \nLand Explorer\n is the quickest way to explore OmicSoft Land data (OncoLand, DiseaseLand, and Internal Lands). Users of Array Studio may be familiar with the content provided within the Land Explorer framework. The streamlined web interface uses our most popular visualizations to help researchers and clinicians explore OmicSoft Lands.\n\n\nVideo introduction to Land Explorer\n\n\nPlease see our video for a basic introduction to Land Explorer:\n\n\n\n  \n\n\n\n\n\nLand Explorer is hosted on a Windows machine which connects to ArrayServer to provide access to rich visualization of Omic-data, directly in a user's web browser, meaning no extra software required. Land Explorer can by used as a companion product to OmicSoft's ArraySuite (to use with internal Lands and OmicSoft Lands), or as a standalone product hosted by QIAGEN/OmicSoft. Like ArraySuite, Land Explorer is fully customizable to meet the needs of its users.\n\n\nThese tutorial pages demonstrate the utility of Land Explorer, including a description of the many \nviews\n available, as well as the \ngeneral usage and customizations\n of these views.\n\n\nLand Explorer usage\n\n\nUsers can login to Land Explorer using their ArrayServer credentials. Please contact your ArrayServer adminstrator or \n if you are having issues logging in. Once you connect to the LandExplorer, there are two options for a landing page that can be customized for each LandExplorer installation: An Optional SampleExplorer or a Land View.\n\n\nSampleExplorer Option\n\n\nThis option allows users to query data across all Lands related to specific Sample Types. For example, the view below shows a distribution of all samples represented with the OncoLand, DiseaseLand, BodyMap, Cell Line and Single Cell collections, including sample counts, counts of data types and how these samples are distributed across all Lands.\n\n\nFor more information on how the SampleExplorer are configured and used, please visit the SampleExplorer \nhelp\n menu.\n\n\n\n\nLand View Option\n\n\nIf a SampleExplorer option is not defined in Land Explorer, the default view will be a Land View. In this view, the default land chosen by the administrator (TCGA by default) will appear. Users can switch to other Lands by simply clicking \nSelect Land\n:\n\n\n\n\nThe default \nTCGA_B37 Land Explorer\n view shows a histogram plot of samples grouped on the y-axis by Tumor Type, and colored on the x-axis by Sample Type. Other views are also available for users to query the sample data at a general level.", 
             "title": "Introduction"
         }, 
         {
@@ -742,61 +742,61 @@
         }, 
         {
             "location": "/tutorials/Land Explorer/Introduction/#land-explorer-usage", 
-            "text": "Users can login to Land Explorer using their ArrayServer credentials. Please contact your ArrayServer adminstrator or   if you are having issues logging in. Once you connect to the LandExplorer, there are two options for a landing page that can be customized for each LandExplorer installation: An Optional FrontPage or a Land View.", 
+            "text": "Users can login to Land Explorer using their ArrayServer credentials. Please contact your ArrayServer adminstrator or   if you are having issues logging in. Once you connect to the LandExplorer, there are two options for a landing page that can be customized for each LandExplorer installation: An Optional SampleExplorer or a Land View.", 
             "title": "Land Explorer usage"
         }, 
         {
-            "location": "/tutorials/Land Explorer/Introduction/#frontpage-option", 
-            "text": "This option allows users to query data across all Lands related to specific Sample Types. For example, the view below shows a distribution of all samples represented with the OncoLand, DiseaseLand, BodyMap, Cell Line and Single Cell collections, including sample counts, counts of data types and how these samples are distributed across all Lands.  For more information on how the FrontPages are configured and used, please visit the FrontPage  help  menu.", 
-            "title": "FrontPage Option"
+            "location": "/tutorials/Land Explorer/Introduction/#sampleexplorer-option", 
+            "text": "This option allows users to query data across all Lands related to specific Sample Types. For example, the view below shows a distribution of all samples represented with the OncoLand, DiseaseLand, BodyMap, Cell Line and Single Cell collections, including sample counts, counts of data types and how these samples are distributed across all Lands.  For more information on how the SampleExplorer are configured and used, please visit the SampleExplorer  help  menu.", 
+            "title": "SampleExplorer Option"
         }, 
         {
             "location": "/tutorials/Land Explorer/Introduction/#land-view-option", 
-            "text": "If a FrontPage option is not defined in Land Explorer, the default view will be a Land View. In this view, the default land chosen by the administrator (TCGA by default) will appear. Users can switch to other Lands by simply clicking  Select Land :   The default  TCGA_B37 Land Explorer  view shows a histogram plot of samples grouped on the y-axis by Tumor Type, and colored on the x-axis by Sample Type. Other views are also available for users to query the sample data at a general level.", 
+            "text": "If a SampleExplorer option is not defined in Land Explorer, the default view will be a Land View. In this view, the default land chosen by the administrator (TCGA by default) will appear. Users can switch to other Lands by simply clicking  Select Land :   The default  TCGA_B37 Land Explorer  view shows a histogram plot of samples grouped on the y-axis by Tumor Type, and colored on the x-axis by Sample Type. Other views are also available for users to query the sample data at a general level.", 
             "title": "Land View Option"
         }, 
         {
-            "location": "/tutorials/Land Explorer/FrontPage/FrontPage/", 
+            "location": "/tutorials/Land Explorer/Explorer/SampleExplorer/", 
             "text": "LandExplorer FrontPage\n\n\nOmicSoft has added an optional FrontPage to the Land Explorer interface. Here users can browse data across all available lands to identify samples of interest. On this help page, we describe the usage of the FrontPage.\n\n\nSample Explorer\n\n\n\n\nFrom the Sample Explorer, if users are interested in a specific Land, they can choose the appropriate Land from the drop-down menu at the top of the screen \nSelect Land\n and click the search button.\n\n\n\n\n\n\n\n\nWhen performing a search without selecting a gene (1), users will be taken to the \nsample distribution view\n to display all samples in that land.\n\n\n\n\n\n\nWhen performing a search after selecting a gene (2), users will be taken to the \nGene FPKM view\n to display all samples in that land.\n\n\n\n\n\n\nFilter samples\n\n\nOmicSoft lands are curated to include key metadata across all Land types (such as OncoLand and DiseaseLand). In the filtering section of the Sample Explorer, users can filter samples across all lands using these metadata, including the Land Collection (OncoLand, DiseaseLand, BodyMap, SingleCell). For a full description of the OmicSoft Lands, please visit \nhere\n. Land samples can also be filtered by the species and genome used to process the data, the type of data available, and what tissues samples came from.\n\n\nCross-Land Distribution\n\n\nThe distribution view is a common way to visualize how many samples are available using the filters selected on the left-hand side of the webpage. The default visualization will be a plot that shows the number of samples (ranked from highest to lowest), grouped by tissue on the y-axis.\n\n\nCollection Summary\n\n\nThis table in the upper-right corner of the Sample Explorer will display details of how many samples exist for the filtered samples, including the data types available (RNA/DNA-seq, CNV, microarray and proteomics assays)\n\n\nCollection TreeBlock View\n\n\nA user can quickly identify which Land(s) the filtered samples are in with this view. The blocks are sized based on the overall proportion of the samples are represented in the selected land.\n\n\nOpen Land to Filtered Gene FPKM view\n\n\nWithin the tree block view, a user can click on a Land and a search window will appear:\n\n\n\n\nTyping a gene name and selecting the Search button will allow a user to open up the \nGeneFPKM\n view, prefiltered using the FrontPage Filters:\n\n\n\n\nOpen Land to Filtered Land view\n\n\nWithout entering a gene, clicking the search button will take users to the \nsample distribution view\n to display samples, prefiltered using the FrontaPage Filters.", 
-            "title": "FrontPage"
+            "title": "Sample Explorer"
         }, 
         {
-            "location": "/tutorials/Land Explorer/FrontPage/FrontPage/#landexplorer-frontpage", 
+            "location": "/tutorials/Land Explorer/Explorer/SampleExplorer/#landexplorer-frontpage", 
             "text": "OmicSoft has added an optional FrontPage to the Land Explorer interface. Here users can browse data across all available lands to identify samples of interest. On this help page, we describe the usage of the FrontPage.", 
             "title": "LandExplorer FrontPage"
         }, 
         {
-            "location": "/tutorials/Land Explorer/FrontPage/FrontPage/#sample-explorer", 
+            "location": "/tutorials/Land Explorer/Explorer/SampleExplorer/#sample-explorer", 
             "text": "From the Sample Explorer, if users are interested in a specific Land, they can choose the appropriate Land from the drop-down menu at the top of the screen  Select Land  and click the search button.     When performing a search without selecting a gene (1), users will be taken to the  sample distribution view  to display all samples in that land.    When performing a search after selecting a gene (2), users will be taken to the  Gene FPKM view  to display all samples in that land.", 
             "title": "Sample Explorer"
         }, 
         {
-            "location": "/tutorials/Land Explorer/FrontPage/FrontPage/#filter-samples", 
+            "location": "/tutorials/Land Explorer/Explorer/SampleExplorer/#filter-samples", 
             "text": "OmicSoft lands are curated to include key metadata across all Land types (such as OncoLand and DiseaseLand). In the filtering section of the Sample Explorer, users can filter samples across all lands using these metadata, including the Land Collection (OncoLand, DiseaseLand, BodyMap, SingleCell). For a full description of the OmicSoft Lands, please visit  here . Land samples can also be filtered by the species and genome used to process the data, the type of data available, and what tissues samples came from.", 
             "title": "Filter samples"
         }, 
         {
-            "location": "/tutorials/Land Explorer/FrontPage/FrontPage/#cross-land-distribution", 
+            "location": "/tutorials/Land Explorer/Explorer/SampleExplorer/#cross-land-distribution", 
             "text": "The distribution view is a common way to visualize how many samples are available using the filters selected on the left-hand side of the webpage. The default visualization will be a plot that shows the number of samples (ranked from highest to lowest), grouped by tissue on the y-axis.", 
             "title": "Cross-Land Distribution"
         }, 
         {
-            "location": "/tutorials/Land Explorer/FrontPage/FrontPage/#collection-summary", 
+            "location": "/tutorials/Land Explorer/Explorer/SampleExplorer/#collection-summary", 
             "text": "This table in the upper-right corner of the Sample Explorer will display details of how many samples exist for the filtered samples, including the data types available (RNA/DNA-seq, CNV, microarray and proteomics assays)", 
             "title": "Collection Summary"
         }, 
         {
-            "location": "/tutorials/Land Explorer/FrontPage/FrontPage/#collection-treeblock-view", 
+            "location": "/tutorials/Land Explorer/Explorer/SampleExplorer/#collection-treeblock-view", 
             "text": "A user can quickly identify which Land(s) the filtered samples are in with this view. The blocks are sized based on the overall proportion of the samples are represented in the selected land.", 
             "title": "Collection TreeBlock View"
         }, 
         {
-            "location": "/tutorials/Land Explorer/FrontPage/FrontPage/#open-land-to-filtered-gene-fpkm-view", 
+            "location": "/tutorials/Land Explorer/Explorer/SampleExplorer/#open-land-to-filtered-gene-fpkm-view", 
             "text": "Within the tree block view, a user can click on a Land and a search window will appear:   Typing a gene name and selecting the Search button will allow a user to open up the  GeneFPKM  view, prefiltered using the FrontPage Filters:", 
             "title": "Open Land to Filtered Gene FPKM view"
         }, 
         {
-            "location": "/tutorials/Land Explorer/FrontPage/FrontPage/#open-land-to-filtered-land-view", 
+            "location": "/tutorials/Land Explorer/Explorer/SampleExplorer/#open-land-to-filtered-land-view", 
             "text": "Without entering a gene, clicking the search button will take users to the  sample distribution view  to display samples, prefiltered using the FrontaPage Filters.", 
             "title": "Open Land to Filtered Land view"
         }, 

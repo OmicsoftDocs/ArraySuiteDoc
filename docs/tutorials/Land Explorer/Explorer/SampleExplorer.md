@@ -1,6 +1,6 @@
-# LandExplorer FrontPage
+# LandExplorer Sample Explorer
 
-OmicSoft has added an optional FrontPage to the Land Explorer interface. Here users can browse data across all available lands to identify samples of interest. On this help page, we describe the usage of the FrontPage.
+OmicSoft has added an optional SampleExplorer to the Land Explorer interface. Here users can browse data across all available lands to identify samples of interest. On this help page, we describe the usage of the SampleExplorer.
 
 ## Sample Explorer
 
@@ -36,7 +36,7 @@ Within the tree block view, a user can click on a Land and a search window will 
 
 ![TreeSearch](../images/Search_TreeBlock.png)
 
-Typing a gene name and selecting the Search button will allow a user to open up the [GeneFPKM](../Land Views/Gene Level Views/RnaSeqQuantification#gene-fpkm-view) view, prefiltered using the FrontPage Filters:
+Typing a gene name and selecting the Search button will allow a user to open up the [GeneFPKM](../Land Views/Gene Level Views/RnaSeqQuantification#gene-fpkm-view) view, prefiltered using the SampleExplorer Filters:
 
 ![FilteredGeneFPKM](../images/filtered_from_treeblock.png)
 
