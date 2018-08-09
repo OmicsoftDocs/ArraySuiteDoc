@@ -2449,9 +2449,28 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4-2" type="checkbox" id="nav-4-4-2">
+    
+    <label class="md-nav__link" for="nav-4-4-2">
+      Pre-processing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-4-2">
+        Pre-processing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="../Create_ArrayStudio_Project/" title="CreateArray Studio Project" class="md-nav__link">
-      CreateArray Studio Project
+    <a href="../Pre-processing/10X Data Sets/" title="10X Genomics Data" class="md-nav__link">
+      10X Genomics Data
     </a>
   </li>
 
@@ -2462,33 +2481,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../scRNA_Analysis_Workflow/" title="scRNA analysis workflow" class="md-nav__link">
-      scRNA analysis workflow
+    <a href="../Pre-processing/non10XData/" title="Other UMI Data sets" class="md-nav__link">
+      Other UMI Data sets
     </a>
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Preprocess_scRNA_Data/" title="Pre-process of scRNA-Seq data" class="md-nav__link">
-      Pre-process of scRNA-Seq data
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Tag_based_QC/" title="TAG Based QC" class="md-nav__link">
-      TAG Based QC
-    </a>
+      </ul>
+    </nav>
   </li>
 
         
@@ -2510,8 +2510,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Remove_Duplicate/" title="Remove Duplicate" class="md-nav__link">
-      Remove Duplicate
+    <a href="../QC of Aligned Data/" title="QC of Aligned Data" class="md-nav__link">
+      QC of Aligned Data
     </a>
   </li>
 
@@ -2579,8 +2579,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Other_Downstream_Analysis/" title="Other Downstream Analysis" class="md-nav__link">
-      Other Downstream Analysis
+    <a href="../Downstream Analyses of SC Data/" title="Downstream Analyses of SC Data" class="md-nav__link">
+      Downstream Analyses of SC Data
     </a>
   </li>
 
@@ -2593,6 +2593,18 @@
   <li class="md-nav__item">
     <a href="../Save_Close_Project/" title="Save and Close Project" class="md-nav__link">
       Save and Close Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../AdditionalOptions/" title="Addtional Options" class="md-nav__link">
+      Addtional Options
     </a>
   </li>
 
@@ -3263,16 +3275,20 @@
 <h2 id="report-barcoded-bam-counts">Report Barcoded BAM Counts<a class="headerlink" href="#report-barcoded-bam-counts" title="Permanent link">&para;</a></h2>
 <p>For single cell sequencing data analysis, one of the most important parts is to get the transcript count for each cell, and this module in ArrayStudio can be accessed by going to Analysis | NGS | Single Cell RNA-Seq | Barcoded BAM Based Counting:</p>
 <p><img alt="BarcodedBAMBasedCount" src="../images/Barcoded_BAM_Counting.png" /></p>
-<p>This window will be similar to the normal RNASeq quantification, user can leave all the settings on the left as default. For the Options on the right section, <strong>Gene model</strong> and <strong>Cell barcode tag</strong> will be automatically assigned based on the bam file information; User can modify the setting for <strong>Cell count safe harbor</strong>, for the cells that have count in total less then this harbor, such cells will be filtered out in the reporting table. We will use set this value as 1000 for this tutorial.  </p>
+<p>This module will quantify unique UMI counts for each gene from the BAM files. Optionally, if the user would like to completely remove the duplicates from the BAM file, they can use the Remove Duplicates function <img alt="here" src="../AdditionalOptions/" /></p>
+<p>This window will be similar to the normal RNASeq quantification, user can leave all the settings on the left as default. For the Options on the right section, <strong>Gene model</strong> and <strong>Cell barcode tag</strong> will be automatically assigned based on the bam file information; User can modify the setting for <strong>Cell count safe harbor</strong> - this parameter will filter for cells that have at least the specified number of genes represented. For UMI studies, as shown for the <a href="../QC of Aligned Data/">AlignQC</a> step, we recommend using 250 as a safe harbor.  </p>
 <p>Leave settings as default and specify <strong>Job Number</strong> as the number of processes to run in parallel. Specify the output folder where the results files will be saved, otherwise the files will go the project folder by default.</p>
-<p><img alt="ReportSingleCellCounts" src="../images/Report_SingleCell_Count.png" /></p>
-<p>And then go to the Advanced tab, check the option for <strong>Convert UMI count transcript number</strong>.</p>
-<p><strong>Convert UMI count to transcript number</strong> is an option we designed for the correction of “UMI saturation”, please refer to our wiki: <a href="http://www.arrayserver.com/wiki/index.php?title=Ngs_ReportSingleCellCounts.pdf#Convert_UMI_count_to_transcript_number">UMI to Transcript</a> for the detail explanation.</p>
-<p>We will check this option “Convert UMI count to transcript number” in the advanced tab as our UMI is only 4nt in this project, it will easily get saturated:</p>
+<p><img alt="ReportSingleCellCounts" src="../images/quantification.png" /></p>
+<p>On the Advanced tab, there are two additional options for UMI counting:</p>
 <p><img alt="ReportSingleCellCountsAdvance" src="../images/Report_SingleCell_Count_Advance.png" /></p>
-<p>Click <strong>Send To Queue</strong> to submit the job.</p>
+<p><strong>Cluster UMI</strong> - Similar to barcode correction performed during pre-processing, sequencing errors in the UMI tags can be corrected using this option. For more details on clustering UMI reads, please see the wiki page here: <a href="http://www.arrayserver.com/wiki/index.php?title=Ngs_ReportSingleCellCounts.pdf#Cluster_UMI">http://www.arrayserver.com/wiki/index.php?title=Ngs_ReportSingleCellCounts.pdf#Cluster_UMI</a></p>
+<p>For both datasets provided for Tutorials by OmicSoft, Cluster UMI can be used.</p>
+<p><strong>Convert UMI count to transcript number</strong> is an option we designed for the correction of “UMI saturation”, please refer to our wiki: <a href="http://www.arrayserver.com/wiki/index.php?title=Ngs_ReportSingleCellCounts.pdf#Convert_UMI_count_to_transcript_number">UMI to Transcript</a> for the detailed explanation. This option is not needed for the 10X dataset analyzed in these tutorials, as they use 10 bp for the UMI tag. However, for the <a href="../Pre-processing/non10XData/">CEL-Seq experiment</a>, the UMI tag is only 4 nucleotides long, leading to possible saturation. In this case, users can use this option to convert UMI counts to account for this saturation.</p>
+<p>Once the appropriate options are chosen, click <strong>Send To Queue</strong> to submit the job.</p>
 <h2 id="output-files-and-tables">Output files and tables<a class="headerlink" href="#output-files-and-tables" title="Permanent link">&para;</a></h2>
-<p>When the job is done, there will be two -Omic type data objects show up in the GUI of project: a zero inflated binary matrix (ZIM) data object to store the UMI count, and another MicroArray type data object to store the converted UMI count:</p>
+<p>When the job is done, there will be an -Omic Data object (a *z*ero *i*nflated *b*inary matrix, or ZIM, data object), with a counts table representing all kept cells as columns and all genes as rows.</p>
+<p><img alt="quant_results" src="../images/quant_results.png" /></p>
+<p>If the user chooses to convert UMI counts to transcript number, there will be two -Omic type data objects: a zero inflated binary matrix (ZIM) data object to store the UMI count, and another MicroArray type data object to store the converted UMI count:</p>
 <p><img alt="SingleCellConvertedCounts" src="../images/SingleCell_Converted_Counts.png" /></p>
 <p>This is the ZIM data object file which has 256 as the maximum UMI count:</p>
 <p><img alt="SingleCellUMICounts" src="../images/SingleCell_UMI_Counts_table.png" /></p>
@@ -3298,7 +3314,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Remove_Duplicate/" title="Remove Duplicate" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../QC of Aligned Data/" title="QC of Aligned Data" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -3307,19 +3323,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Remove Duplicate
+                QC of Aligned Data
               </span>
             </div>
           </a>
         
         
-          <a href="../Other_Downstream_Analysis/" title="Other Downstream Analysis" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Downstream Analyses of SC Data/" title="Downstream Analyses of SC Data" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Other Downstream Analysis
+                Downstream Analyses of SC Data
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
