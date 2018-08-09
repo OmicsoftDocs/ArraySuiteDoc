@@ -1,18 +1,18 @@
 # Alignment to the Genome
 
-After the preprocess of single cell fastq file, the major step of the SC RNASeq analysis is the alignment of the reads to the genome. For this tutorial, we will align the data using OShell (same to normal RNASeq alignment), but with a special module to include the information in the tag file. To access this module, please go to **NGS | Single Cell RNA-Seq | Barcoded Alignment:**  
+After the [preprocessing](./Pre-processing/10X Data Sets.md) of single cell fastq files, the major step of the SC RNASeq analysis is the alignment of the reads to the genome. For this tutorial, we will align the data using OShell (same to normal RNASeq alignment), but with a special module to include the information in the tag file. To access this module, please go to **NGS | Single Cell RNA-Seq | Barcoded Alignment:**  
 
 ![BarcodedAlignment](images/Barcoded_alignment.png)
 
 ## Add filtered reads
 
-Click the **Add** button to specify the location of the files. If user has followed this tutorial to run the filtering step, use the fastq files resulted from filtering process. The associated tag.gz file will be expected in the same folder as fastq.gz file.
+If you used the [10X Preprocessing menu](./Pre-processing/10X Data Sets.md) you can simply Click the **Add List** link to specify the location of the files. This will automatically populate the File names field with the filtered reads. If you have used the [non-10X](./Pre-processing/non10XData.md) UMI data tutorial to run the filtering step, simply use the fastq files resulted from filtering process, clicking the **Add** link to choose the location of these files. The associated tag.gz file will be expected in the same folder as fastq.gz file.
 
 ![MapscRNAReads2Genome](images/Map_scRNA_Reads_Genome.png)
 
 Although our original fastq files are paired end reads, while the read1 only contains cell barcode and UMI information, the fastq file after preprocessing is now single end reads now, so leave the option for **Reads are paired** empty.
 
-Choose the Genome for the experiment. In this analysis, we used **Human.hg19**. Omicsoft supplies standard genome builds for common organisms, but the user can always choose to build and use their own genome. Similarly, choose the Gene Model to be used for alignment. Here we use **Ensembl.R75**, but the user can always choose to use their own gene model.
+Choose the Genome for the experiment. In the 10X data analysis, we used **Mouse.B38**, and for the non-10X dataset, **Human.hg19**. Omicsoft supplies standard genome builds for common organisms, but the user can always choose to build and use their own genome. Similarly, choose the Gene Model to be used for alignment. Here we use **Ensembl.R92** (10X) and **Ensembl.R75** (non-10X), but the user can always choose to use their own gene model.
 
 Leave the quality encoding set to automatic. However, for your information, these files were encoded using the Sanger quality scoring system. Total penalty should be left as automatic, and is described completely in Omicsoft’s white paper on alignment.
 Thread number indicates the number of threads to use per alignment, and usually this number should be less than 6. Job number refers to the number of parallel jobs (independent processes). Non-unique mapping indicates how many “ties” for non-unique reads should be reported, or whether they should be excluded all together.

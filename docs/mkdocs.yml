@@ -75,8 +75,8 @@ pages:
       - Pipeline Script: tutorials/Oscript/PipelineScript.md
     - Land Explorer:
       - Introduction: tutorials/Land Explorer/Introduction.md
-      - FrontPage: 
-        - FrontPage: tutorials/Land Explorer/FrontPage/FrontPage.md
+      - Explorer: 
+        - Sample Explorer: tutorials/Land Explorer/Explorer/SampleExplorer.md
       - Land Views:
         - Views: tutorials/Land Explorer/Land Views/Views.md
         - Sample Level Views:
@@ -191,15 +191,15 @@ pages:
       - Save and Close Project: tutorials/miRNAseq/Save_Close_Project.md
     - scRNA-Seq:
       - Introduction: tutorials/scRNAseq/Introduction.md
-      - CreateArray Studio Project: tutorials/scRNAseq/Create_ArrayStudio_Project.md
-      - scRNA analysis workflow: tutorials/scRNAseq/scRNA_Analysis_Workflow.md
-      - Pre-process of scRNA-Seq data: tutorials/scRNAseq/Preprocess_scRNA_Data.md
-      - TAG Based QC: tutorials/scRNAseq/Tag_based_QC.md
+      - Pre-processing:
+        - 10X Genomics Data: tutorials/scRNAseq/Pre-processing/10X Data Sets.md
+        - Other UMI Data sets: tutorials/scRNAseq/Pre-processing/non10XData.md
       - Alignment to the Genome: tutorials/scRNAseq/Alignment_to_the_Genome.md
-      - Remove Duplicate: tutorials/scRNAseq/Remove_Duplicate.md
+      - QC of Aligned Data: tutorials/scRNAseq/QC of Aligned Data.md
       - scRNA-Seq Quantification: tutorials/scRNAseq/scRNASeq_Quantification.md
-      - Other Downstream Analysis: tutorials/scRNAseq/Other_Downstream_Analysis.md
+      - Downstream Analyses of SC Data: tutorials/scRNAseq/Downstream Analyses of SC Data.md
       - Save and Close Project: tutorials/scRNAseq/Save_Close_Project.md
+      - Addtional Options: tutorials/scRNAseq/AdditionalOptions.md
     - GWAS:
       - Introduction: tutorials/GWAS/Introduction.md
       - Connecting To A Server And Uploading Files: tutorials/GWAS/Connecting_To_A_Server_And_Uploading_Files.md

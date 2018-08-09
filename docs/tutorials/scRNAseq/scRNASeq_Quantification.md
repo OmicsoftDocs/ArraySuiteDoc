@@ -8,25 +8,33 @@ For single cell sequencing data analysis, one of the most important parts is to 
 
 ![BarcodedBAMBasedCount](images/Barcoded_BAM_Counting.png)
 
-This window will be similar to the normal RNASeq quantification, user can leave all the settings on the left as default. For the Options on the right section, **Gene model** and **Cell barcode tag** will be automatically assigned based on the bam file information; User can modify the setting for **Cell count safe harbor**, for the cells that have count in total less then this harbor, such cells will be filtered out in the reporting table. We will use set this value as 1000 for this tutorial.  
+This module will quantify unique UMI counts for each gene from the BAM files. Optionally, if the user would like to completely remove the duplicates from the BAM file, they can use the Remove Duplicates function ![here](./AdditionalOptions.md)
+
+This window will be similar to the normal RNASeq quantification, user can leave all the settings on the left as default. For the Options on the right section, **Gene model** and **Cell barcode tag** will be automatically assigned based on the bam file information; User can modify the setting for **Cell count safe harbor** - this parameter will filter for cells that have at least the specified number of genes represented. For UMI studies, as shown for the [AlignQC](./QC of Aligned Data.md) step, we recommend using 250 as a safe harbor.  
 
 Leave settings as default and specify **Job Number** as the number of processes to run in parallel. Specify the output folder where the results files will be saved, otherwise the files will go the project folder by default.
 
-![ReportSingleCellCounts](images/Report_SingleCell_Count.png)
+![ReportSingleCellCounts](images/quantification.png)
 
-And then go to the Advanced tab, check the option for **Convert UMI count transcript number**.
-
-**Convert UMI count to transcript number** is an option we designed for the correction of “UMI saturation”, please refer to our wiki: [UMI to Transcript](http://www.arrayserver.com/wiki/index.php?title=Ngs_ReportSingleCellCounts.pdf#Convert_UMI_count_to_transcript_number) for the detail explanation.
-
-We will check this option “Convert UMI count to transcript number” in the advanced tab as our UMI is only 4nt in this project, it will easily get saturated:
+On the Advanced tab, there are two additional options for UMI counting:
 
 ![ReportSingleCellCountsAdvance](images/Report_SingleCell_Count_Advance.png)
 
-Click **Send To Queue** to submit the job.
+**Cluster UMI** - Similar to barcode correction performed during pre-processing, sequencing errors in the UMI tags can be corrected using this option. For more details on clustering UMI reads, please see the wiki page here: http://www.arrayserver.com/wiki/index.php?title=Ngs_ReportSingleCellCounts.pdf#Cluster_UMI
+
+For both datasets provided for Tutorials by OmicSoft, Cluster UMI can be used.
+
+**Convert UMI count to transcript number** is an option we designed for the correction of “UMI saturation”, please refer to our wiki: [UMI to Transcript](http://www.arrayserver.com/wiki/index.php?title=Ngs_ReportSingleCellCounts.pdf#Convert_UMI_count_to_transcript_number) for the detailed explanation. This option is not needed for the 10X dataset analyzed in these tutorials, as they use 10 bp for the UMI tag. However, for the [CEL-Seq experiment](./Pre-processing/non10XData.md), the UMI tag is only 4 nucleotides long, leading to possible saturation. In this case, users can use this option to convert UMI counts to account for this saturation.
+
+Once the appropriate options are chosen, click **Send To Queue** to submit the job.
 
 ## Output files and tables
 
-When the job is done, there will be two -Omic type data objects show up in the GUI of project: a zero inflated binary matrix (ZIM) data object to store the UMI count, and another MicroArray type data object to store the converted UMI count:
+When the job is done, there will be an -Omic Data object (a *z*ero *i*nflated *b*inary matrix, or ZIM, data object), with a counts table representing all kept cells as columns and all genes as rows.
+
+![quant_results](images/quant_results.png)
+
+ If the user chooses to convert UMI counts to transcript number, there will be two -Omic type data objects: a zero inflated binary matrix (ZIM) data object to store the UMI count, and another MicroArray type data object to store the converted UMI count:
 
 ![SingleCellConvertedCounts](images/SingleCell_Converted_Counts.png)
 

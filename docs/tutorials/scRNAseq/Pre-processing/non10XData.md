@@ -1,3 +1,16 @@
+# Introduction - Non-10X Umi Experiments
+
+## Test Dataset
+
+This Single Cell RNA-Seq (scRNA-Seq) tutorial will cover the importing and some analysis of a public dataset. This dataset can be accessed from NCBI GEO database: [GEO GSE85241](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE85241) which was run on the Illumina NextSeq 500(GPL18573) platform, and adopting the method of CEL-Seq2. There are 32 samples in total and each sample has 2 fastq files as input, as it’s paired-end sequencing data.
+
+As described in the document (GSE85241_readme_demultiplexing_Cel-seq_data.pdf) downloaded from GEO database, read 1 should be parsed in the following manner: “the first 8 basepairs are the Cel-Seq cell barcodes (see list at the bottom of the same document). The following four basepairs are random basepairs of the unique molecular identifier, which can be used to count individual molecules for each transcript. The rest of read 1 consists of mostly polyT and is not used. Read two is then mapped to the reference genome of choice (hg19 in our case).”
+
+Based on this description, in this tutorial we will extract the cell barcode and UMI information from read1, then align read2 to human genome, and perform downstream quantification and clustering analysis.
+
+If users are interested in testing with this project, the data can be downloaded from NCBI: [SRP080991](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=SRP080991), or using our GUI for downloading SRA to download the fastq files: [Download SRA in ArrayStudio](http://www.arrayserver.com/wiki/index.php?title=DownloadSRAData.pdf).
+After retrieving these data, you can begin the tutorial.
+
 # Pre-Process
 
 ## Pre-process
@@ -6,33 +19,33 @@ Compared to normal fastq files, Single-Cell RNASeq fastq files contain extra inf
 
 This module can be accessed by going to **NGS | SingleCell RNA-Seq | Single Cell Preprocessing:**
 
-![SingleCellPreprocessing](images/SingleCellPreProcessing.png)
+![SingleCellPreprocessing](../images/SingleCellPreProcessing.png)
 
 
 Click **Add** to find all fastq files for these 32 samples (64 fastq files). Leave **Quality encoding** as Automatic to automatically set the correct quality encoding method (this tutorial has fastq files with the Sanger method of quality encoding). Specify **Job Number** as the number of processes to run in parallel. Specify the output folder where the results files (.fastq.gz and .tag.gz) will be saved, otherwise the files will go to the project folder by default.
 
 Check the option for **Reads are paired** as we are using paired end data in this tutorial, and check the option for **Reads contain UMI**. Leave the box for **Demultiplex with cell barcode** empty here, as we don’t want to demultiplex at fastq file level, which will generate too many files.
 
-![AddscRNAfastq](images/Add_scRNA_FASTQ_File.png)
+![AddscRNAfastq](../images/Add_scRNA_FASTQ_File.png)
 
 ## Barcode UMI Source
 
 In the **Barcode/UMI Source** section, check the option for **Read Sequences** as the barcode and UMI are included in the read1 for our data, then click **R1 pattern** to bring up the regular expression window:
 
-![Specify_Regx](images/Specify_Regular_Expression.png)
+![Specify_Regx](../images/Specify_Regular_Expression.png)
 
 For our testing data, in the read 1 files, the first **8** basepairs are the Cel-Seq **cell barcodes**, and the following **4** basepairs are random basepairs of the **unique molecular identifier**. We can modify the length for barcode and UMI like this in the box, and click **Match**, user can see how the fastq read1 sequences get mapped by this regular expression pattern:
 
-![Specify_Regx_Match](images/Specify_REGX_match.png)
+![Specify_Regx_Match](../images/Specify_REGX_match.png)
 
 Click **OK** will bring this regular expression phrase to the Single Cell Preprocessing window. In the last option, choose **Read2** as the read sequence exists in Read2 for our testing data.
 
-![preprocess_send2queue](images/scPreprocess_send2queue.png)
+![preprocess_send2queue](../images/scPreprocess_send2queue.png)
 
 Click **Send To Queue** to run this job on server.
 When the job is done, user can find four files generated for each sample in the output folder:
 
-![Output_preprocessed](images/preprocessed_output.png)
+![Output_preprocessed](../images/preprocessed_output.png)
 
 Mainly, we will use **\_prepReads.fastq.gz** file and **\_prepReads.tag.gz** file for the following analysis.
 
@@ -48,7 +61,7 @@ After the pre-processing of SC fastq files (resulting **prepReads.fastq.gz** and
 
 To open this module, user can go to **Analysis | NGS | Single Cell RNA-Seq | Filter Single Cell Raw Reads**.
 
-![FilterscRawReads](images/Filter_SingleCell_rawReads.png)
+![FilterscRawReads](../images/Filter_SingleCell_rawReads.png)
 
 Click Add to find all 32 files, pay attention to the files names, and make sure you are loading the *.prepReads.fastq.gz* files. Specify Job Number as the number of processes to run in parallel. Specify the output folder where the results files (.ngs) will be saved, otherwise the files will go the project folder by default.
 
@@ -58,12 +71,12 @@ In this window, user can provide a ValidBarcode list if they have such list to v
 
 Leave the box for **“Reads are paired”** empty, and check **Read2** for **Single end read source**, as our fastq data is originated from paired end data and Read2 is read source.
 
-![FilterscFASTQReads](images/Filter_SingleCell_FastqReads.png)
+![FilterscFASTQReads](../images/Filter_SingleCell_FastqReads.png)
 
 Click **Send To Queue** to run the module on server.
 
 When the job is done, user will be able to see 5 files generated for each sample:
 
-![FiveFilesFilterReads](images/generated_5Files_Filter_FastqReads.png)
+![FiveFilesFilterReads](../images/generated_5Files_Filter_FastqReads.png)
 
 The **prepReads.filter.fastq.gz** file and **filterReads.filter.tag.gz** files will be used for the following analysis. User can move the rest of the files into a sub-folder for better management.

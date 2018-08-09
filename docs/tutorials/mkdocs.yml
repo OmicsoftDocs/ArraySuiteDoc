@@ -75,20 +75,20 @@ pages:
       - Pipeline Script: tutorials/Oscript/PipelineScript.md
     - Land Explorer:
       - Introduction: tutorials/Land Explorer/Introduction.md
-      - Explorer:
+      - Explorer: 
         - Sample Explorer: tutorials/Land Explorer/Explorer/SampleExplorer.md
       - Land Views:
         - Views: tutorials/Land Explorer/Land Views/Views.md
         - Sample Level Views:
-            - Distribution Views: tutorials/Land Explorer/Land Views/Sample Level Views/Samples.md
-            - Comparisons: tutorials/Land Explorer/Land Views/Sample Level Views/Comparisons.md
+            - Distribution Views: tutorials/Land Explorer/Land Views/Sample Level Views/Samples.md 
+            - Comparisons: tutorials/Land Explorer/Land Views/Sample Level Views/Comparisons.md 
             - Sample Details: tutorials/Land Explorer/Land Views/Sample Level Views/Sample_Details.md
             - Comparison Availability: tutorials/Land Explorer/Land Views/Sample Level Views/Comparison_Availability.md
             - Data Availability: tutorials/Land Explorer/Land Views/Sample Level Views/Data_Availability.md
             - Survival Data: tutorials/Land Explorer/Land Views/Sample Level Views/Survival_Data.md
         - Gene Level Views:
             - Integration: tutorials/Land Explorer/Land Views/Gene Level Views/OmicDataIntegrationViews.md
-            - Comparisons: tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons.md
+            - Comparisons: tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons.md             
             - DNA-Seq: tutorials/Land Explorer/Land Views/Gene Level Views/DNAAlterationDistribution.md
             - Copy Number: tutorials/Land Explorer/Land Views/Gene Level Views/CopyNumberViews.md
             - RNA-Seq Quantification: tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification.md
@@ -98,11 +98,11 @@ pages:
             - miRNA-Seq: tutorials/Land Explorer/Land Views/Gene Level Views/miRNA_views.md
             - Proteomics: tutorials/Land Explorer/Land Views/Gene Level Views/Proteomics.md
             - Methylation: tutorials/Land Explorer/Land Views/Gene Level Views/Methylation.md
-        - Comparison Level Views:
+        - Comparison Level Views: 
             - Volcano Plot: tutorials/Land Explorer/Land Views/Comparison Level Views/Volcano_Plot.md
       - Using Land Explorer:
         - Land Explorer Interface: tutorials/Land Explorer/Using Land Explorer/LandExplorerInterface.md
-        - Filters:
+        - Filters: 
             - Filtering: tutorials/Land Explorer/Using Land Explorer/Filters/Filters.md
             - Sample Filters: tutorials/Land Explorer/Using Land Explorer/Filters/Sample_Filters.md
             - Comparison Filters: tutorials/Land Explorer/Using Land Explorer/Filters/Comparison_filters.md
@@ -110,13 +110,13 @@ pages:
             - Gene Filters: tutorials/Land Explorer/Using Land Explorer/Filters/Gene.md
             - Mutation Filters: tutorials/Land Explorer/Using Land Explorer/Filters/Mutation.md
             - CNV Filters: tutorials/Land Explorer/Using Land Explorer/Filters/CNV.md
-        - Queries:
+        - Queries: 
             - Custom Query: tutorials/Land Explorer/Using Land Explorer/Queries/Custom_Query.md
             - Search Bar: tutorials/Land Explorer/Using Land Explorer/Queries/Searching_Genes.md
         - Generate View Link: tutorials/Land Explorer/Using Land Explorer/GenerateViewLink.md
         - Customizations: tutorials/Land Explorer/Using Land Explorer/Customizations.md
         - View Controller: tutorials/Land Explorer/Using Land Explorer/View_controller.md
-
+        
 - OmicData:
     - Microarray:
       - Installing Array Studio: tutorials/Microarray/Installing_Array_Studio.md
@@ -191,15 +191,15 @@ pages:
       - Save and Close Project: tutorials/miRNAseq/Save_Close_Project.md
     - scRNA-Seq:
       - Introduction: tutorials/scRNAseq/Introduction.md
-      - CreateArray Studio Project: tutorials/scRNAseq/Create_ArrayStudio_Project.md
-      - scRNA analysis workflow: tutorials/scRNAseq/scRNA_Analysis_Workflow.md
-      - Pre-process of scRNA-Seq data: tutorials/scRNAseq/Preprocess_scRNA_Data.md
-      - TAG Based QC: tutorials/scRNAseq/Tag_based_QC.md
+      - Pre-processing:
+        - 10X Genomics Data: tutorials/scRNAseq/Pre-processing/10X Data Sets.md
+        - Other UMI Data sets: tutorials/scRNAseq/Pre-processing/non10XData.md
       - Alignment to the Genome: tutorials/scRNAseq/Alignment_to_the_Genome.md
-      - Remove Duplicate: tutorials/scRNAseq/Remove_Duplicate.md
+      - QC of Aligned Data: tutorials/scRNAseq/QC of Aligned Data.md
       - scRNA-Seq Quantification: tutorials/scRNAseq/scRNASeq_Quantification.md
-      - Other Downstream Analysis: tutorials/scRNAseq/Other_Downstream_Analysis.md
+      - Downstream Analyses of SC Data: tutorials/scRNAseq/Downstream Analyses of SC Data.md
       - Save and Close Project: tutorials/scRNAseq/Save_Close_Project.md
+      - Addtional Options: tutorials/scRNAseq/AdditionalOptions.md
     - GWAS:
       - Introduction: tutorials/GWAS/Introduction.md
       - Connecting To A Server And Uploading Files: tutorials/GWAS/Connecting_To_A_Server_And_Uploading_Files.md
@@ -291,3 +291,4 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.details
   - mdx_math
+
