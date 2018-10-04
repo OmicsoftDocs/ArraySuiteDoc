@@ -2601,6 +2601,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#visualize-gene-expression" title="Visualize gene expression" class="md-nav__link">
+    Visualize gene expression
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-violin-plot" title="Generate Violin plot" class="md-nav__link">
+    Generate Violin plot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overlay-expression-onto-tsne-plot" title="Overlay Expression onto tSNE plot" class="md-nav__link">
+    Overlay Expression onto tSNE plot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -3307,6 +3334,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#visualize-gene-expression" title="Visualize gene expression" class="md-nav__link">
+    Visualize gene expression
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-violin-plot" title="Generate Violin plot" class="md-nav__link">
+    Generate Violin plot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overlay-expression-onto-tsne-plot" title="Overlay Expression onto tSNE plot" class="md-nav__link">
+    Overlay Expression onto tSNE plot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -3404,6 +3458,35 @@ the columns to Color the view:</p>
 <li>An example of volcano plot is shown below:</li>
 </ol>
 <p><img alt="scRNAVolcanoPlot" src="../images/scRNA_Volcano_plot.png" /></p>
+<h2 id="visualize-gene-expression">Visualize gene expression<a class="headerlink" href="#visualize-gene-expression" title="Permanent link">&para;</a></h2>
+<p>ArrayStudio has developed a large number of rich visualizations to further explore data from OmicData and examine the results of downstream analyses. In addition to the inference reports and the associated Volcano plot views that allow users to visualize the distribution of fold change of all genes from say, one cluster to another, or one cluster to all cells, users can also visualize the normalized read counts and overlay the results with other cell metadata, such as cluster identity.</p>
+<h3 id="generate-violin-plot">Generate Violin plot<a class="headerlink" href="#generate-violin-plot" title="Permanent link">&para;</a></h3>
+<p>A simply way to visualize expression of the highly variable or differentially expressed genes identified by Seurat would be to generate a Variable view in the RPM-Normalized OmicData object with all the single-cell counts:</p>
+<p><img alt="AddVariableView" src="../images/AddVariableView.png" /></p>
+<p>As shown in the preview above, for each cell, the expression level of each gene will be plotted. In order to better view the data, users can first add cluster metadata to the Design table of this OmicData object. Simply select all the lists of clusters identified in the tSNE view, right-click and choose Add List Membership to table:</p>
+<p><img alt="AddListMembership" src="../images/AddListMembership.png" /></p>
+<p>Simply choose the design table of the OmicData object with the RPM-normalized counts:</p>
+<p><img alt="DesignTable" src="../images/DesignTable.png" /></p>
+<p>In the Variable View that was added to this OmicData object, notice that each cell is represented on the X-axis. Users can Specify Profile Column to group cells based on metadata, such as the Cluster Identity (from the added List Membership):</p>
+<p><img alt="Profile Column" src="../images/ProfileColumn.png" /></p>
+<p>The scatter plot can be changed to a different style, such as the violin plot by selecting <em>Change Profile Gallery</em></p>
+<p><img alt="ProfileGallery" src="../images/ProfileGallery.png" /></p>
+<p>The resulting view will be a violin plot for all variables (genes) represented in the experiment. From here, users can search their gene of interest:</p>
+<p><img alt="SearchGene" src="../images/SearchGene.png" /></p>
+<p>The view can be customized to show the gene symbol or color by cluster type:</p>
+<p><img alt="GeneName" src="../images/GeneName.png" />
+<img alt="ClusterType" src="../images/ClusterType.png" /></p>
+<p>However, in single-cell analyses, many genes will have zero counts, and users may want to quickly filter out genes. Using the View Controller on the right side of the screen, users can filter to specific gene lists, such at the list of Highly Variable Genes produced by Seurat in the previous steps. Simply right-click on the GeneID and add list:</p>
+<p><img alt="AddFilter" src="../images/AddFilter.png" /></p>
+<p>Now, the view will be filtered down to the genes in the list, and users can scroll the view to visualize how genes are expressed in the clusters identified:</p>
+<p><img alt="ViolinPlot" src="../images/ViolinPlot.png" /></p>
+<h3 id="overlay-expression-onto-tsne-plot">Overlay Expression onto tSNE plot<a class="headerlink" href="#overlay-expression-onto-tsne-plot" title="Permanent link">&para;</a></h3>
+<p>Another useful visualization would be to overlay gene expression onto the defined clusters from the tSNE view generated earlier. Within ArrayStudio, users can use <strong>Table | Overlay OmicData Features</strong> option:</p>
+<p><img alt="OverlayOmicData" src="../images/OverlayOmicData.png" /></p>
+<p>In this function count data from an OmicData object is transposed onto the tSNE scatter plot generated using the tSNE function. Users can simply choose the target data (the tSNE plot) and the source data (the counts table), and either input a single gene ID or a list of up to 200 genes to visualize on the tSNE plot:</p>
+<p><img alt="OverlayOptions" src="../images/OverlayOptions.png" /></p>
+<p>This will generate a new table object with the expression for the desired gene(s) added onto the tSNE table. In addition, a new view, called the ColorScatterView will be plotted, where each gene will be overlaid on a tSNE scatter view:</p>
+<p><img alt="ColorScatter" src="../images/ColorScatter.png" /></p>
                 
                   
                 
