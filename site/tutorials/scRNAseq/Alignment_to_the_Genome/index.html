@@ -2449,9 +2449,28 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4-2" type="checkbox" id="nav-4-4-2">
+    
+    <label class="md-nav__link" for="nav-4-4-2">
+      Pre-processing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-4-2">
+        Pre-processing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="../Create_ArrayStudio_Project/" title="CreateArray Studio Project" class="md-nav__link">
-      CreateArray Studio Project
+    <a href="../Pre-processing/10X Data Sets/" title="10X Genomics Data" class="md-nav__link">
+      10X Genomics Data
     </a>
   </li>
 
@@ -2462,33 +2481,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../scRNA_Analysis_Workflow/" title="scRNA analysis workflow" class="md-nav__link">
-      scRNA analysis workflow
+    <a href="../Pre-processing/non10XData/" title="Other UMI Data sets" class="md-nav__link">
+      Other UMI Data sets
     </a>
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Preprocess_scRNA_Data/" title="Pre-process of scRNA-Seq data" class="md-nav__link">
-      Pre-process of scRNA-Seq data
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Tag_based_QC/" title="TAG Based QC" class="md-nav__link">
-      TAG Based QC
-    </a>
+      </ul>
+    </nav>
   </li>
 
         
@@ -2555,8 +2555,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Remove_Duplicate/" title="Remove Duplicate" class="md-nav__link">
-      Remove Duplicate
+    <a href="../QC of Aligned Data/" title="QC of Aligned Data" class="md-nav__link">
+      QC of Aligned Data
     </a>
   </li>
 
@@ -2579,8 +2579,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Other_Downstream_Analysis/" title="Other Downstream Analysis" class="md-nav__link">
-      Other Downstream Analysis
+    <a href="../Downstream Analyses of SC Data/" title="Downstream Analyses of SC Data" class="md-nav__link">
+      Downstream Analyses of SC Data
     </a>
   </li>
 
@@ -2593,6 +2593,18 @@
   <li class="md-nav__item">
     <a href="../Save_Close_Project/" title="Save and Close Project" class="md-nav__link">
       Save and Close Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../AdditionalOptions/" title="Addtional Options" class="md-nav__link">
+      Addtional Options
     </a>
   </li>
 
@@ -3259,13 +3271,13 @@
                 
                 
                 <h1 id="alignment-to-the-genome">Alignment to the Genome<a class="headerlink" href="#alignment-to-the-genome" title="Permanent link">&para;</a></h1>
-<p>After the preprocess of single cell fastq file, the major step of the SC RNASeq analysis is the alignment of the reads to the genome. For this tutorial, we will align the data using OShell (same to normal RNASeq alignment), but with a special module to include the information in the tag file. To access this module, please go to <strong>NGS | Single Cell RNA-Seq | Barcoded Alignment:</strong>  </p>
+<p>After the <a href="../Pre-processing/10X Data Sets/">preprocessing</a> of single cell fastq files, the major step of the SC RNASeq analysis is the alignment of the reads to the genome. For this tutorial, we will align the data using OShell (same to normal RNASeq alignment), but with a special module to include the information in the tag file. To access this module, please go to <strong>NGS | Single Cell RNA-Seq | Barcoded Alignment:</strong>  </p>
 <p><img alt="BarcodedAlignment" src="../images/Barcoded_alignment.png" /></p>
 <h2 id="add-filtered-reads">Add filtered reads<a class="headerlink" href="#add-filtered-reads" title="Permanent link">&para;</a></h2>
-<p>Click the <strong>Add</strong> button to specify the location of the files. If user has followed this tutorial to run the filtering step, use the fastq files resulted from filtering process. The associated tag.gz file will be expected in the same folder as fastq.gz file.</p>
+<p>If you used the <a href="../Pre-processing/10X Data Sets/">10X Preprocessing menu</a> you can simply Click the <strong>Add List</strong> link to specify the location of the files. This will automatically populate the File names field with the filtered reads. If you have used the <a href="../Pre-processing/non10XData/">non-10X</a> UMI data tutorial to run the filtering step, simply use the fastq files resulted from filtering process, clicking the <strong>Add</strong> link to choose the location of these files. The associated tag.gz file will be expected in the same folder as fastq.gz file.</p>
 <p><img alt="MapscRNAReads2Genome" src="../images/Map_scRNA_Reads_Genome.png" /></p>
 <p>Although our original fastq files are paired end reads, while the read1 only contains cell barcode and UMI information, the fastq file after preprocessing is now single end reads now, so leave the option for <strong>Reads are paired</strong> empty.</p>
-<p>Choose the Genome for the experiment. In this analysis, we used <strong>Human.hg19</strong>. Omicsoft supplies standard genome builds for common organisms, but the user can always choose to build and use their own genome. Similarly, choose the Gene Model to be used for alignment. Here we use <strong>Ensembl.R75</strong>, but the user can always choose to use their own gene model.</p>
+<p>Choose the Genome for the experiment. In the 10X data analysis, we used <strong>Mouse.B38</strong>, and for the non-10X dataset, <strong>Human.hg19</strong>. Omicsoft supplies standard genome builds for common organisms, but the user can always choose to build and use their own genome. Similarly, choose the Gene Model to be used for alignment. Here we use <strong>Ensembl.R92</strong> (10X) and <strong>Ensembl.R75</strong> (non-10X), but the user can always choose to use their own gene model.</p>
 <p>Leave the quality encoding set to automatic. However, for your information, these files were encoded using the Sanger quality scoring system. Total penalty should be left as automatic, and is described completely in Omicsoft’s white paper on alignment.
 Thread number indicates the number of threads to use per alignment, and usually this number should be less than 6. Job number refers to the number of parallel jobs (independent processes). Non-unique mapping indicates how many “ties” for non-unique reads should be reported, or whether they should be excluded all together.</p>
 <p>Different from the normal RNASeq alignment, in this module, Barcoded BAM files will be generated. Basically, there will be several extra columns in the bam file for each read, showing the corresponding information about cell barcode and UMI.</p>
@@ -3299,7 +3311,7 @@ Thread number indicates the number of threads to use per alignment, and usually 
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Tag_based_QC/" title="TAG Based QC" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Pre-processing/non10XData/" title="Other UMI Data sets" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -3308,19 +3320,19 @@ Thread number indicates the number of threads to use per alignment, and usually 
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                TAG Based QC
+                Other UMI Data sets
               </span>
             </div>
           </a>
         
         
-          <a href="../Remove_Duplicate/" title="Remove Duplicate" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../QC of Aligned Data/" title="QC of Aligned Data" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Remove Duplicate
+                QC of Aligned Data
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

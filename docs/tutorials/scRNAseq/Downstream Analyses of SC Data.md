@@ -136,3 +136,60 @@ The SCDE module will generate an inference table and a volcano plot view for thi
 2.	An example of volcano plot is shown below:
 
 ![scRNAVolcanoPlot](images/scRNA_Volcano_plot.png)
+
+## Visualize gene expression
+
+ArrayStudio has developed a large number of rich visualizations to further explore data from OmicData and examine the results of downstream analyses. In addition to the inference reports and the associated Volcano plot views that allow users to visualize the distribution of fold change of all genes from say, one cluster to another, or one cluster to all cells, users can also visualize the normalized read counts and overlay the results with other cell metadata, such as cluster identity.
+
+### Generate Violin plot
+
+A simply way to visualize expression of the highly variable or differentially expressed genes identified by Seurat would be to generate a Variable view in the RPM-Normalized OmicData object with all the single-cell counts:
+
+![AddVariableView](images/AddVariableView.png)
+
+As shown in the preview above, for each cell, the expression level of each gene will be plotted. In order to better view the data, users can first add cluster metadata to the Design table of this OmicData object. Simply select all the lists of clusters identified in the tSNE view, right-click and choose Add List Membership to table:
+
+![AddListMembership](images/AddListMembership.png)
+
+Simply choose the design table of the OmicData object with the RPM-normalized counts:
+
+![DesignTable](images/DesignTable.png)
+
+In the Variable View that was added to this OmicData object, notice that each cell is represented on the X-axis. Users can Specify Profile Column to group cells based on metadata, such as the Cluster Identity (from the added List Membership):
+
+![Profile Column](images/ProfileColumn.png)
+
+The scatter plot can be changed to a different style, such as the violin plot by selecting *Change Profile Gallery*
+
+![ProfileGallery](images/ProfileGallery.png)
+
+The resulting view will be a violin plot for all variables (genes) represented in the experiment. From here, users can search their gene of interest:
+
+![SearchGene](images/SearchGene.png)
+
+The view can be customized to show the gene symbol or color by cluster type:
+
+![GeneName](images/GeneName.png)
+![ClusterType](images/ClusterType.png)
+
+ However, in single-cell analyses, many genes will have zero counts, and users may want to quickly filter out genes. Using the View Controller on the right side of the screen, users can filter to specific gene lists, such at the list of Highly Variable Genes produced by Seurat in the previous steps. Simply right-click on the GeneID and add list:
+
+![AddFilter](images/AddFilter.png)
+
+Now, the view will be filtered down to the genes in the list, and users can scroll the view to visualize how genes are expressed in the clusters identified:
+
+![ViolinPlot](images/ViolinPlot.png)
+
+### Overlay Expression onto tSNE plot
+
+Another useful visualization would be to overlay gene expression onto the defined clusters from the tSNE view generated earlier. Within ArrayStudio, users can use **Table | Overlay OmicData Features** option:
+
+![OverlayOmicData](images/OverlayOmicData.png)
+
+In this function count data from an OmicData object is transposed onto the tSNE scatter plot generated using the tSNE function. Users can simply choose the target data (the tSNE plot) and the source data (the counts table), and either input a single gene ID or a list of up to 200 genes to visualize on the tSNE plot:
+
+![OverlayOptions](images/OverlayOptions.png)
+
+This will generate a new table object with the expression for the desired gene(s) added onto the tSNE table. In addition, a new view, called the ColorScatterView will be plotted, where each gene will be overlaid on a tSNE scatter view:
+
+![ColorScatter](images/ColorScatter.png)

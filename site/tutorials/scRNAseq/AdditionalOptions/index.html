@@ -13,7 +13,7 @@
         <meta name="description" content="OmicSoft Doc">
       
       
-        <link rel="canonical" href="https://omicsoftdocs.github.io/ArraySuiteDoc/tutorials/scRNAseq/scRNA_Analysis_Workflow/">
+        <link rel="canonical" href="https://omicsoftdocs.github.io/ArraySuiteDoc/tutorials/scRNAseq/AdditionalOptions/">
       
       
         <meta name="author" content="OmicSoft Support">
@@ -42,7 +42,7 @@
     
     
       
-        <title>scRNA analysis workflow - omicsoft doc</title>
+        <title>Addtional Options - omicsoft doc</title>
       
     
     
@@ -82,7 +82,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#single-cell-rnaseq-analysis-workflow" tabindex="1" class="md-skip">
+      <a href="#remove-duplicate" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -108,7 +108,7 @@
                 omicsoft doc
               </span>
               <span class="md-header-nav__topic">
-                scRNA analysis workflow
+                Addtional Options
               </span>
             
           
@@ -2449,33 +2449,19 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../Create_ArrayStudio_Project/" title="CreateArray Studio Project" class="md-nav__link">
-      CreateArray Studio Project
-    </a>
-  </li>
-
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4-2" type="checkbox" id="nav-4-4-2">
+    
+    <label class="md-nav__link" for="nav-4-4-2">
+      Pre-processing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-4-2">
+        Pre-processing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
         
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-    <a href="./" title="scRNA analysis workflow" class="md-nav__link md-nav__link--active">
-      scRNA analysis workflow
-    </a>
-    
-  </li>
-
         
           
           
@@ -2483,8 +2469,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Preprocess_scRNA_Data/" title="Pre-process of scRNA-Seq data" class="md-nav__link">
-      Pre-process of scRNA-Seq data
+    <a href="../Pre-processing/10X Data Sets/" title="10X Genomics Data" class="md-nav__link">
+      10X Genomics Data
     </a>
   </li>
 
@@ -2495,9 +2481,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../Tag_based_QC/" title="TAG Based QC" class="md-nav__link">
-      TAG Based QC
+    <a href="../Pre-processing/non10XData/" title="Other UMI Data sets" class="md-nav__link">
+      Other UMI Data sets
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -2519,8 +2510,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Remove_Duplicate/" title="Remove Duplicate" class="md-nav__link">
-      Remove Duplicate
+    <a href="../QC of Aligned Data/" title="QC of Aligned Data" class="md-nav__link">
+      QC of Aligned Data
     </a>
   </li>
 
@@ -2543,8 +2534,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Other_Downstream_Analysis/" title="Other Downstream Analysis" class="md-nav__link">
-      Other Downstream Analysis
+    <a href="../Downstream Analyses of SC Data/" title="Downstream Analyses of SC Data" class="md-nav__link">
+      Downstream Analyses of SC Data
     </a>
   </li>
 
@@ -2558,6 +2549,27 @@
     <a href="../Save_Close_Project/" title="Save and Close Project" class="md-nav__link">
       Save and Close Project
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Addtional Options" class="md-nav__link md-nav__link--active">
+      Addtional Options
+    </a>
+    
   </li>
 
         
@@ -3199,9 +3211,14 @@
               
                 
                 
-                <h1 id="single-cell-rnaseq-analysis-workflow">Single Cell RNASeq Analysis Workflow<a class="headerlink" href="#single-cell-rnaseq-analysis-workflow" title="Permanent link">&para;</a></h1>
-<p>In this tutorial, we will introduce the SCRNA-Seq data analysis workflow in ArrayStudio, step by step. The workflow consists of a number of modules for SCRNA-Seq data processing, including pre-process, filter SC reads, Tag Based QC, alignment, quantification, and a series of optional downstream analysis, as shown in the schematic chart below:</p>
-<p><img alt="scRNAWorkflow" src="../images/scRNA_workflow.png" /></p>
+                <h1 id="remove-duplicate">Remove Duplicate<a class="headerlink" href="#remove-duplicate" title="Permanent link">&para;</a></h1>
+<p><strong>This module is optional for this tutorial, user can run this or just skip this part, and jump to the step for Quantification.</strong> Remove Duplicate can be used to remove duplication for Single Cell Bam files. The module will be useful if the user wants to have a clean (duplicate removed) BAM file for downstream analysis.</p>
+<p>To access this module, user can go to <strong>Analysis | NGS | Single Cell RNA-Seq | Remove Duplicates</strong>:</p>
+<p><img alt="RemoveDuplicate" src="../images/Remove_Duplicate.png" /></p>
+<p>Use the default options and just input the Output name and output folder, then click <strong>Send To Queue</strong> to submit this job:</p>
+<p><img alt="RemoveDuplicate4SCData" src="../images/Remove_Duplicate_for_scData.png" /></p>
+<p>Once this job is finished, user should be able to see a new NgsData object in Array Studio GUI, as well as new BAM files in the specified output folder:</p>
+<p><img alt="RemoveDuplicateOutput" src="../images/Remove_Duplicate_output.png" /></p>
                 
                   
                 
@@ -3222,7 +3239,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Create_ArrayStudio_Project/" title="CreateArray Studio Project" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Save_Close_Project/" title="Save and Close Project" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -3231,19 +3248,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                CreateArray Studio Project
+                Save and Close Project
               </span>
             </div>
           </a>
         
         
-          <a href="../Preprocess_scRNA_Data/" title="Pre-process of scRNA-Seq data" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../GWAS/Introduction/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Pre-process of scRNA-Seq data
+                Introduction
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
