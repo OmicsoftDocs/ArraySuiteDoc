@@ -31,6 +31,15 @@ For more information on how the SampleExplorer are configured and used, please v
 
 ![Front_Page](images/FrontPageNirav.png)
 
+### ComparisonExplorer Option
+
+This option allows users to query data across all Lands related to comparisons. For example, the view below shows a distribution of all comparisons represented within ArrayLands, and can be grouped by disease or tissue, with interactive pie charts and tree blocks that allow users to view and click through to OmicSoft-curated comparison(s) of interest.
+
+For more information on how the ComparisonExplorer are configured and used, please visit the ComparisonExplorer [help](./Explorer/ComparisonExplorer.md) menu.
+
+![ComparisonExplorerHomePage](images/ComparisonExplorerHomePage.png)
+
+
 ### Land View Option
 
 If a SampleExplorer option is not defined in Land Explorer, the default view will be a Land View. In this view, the default land chosen by the administrator (TCGA by default) will appear. Users can switch to other Lands by simply clicking **Select Land**:

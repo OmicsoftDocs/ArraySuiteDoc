@@ -3275,25 +3275,28 @@
 <h2 id="report-barcoded-bam-counts">Report Barcoded BAM Counts<a class="headerlink" href="#report-barcoded-bam-counts" title="Permanent link">&para;</a></h2>
 <p>For single cell sequencing data analysis, one of the most important parts is to get the transcript count for each cell, and this module in ArrayStudio can be accessed by going to Analysis | NGS | Single Cell RNA-Seq | Barcoded BAM Based Counting:</p>
 <p><img alt="BarcodedBAMBasedCount" src="../images/Barcoded_BAM_Counting.png" /></p>
-<p>This module will quantify unique UMI counts for each gene from the BAM files. Optionally, if the user would like to completely remove the duplicates from the BAM file, they can use the Remove Duplicates function <img alt="here" src="../AdditionalOptions/" /></p>
+<p>This module will quantify unique UMI counts for each gene from the BAM files. Optionally, if the user would like to completely remove the duplicates from the BAM file, they can use the Remove Duplicates function <a href="../AdditionalOptions/">here</a></p>
 <p>This window will be similar to the normal RNASeq quantification, user can leave all the settings on the left as default. For the Options on the right section, <strong>Gene model</strong> and <strong>Cell barcode tag</strong> will be automatically assigned based on the bam file information; User can modify the setting for <strong>Cell count safe harbor</strong> - this parameter will filter for cells that have at least the specified number of genes represented. For UMI studies, as shown for the <a href="../QC of Aligned Data/">AlignQC</a> step, we recommend using 250 as a safe harbor.  </p>
 <p>Leave settings as default and specify <strong>Job Number</strong> as the number of processes to run in parallel. Specify the output folder where the results files will be saved, otherwise the files will go the project folder by default.</p>
 <p><img alt="ReportSingleCellCounts" src="../images/quantification.png" /></p>
-<p>On the Advanced tab, there are two additional options for UMI counting:</p>
+<p>On the Advanced tab, there are three additional options for UMI counting:</p>
 <p><img alt="ReportSingleCellCountsAdvance" src="../images/Report_SingleCell_Count_Advance.png" /></p>
 <p><strong>Cluster UMI</strong> - Similar to barcode correction performed during pre-processing, sequencing errors in the UMI tags can be corrected using this option. For more details on clustering UMI reads, please see the wiki page here: <a href="http://www.arrayserver.com/wiki/index.php?title=Ngs_ReportSingleCellCounts.pdf#Cluster_UMI">http://www.arrayserver.com/wiki/index.php?title=Ngs_ReportSingleCellCounts.pdf#Cluster_UMI</a></p>
 <p>For both datasets provided for Tutorials by OmicSoft, Cluster UMI can be used.</p>
 <p><strong>Convert UMI count to transcript number</strong> is an option we designed for the correction of “UMI saturation”, please refer to our wiki: <a href="http://www.arrayserver.com/wiki/index.php?title=Ngs_ReportSingleCellCounts.pdf#Convert_UMI_count_to_transcript_number">UMI to Transcript</a> for the detailed explanation. This option is not needed for the 10X dataset analyzed in these tutorials, as they use 10 bp for the UMI tag. However, for the <a href="../Pre-processing/non10XData/">CEL-Seq experiment</a>, the UMI tag is only 4 nucleotides long, leading to possible saturation. In this case, users can use this option to convert UMI counts to account for this saturation.</p>
+<p><strong>RPM Scaling</strong> - this option allows users to normalize cell counts as part of the quantification step (to reads per million). By checking this option, users skip this further processing that is described <a href="../Downstream Analyses of SC Data/#Normalization">here</a>. Please note if running a server project, this step requires ArrayServer version 10.0.1.96 or newer.</p>
 <p>Once the appropriate options are chosen, click <strong>Send To Queue</strong> to submit the job.</p>
 <h2 id="output-files-and-tables">Output files and tables<a class="headerlink" href="#output-files-and-tables" title="Permanent link">&para;</a></h2>
-<p>When the job is done, there will be an -Omic Data object (a *z*ero *i*nflated *b*inary matrix, or ZIM, data object), with a counts table representing all kept cells as columns and all genes as rows.</p>
+<p>When the job is done, there will be an -Omic Data object (a zero inflated binary matrix, or ZIM, data object), with a counts table representing all kept cells as columns and all genes as rows.</p>
 <p><img alt="quant_results" src="../images/quant_results.png" /></p>
-<p>If the user chooses to convert UMI counts to transcript number, there will be two -Omic type data objects: a zero inflated binary matrix (ZIM) data object to store the UMI count, and another MicroArray type data object to store the converted UMI count:</p>
+<p>If the user chooses to convert UMI counts to transcript number, there will be two -Omic data objects: a zero inflated binary matrix (ZIM) data object to store the UMI count, and another MicroArray type data object to store the converted UMI count:</p>
 <p><img alt="SingleCellConvertedCounts" src="../images/SingleCell_Converted_Counts.png" /></p>
 <p>This is the ZIM data object file which has 256 as the maximum UMI count:</p>
 <p><img alt="SingleCellUMICounts" src="../images/SingleCell_UMI_Counts_table.png" /></p>
 <p>And this will be the normal MicroArray type -Omic data which store the converted theoretical UMI count, which has the maximum UMI as 1420:</p>
 <p><img alt="SingleCellUMICounts" src="../images/SingleCell_UMI_Counts_1420.png" /></p>
+<p>If the user chooses to normalize UMI counts to reads per million, an addtional -Omic data object will be generated with each cell normalized to one million counts:</p>
+<p><img alt="RPM_quant" src="../images/RPM_quant.png" /></p>
                 
                   
                 

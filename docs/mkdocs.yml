@@ -77,6 +77,7 @@ pages:
       - Introduction: tutorials/Land Explorer/Introduction.md
       - Explorer: 
         - Sample Explorer: tutorials/Land Explorer/Explorer/SampleExplorer.md
+        - Comparion Explorer: tutorials/Land Explorer/Explorer/ComparisonExplorer.md
       - Land Views:
         - Views: tutorials/Land Explorer/Land Views/Views.md
         - Sample Level Views:
