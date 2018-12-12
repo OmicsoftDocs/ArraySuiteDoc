@@ -117,7 +117,8 @@ pages:
         - Generate View Link: tutorials/Land Explorer/Using Land Explorer/GenerateViewLink.md
         - Customizations: tutorials/Land Explorer/Using Land Explorer/Customizations.md
         - View Controller: tutorials/Land Explorer/Using Land Explorer/View_controller.md
-        
+      - Land Explorer for IPA:
+            - Introduction: tutorials/Land Explorer/Land Explorer for IPA/Land_Explorer_for_IPA.md
 - OmicData:
     - Microarray:
       - Installing Array Studio: tutorials/Microarray/Installing_Array_Studio.md
