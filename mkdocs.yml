@@ -77,7 +77,7 @@ pages:
       - Introduction: tutorials/Land Explorer/Introduction.md
       - Explorer: 
         - Sample Explorer: tutorials/Land Explorer/Explorer/SampleExplorer.md
-        - Comparison Explorer: tutorials/Land Explorer/Explorer/ComparisonExplorer.md
+        - Comparion Explorer: tutorials/Land Explorer/Explorer/ComparisonExplorer.md
       - Land Views:
         - Views: tutorials/Land Explorer/Land Views/Views.md
         - Sample Level Views:
@@ -117,7 +117,8 @@ pages:
         - Generate View Link: tutorials/Land Explorer/Using Land Explorer/GenerateViewLink.md
         - Customizations: tutorials/Land Explorer/Using Land Explorer/Customizations.md
         - View Controller: tutorials/Land Explorer/Using Land Explorer/View_controller.md
-        
+      - Land Explorer for IPA:
+            - Introduction: tutorials/Land Explorer/Land Explorer for IPA/Land_Explorer_for_IPA.md
 - OmicData:
     - Microarray:
       - Installing Array Studio: tutorials/Microarray/Installing_Array_Studio.md
