@@ -10,4 +10,4 @@ The Land Explorer gives users the freedom to browse Omicsoft Lands through their
 
 ...and more!
 
-![interface_png](../images/interface.png)
+![interface_png](../images/interface_12192018.png)
