@@ -16,6 +16,7 @@ copyright: 'Copyright &copy; 2008 - 2017 OmicSoft/QIAGEN Bioinformatics'
 #theme: mkdocs #material # material-extend #mkdocs readthedocs
 theme:
   name: 'material'
+#  custom_dir: 'mkdocs-material/material'
   palette:
     primary: 'Blue'
     accent: 'teal'
@@ -34,8 +35,8 @@ extra_javascript:
 extra_css:
   - 'stylesheets/extra.css'
 
-# page tree
-pages:
+# page tree changed to nav 
+nav:
 - Home: index.md
 - Framework:
     - Array Studio: tutorials/ArrayStudio/ArrayStudio.md
@@ -272,13 +273,13 @@ google_analytics:
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
-  - markdown.extensions.codehilite(guess_lang=false)
+  - markdown.extensions.codehilite
   - markdown.extensions.def_list
   - markdown.extensions.footnotes
   - markdown.extensions.meta
-  - markdown.extensions.toc(permalink=true)
+  - markdown.extensions.toc
   - pymdownx.arithmatex
-  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.betterem 
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.critic
@@ -289,8 +290,8 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
-  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tasklist
   - pymdownx.tilde
   - pymdownx.details
-  - mdx_math
+#  - mdx_math
 

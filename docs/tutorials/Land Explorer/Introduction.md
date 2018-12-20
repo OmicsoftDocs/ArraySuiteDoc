@@ -1,6 +1,5 @@
 # Introduction
 
-**Note to reader**: The tutorial pages are actively being written to describe the usage of the Land Explorer and the recent 2018Q2 release. Please check back for updates or e-mail support@omicsoft.com if you have specific questions not addressed here.
 
 ## Land Explorer
 
