@@ -15,5 +15,23 @@ Land Explorer for IPA provides interactive plots of gene expression in 51 differ
 
 Navigate to sample-level human tissue expression for human genes via links in isoform view. Click the link (shown in the red box) to view the Land Explorer for IPA web page that plots the expression of the isoforms (splice variants) of a human gene in 51 different human tissues. Gene-level expression is also available in Land Explorer.
 
+Within Land Explorer, users can:
+1.	Filter on metadata
+
+a.	Add new metadata filters, under Tissue tab, keep only for tissue categories.
+b.  Apply newly created filters
+
+![image_ApplyFilters_IPA.png](../images/ApplyFilters_IPA.png)
+
+2.	Regroup on metadata
+
+3.	Trellis on metadata (currently broken! Needs an update!)
+
+4.	Switch between transcript-level and gene-level View
+
+5.	Search for a new gene
+
+
+Land Explorer for IPA is available at no charge for all IPA users, and does not require registration or manual sign-in. For broader access to hundreds of thousands of samples from healthy and disease tissue, please take a tour of the full OmicSoft Land Explorer.
 You can find detailed information about navigating Land Explorer's [gene and transcript level Views](../Land Views/Gene Level Views/RnaSeqQuantification.md),
 and [filtering data](../Using Land Explorer/Filters/Filters.md).
