@@ -17,7 +17,7 @@ Navigate to sample-level human tissue expression for human genes via links in is
 
 Within Land Explorer, users can:
 
-1.	Filter on metadata
+1	Filter on metadata
 
  a.	Add new metadata filters, under Tissue tab, keep only four tissue categories.
 
@@ -25,19 +25,19 @@ Within Land Explorer, users can:
 
 ![image_ApplyFilters_IPA_png](../images/ApplyFilters_IPA.png)
 
-2.	Regroup on metadata
+2	Regroup on metadata
 
  ![image_IPA_regroup_png](../images/IPA_regroup.png)
 
-3.	Trellis on metadata (Right now this feature is available for Gene FPKM views, our development team are currently updating this feature on other views)
+3	Trellis on metadata (Right now this feature is available for Gene FPKM views, our development team are currently updating this feature on other views)
 
  ![image_IPA_trellis_png](../images/IPA_trellis.png)
 
-4.	Switch between transcript-level and gene-level View
+4	Switch between transcript-level and gene-level View
 
  ![image_IPA_switch_Gene_transcript_png](../images/IPA_switch_Gene_transcript.png)
 
-5.	Search for a new gene
+5	Search for a new gene
 
  ![image_IPA_search_new_gene_png](../images/IPA_search_new_gene.png)
 
