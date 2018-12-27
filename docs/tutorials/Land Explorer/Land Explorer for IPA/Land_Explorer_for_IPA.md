@@ -19,8 +19,9 @@ Within Land Explorer, users can:
 
 1.	Filter on metadata
 
- a.	Add new metadata filters, under Tissue tab, keep only for tissue categories.
- b.  Apply newly created filters
+ a.	Add new metadata filters, under Tissue tab, keep only four tissue categories.
+
+ b.  Click Apply button to apply the newly created filters
 
 ![image_ApplyFilters_IPA_png](../images/ApplyFilters_IPA.png)
 
