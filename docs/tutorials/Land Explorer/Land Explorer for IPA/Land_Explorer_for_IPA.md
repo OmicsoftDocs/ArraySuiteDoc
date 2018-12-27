@@ -23,23 +23,23 @@ Within Land Explorer, users can:
 
  b.  Click Apply button to apply the newly created filters
 
-
 ![image_ApplyFilters_IPA_png](../images/ApplyFilters_IPA.png)
 
 2.	Regroup on metadata
 
-![image_IPA_regroup_png](../images/IPA_regroup.png)
+ ![image_IPA_regroup_png](../images/IPA_regroup.png)
 
 3.	Trellis on metadata (Right now this feature is available for Gene FPKM views, our development team are currently updating this feature on other views)
 
-![image_IPA_trellis_png](../images/IPA_trellis.png)
+ ![image_IPA_trellis_png](../images/IPA_trellis.png)
 
 4.	Switch between transcript-level and gene-level View
-![image_IPA_switch_Gene_transcript_png](../images/IPA_switch_Gene_transcript.png)
+
+ ![image_IPA_switch_Gene_transcript_png](../images/IPA_switch_Gene_transcript.png)
 
 5.	Search for a new gene
 
-![image_IPA_search_new_gene_png](../images/IPA_search_new_gene.png)
+ ![image_IPA_search_new_gene_png](../images/IPA_search_new_gene.png)
 
 Land Explorer for IPA is available at no charge for all IPA users, and does not require registration or manual sign-in. For broader access to hundreds of thousands of samples from healthy and disease tissue, please take a tour of the full OmicSoft Land Explorer.
 You can find detailed information about navigating Land Explorer's [gene and transcript level Views](../Land Views/Gene Level Views/RnaSeqQuantification.md),
