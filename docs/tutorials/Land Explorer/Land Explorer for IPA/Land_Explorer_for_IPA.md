@@ -23,6 +23,7 @@ Within Land Explorer, users can:
 
  b.  Click Apply button to apply the newly created filters
 
+
 ![image_ApplyFilters_IPA_png](../images/ApplyFilters_IPA.png)
 
 2.	Regroup on metadata
