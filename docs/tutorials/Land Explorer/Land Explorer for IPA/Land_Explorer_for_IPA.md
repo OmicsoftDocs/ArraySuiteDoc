@@ -16,10 +16,11 @@ Land Explorer for IPA provides interactive plots of gene expression in 51 differ
 Navigate to sample-level human tissue expression for human genes via links in isoform view. Click the link (shown in the red box) to view the Land Explorer for IPA web page that plots the expression of the isoforms (splice variants) of a human gene in 51 different human tissues. Gene-level expression is also available in Land Explorer.
 
 Within Land Explorer, users can:
+
 1.	Filter on metadata
 
-a.	Add new metadata filters, under Tissue tab, keep only for tissue categories.
-b.  Apply newly created filters
+ a.	Add new metadata filters, under Tissue tab, keep only for tissue categories.
+ b.  Apply newly created filters
 
 ![image_ApplyFilters_IPA_png](../images/ApplyFilters_IPA.png)
 
