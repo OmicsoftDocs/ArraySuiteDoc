@@ -14,7 +14,7 @@ From IPA's Isoforms View for your gene of interest, click **"View Expression in 
 
 ![image_ipa_in_landexplorer](../images/Ipa_in_landexplorer.png)
 
-##Tips and Tricks
+## Tips and Tricks
 
 ###	Filtering on metadata
 
