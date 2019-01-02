@@ -14,6 +14,9 @@ From IPA's Isoforms View for your gene of interest, click **"View Expression in 
 
 ![image_ipa_in_landexplorer](../images/Ipa_in_landexplorer.png)
 
+You can find detailed information about navigating Land Explorer's [gene and transcript level Views](../Land Views/Gene Level Views/RnaSeqQuantification.md),
+and [filtering data](../Using Land Explorer/Filters/Filters.md).
+
 ## Tips and Tricks
 
 ###	Filtering on metadata
@@ -48,6 +51,3 @@ While you are in **Land Explorer for IPA**, you can search for expression of oth
 Land Explorer for IPA is available at no charge for all IPA users, and does not require registration or manual sign-in, providing gene expression data from GTEx. 
 
 For full access to hundreds of thousands of samples from healthy and disease tissue, please request a trial of the full OmicSoft Land Explorer: https://www.qiagenbioinformatics.com/land-explorer/.
-
-You can find detailed information about navigating Land Explorer's [gene and transcript level Views](../Land Views/Gene Level Views/RnaSeqQuantification.md),
-and [filtering data](../Using Land Explorer/Filters/Filters.md).
