@@ -6,7 +6,7 @@ Explore detailed expression patterns across human tissues directly from IPA’s 
 
 IPA users can examine detailed expression patterns across human tissues directly from IPA's Isoform Views.
 
-From IPA's Isoforms View for your gene of interest, click **"View Expression in Land Explorer"** to open the web portal, displaying expression information for your gene.
+From IPA's Isoforms View for your gene of interest, click **"View GTEx human tissue expression (Land Explorer)"** to open the web portal, displaying expression information for your gene.
 
 ![image_Isoforms2GTEx](../images/Isoforms2GTEx.png)
 
