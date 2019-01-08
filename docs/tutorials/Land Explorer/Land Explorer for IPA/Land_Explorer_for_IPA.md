@@ -12,6 +12,8 @@ From IPA's Isoforms View for your gene of interest, click **"View Expression in 
 
 By default, the RefSeq gene model is used in the **IPA Isoform View** and **Land Explorer for IPA**. If you switch the drop-down box to **Ensembl** in the **IPA Isoform View**, you can view transcript and gene quantification in **Land Explorer for IPA** using the Ensembl gene model.
 
+![image_LandExplorer_SwitchToEnsembl](../images/LandExplorer_SwitchToEnsembl.png)
+
 **Land Explorer for IPA** plots the expression of the splice variants of any human gene in 51 different human tissues. Gene-level expression is also available in Land Explorer (see below).
 
 ![image_ipa_in_landexplorer](../images/Ipa_in_landexplorer.png)
