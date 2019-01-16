@@ -11,5 +11,3 @@ Copy Number Variation Analysis Tutorial
     Advanced_Visualization
     Analysis_Modules
     Save_Close_Project
-
-Jeff is super nice!

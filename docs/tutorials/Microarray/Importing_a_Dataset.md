@@ -59,9 +59,9 @@ When users want to create a server project, some basic metadata need to be provi
 
 ![image9_2_png](images/image9_2.png)
 
-The interface of creating of new local project is different from creating a new server project, but the rest of the steps such as data import, data analysis share the same interface. Different project types would tell Array Studio where to run the analysis, if it is a local project, Array Studio would run the analysis in local machine; if it is a server project, Array Studio would run the analysis on server. Server projects are recommended when dealing with larger datasets as server-based analyses allows the user to run jobs on a remote server (Linux or Windows), which usually has more computing power than a desktop computer.
+The interface of creating of a new local project is different from creating a new server project, but the rest of the steps, such as data import and data analysis, share the same interface. The "local" or "server" project types tell Array Studio where to run the analysis. If it is a local project, Array Studio runs the analysis on the local machine; if it is a server project, Array Studio would run the analysis on the server. Server projects are recommended when dealing with larger datasets, as server-based analyses allow the user to run jobs on a remote server (Linux or Windows), which usually has more computing power than a desktop computer.
 
-The analyses in this tutorial are performed under local project, but can also be followed as a server project if connected to ArrayServer.
+The analyses in this tutorial are performed as a local project, but these can also be followed as a server project if the user is connected to ArrayServer.
 
 To switch to the *Solution Explorer*, choose the *Solution Explorer* tab, which should be found at the bottom of the *Workflow Window* . If the *Solution Explorer* tab is not visible, switch to it by going to the **View Menu | Show Solution Explorer**.
 
