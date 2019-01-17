@@ -7,7 +7,7 @@ For this tutorial, the following materials will be required: 24 .CEL files from 
 
 After downloading the single .zip file, unzip the file to a folder to be used for this tutorial. The DBP Time Series data set contains information for 15923 probesets in a 2 by 4 factorial experiment. There are treatment (DBP) and control groups, measured at four different times (1 hr, 3 hr, 6 hr, and 18 hr). The experiment measures the intensity of gene expression level of 15923 probesets, with three replicates for each combination of treatment and time. This is NOT a repeated measure experiment, as different samples were used for different time points. The primary interest of this experiment is to find probesets that are differentially expressed under two conditions (treatment and control) at the 4 different time points.
 
-The dbpts.design file contains the design information for the study, including columns for *chip, time, treatment, and group.* A design table can be created at any time by a user, using Microsoft Excel or Array Studio. As a rule, the design table must contain a first column, usually deemed *Chip* for Affymetrix platforms, that contains the exact file names of the chips used in the experiment, without the .CEL file extensions. Additional columns usually include *treatment, time, etc.* (anything pertinent to the experiment). If you forget to include a particular column at the time of the creation of the design table, it can be edited later on.
+The tutorial also contains a design file. The dbpts.design file contains the design information for the study, including columns for *chip, time, treatment, and group.* A design table can be created at any time by a user, using Microsoft Excel or Array Studio. As a rule, the design table must contain a first column, usually deemed *Chip* for Affymetrix platforms, that contains the exact file names of the chips used in the experiment, without the .CEL file extensions. Additional columns usually include *treatment, time, etc.* (anything pertinent to the experiment). If you forget to include a particular column at the time of the creation of the design table, it can be edited later on.
 
 ![image5_png](images/image5.png)
 
@@ -43,7 +43,7 @@ To create a new project, click the **New Project** button in the Workflow, or th
 
 ![image9_png](images/image9.png)
 
-*Array Studio* allows the user to create two different project types. A simple project, in which all the outputs are saved in a single file (recommended for microarray and RT-PCR projects), and a distributed project, where output are saved in separate files (recommended for exon array, CNV, genotyping and NGS projects).
+*Array Studio* allows the user to create two different project types: a simple project, in which all the outputs are saved in a single file (recommended for microarray and RT-PCR projects), or a distributed project, where the output is saved in separate files (recommended for exon array, CNV, genotyping and NGS projects). This project type is based on the organization of the data to be analyzed.
 
 Since this project is a microarray project, choose **Create a simple project** now. Then, click the **Browse** button to select a location and enter the name for the project. Once this is complete, click *OK* to continue.
 
@@ -53,7 +53,7 @@ Another way to create a new project is by this icon in the Analysis tab:
 
 ![image9_1_png](images/image9_1.png)
 
-Note that users can choose to create different projects: Local project as mentioned above and server project. A server project is a distributed project saved on server. Once the user is connected to server, the option of creating a new server project will become available.
+Note that users can choose to create different projects: Local project as mentioned above and server project. A server project is a distributed project saved on server. Once the user is connected to server, the option of creating a new server project will become available. This project type is based on the location (local computer or server) where the data will be analyzed.
 
 When users want to create a server project, some basic metadata need to be provided:
 
@@ -247,7 +247,7 @@ The user can also click on the header cell for any variable. Do this now, and no
 
 ![image39_png](images/image39.png)
 
-Besides the *Details Window*, *Array Studio* also contains **Web Details On-Demand**. *Web Details* allow the user to connect to online websites for further information about a particular variable or probeset.
+Besides the *Details Window*, *Array Studio* also contains **Web Details On-Demand**, which is located by right-clicking on the variable name (i.e.: *Probeset ID*) within the *Details Window*. *Web Details* allow the user to connect to online websites for further information about a particular variable or probeset.
 
 In the *Details Window*, right-click on the row header cell that was previously selected.
 
@@ -283,7 +283,10 @@ The view controller should now be visible on the right side of the screen.
 
 Click the pin button ![image46_png](images/image46.png) so that it is facing downwards. ![image47_png](images/image47.png) This ensures that the *View Controller* remains in constant view. If the pin is facing to the left, the *View Controller* (and any other window i.e. *Solution Explorer, Details Window, etc.* ) will auto hide itself when it loses the mouse focus. When the user rolls the mouse pointer over the hidden view, it will reappear. Keep the *View Controller* with the pin facing downwards so that the *View Controller* is visible at all times.
 
-As can be seen from the picture above, the *View Controller* contains three tabs. The *Task* tab contains all the settings for modifying the properties of the current view. For the *TableView*, this includes **Show Row Numbers**, **Specify Columns**, **Reset Columns**, **Generate Data From View and Export With Customized Column Headers**. Click *Specify Columns* to specify which columns of the dataset are visible.
+As can be seen from the picture above, the *View Controller* contains three tabs. The *Task* tab contains all the settings for modifying the properties of the current view. One option is *Summarize By Group*: this allows the user to do a quality control check of the expression levels of each time point and treatment to ensure that there are no outliers among the expression profiles. To compare gene expression between sample groups and treatments, the overall gene expression should be similar at this high level to ensure technical confidence in the analysis.
+
+
+The *View Controller* can also be used to investigate the gene expression data. From the *TableView*, the *View Controller* *Task* tab includes **Show Row Numbers**, **Specify Columns**, **Reset Columns**, **Generate Data From View and Export With Customized Column Headers**. Click *Specify Columns* to specify which columns of the dataset are visible.
 
 ![image48_png](images/image48.png)
 

@@ -184,7 +184,7 @@ Click **Add View** and select **PairwiseScatterView** from the list of views. On
 
 In this screenshot, 3 chips are shown by default (in the example below 01A, 02A and 03A). This view provides a way for the user to look at both a ScatterView of the chips against each other, as well as an MA Plot for each chip against each other.
 
-The MA Plots are contained in the upper-right of the *PairwiseScatterView*, and the regular *ScatterViews* are contained in the lower-left of the *PairwiseScatterView*.
+The MA Plots are contained in the upper-right of the *PairwiseScatterView*, and the regular *ScatterViews* are contained in the lower-left of the *PairwiseScatterView*. (see References for details)
 
 An **r** value (Pearson correlation) for each chip-to-chip comparison is shown on each chart.
 
@@ -214,7 +214,7 @@ Ensure that the correct project (*TutorialMicroArray* in this example) is select
 
 Under options, change the *Group* to *'group'* to indicate the biological group information.
 
-Array Studio can generate 2D(3D) PCA plots if **Component number** is set to 2(3). Setting the Component number to 4 or more will generate a pairwise scatterview plot of the PCA. For this example, we will generate a 3D plot by setting this value to 3.
+Array Studio can generate 2D(3D) PCA plots if **Component number** is set to 2(3). Setting the number of principal components visualized (Component number) to 4 or more will generate a pairwise scatterview plot of the PCA. For this example, we will generate a 3D plot by setting this value to 3.
 
 Ensure that **Scale variables**, **Output scores**, and **Calculate Hotelling T2** are selected, with an **Alpha level** of 0.05. Click *Submit*. Remember that all the details about this module, including input, output and parameter explanations can be retrieved by clicking the **Help** button.
 
@@ -228,7 +228,7 @@ When complete, a new view will be created, as well as a new *Table object* in th
 
 The *Table* section of the Solution Explorer will need to be expanded, as well as the automatically generated QC folder and the new table. This is an example of a type of Table data, as opposed to the  Omic data that we have been working with before. Table data has a flat two-way structure (rows and columns), while  Omic data contains multiple levels (Data, Design, and Annotation).
 
-Switch to the view *MicroArray.PcaScores|PcaScores* to look at the score plot. First, notice that on the X and Y axis, the variance of each component is explained (equivalent of R 2 value). Component 1 (x-axis) explains 36.43 % of the variance in the data. Component 2 represents 11.77% of the variance in the data. And Component 3 represents an additional 8.41%.
+Switch to the view *MicroArrayData.PcaScores* -> *PcaScores* to look at the score plot. First, notice that on the X and Y axis, the variance of each component is explained (equivalent of R 2 value). Component 1 (x-axis) explains 36.43 % of the variance in the data. Component 2 represents 11.77% of the variance in the data. And Component 3 represents an additional 8.41%. To adjust the visualization by adding or removing principal components, use the *Specify Columns* option under *Task* -> *Data* in the *View Controller*.
 
 Users can use the **Trackball** button ![image106_png](images/image106.png) to rotate the 3D plot. At first glance, it is clear that there is one outlier in the chart.
 
@@ -262,7 +262,7 @@ This triggers the principal component analysis to re-run, with newly generated *
 
 ![image115_png](images/image115.png)
 
-The newly generated *PcaScores* plot is shown below.
+The newly generated *PcaScores* plot is shown below. A quick way to distinguish between the original and re-run analyses is by looking at the number of samples analyzed, which is listed next to the object title in the *Solution Explorer*. 
 
 ![image116_png](images/image116.png)
 

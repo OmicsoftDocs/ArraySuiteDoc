@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
     
     
       
@@ -46,7 +46,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/application.11e41852.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.572ca0f0.css">
       
         <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.22915126.css">
       
@@ -57,7 +57,7 @@
       
     
     
-      <script src="../../../../assets/javascripts/modernizr.20ef595d.js"></script>
+      <script src="../../../../assets/javascripts/modernizr.8c900955.js"></script>
     
     
       
@@ -1499,6 +1499,54 @@
   <a href="#accessing-land-explorer-for-ipa" title="Accessing Land Explorer for IPA" class="md-nav__link">
     Accessing Land Explorer for IPA
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-and-tricks" title="Tips and Tricks" class="md-nav__link">
+    Tips and Tricks
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtering-on-metadata" title="Filtering on metadata" class="md-nav__link">
+    Filtering on metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regrouping-on-metadata" title="Regrouping on metadata" class="md-nav__link">
+    Regrouping on metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trellis-on-metadata" title="Trellis on metadata" class="md-nav__link">
+    Trellis on metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-between-transcript-level-and-gene-level-view" title="Switch between transcript-level and gene-level View" class="md-nav__link">
+    Switch between transcript-level and gene-level View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-a-new-gene" title="Search for a new gene" class="md-nav__link">
+    Search for a new gene
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3295,6 +3343,54 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tips-and-tricks" title="Tips and Tricks" class="md-nav__link">
+    Tips and Tricks
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtering-on-metadata" title="Filtering on metadata" class="md-nav__link">
+    Filtering on metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regrouping-on-metadata" title="Regrouping on metadata" class="md-nav__link">
+    Regrouping on metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trellis-on-metadata" title="Trellis on metadata" class="md-nav__link">
+    Trellis on metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-between-transcript-level-and-gene-level-view" title="Switch between transcript-level and gene-level View" class="md-nav__link">
+    Switch between transcript-level and gene-level View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-a-new-gene" title="Search for a new gene" class="md-nav__link">
+    Search for a new gene
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -3313,30 +3409,40 @@
                 
                 
                 <h1 id="land-explorer-for-ipa">Land Explorer for IPA</h1>
-<p>Explore detailed expression patterns across human tissues directly from IPA’s Isoform Views. Land Explorer for IPA provides interactive plots  of gene expression in 51 different human tissues from the GTEx project, for the gene level and individual splice variants. Learn more about the details underlying IPA’s IsoProfiler, and visualize patterns of differential transcript utilization across profiled tissues, or by profiled any metadata.</p>
+<p>Explore detailed expression patterns across human tissues directly from IPA’s Isoform Views. Land Explorer for IPA provides interactive plots of gene expression in 51 different human tissues from the GTEx project, for the gene level and individual splice variants. Learn more about the details underlying IPA’s IsoProfiler, and visualize patterns of differential transcript utilization across profiled tissues, or profiled by any metadata.</p>
 <h2 id="accessing-land-explorer-for-ipa">Accessing Land Explorer for IPA</h2>
-<p>IPA users can examine detail expression patterns across human tissues directly from IPA's ISoform Views.</p>
-<p>From IPA's Isoforms View, click "View Expression in Land Explorer" to open the web portal, displaying expression information for your gene.</p>
+<p>IPA users can examine detailed expression patterns across human tissues directly from IPA's Isoform Views.</p>
+<p>From IPA's Isoforms View for your gene of interest, click <strong>"View GTEx human tissue expression (Land Explorer)"</strong> to open the web portal, displaying expression information for your gene.</p>
 <p><img alt="image_Isoforms2GTEx" src="../../images/Isoforms2GTEx.png" /></p>
-<p>Click the link (shown in the red box) to view the Land Explorer for IPA web page that plots the expression of the isoforms (splice variants) of a human gene in 51 different human tissues. Gene-level expression is also available in Land Explorer.</p>
+<p>By default, the RefSeq gene model is used in the <strong>IPA Isoform View</strong> and <strong>Land Explorer for IPA</strong>. If you switch the drop-down box to <strong>Ensembl</strong> in the <strong>IPA Isoform View</strong>, you can view transcript and gene quantification in <strong>Land Explorer for IPA</strong> using the Ensembl gene model.</p>
+<p><img alt="image_LandExplorer_SwitchToEnsembl" src="../../images/LandExplorer_SwitchToEnsembl.png" /></p>
+<p><strong>Land Explorer for IPA</strong> plots the expression of the splice variants of any human gene in 51 different human tissues. Gene-level expression is also available in Land Explorer (see below).</p>
 <p><img alt="image_ipa_in_landexplorer" src="../../images/Ipa_in_landexplorer.png" /></p>
-<p>Land Explorer for IPA provides interactive plots of gene expression in 51 different human tissues from the GTEx project, for both gene level and individual splice variants. You can filter the view for a particular tissue, or filter on metadata categories. </p>
-<p>Within Land Explorer, users can:</p>
-<p>1   Filter on metadata</p>
-<p>a. Add new metadata filters, under Tissue tab, keep only four tissue categories.</p>
-<p>b.  Click Apply button to apply the newly created filters</p>
-<p><img alt="image_ApplyFilters_IPA_png" src="../../images/ApplyFilters_IPA.png" /></p>
-<p>2   Regroup on metadata</p>
-<p><img alt="image_IPA_regroup_png" src="../../images/IPA_regroup.png" /></p>
-<p>3   Trellis on metadata (Right now this feature is available for Gene FPKM views, our development team are currently updating this feature on other views)</p>
-<p><img alt="image_IPA_trellis_png" src="../../images/IPA_trellis.png" /></p>
-<p>4   Switch between transcript-level and gene-level View</p>
-<p><img alt="image_IPA_switch_Gene_transcript_png" src="../../images/IPA_switch_Gene_transcript.png" /></p>
-<p>5   Search for a new gene</p>
-<p><img alt="image_IPA_search_new_gene_png" src="../../images/IPA_search_new_gene.png" /></p>
-<p>Land Explorer for IPA is available at no charge for all IPA users, and does not require registration or manual sign-in. For broader access to hundreds of thousands of samples from healthy and disease tissue, please take a tour of the full OmicSoft Land Explorer.
-You can find detailed information about navigating Land Explorer's <a href="../../Land Views/Gene Level Views/RnaSeqQuantification/">gene and transcript level Views</a>,
+<p>You can find detailed information about navigating Land Explorer's <a href="../../Land Views/Gene Level Views/RnaSeqQuantification/">gene and transcript level Views</a>,
 and <a href="../../Using Land Explorer/Filters/Filters/">filtering data</a>.</p>
+<h2 id="tips-and-tricks">Tips and Tricks</h2>
+<h3 id="filtering-on-metadata">Filtering on metadata</h3>
+<p>You can use the extensive metadata for each sample in GTEx to focus only on the samples of interest to you, such as Tissue, Gender, etc.</p>
+<ol>
+<li>Find metadata of interest, then select only the categories you want</li>
+<li>For example, under <strong>Tissue tab</strong>, click <strong>"Check None"</strong> then keep only four tissues.</li>
+<li>Click Apply button to apply the newly created filters</li>
+</ol>
+<p><img alt="image_ApplyFilters_IPA_png" src="../../images/ApplyFilters_IPA.png" /></p>
+<h3 id="regrouping-on-metadata">Regrouping on metadata</h3>
+<p>You can re-organize all samples along the Y-axis based on any metadata. For example, you can find more detailed tissue-level information by grouping on <strong>Tissue Detail Type</strong>. 
+ <img alt="image_IPA_regroup_png" src="../../images/IPA_regroup.png" /></p>
+<h3 id="trellis-on-metadata">Trellis on metadata</h3>
+<p>Separate samples out into entirely different charts using the <strong>Trellis</strong> option.</p>
+<p><img alt="image_IPA_trellis_png" src="../../images/IPA_trellis.png" /></p>
+<h3 id="switch-between-transcript-level-and-gene-level-view">Switch between transcript-level and gene-level View</h3>
+<p>By default, expression data for your gene of interest is displayed for transcripts, but you can also view gene-level expression information.</p>
+<p><img alt="image_IPA_switch_Gene_transcript_png" src="../../images/IPA_switch_Gene_transcript.png" /></p>
+<h3 id="search-for-a-new-gene">Search for a new gene</h3>
+<p>While you are in <strong>Land Explorer for IPA</strong>, you can search for expression of other genes of interest, simply be typing in your gene's identifier in <strong>Find Gene</strong>.</p>
+<p><img alt="image_IPA_search_new_gene_png" src="../../images/IPA_search_new_gene.png" /></p>
+<p>Land Explorer for IPA is available at no charge for all IPA users, and does not require registration or manual sign-in, providing gene expression data from GTEx. </p>
+<p>For full access to hundreds of thousands of samples from healthy and disease tissue, please request a trial of the full OmicSoft Land Explorer: <a href="https://www.qiagenbioinformatics.com/land-explorer/">https://www.qiagenbioinformatics.com/land-explorer/</a>.</p>
                 
                   
                 
@@ -3423,7 +3529,7 @@ and <a href="../../Using Land Explorer/Filters/Filters/">filtering data</a>.</p>
       
     </div>
     
-      <script src="../../../../assets/javascripts/application.9e1f3b71.js"></script>
+      <script src="../../../../assets/javascripts/application.b41f3d20.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
       
@@ -3432,7 +3538,8 @@ and <a href="../../Using Land Explorer/Filters/Filters/">filtering data</a>.</p>
     
     
       
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

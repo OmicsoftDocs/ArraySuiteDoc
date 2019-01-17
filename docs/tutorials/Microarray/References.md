@@ -24,6 +24,11 @@ Journal of the American Statistical Association, 2004 vol 99 page 909
 GCRMA2 is newer implementation of GCRMA which fixes a bug in original GCRMA implementation that introduces artifacts that can lead to the overestimation of pair wise correlation
 [^link^](http://www.bioconductor.org/packages/2.12/bioc/vignettes/gcrma/inst/doc/gcrma2.0.pdf )
 
+## OMICSOFT Normalization of Microarray Data
+
+Nearly all microarray expression data in OmicSoft Lands are re-processed from the signal intensity files in GEO/ArrayExpress, and normalized to improve cross-project comparisons.
+[^link^](http://www.arrayserver.com/wiki/index.php?title=Omicsoft_Affymetrix_Microarray_Preprocessing)
+
 ## Moderated t-test (Limma Package in R)
 
 The moderated t-test is used to rank genes in order of evidence for differential expression. They use an empirical Bayes method to shrink the probe-wise sample variances towards a common value and to augment the degrees of freedom for the individual variances (Smyth, 2004).
