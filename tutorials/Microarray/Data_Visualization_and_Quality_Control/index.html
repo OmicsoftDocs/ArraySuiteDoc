@@ -3431,7 +3431,7 @@
 <p>Click <strong>Add View</strong> and select <strong>PairwiseScatterView</strong> from the list of views. Once added, the main view window should look similar to the following screenshot. Note: If plots are blank, clear any applied filters from the View Controller.</p>
 <p><img alt="image100_png" src="../images/image100.png" /></p>
 <p>In this screenshot, 3 chips are shown by default (in the example below 01A, 02A and 03A). This view provides a way for the user to look at both a ScatterView of the chips against each other, as well as an MA Plot for each chip against each other.</p>
-<p>The MA Plots are contained in the upper-right of the <em>PairwiseScatterView</em>, and the regular <em>ScatterViews</em> are contained in the lower-left of the <em>PairwiseScatterView</em>.</p>
+<p>The MA Plots are contained in the upper-right of the <em>PairwiseScatterView</em>, and the regular <em>ScatterViews</em> are contained in the lower-left of the <em>PairwiseScatterView</em>. (see References for details)</p>
 <p>An <strong>r</strong> value (Pearson correlation) for each chip-to-chip comparison is shown on each chart.</p>
 <p>Go to the <em>Observation</em> tab of the <em>View Controller</em>.</p>
 <p>Expand the <em>group</em> column, and choose <em>dbp.t18</em>.</p>
@@ -3446,14 +3446,14 @@
 <p>The <em>Principal Component Analysis</em> window, like most analysis windows in <em>Array Studio</em>, contains an <em>Input/Output</em> section. In this section, the user picks the <em>Project</em> and <em>Data</em> on which to run the analysis, as well as the <em>Variables</em> and <em>Observations</em> on which to run the analysis. This allows the user to specify if analyses should be run on all, selected, visible, or particular <em>Customized Lists</em> of <em>Variables</em> or <em>Observations</em>.</p>
 <p>Ensure that the correct project (<em>TutorialMicroArray</em> in this example) is selected under the <em>Input/Output | Project</em> drop-down box and <em>MicroArrayData</em> is selected under <em>Data</em> drop-down box. Ensure that <em>All variables</em> is selected for <em>Variables</em>. Ensure that <em>All observations</em> is selected for <em>Observations</em>. Leave <em>Output Name</em> blank, as by default the outputted plots will be called <em>Microarray.PcaScores</em>.</p>
 <p>Under options, change the <em>Group</em> to <em>'group'</em> to indicate the biological group information.</p>
-<p>Array Studio can generate 2D(3D) PCA plots if <strong>Component number</strong> is set to 2(3). Setting the Component number to 4 or more will generate a pairwise scatterview plot of the PCA. For this example, we will generate a 3D plot by setting this value to 3.</p>
+<p>Array Studio can generate 2D(3D) PCA plots if <strong>Component number</strong> is set to 2(3). Setting the number of principal components visualized (Component number) to 4 or more will generate a pairwise scatterview plot of the PCA. For this example, we will generate a 3D plot by setting this value to 3.</p>
 <p>Ensure that <strong>Scale variables</strong>, <strong>Output scores</strong>, and <strong>Calculate Hotelling T2</strong> are selected, with an <strong>Alpha level</strong> of 0.05. Click <em>Submit</em>. Remember that all the details about this module, including input, output and parameter explanations can be retrieved by clicking the <strong>Help</strong> button.</p>
 <p><img alt="image104_png" src="../images/image104.png" /></p>
 <p>A dialog box will open showing the progress of the PCA. This should take approximately 1 or 2 seconds.</p>
 <p>When complete, a new view will be created, as well as a new <em>Table object</em> in the <strong>QC</strong> folder of the <em>Solution Explorer</em> with associated views.</p>
 <p><img alt="image105_png" src="../images/image105.png" /></p>
 <p>The <em>Table</em> section of the Solution Explorer will need to be expanded, as well as the automatically generated QC folder and the new table. This is an example of a type of Table data, as opposed to the  Omic data that we have been working with before. Table data has a flat two-way structure (rows and columns), while  Omic data contains multiple levels (Data, Design, and Annotation).</p>
-<p>Switch to the view <em>MicroArray.PcaScores|PcaScores</em> to look at the score plot. First, notice that on the X and Y axis, the variance of each component is explained (equivalent of R 2 value). Component 1 (x-axis) explains 36.43 % of the variance in the data. Component 2 represents 11.77% of the variance in the data. And Component 3 represents an additional 8.41%.</p>
+<p>Switch to the view <em>MicroArrayData.PcaScores</em> -&gt; <em>PcaScores</em> to look at the score plot. First, notice that on the X and Y axis, the variance of each component is explained (equivalent of R 2 value). Component 1 (x-axis) explains 36.43 % of the variance in the data. Component 2 represents 11.77% of the variance in the data. And Component 3 represents an additional 8.41%. To adjust the visualization by adding or removing principal components, use the <em>Specify Columns</em> option under <em>Task</em> -&gt; <em>Data</em> in the <em>View Controller</em>.</p>
 <p>Users can use the <strong>Trackball</strong> button <img alt="image106_png" src="../images/image106.png" /> to rotate the 3D plot. At first glance, it is clear that there is one outlier in the chart.</p>
 <p><img alt="image107_png" src="../images/image107.png" /></p>
 <p>Click on the <strong>Change Symbol Properties</strong> in the task tab.</p>
@@ -3470,7 +3470,7 @@
 <p><img alt="image114_png" src="../images/image114.png" /></p>
 <p>This triggers the principal component analysis to re-run, with newly generated <em>PCAScores</em> in the <em>Solution Explorer</em>.</p>
 <p><img alt="image115_png" src="../images/image115.png" /></p>
-<p>The newly generated <em>PcaScores</em> plot is shown below.</p>
+<p>The newly generated <em>PcaScores</em> plot is shown below. A quick way to distinguish between the original and re-run analyses is by looking at the number of samples analyzed, which is listed next to the object title in the <em>Solution Explorer</em>. </p>
 <p><img alt="image116_png" src="../images/image116.png" /></p>
 <p><strong>Important:</strong> <em>Array Studio</em> has also added a new <em>List</em>, called MicroArrayData.Observation23. This is a list of the remaining 23 chips (after the outlier, 22A, has been removed). This <em>List</em> can be used for all further downstream analysis, to automatically exclude chip 22A.</p>
 <p>Expand the <strong>List</strong> section in <em>Solution Explorer</em> now to see the newly generated list.</p>
