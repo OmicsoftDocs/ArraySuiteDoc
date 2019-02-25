@@ -12,8 +12,8 @@ Each view is controlled by a *View Controller*,
 which performs view customization, applies filtering, and displays legends.
 Furthermore, its interactive visualization technique provides the details of data with the *Details Window* and the *Web Details On-Demand*.
 
-This chapter will cover installation of Array Studio.
-The next chapter will cover downloading of the data and chip normalization.
+This section will cover installation of Array Studio.
+The next section will cover downloading of the data and chip normalization.
 In the process, the user will become familiar with some of the features of the *Workflow Window* and *Solution Explorer*, as well as getting acquainted with the *TableView* in *Array Studio*.
 
 ##Prerequisites and installation of Array Studio

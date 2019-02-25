@@ -6,7 +6,7 @@ Similar to the [DNA Somatic Mutation Distribution View](./DNAAlterationDistribut
 
 ![LandPortal_login_png](../../images/RNASeqSomatic.png)
 
-The x-Axis shows the percent of mutant samples, while the samples are grouped on the X-axis by the grouping column. Only groups with any mutations available in that gene will be plotted in the view.
+The X-axis shows the percent of mutant samples, while the samples are grouped on the X-axis by the grouping column. Only groups with any mutations available in that gene will be plotted in the view.
 
 Use the Sample Tab to change filtering options on the samples (or to change grouping). Use the Mutation tab to filter for specific Amino Acid mutation (OS_AAMutation), Annotation Type (i.e non-synonymous via OS_AnnotationType) and more. For more information on filtering in Land Explorer, please see the [filtering guide](../../Using Land Explorer/Filters/Filters.md)
 
@@ -37,7 +37,7 @@ Similar to the [DNA Somatic Mutation Site Distribution View](./DNAAlterationDist
 
 ![RNASeq_mutation_site_dist_png](../../images/rnaseq_mutation_site_dist.png)
 
-All alleles identified for that gene will be represented on the x-axis as a unique color in the plot. As for the gene-level distributions for RNA-seq mutations, this can be displayed for RNA-seq Somatic mutation and RNA-seq Mutation data.
+All alleles identified for that gene will be represented on the x-axis as a unique color in the plot. The gene-level distributions for RNA-seq mutations can be displayed for RNA-seq Somatic mutation and RNA-seq Mutation data.
 
 ## RNA-Seq Somatic Mutation Gene Pattern
 

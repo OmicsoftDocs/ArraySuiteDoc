@@ -1,6 +1,8 @@
 # LandExplorer Sample Explorer
 
-OmicSoft has added an optional SampleExplorer to the Land Explorer interface. Here users can browse data across all available lands to identify samples of interest. On this help page, we describe the usage of the SampleExplorer.
+OmicSoft has added an optional Sample Explorer to the Land Explorer interface. Here users can browse data across all available lands to identify samples of interest. Users can navigate to the Comparison Explorer using the menu button in the top right corner of the screen:
+
+![menu_comparison](../images/menu_comparison.png)
 
 ## Sample Explorer
 
@@ -42,4 +44,4 @@ Typing a gene name and selecting the Search button will allow a user to open up 
 
 #### Open Land to Filtered Land view
 
-Without entering a gene, clicking the search button will take users to the [sample distribution view](../Land Views/Sample Level Views/Samples.md) to display samples, prefiltered using the FrontaPage Filters.
+Without entering a gene, clicking the search button will take users to the [sample distribution view](../Land Views/Sample Level Views/Samples.md) to display samples, prefiltered using the FrontPage Filters.

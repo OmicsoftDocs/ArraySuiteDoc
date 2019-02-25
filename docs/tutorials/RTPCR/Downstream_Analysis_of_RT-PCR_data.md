@@ -170,8 +170,8 @@ Users also have the option of choosing specific branches within the dendrogram t
 Congratulations! You are done with the analysis. Feel free to browse other options in the workflow to examine other features of this module. As mentioned above, users are encouraged to examine the consequences of filtering out samples (i.e. ones that did not pass MADScore filters) on subsequent steps (QC, GLM, and hierarchical clustering). Click "Save" to save this project. You can reopen this project later on to get back to the same state as you saved.
 This includes all views, filters, analyses, etc.
 
-This tutorial represents just a piece of what Array Studio is capable of, with reference to RT-PCR preprocessing and analysis. Feel free to try different options along the **Import RT-PCR Wizard** to get a feel for what Array Studio can do. For additional information, don t hesitate to contact Omicsoft s support team (support@omicsoft.com).
+This tutorial represents just a piece of what Array Studio is capable of, with reference to RT-PCR preprocessing and analysis. Feel free to try different options along the **Import RT-PCR Wizard** to get a feel for what Array Studio can do. For additional information, don t hesitate to contact Omicsoft s support team (omicsoft.support@qiagen.com).
 
 **Thank you for using Array Studio.**
 
-**Please contact Omicsoft Support (** support@omicsoft.com **) or Omicsoft Sales (** sales@omicsoft.com **) for sales-related questions.**
+**Please contact Omicsoft Support (omicsoft.support@qiagen.com) or Omicsoft Sales (bioinformaticssales@qiagen.com) for sales-related questions.**

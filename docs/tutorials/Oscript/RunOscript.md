@@ -194,7 +194,7 @@ Below is an example oscript that can be submit via Run Script (Send To Queue) to
 	 End;
 
 ## Run Oscript from Windows or Linux Oshell Commandline
-Users may also run an oscript from a single windows or linux command line (oshell commandline) by using Omicsoft's oshell.exe function in Omicsoft Oshell environment. The Oshell Environment is another Omicsoft package that is independent from Array Server and Array Studio. Users may need to obtain a license from Omicsoft to install the package. Please contact support@omicsoft.com for more information.
+Users may also run an oscript from a single windows or linux command line (oshell commandline) by using Omicsoft's oshell.exe function in Omicsoft Oshell environment. The Oshell Environment is another Omicsoft package that is independent from Array Server and Array Studio. Users may need to obtain a license from Omicsoft to install the package. Please contact omicsoft.support@qiagen.com for more information.
 
 By running with OShell command line, users do not need to interact with the GUI. The Oshell Environment can work on a local project as a commandline version of Array Studio GUI, and also can interact with an Array Server to work on a server project.
 

@@ -285,7 +285,6 @@ Click the pin button ![image46_png](images/image46.png) so that it is facing dow
 
 As can be seen from the picture above, the *View Controller* contains three tabs. The *Task* tab contains all the settings for modifying the properties of the current view. One option is *Summarize By Group*: this allows the user to do a quality control check of the expression levels of each time point and treatment to ensure that there are no outliers among the expression profiles. To compare gene expression between sample groups and treatments, the overall gene expression should be similar at this high level to ensure technical confidence in the analysis.
 
-
 The *View Controller* can also be used to investigate the gene expression data. From the *TableView*, the *View Controller* *Task* tab includes **Show Row Numbers**, **Specify Columns**, **Reset Columns**, **Generate Data From View and Export With Customized Column Headers**. Click *Specify Columns* to specify which columns of the dataset are visible.
 
 ![image48_png](images/image48.png)

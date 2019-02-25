@@ -37,7 +37,7 @@ Historically, ImmunoLand (focused on immunological and inflammatory disease) and
 
 Now, all non-oncology disease studies are in **DiseaseLand**, and sub-stratified by "collection" (Immuno or CVM). Subscribers to DiseaseLand may choose to subscribe to either collection, or both, but will always find the data in **DiseaseLand**.
 
-Hundreds of new projects are added to DiseaseLand every quarter, and it is a customer-driven expanding database (If you have other disease areas that you are interested to add into ImmunoLand, please let us know by e-mailing Omicsoft support at support@omicsoft.com). Currently, DiseaseLand has more than 85,000 human samples and 25,000 mouse samples, across different cell types and tissues.
+Hundreds of new projects are added to DiseaseLand every quarter, and it is a customer-driven expanding database (If you have other disease areas that you are interested to add into ImmunoLand, please let us know by e-mailing Omicsoft support at omicsoft.support@qiagen.com). Currently, DiseaseLand has more than 85,000 human samples and 25,000 mouse samples, across different cell types and tissues.
 
 Omicsoft has carefully curated both sample level data and "comparison" level data, allowing users to easily search and visualize data using common queries: Treated vs Control, Disease vs Normal, Responder vs Non-Responder, etc. Expression data are reprocessed from raw files and normalized to a common standard, which dramatically improves cross-project comparisons.
 

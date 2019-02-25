@@ -10,7 +10,7 @@ Under the annotation tab, the Variant based annotators 1000GenomesSimple_2017050
 
 ![image33_png](images/image33.png)
 
-If you would like to include additional annotation sources, please contact Omicsoft support team (support@omicsoft.com ). Requests will be reviewed and new features may be added in future releases of Array Suite.
+If you would like to include additional annotation sources, please contact Omicsoft support team (omicsoft.support@qiagen.com ). Requests will be reviewed and new features may be added in future releases of Array Suite.
 
 Please keep other options as default, and click  Send To Queue  to submit the job.
 

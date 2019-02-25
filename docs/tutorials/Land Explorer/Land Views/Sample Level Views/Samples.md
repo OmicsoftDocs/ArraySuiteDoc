@@ -21,19 +21,19 @@ The bars in the distribution views are interactive. Users can simply click on a 
 
 ![LandPortal_table_view_details_png](../../images/table_view_details.png)
 
-This table can easily be exported to excel with the click of a button (located at the top of the table). Users can also simplify the table by removing columns from the view using the "Select Columns" button.
+This table can easily be exported to Excel with the click of a button (located at the top of the table). Users can also simplify the table by removing columns from the view using the "Select Columns" button.
 
 For additional customizations of the views in Land Explorer, please see our documentation [here](../../Using Land Explorer/LandExplorerInterface.md)
 
 
 ## Comparison Distribution
 
-This view shows all pre-computed comparisons present in the Land. In TCGA land, this will typically be all Tumor vs Normal (where available) comparisons. In 2018, the Omicsoft OncoLand team has added a number of comparisons to reflect the mutation status of genes represented in the [QIA-seq Cancer Panels](https://www.qiagen.com/us/shop/sample-technologies/dna/genomic-dna/qiaseq-targeted-dna-panels/#orderinginformation). In DiseaseLands and OncoGEO, this can refer to multiple comparison types (i.e. Disease vs. Normal, Treatment vs. Control, Response vs no response, pre-treatment vs post-treatment). In this view, users can quickly query the different comparisons available within the Land, based on the category shown on the x-axis.
+This view shows all pre-computed comparisons present in the Land. In TCGA land, this will typically be all Tumor vs Normal (where available) comparisons. In 2018, the Omicsoft OncoLand team has added a number of comparisons to reflect the mutation status of genes represented in the [QIA-seq Cancer Panels](https://www.qiagen.com/us/shop/sample-technologies/dna/genomic-dna/qiaseq-targeted-dna-panels/#orderinginformation). In DiseaseLands and OncoGEO, this can refer to multiple comparison types (i.e. Disease vs. Normal, Treatment vs. Control, Response vs No Response, Pre-treatment vs Post-treatment). In this view, users can quickly query the different comparisons available within the Land, based on the category shown on the X-axis.
 
 ![LandPortal_login_png](../../images/ComparisonViews.png)
 
 ## Project Distribution
 
-In lands that comprise of many projects, such as OncoGEO, HumanDisease and MouseDisease, another useful view to identify specific projects is the project distribution view. In this view, all projects are plotted on the x-axis and categorized on the y-axis by the Therapeutic area, or general disease focus.
+In Lands that contain many projects, such as OncoGEO, HumanDisease and MouseDisease, another useful view to identify specific projects is the project distribution view. In this view, all projects are plotted on the X-axis and categorized on the Y-axis by the Therapeutic area, or general disease focus.
 
 ![LandPortal_login_png](../../images/proj_distribution.png)

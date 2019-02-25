@@ -29,11 +29,14 @@ Enter in all the SRR run IDs and specify a folder for the download as the "Outpu
 
 ![SRA_download_2_2017_06_14_png](images/SRA_download_2_2017_06_14.png)
 
-The whole dataset is ~35GB. For convenience, if you prefer to work with a smaller dataset for this training (i.e. to run a local project - see Chapter 2), we also provide a subset (5% of reads) of the dataset for download:
+The whole dataset is ~35GB. For convenience, if you prefer to work with a smaller dataset for this training (i.e. to run a local project - see Microarray tutorial), we also provide a subset (5% of reads) of the dataset for download:
 [^link^](http://omicsoft.com/downloads/data/tutorial/RNASeq.zip )
 
 Note:
-This download also contains a design table, "Design.txt" that will be required and discussed for further analyses during this tutorial.  Also, since this tutorial is based on the full dataset, users analyzing the smaller subset of data will obtain results that are different than what is shown in this tutorial.
+This download also contains a design table, "Design.txt" that will be required and discussed for further analyses during this tutorial. Users analyzing the full dataset will need to import this design table by right-clicking on Design -> Import.  
+
+Note:
+Since this tutorial is based on the full dataset, users analyzing the smaller subset of data will obtain results that are different than what is shown in this tutorial.
 
 ## RNA-Seq Analysis Workflow
 

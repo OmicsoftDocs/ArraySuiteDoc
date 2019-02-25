@@ -13,14 +13,13 @@ This view shows a single chart, for each gene, comparing Gene Expression Ratio (
 
 ![CNVvsFPKM_png](../../images/CNVvsFPKM.png)
 
-This view shows a single chart, for each gene, comparing Gene Expression Ratio (Sample vs Universal Human Reference) vs Average Copy Number Log2 Ratio. By default, all sample types (tumor and normal) are shown, users could visualize a geneset (multiple genes), and choose grouping by Tumor Type, Sample ID, Sample Type, Disease, etc.
+This view shows a single chart, for each gene, comparing Gene Expression Ratio (Sample vs Universal Human Reference) vs Average Copy Number Log2 Ratio. By default, all sample types (tumor and normal) are shown, users could visualize a gene set (multiple genes), and choose grouping by Tumor Type, Sample ID, Sample Type, Disease, etc.
 
 ## Copy Number Variation (CNV) vs Microarray Expression
 
 Similar to the CNV vs RNA-Seq Expression view, when CNV and Microarray data is available for a gene, pairwise comparison of the two data points (y- and x-axis, respectively) can be done to see if there is a correlation between copy number and expression:
 
 ![CNVvsMicroarray](../../images/cnv_microarray.png)
-
 
 
 ## CNV Expression Ratio

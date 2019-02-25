@@ -14,7 +14,7 @@ By default, only non-synonymous coding mutations are applied in the Land. Users 
 
 ## Consequence
 
-By default, only non-synonymous coding mutations are applied in the Land. Users can filter synonymous mutations, or perhaps more stringent filters using this Mutation metadata:
+By default, only non-synonymous coding mutations are applied in the Land. Users can filter synonymous mutations, or perhaps more stringent filters using this mutation metadata:
 
 ![consequence_filter](../../images/consequence_mut.png)
 
@@ -27,12 +27,12 @@ RS_ID (when available) can be used to filter to specific mutations:
 
 ## AAMutation (Amino Acid Mutation)
 
-All variants in a searched genes are represented in the mutation views. Users can filter to specific variants using this filter:
+All variants in a searched gene(s) are represented in the mutation views. Users can filter to specific variants using this filter:
 
 ![aa_filter](../../images/aa_variants.png)
 
 ## Classifiers
 
-A number of classifiers can be used to filter for variants that are not highly abundant in variant databases. For example, in the case below, users can filter to mutations in a gene with less than fifty percent frequency in 1000 genomes:
+A number of classifiers can be used to filter for variants that are not highly abundant in variant databases. For example, in the case below, users can filter to mutations in a gene with less than fifty percent frequency in 1000 Genomes:
 
 ![classifiers](../../images/classifiers.png)

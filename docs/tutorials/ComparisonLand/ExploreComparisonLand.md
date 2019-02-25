@@ -137,6 +137,6 @@ As you build your ComparisonLand with real data, you will be able to identify Co
 Congratulations, you have successfully built your own Land from raw expression and inference data,
 converting text quantifications to rich visualizations, ready for analysis!
 
-For additional information, don’t hesitate to contact Omicsoft’s support team (support@omicsoft.com).
+For additional information, don’t hesitate to contact Omicsoft’s support team (omicsoft.support@qiagen.com).
 
 **Thank you for using Array Studio.**

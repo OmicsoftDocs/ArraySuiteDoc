@@ -10,7 +10,7 @@ Alternatively, by clicking on Menu --> Generate View Link:
 
 ![viewlink](../images/viewlink.png)
 
-A user can create a hyperlink that can be shared to other users with access to the LandExplorer. The link will be copied and pasted to the clipboard and can be shared instantly. This a particularly useful option to provide someone that may want to further customize the visualization, but without having to filter down to the samples of interest.
+A user can create a hyperlink that can be shared to other users with access to the Land Explorer. The link will be copied and pasted to the clipboard and can be shared instantly. This a particularly useful option to provide someone that may want to further customize the visualization, but without having to filter down to the samples of interest.
 
 ## Customized View Generation
 

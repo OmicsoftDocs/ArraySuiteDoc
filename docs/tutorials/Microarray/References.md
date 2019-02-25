@@ -29,6 +29,10 @@ GCRMA2 is newer implementation of GCRMA which fixes a bug in original GCRMA impl
 Nearly all microarray expression data in OmicSoft Lands are re-processed from the signal intensity files in GEO/ArrayExpress, and normalized to improve cross-project comparisons.
 [^link^](http://www.arrayserver.com/wiki/index.php?title=Omicsoft_Affymetrix_Microarray_Preprocessing)
 
+## MA plot
+The MA plot visualizes the relationship between measurement intensity in two samples.
+[^link^](https://en.wikipedia.org/wiki/MA_plot)
+
 ## Moderated t-test (Limma Package in R)
 
 The moderated t-test is used to rank genes in order of evidence for differential expression. They use an empirical Bayes method to shrink the probe-wise sample variances towards a common value and to augment the degrees of freedom for the individual variances (Smyth, 2004).

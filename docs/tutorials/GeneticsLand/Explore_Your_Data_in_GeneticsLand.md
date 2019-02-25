@@ -16,7 +16,7 @@ The *Association Annotation* view is the fully annotated table of all associatio
 
 ![Image44_png](images/image44.png)
 
-Note, these annotations were generated when the association results (GTT file) were published, and thus may be slightly out of date if new annotations have been released since then. For all other views in the Land, the most current annotations will be dynamically joined. The annotation sources were defined in the configuration when the Land was created (VariantClassifiers=ClinVar_20170501, FunctionalMutation_20170501…). The specific classifiers we used for this tutorial are provided by OmicSoft. OmicSoft support (support@omicsoft.com) can assist you with building custom classifiers if you have proprietary or licensed annotations you wish to include.
+Note, these annotations were generated when the association results (GTT file) were published, and thus may be slightly out of date if new annotations have been released since then. For all other views in the Land, the most current annotations will be dynamically joined. The annotation sources were defined in the configuration when the Land was created (VariantClassifiers=ClinVar_20170501, FunctionalMutation_20170501…). The specific classifiers we used for this tutorial are provided by OmicSoft. OmicSoft support (omicsoft.support@qiagen.com) can assist you with building custom classifiers if you have proprietary or licensed annotations you wish to include.
 
 You can use the variant attributes in the *Search Result* tab on the left to filter. Switch to the *Task* tab on the right and click on **Specify Columns** to configure which columns to display (by default, they are all displayed):
 

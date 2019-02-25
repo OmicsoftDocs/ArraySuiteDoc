@@ -35,7 +35,7 @@ extra_javascript:
 extra_css:
   - 'stylesheets/extra.css'
 
-# page tree changed to nav 
+# page tree changed to nav
 nav:
 - Home: index.md
 - Framework:
@@ -76,21 +76,21 @@ nav:
       - Pipeline Script: tutorials/Oscript/PipelineScript.md
     - Land Explorer:
       - Introduction: tutorials/Land Explorer/Introduction.md
-      - Explorer: 
+      - Explorer:
         - Sample Explorer: tutorials/Land Explorer/Explorer/SampleExplorer.md
-        - Comparion Explorer: tutorials/Land Explorer/Explorer/ComparisonExplorer.md
+        - Comparison Explorer: tutorials/Land Explorer/Explorer/ComparisonExplorer.md
       - Land Views:
         - Views: tutorials/Land Explorer/Land Views/Views.md
         - Sample Level Views:
-            - Distribution Views: tutorials/Land Explorer/Land Views/Sample Level Views/Samples.md 
-            - Comparisons: tutorials/Land Explorer/Land Views/Sample Level Views/Comparisons.md 
+            - Distribution Views: tutorials/Land Explorer/Land Views/Sample Level Views/Samples.md
+            - Comparisons: tutorials/Land Explorer/Land Views/Sample Level Views/Comparisons.md
             - Sample Details: tutorials/Land Explorer/Land Views/Sample Level Views/Sample_Details.md
             - Comparison Availability: tutorials/Land Explorer/Land Views/Sample Level Views/Comparison_Availability.md
             - Data Availability: tutorials/Land Explorer/Land Views/Sample Level Views/Data_Availability.md
             - Survival Data: tutorials/Land Explorer/Land Views/Sample Level Views/Survival_Data.md
         - Gene Level Views:
             - Integration: tutorials/Land Explorer/Land Views/Gene Level Views/OmicDataIntegrationViews.md
-            - Comparisons: tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons.md             
+            - Comparisons: tutorials/Land Explorer/Land Views/Gene Level Views/AllComparisons.md
             - DNA-Seq: tutorials/Land Explorer/Land Views/Gene Level Views/DNAAlterationDistribution.md
             - Copy Number: tutorials/Land Explorer/Land Views/Gene Level Views/CopyNumberViews.md
             - RNA-Seq Quantification: tutorials/Land Explorer/Land Views/Gene Level Views/RnaSeqQuantification.md
@@ -100,11 +100,11 @@ nav:
             - miRNA-Seq: tutorials/Land Explorer/Land Views/Gene Level Views/miRNA_views.md
             - Proteomics: tutorials/Land Explorer/Land Views/Gene Level Views/Proteomics.md
             - Methylation: tutorials/Land Explorer/Land Views/Gene Level Views/Methylation.md
-        - Comparison Level Views: 
+        - Comparison Level Views:
             - Volcano Plot: tutorials/Land Explorer/Land Views/Comparison Level Views/Volcano_Plot.md
       - Using Land Explorer:
         - Land Explorer Interface: tutorials/Land Explorer/Using Land Explorer/LandExplorerInterface.md
-        - Filters: 
+        - Filters:
             - Filtering: tutorials/Land Explorer/Using Land Explorer/Filters/Filters.md
             - Sample Filters: tutorials/Land Explorer/Using Land Explorer/Filters/Sample_Filters.md
             - Comparison Filters: tutorials/Land Explorer/Using Land Explorer/Filters/Comparison_filters.md
@@ -112,7 +112,7 @@ nav:
             - Gene Filters: tutorials/Land Explorer/Using Land Explorer/Filters/Gene.md
             - Mutation Filters: tutorials/Land Explorer/Using Land Explorer/Filters/Mutation.md
             - CNV Filters: tutorials/Land Explorer/Using Land Explorer/Filters/CNV.md
-        - Queries: 
+        - Queries:
             - Custom Query: tutorials/Land Explorer/Using Land Explorer/Queries/Custom_Query.md
             - Search Bar: tutorials/Land Explorer/Using Land Explorer/Queries/Searching_Genes.md
         - Generate View Link: tutorials/Land Explorer/Using Land Explorer/GenerateViewLink.md
@@ -244,7 +244,7 @@ nav:
 - About:
     - Release Notes: about/Release-notes.md
     - Contributing: about/Contributing.md
-    - Example: about/example.md
+#    - Example: about/example.md
 
 # Options
 extra:
@@ -279,7 +279,7 @@ markdown_extensions:
   - markdown.extensions.meta
   - markdown.extensions.toc
   - pymdownx.arithmatex
-  - pymdownx.betterem 
+  - pymdownx.betterem
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.critic
@@ -294,4 +294,3 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.details
 #  - mdx_math
-
