@@ -879,8 +879,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Explorer/ComparisonExplorer/" title="Comparion Explorer" class="md-nav__link">
-      Comparion Explorer
+    <a href="../../../Explorer/ComparisonExplorer/" title="Comparison Explorer" class="md-nav__link">
+      Comparison Explorer
     </a>
   </li>
 
@@ -3301,18 +3301,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../../../about/example/" title="Example" class="md-nav__link">
-      Example
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -3419,7 +3407,7 @@
 <p><img alt="CNV_Call_png" src="../../../images/cnv_call.png" /></p>
 <p>In this example, all copy number gains (2 or more extra copies) or loss (2 missing copies) will be identified, with all remaining samples showing "No Change":</p>
 <p><img alt="CNV_Call_filter_png" src="../../../images/cnv_call_filter.png" /></p>
-<p>As shown above, removing the No Change samples will filter to only samples with CNV calls. For the gene PTEN, there are 60+ samples each for prostate and breast cancer with variations in copy number. To determine if these are mainly deletions or amplifications, the custom query can by used to group the samples as well. Filtering to BRCA and PRAD tumors, and grouping the samples by the query, it is clear that the majority of these samples have deletions affecting pten:</p>
+<p>As shown above, removing the No Change samples will filter to only samples with CNV calls. For the gene PTEN, there are 60+ samples each for prostate and breast cancer with variations in copy number. To determine if these are mainly deletions or amplifications, the custom query can by used to group the samples as well. Filtering to BRCA and PRAD tumors, and grouping the samples by the query, it is clear that the majority of these samples have deletions affecting PTEN:</p>
 <p><img alt="CNV_Call_customgroup_png" src="../../../images/group_by_customquery.png" /></p>
 <h2 id="cnv-log2-ratio">CNV Log2 Ratio</h2>
 <p>Similar to the GISTIC2 calls, users can browse the log2 ratio derived from an Affymetrix SNP6 Copy Number Inference Pipeline:</p>
@@ -3429,7 +3417,7 @@
 <h2 id="dna-somatic-mutation">DNA Somatic mutation</h2>
 <p>Users can query a gene's mutation status within the samples of the Land. Simply type in the gene name and click OK to return a custom query metadata for WT vs MUT assigned to all samples in the land. Alternatively, one can generate a more detailed mutation status returning all variants for that gene and assigning to the samples (by clicking the "Return AAMutation classification"). Users interested in samples with a specific allele can search it as shown below for BRAF.V600E:</p>
 <p><img alt="DNA-Seq_mutationquery_png" src="../../../images/DNA-seq_query.png" /></p>
-<p>The variant consequence dropdown will allow users to customize the type of mutations queried. By default, only non-synonymous mutations are selected.</p>
+<p>The variant consequence dropdown menu will allow users to customize the type of mutations queried. By default, only non-synonymous mutations are selected.</p>
 <h2 id="rna-seq-expression">RNA-Seq Expression</h2>
 <p>A user can also attach metadata to samples based on the expression status of a gene of interest. Simply type in the gene name in the window at the top of the screen. Three options for output are available:</p>
 <p><img alt="Expression_query_png" src="../../../images/Expression_query.png" /></p>

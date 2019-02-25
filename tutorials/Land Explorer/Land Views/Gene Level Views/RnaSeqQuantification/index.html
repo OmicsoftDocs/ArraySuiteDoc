@@ -879,8 +879,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Explorer/ComparisonExplorer/" title="Comparion Explorer" class="md-nav__link">
-      Comparion Explorer
+    <a href="../../../Explorer/ComparisonExplorer/" title="Comparison Explorer" class="md-nav__link">
+      Comparison Explorer
     </a>
   </li>
 
@@ -3358,18 +3358,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../../../about/example/" title="Example" class="md-nav__link">
-      Example
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -3535,7 +3523,7 @@
 <p><img alt="SummaryGeneFPKM_png" src="../../../images/SummaryGeneFPKM.png" /></p>
 <p>Easily search samples in Land that have a minimal up- or down-regulation for a gene of interest. For each gene, this view shows % of disease samples whose RNA-Seq expression is 2x up-regulated or 2x down-regulated, compared to normal samples in each group (e.g. Tumor Type). Samples are grouped by the primary grouping category by default.</p>
 <h4 id="view-navigation">View Navigation</h4>
-<p>For each group, expression for normal samples is calculated as the average of Log2(FPKM + 0.1). For each tumor (disease) sample, when the Log2(FPKM + 0.1) value is larger than normal sample average by ExpressionUpRegulationCutoff or is smaller than normal average by ExpressionDownRegulationCutoff, this tumor sample is counted as up-regulated or down-regulated.</p>
+<p>For each group, expression for normal samples is calculated as the average of Log2(FPKM + 0.1). For each tumor (disease) sample, when the Log2(FPKM + 0.1) value is larger than normal sample average by <strong>Expression UpRegulation Cutoff</strong> or is smaller than normal average by <strong>Expression DownRegulation Cutoff</strong>, this tumor sample is counted as up-regulated or down-regulated.</p>
 <p>The percentage showing on X axis = ( # of tumor samples up-regulated or down-regulated) / ( # of all tumor samples in this group).</p>
 <h4 id="key-filters">Key Filters</h4>
 <p>Fold change cutoff can be changed under Expression in the left panel.</p>
@@ -3547,13 +3535,13 @@
 <p><img alt="RNA-seqTranscript_png" src="../../../images/RNASeqTranscript.png" /></p>
 <p>Each transcript is shown in a separate chart. When visualizing more than one gene, all transcripts (all genes) will be represented in individual plots. The X-axis shows Transcript RPKM while the Y-axis shows the group.</p>
 <h3 id="rna-seq-survival-view">RNA-Seq Survival View</h3>
-<p>In this view, when survival data is available and attributed to samples within the land, such as within OncoLand studies (TCGA, OncoGEO, etc.), a survival view will be generated. Samples will be grouped into quartiles (Up, upper 25% (Q1) expression of gene, Down, lower 25% (Q4), Mid (all remaining samples, Q2 and Q3)). Survival will be plotted on the Y-axis and time on the X-axis.</p>
+<p>In this view, when survival data is available and attributed to samples within the land, such as within OncoLand studies (TCGA, OncoGEO, etc.), a survival view will be generated. Samples will be grouped into quartiles (Up, upper 25% [Q1] expression of gene; Down, lower 25% [Q4]; Mid [all remaining samples, Q2 and Q3]). Survival will be plotted on the Y-axis and time on the X-axis.</p>
 <p><img alt="Survival_png" src="../../../images/survival_view_RNAseq.png" /></p>
 <h2 id="multi-gene-rna-seq-quantification-views">Multi-gene RNA-seq Quantification views</h2>
 <h3 id="average-fpkm-view">Average FPKM View</h3>
 <p>When a user searches multiple genes, the default expression view will be the average FPKM view, where the expression of all genes searched is averaged for each sample. Each dot in the plot will represent a single sample, with expression plotted on the x-axis and samples grouped on the y-axis by the designated grouping category.</p>
 <p><img alt="average_FPKM_png" src="../../../images/average_FPKM.png" /></p>
-<p>The Multi-gene correlation (RNA-Seq FPKM) view shows a scatter view comparing the RNA-Seq RPKM data for two or more genes.</p>
+<p>The multi-gene correlation (RNA-Seq FPKM) view shows a scatter view comparing the RNA-Seq RPKM data for two or more genes.</p>
 <h3 id="multi-gene-correlation-rna-seq-fpkm-view">Multi-gene Correlation (RNA-Seq FPKM) View</h3>
 <p>For two genes, the X-Axis will be the first gene, while the Y-axis will be the second gene.
 For 3 or more genes, the view will show a multi-chart correlation plot.</p>
@@ -3562,10 +3550,10 @@ For 3 or more genes, the view will show a multi-chart correlation plot.</p>
 <p>Similar to the gene FPKM view when searching a single gene, this view will generate plot expression on the x-axis and samples grouped on the y-axis by the GeneID. This grouping can be changed to reflect gene metadata. Trellising the view by metadata may provide better visualization of the gene expression. Values plotted are Log2(FPKM + 0.1).</p>
 <p><img alt="multi-gene_png" src="../../../images/multi-gene_FPKM.png" /></p>
 <h3 id="transcript-fpkm-multi-transcript-chart-view">Transcript FPKM (Multi-Transcript Chart) View</h3>
-<p>The multi transciprt FPKM view shows Transcript RPKM for all transcripts for the specified gene, organized by group (e.g. Tumor Type/Sample Type/etc.) in a single chart. Each bar represents a separate group, while each transcript is organized on the Y-axis. In this view, users could choose to filter samples by a particular disease type, and then change the grouping option to Sample Type to compare Tumor vs. Normal.</p>
+<p>The multi-transcript FPKM view shows Transcript RPKM for all transcripts for the specified gene, organized by group (e.g. Tumor Type/Sample Type/etc.) in a single chart. Each bar represents a separate group, while each transcript is organized on the Y-axis. In this view, users could choose to filter samples by a particular disease type, and then change the grouping option to Sample Type to compare Tumor vs. Normal.</p>
 <p><img alt="RNA_multi_transcript_FPKM_png" src="../../../images/RNA_multi_transcript_FPKM.png" /></p>
 <h3 id="multi-gene-search-heatmap-fpkm-view">Multi-gene search: Heatmap FPKM View</h3>
-<p>Another way to visualize the expression of multiple genes is in a  heatmap view. The Heatmap FPKM view allows users to visualize the expression of all genes (columns) by all samples filtered (rows). Unbiased heirarchial clustering of genes and samples allows users to find genes or samples that may exhibit similar gene signatures.</p>
+<p>Another way to visualize the expression of multiple genes is in a  heatmap view. The Heatmap FPKM view allows users to visualize the expression of all genes (columns) by all samples filtered (rows). Unbiased hierarchical clustering of genes and samples allows users to find genes or samples that may exhibit similar gene signatures.</p>
 <p><img alt="LandPortal_login_png" src="../../../images/HeatmapFPKM.png" /></p>
                 
                   
