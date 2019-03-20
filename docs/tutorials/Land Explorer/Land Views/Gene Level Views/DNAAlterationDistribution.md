@@ -19,13 +19,13 @@ For multi-gene searches, all mutation and CNV data will be compounded for the ge
 
 ## Somatic Co-Mutation Frequencies
 
-DNA Seq somatic co-mutation frequencies shows a bar plot of # genes with mutation vs frequency of mutation. For instance, for a gene set of BRAF and PTEN, a bar will be shown for samples exhibiting 0, 1, or 2 mutations.
+DNA-Seq somatic co-mutation frequencies shows a bar plot of # genes with mutation vs frequency of mutation. For instance, for a gene set of BRAF and PTEN, a bar will be shown for samples exhibiting 0, 1, or 2 mutations.
 
 ![DNA_somatic_comutation_frequencies_png](../../images/DNA_somatic_comutation_frequencies.png)
 
 ## Somatic Mutation Pattern
 
-DNA Seq somatic mutation pattern view shows a bar plot showing the number of mutations matching a particular pattern for the specified gene set across a grouping (e.g. Tumor Type).
+DNA-Seq somatic mutation pattern view shows a bar plot showing the number of mutations matching a particular pattern for the specified gene set across a grouping (e.g. Tumor Type).
 
 ![DNA_somatic_mutation_pattern_png](../../images/DNA_somatic_mutation_pattern.png)
 

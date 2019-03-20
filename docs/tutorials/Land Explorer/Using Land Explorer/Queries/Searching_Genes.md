@@ -6,7 +6,7 @@ The Search Bar at the top of the Land Explorer page can search a number of thing
 
 The search bar is interactive and dynamic. Entering the first 2-3 characters in a search will automatically populate results in the search bar:
 
-![Search_bar](../../images/auto_search.png) 
+![Search_bar](../../images/auto_search.png)
 
 Within the search bar, users can search:
 
@@ -18,7 +18,7 @@ The most common search item in the search bar is a gene search. Typing in the ge
 
 ## Multiple Genes  
 
-Users can search additional genes in the search bar (with options becoming available for each additional search as well):
+Users can search additional genes in the search bar by entering gene names separated by a comma. Options will become available in the dropdown menu for each additional search term as well:
 
 ![multi_search](../../images/multi_search.png)
 
@@ -28,6 +28,6 @@ Another search users can perform to quickly identify a comparison of interest, i
 
 ![multi_search](../../images/gse_search.png)
 
-Clicking on any of these comparsions will take you to a [Volcano Plot](../../Land Views/Comparison Level Views/Volcano_Plot.md) view:
+Clicking on any of these comparisons will take you to a [Volcano Plot](../../Land Views/Comparison Level Views/Volcano_Plot.md) view:
 
 ![multi_search](../../images/volcano.png)

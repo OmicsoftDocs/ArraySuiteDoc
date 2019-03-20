@@ -26,4 +26,4 @@ Data will be able to compare between different Array Lands by **Specify Multiple
 
 ![NewImage93_png](images/201510-93.png)
 
-This tutorial represents just a piece of what ArraySuite is capable of. Feel free to try different options to get a feel for what the software can do. For additional information, don’t hesitate to contact Omicsoft’s support team (support@omicsoft.com).
+This tutorial represents just a piece of what ArraySuite is capable of. Feel free to try different options to get a feel for what the software can do. For additional information, don’t hesitate to contact Omicsoft’s support team (omicsoft.support@qiagen.com).

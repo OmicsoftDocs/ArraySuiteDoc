@@ -131,4 +131,4 @@ User can run raw data QC and also align the fastq files to plasmid genome and ch
 
 Congratulations! Now you can successfully run a transgene detection analysis!
 
-If you have any questions, please feel free to contact Omicsoft support@omicsoft.com.
+If you have any questions, please feel free to contact Omicsoft omicsoft.support@qiagen.com.

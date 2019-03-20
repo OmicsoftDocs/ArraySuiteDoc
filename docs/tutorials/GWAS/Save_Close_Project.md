@@ -12,4 +12,4 @@ This includes all views, filters, analyses, etc.
 
 **Thank you for using Array Studio.**
 
-**Please contact Omicsoft Support (** support@omicsoft.com **) or Omicsoft Sales (** sales@omicsoft.com **) if you have any questions questions.**
+**Please contact Omicsoft Support (omicsoft.support@qiagen.com) or Omicsoft Sales (bioinformaticssales@qiagen.com) if you have any questions questions.**

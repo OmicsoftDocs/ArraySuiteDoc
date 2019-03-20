@@ -11,4 +11,4 @@ By default, for each type of view (i.e. Sample, Gene, Comparison), a small group
 
 ## Administrator-defined Land Explorer Views
 
-During installation of Land Explorer, administrator can define  available views for all users. These views can be defined in the LandExplorer.cfg file. Please contact Omicsoft Support (support@omicsoft.com) for assistance in customizing this setting.
+During installation of Land Explorer, administrator can define  available views for all users. These views can be defined in the LandExplorer.cfg file. Please contact Omicsoft Support (omicsoft.support@qiagen.com) for assistance in customizing this setting.

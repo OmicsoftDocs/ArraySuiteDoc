@@ -16,7 +16,7 @@ In this example, all copy number gains (2 or more extra copies) or loss (2 missi
 
 ![CNV_Call_filter_png](../../images/cnv_call_filter.png)
 
-As shown above, removing the No Change samples will filter to only samples with CNV calls. For the gene PTEN, there are 60+ samples each for prostate and breast cancer with variations in copy number. To determine if these are mainly deletions or amplifications, the custom query can by used to group the samples as well. Filtering to BRCA and PRAD tumors, and grouping the samples by the query, it is clear that the majority of these samples have deletions affecting pten:
+As shown above, removing the No Change samples will filter to only samples with CNV calls. For the gene PTEN, there are 60+ samples each for prostate and breast cancer with variations in copy number. To determine if these are mainly deletions or amplifications, the custom query can by used to group the samples as well. Filtering to BRCA and PRAD tumors, and grouping the samples by the query, it is clear that the majority of these samples have deletions affecting PTEN:
 
 ![CNV_Call_customgroup_png](../../images/group_by_customquery.png)
 
@@ -36,7 +36,7 @@ Users can query a gene's mutation status within the samples of the Land. Simply 
 
 ![DNA-Seq_mutationquery_png](../../images/DNA-seq_query.png)
 
-The variant consequence dropdown will allow users to customize the type of mutations queried. By default, only non-synonymous mutations are selected.
+The variant consequence dropdown menu will allow users to customize the type of mutations queried. By default, only non-synonymous mutations are selected.
 
 ## RNA-Seq Expression
 

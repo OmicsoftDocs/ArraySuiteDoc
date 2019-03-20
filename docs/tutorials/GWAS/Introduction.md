@@ -42,6 +42,6 @@ and is based on the normalized gene-level expression provided by The Geuvadis mR
 The expression data file also contains gender information and principal component scores, which we will discuss in detail later.
 
 Note: Omicsoft constantly updates the GWAS module in order to meet continued requests of our customers. Therefore, you may note slightly different results when you compare your results to the results in this tutorial.
-Please contact customer support (support@omicsoft.com) if you have any questions as you go through this tutorial.
+Please contact customer support (omicsoft.support@qiagen.com) if you have any questions as you go through this tutorial.
 
 After this tutorial, users will be able to perform GWAS analysis to find the SNPs significantly associated with the expression level of a gene of interest (e.g. *CPNE1*).

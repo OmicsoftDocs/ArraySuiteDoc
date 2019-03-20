@@ -13,6 +13,6 @@ You will be prompted to confirm you want to delete the Land. If you are sure, se
 ![image101_png](images/image101.png)
 
 Congratulations! You are done with this tutorial, which represents just a piece of what OmicSoft Lands are capable of.
-For additional information, don t hesitate to contact Omicsoft s support team (support@omicsoft.com).
+For additional information, don t hesitate to contact Omicsoft s support team (omicsoft.support@qiagen.com).
 
 **Thank you for using Array Studio.**

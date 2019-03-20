@@ -4,7 +4,7 @@ When viewing [Volcano Plots](../../Land Views/Comparison Level Views/Volcano_Plo
 
 ## Gene Filtering
 
-To select a gene of interest from a volcano plot, users can select the Gene filter tab, and choose the Gene identifier (i.e. GeneID, Entrez, or description). Typing in the gene name will filter the gene list to match your search. Simply click OK, and the view will be filtered to your gene(s) of interest:
+To select a gene of interest from a volcano plot, users can select the Gene filter tab, and choose the Gene Identifier (i.e. GeneID, Entrez, or description). Typing in the gene name will filter the gene list to match your search. Simply click OK, and the view will be filtered to your gene(s) of interest:
 
 ![GeneFilter](../../images/gene_filter.png)
 

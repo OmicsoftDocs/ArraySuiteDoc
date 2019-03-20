@@ -1,6 +1,6 @@
 # LandExplorer Comparison Explorer
 
-OmicSoft has added an optional Comparison Explorer to the Land Explorer interface. Here users can view a distribution of all comparisons represented within ArrayLands, grouped by disease or tissue, with interactive pie charts and tree blocks that allow users to view and click through to OmicSoft-curated comparison(s) of interest. On this help page, we describe the usage of the Comparison Explorer. Users can navigate to the Comparison Explorer using the Help menu:
+OmicSoft has added an optional Comparison Explorer to the Land Explorer interface. Here users can view a distribution of all comparisons represented within OmicLands, grouped by disease or tissue, with interactive pie charts and tree blocks that allow users to view and click through to OmicSoft-curated comparison(s) of interest. On this help page, we describe the usage of the Comparison Explorer. Users can navigate to the Comparison Explorer using the menu button in the top right corner of the screen:
 
 ![menu_comparison](../images/menu_comparison.png)
 
@@ -26,7 +26,7 @@ In addition, by scrolling over the bars in the plot, users can quickly identify 
 
 ### Comparison Pie Charts
 
-The stacked pie charts in the upper right portion of Comparison Explorer allow users to visualize more details about the comparisons filtered to. The inner circle of both pie charts represents the proportion of comparisons reprented by the Land colored. For example, the example below has been filtered by TherapeuticArea of Cardiovascular Disease and the pie charts have been updated to have to colors in the inner circle, representing MouseDisease_B38 and HumanDisease_B37. Scrolling over the circle will reveal the Land represented (the gray portion representing HumanDisease_B37):
+The stacked pie charts in the upper right portion of Comparison Explorer allow users to visualize more details about the comparisons filtered to. The inner circle of the pie charts represents the proportion of comparisons represented by the Land, colored by Land. For example, the example below has been filtered by TherapeuticArea of Cardiovascular Disease and the pie charts have been updated to have to colors in the inner circle, representing MouseDisease_B38 and HumanDisease_B37. Scrolling over the circle will reveal the Land represented (the gray portion representing HumanDisease_B37):
 
 ![pie_inner](../images/pie_inner.png)
 
@@ -58,6 +58,6 @@ Within the tree block view, a user can click on a Land and a search window will 
 
 ![ComparisonTreeSearch](../images/ComparisonTreeSearch.png)
 
-Typing a gene name, such as tbx20, and selecting the Search button will allow a user to open up the [AllComparisons](../Land Views/Gene Level Views/AllComparisons#all-comparisons) view, prefiltered to the Project metadata (Therapeutic Area) using the Comparison Filters:
+Typing a gene name, such as TBX20, and selecting the Search button will allow a user to open up the [AllComparisons](../Land Views/Gene Level Views/AllComparisons#all-comparisons) view, prefiltered to the Project metadata (Therapeutic Area) using the Comparison Filters:
 
 ![filtered_from_treeblock_comparison](../images/filtered_from_treeblock_comparison.png)

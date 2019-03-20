@@ -2,7 +2,7 @@
 
 Users have two options to perform RNA-Seq analysis -- one is to run through RNA-Seq pipeline, the other is to run step by step.
 
-**Add From RNA-Seq Pipeline**, as dicussed in this chapter, allows users to finish the whole RNA-Seq analysis in a single click. Based on a user's selections, Array Studio will run the following pipeline:
+**Add From RNA-Seq Pipeline**, as discussed in this section, allows users to finish the whole RNA-Seq analysis in a single click. Based on a user's selections, Array Studio will run the following pipeline:
 
 ![NewImage_35_png](images/201510-35.png)
 
@@ -12,11 +12,11 @@ To perform RNA-Seq pipeline analysis, choose **Add NGS Data - Add From Pipeline 
 
 For each step in the RNA-Seq pipeline, the user can choose the default parameters found in Array Studio or customize settings such as genome version, gene model, alignment stringency and reporting options. To ease in the sharing of data after processing, it is recommended that the user choose the **Reporting** option to *Generate land ALV files*.
 
-If users want to add more user-defined options in each step, users can perform RNA-Seq analysis step by step starting with raw data QC and alignment. The step-by-step methods will be discussed in the next chapters.
+If users want to add more user-defined options in each step, users can perform RNA-Seq analysis step by step starting with raw data QC and alignment. The step-by-step methods will be discussed in the next sections.
 
 ![RNA_Seq_Pipeline_png](images/RNA_Seq_Pipeline.png)
 
-If the input files are in FASTQ, FASTA, or QSEQ format, then the data will be aligned in the same way as by **Add RNA-Seq Data - Map Reads To Genome (Illumina)** which will be discussed in the Chapter 5, with the default parameters. For this module, select the default options, and check "Reads are paired" as these reads are paired. These files will be automatically paired during the pipeline analysis. Depending on your server options, adjust the number of threads. Job number will determine how many parallel jobs (such as alignments) will be performed at once. This number should not exceed the number of samples. Click Send to Queue and the analysis will begin.
+If the input files are in FASTQ, FASTA, or QSEQ format, then the data will be aligned in the same way as by **Add RNA-Seq Data - Map Reads To Genome (Illumina)** which will be discussed in the **Alignment to Genome** section, with the default parameters. For this module, select the default options, and check "Reads are paired" as these reads are paired. These files will be automatically paired during the pipeline analysis. Depending on your server options, adjust the number of threads. Job number will determine how many parallel jobs (such as alignments) will be performed at once. This number should not exceed the number of samples. Click Send to Queue and the analysis will begin.
 
 This could take hours, depending on the number of threads/jobs or type of computer (64-bit/32-bit), etc.
 

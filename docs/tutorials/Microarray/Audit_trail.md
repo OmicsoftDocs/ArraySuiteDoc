@@ -30,4 +30,4 @@ Click **Save** button to save the current project. Close the *Array Studio* soft
 
 **Thank you for** **using** **Array Studio.**
 
-**Please contact Omicsoft Support (** support@omicsoft.com  **) or Omicsoft Sales (** sales@omicsoft.com  **) for sales-related questions.**
+**Please contact Omicsoft Support (omicsoft.support@qiagen.com) or Omicsoft Sales (bioinformaticssales@qiagen.com) for sales-related questions.**

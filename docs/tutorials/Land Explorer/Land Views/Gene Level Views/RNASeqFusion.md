@@ -34,7 +34,7 @@ Select bars in the plot and choose Fusion Details to see the full table for sele
 
 ## RNA-Seq Paired End Fusion (GenePair Frequency)
 
-The RNA-Seq Paired End FUsion (GenePair Frequency) view shows each paired end fusion gene pair in a single chart, organized by Group (e.g. Tumor Type).
+The RNA-Seq Paired End Fusion (GenePair Frequency) view shows each paired end fusion gene pair in a single chart, organized by Group (e.g. Tumor Type).
 
 X-Axis shows percent of samples with the fusion, while Y-axis shows the group.
 Use the Sample Tab to change filtering options on the samples. Use the Grouping option to change grouping. Use the Fusion tab to filter the shown fusions. By default, all potential fusions are shown.
@@ -51,7 +51,7 @@ The RNA-Seq Fusion (Site Frequency) view shows each fusion in a single chart, or
 
 X-axis shows percent of samples with the fusion, while Y-axis shows the group.
 By using the Sample Tab, users could apply filters to samples, and click the Grouping button to change grouping option. Under the Fusion tab, users could apply filters to the shown fusion options.
-By default, all potential fusions for quried genes would be shown, however potential real fusions are not likely to be in many normal samples.
+By default, all potential fusions for queried genes would be shown, however potential real fusions are not likely to be in many normal samples.
 
 ![RNA_seq_fusion_site_frequency_png](../../images/RNA_seq_fusion_site_frequency.png)
 
