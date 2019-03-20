@@ -3317,12 +3317,12 @@
 <h2 id="report-mirna-counts">Report miRNA Counts</h2>
 <p>Given the alignment, one can summarize miRNA expression, using the Quantification module in <strong>NGS | Quantification | Report Gene/Transcript Counts</strong>.</p>
 <p><img alt="Quantification_Menu" src="../images/Quantification_Menu_updated.png" /></p>
-<p><img alt="transcript_counts" src="../images/transcript_counts.png" /></p>
 <p>User can choose to quantify at transcript level by selecting it in the <strong>Expression measurement</strong> option. At <strong>Summary Level</strong>, If <strong>Gene level</strong> is selected,
-miRNA expression will be quantified at pre-miRNA gene level.  If <strong>Transcript level</strong> is selected, miRNA expression will be quantified at mature miRNA transcript level.<br />
-By default, option <strong>Count fragments instead of reads</strong> is selected, unselect as this is not paired-end (in this case, it makes no difference).
-<strong>Exclude multi-reads</strong> does not count non-unique mapped reads.
-In the source paper, multi-reads were distributed to all matching sites, so we will also use multi-reads.
+miRNA expression will be quantified at pre-miRNA gene level.  If <strong>Transcript level</strong> is selected, miRNA expression will be quantified at mature miRNA transcript level.  </p>
+<p><img alt="transcript_counts" src="../images/transcript_counts.png" /></p>
+<p>By default, option <strong>Count fragments instead of reads</strong> is selected, unselect as this is not paired-end (in this case, it makes no difference).
+<strong>Exclude multi-reads</strong> does not count non-unique mapped reads. It is important to uncheck Use EM algorithm to handle ambigous reads, and Count First-Read-Reverse-Strand reads. </p>
+<p>In the source paper, multi-reads were distributed to all matching sites, so we will also use multi-reads.
 Options to count reads based on strand are design for dataset from strand-specific protocol.
 In this tutorial, the  samples are strand-specific, as shown in the strand metrics from aligned QC table. Only the first strand counting option is checked. We will examine mature miRNA expression levels, so select <strong>Transcript level</strong>.</p>
 <p>Click <strong>Submit</strong> to run the module.</p>
