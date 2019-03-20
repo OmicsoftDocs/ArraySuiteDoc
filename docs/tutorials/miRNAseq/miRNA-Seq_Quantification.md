@@ -8,12 +8,14 @@ Given the alignment, one can summarize miRNA expression, using the Quantificatio
 
 ![Quantification_Menu](images/Quantification_Menu_updated.png)
 
-![transcript_counts](images/transcript_counts.png)
-
 User can choose to quantify at transcript level by selecting it in the **Expression measurement** option. At **Summary Level**, If **Gene level** is selected,
 miRNA expression will be quantified at pre-miRNA gene level.  If **Transcript level** is selected, miRNA expression will be quantified at mature miRNA transcript level.  
+
+![transcript_counts](images/transcript_counts.png)
+
 By default, option **Count fragments instead of reads** is selected, unselect as this is not paired-end (in this case, it makes no difference).
-**Exclude multi-reads** does not count non-unique mapped reads.
+**Exclude multi-reads** does not count non-unique mapped reads. It is important to uncheck Use EM algorithm to handle ambigous reads, and Count First-Read-Reverse-Strand reads. 
+
 In the source paper, multi-reads were distributed to all matching sites, so we will also use multi-reads.
 Options to count reads based on strand are design for dataset from strand-specific protocol.
 In this tutorial, the  samples are strand-specific, as shown in the strand metrics from aligned QC table. Only the first strand counting option is checked. We will examine mature miRNA expression levels, so select **Transcript level**.
