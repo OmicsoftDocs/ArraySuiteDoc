@@ -58,6 +58,6 @@ Within the tree block view, a user can click on a Land and a search window will 
 
 ![ComparisonTreeSearch](../images/ComparisonTreeSearch.png)
 
-Typing a gene name, such as TBX20, and selecting the Search button will allow a user to open up the [AllComparisons](../Land Views/Gene Level Views/AllComparisons#all-comparisons) view, prefiltered to the Project metadata (Therapeutic Area) using the Comparison Filters:
+Typing a gene name, such as TBX20, and selecting the Search button will allow a user to open up the [AllComparisons](../Land Views/Gene Level Views/AllComparisons/#all-comparisons) view, prefiltered to the Project metadata (Therapeutic Area) using the Comparison Filters:
 
 ![filtered_from_treeblock_comparison](../images/filtered_from_treeblock_comparison.png)

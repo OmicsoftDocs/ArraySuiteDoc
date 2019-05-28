@@ -43,6 +43,6 @@ Gene level comparisons are plotted as scatter or "bubble-plots". In a bubble plo
 
 ### Details Views
 
-Details views essentially will show a table, representing either the [Samples](./Sample Level Views/Data_Availability), [Comparisons](./Sample Level Views/Comparison_Availability) available in the land, or the [metadata](./Sample Level Views/Sample_Details) associated with the samples that are filtered:
+Details views essentially will show a table, representing either the [Samples](../Sample Level Views/Sample_Details/), [Comparisons](../Sample Level Views/Comparison_Availability) available in the land, or the [metadata](../Sample Level Views/Sample_Details) associated with the samples that are filtered:
 
 ![LandPortal_login_png](../images/SampleDetails_view.png)
