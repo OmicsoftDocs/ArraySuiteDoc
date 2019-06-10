@@ -17,6 +17,6 @@ Help documents are available to provide context for many of the analysis modules
 ##Contact Us
 Our regular support hours are Monday through Friday 9:00 AM through 5:00 PM Eastern Time.  Emailed technical support requests are responded to on the same business day, and in most cases within a few hours.
 
-Email: support@omicsoft.com
+Email: omicsoft.support@qiagen.com
 
-Phone: 1-888-259-OMIC (1-888-259-6642) Option 1
+Phone: 919-694-1674
