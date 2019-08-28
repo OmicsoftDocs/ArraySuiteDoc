@@ -879,8 +879,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Explorer/ComparisonExplorer/" title="Comparion Explorer" class="md-nav__link">
-      Comparion Explorer
+    <a href="../../Explorer/ComparisonExplorer/" title="Comparison Explorer" class="md-nav__link">
+      Comparison Explorer
     </a>
   </li>
 
@@ -3299,18 +3299,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../../about/example/" title="Example" class="md-nav__link">
-      Example
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -3414,23 +3402,23 @@
 <p>In addition to the default <strong>Samples</strong> view above, other views like <strong>Data Availability</strong> and <strong>Table View</strong> are also available for users to query the sample data at a general level.</p>
 <p><img alt="SampleDistView_png" src="../../images/SampleView.png" /></p>
 <h2 id="gene-level-views">Gene Level Views</h2>
-<p>When a user searches a gene or a gene set (multiple genes), there will be more views available, like DNA-Seq, Somatic Mutation Distribution, RNA-Seq, Gene FPKM, Transcript FPKM, etc.</p>
+<p>When a user searches a gene or a gene set (multiple genes), there will be more views available, such as: DNA-Seq, Somatic Mutation Distribution, RNA-Seq, Gene FPKM, Transcript FPKM, etc.</p>
 <p><img alt="SelectViews_genes_png" src="../../images/SelectViews_genes.png" /></p>
 <h2 id="view-types">View types</h2>
 <p>Visualization of the data in Lands can come in many formats. Please find the description of each specific view found in Lands under the subsections for the Land Views page. Some basic themes exist for certain views:</p>
 <h3 id="distribution-views">Distribution Views</h3>
-<p>Distribution views are generally histogram views. For Sample Level views, such as <a href="../Sample Level Views/Samples/">Sample, Comparison or Project Distribution</a>, these views will plot the number of each available on the x-axis. Users can group these on the Y-axis using the metadata associated with that land. As a variation, quantification of mutation data can also be plotted in a Distribution view and found for both <a href="../Gene Level Views/DNAAlterationDistribution/">DNA-seq</a> and <a href="../Gene Level Views/RNASeqSomaticMutation/">RNA-seq</a> mutation calling. An example of a distribution view is shown below for TCGA, where all samples are plotted (with numbers of x-axis showing quantity). Under the Grouping option, Tumor Type is chosen - therefore the samples are grouped on the y-axis by the TCGA-designated tumor type.</p>
+<p>Distribution views are generally histogram views. For Sample Level views, such as <a href="../Sample Level Views/Samples/">Sample, Comparison or Project Distribution</a>, these views will plot the number of each available on the X-axis. Users can group these on the Y-axis using the metadata associated with that land. As a variation, quantification of mutation data can also be plotted in a Distribution view and found for both <a href="../Gene Level Views/DNAAlterationDistribution/">DNA-seq</a> and <a href="../Gene Level Views/RNASeqSomaticMutation/">RNA-seq</a> mutation calling. An example of a distribution view is shown below for TCGA, where all samples are plotted (with numbers of x-axis showing quantity). Under the Grouping option, Tumor Type is chosen: therefore, the samples are grouped on the Y-axis by the TCGA-designated tumor type.</p>
 <p><img alt="SampleDistView_png" src="../../images/SampleViewTCGAB37.png" /></p>
 <h3 id="expression-views">Expression Views</h3>
-<p>When users search for a single gene or multiple genes, various "omic-data" can be plotted in expression views. Among the data types supported in these views are <a href="../Gene Level Views/RnaSeqQuantification/">RNA-Seq</a>, <a href="../Gene Level Views/ExpressionRatio/">microarray</a>, as well as <a href="../Gene Level Views/Proteomics/">Proteomics data</a>. <a href="../Gene Level Views/CopyNumberViews/">Copy Number</a>  and <a href="../Gene Level Views/Methylation/">Methylation</a> views are also similarly displayed in Land Explorer. In all such views, each point on the plot represents a single sample, and the x-axis will represent the expression (or copy number/methylation) status for that sample. Similar to the distribution views, samples will be grouped on the y-axis as defined by the user in the "Grouping" option at the top of the screen, as shown below, where fgf2 expression is grouped on the Y-axis by Sample Type.</p>
+<p>When users search for a single gene or multiple genes, various -Omic data can be plotted in expression views. Among the data types supported in these views are <a href="../Gene Level Views/RnaSeqQuantification/">RNA-Seq</a>, <a href="../Gene Level Views/ExpressionRatio/">microarray</a>, as well as <a href="../Gene Level Views/Proteomics/">Proteomics data</a>. <a href="../Gene Level Views/CopyNumberViews/">Copy Number</a>  and <a href="../Gene Level Views/Methylation/">Methylation</a> views are also similarly displayed in Land Explorer. In all such views, each point on the plot represents a single sample, and the X-axis will represent the expression (or copy number/methylation) status for that sample. Similar to the distribution views, samples will be grouped on the Y-axis as defined by the user in the "Grouping" option at the top of the screen, as shown below, where FGF2 expression is grouped on the Y-axis by Sample Type.</p>
 <p><img alt="GeneFPKM_png" src="../../images/geneFPKM.png" /></p>
 <p>For multi-gene searches, these views will often be represented as heat-map views such as below:</p>
 <p><img alt="LandPortal_login_png" src="../../images/HeatmapFPKM.png" /></p>
 <h3 id="comparison-views">Comparison Views</h3>
-<p>Gene level comparisons are plotted as scatter or "bubble-plots", where the fold change of a gene in a specific comparison is plotted on the x-axis and the size of the dot represents the significance of the gene's differential expression (larger means more significant):</p>
+<p>Gene level comparisons are plotted as scatter or "bubble-plots". In a bubble plot, the fold change of a gene in a specific comparison is plotted on the X-axis and the size of the dot represents the significance of the gene's differential expression (larger means more significant):</p>
 <p><img alt="Disease_vs_Normal_png" src="../../images/DiseasevsNormal.png" /></p>
 <h3 id="details-views">Details Views</h3>
-<p>Details views essentially will show a table, such as representing either the <a href="./Sample Level Views/Data_Availability">Samples</a> or <a href="./Sample Level Views/Comparison_Availability">Comparisons</a> available in the land, or the <a href="./Sample Level Views/Sample_Details">metadata</a> associated with the samples that are filtered:</p>
+<p>Details views essentially will show a table, representing either the <a href="../Sample Level Views/Sample_Details/">Samples</a>, <a href="../Sample Level Views/Comparison_Availability">Comparisons</a> available in the land, or the <a href="../Sample Level Views/Sample_Details">metadata</a> associated with the samples that are filtered:</p>
 <p><img alt="LandPortal_login_png" src="../../images/SampleDetails_view.png" /></p>
                 
                   
@@ -3452,7 +3440,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../Explorer/ComparisonExplorer/" title="Comparion Explorer" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../Explorer/ComparisonExplorer/" title="Comparison Explorer" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -3461,7 +3449,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Comparion Explorer
+                Comparison Explorer
               </span>
             </div>
           </a>

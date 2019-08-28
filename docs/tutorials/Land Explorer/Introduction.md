@@ -9,9 +9,12 @@ OmicSoft uses ArrayLand framework to deliver large amounts of clinical and "omic
 
 Please see our video for a basic introduction to Land Explorer:
 
-<div class="video-wrapper">
+#<div class="video-wrapper">
   <iframe width="1280" height="720" src="https://www.youtube.com/embed/Gylr_Pi2sxM" frameborder="0" allowfullscreen></iframe>
 </div>
+
+<div style="width:100%; height:0; position: relative; padding-bottom:56.25%"><iframe src="//qiagenbioinformatics.23video.com/v.ihtml/player.html?token=617eaed4e28a0df6d6554b06dffc9fb0&source=embed&photo%5fid=49720383" style="width:100%; height:100%; position: absolute; top: 0; left: 0;" frameborder="0" border="0" scrolling="no" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1" allow="autoplay; fullscreen"></iframe></div>
+
 
 Land Explorer connects to Array Server to provide access to rich visualization of Omic-data, and delivers this data directly to a user's web browser, meaning no extra software required. Land Explorer can by used as a companion product to OmicSoft's Array Suite (to use with internal Lands and OmicSoft Lands), or as a standalone product hosted by QIAGEN/OmicSoft. Like Array Suite, Land Explorer is fully customizable to meet the needs of its users.
 
