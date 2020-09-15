@@ -52,6 +52,4 @@ While you are in **Land Explorer for IPA**, you can search for expression of oth
 
  ![image_IPA_search_new_gene_png](../images/IPA_search_new_gene.png)
 
-Land Explorer for IPA is available at no charge for all IPA users, and does not require registration or manual sign-in, providing gene expression data from GTEx. 
-
 For full access to hundreds of thousands of samples from healthy and disease tissue, please request a trial of the full OmicSoft Land Explorer: https://www.qiagenbioinformatics.com/land-explorer/.
