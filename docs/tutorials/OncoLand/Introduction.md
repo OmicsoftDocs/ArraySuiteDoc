@@ -2,11 +2,11 @@
 
 ## OncoLand
 
-OmicSoft uses ArrayLand framework to deliver large data service results. OncoLand is an important part of ArrayLand specifically focused on oncology data. Land files are built up based on OmicSoft File System (OFS), which stores genomics data in database files and different layers of indexes for gene/markers and samples. It is a revolutionary google-like storage for vector data. The goal of OncoLand is to provide fast data access in both sample and gene directions.
+OmicSoft uses OmicLand framework to deliver large data service results. OncoLand is an important part of the OmicLand collection, specifically focused on oncology data. Land files are built up based on OmicSoft File System (OFS), which stores genomics data in database files and different layers of indexes for gene/markers and samples. The goal of OncoLand is to provide fast data access in both sample and gene directions for biomarker-focused queries.
 
-Once users configured Land data on ArrayServer internally, all ArrayStudio/ArrayLand users can search all types of genomics profiles of a single gene or a set of genes instantly with rich visualizations.
+Once users configured Land data on OmicSoft internally, OmicSoft Studio/OmicLand users can search all types of genomics profiles of a single gene or a set of genes instantly with rich visualizations.
 
-This tutorial is mainly based on TCGA Land and CCLE Land. Please refer to the OncoLand Whitepaper, available through the Help menu item, for descriptions of all available lands within OncoLand.
+This tutorial is mainly based on TCGA Land and CCLE Land, but there are many other oncology-focused databases to explore. Please refer to the OncoLand Whitepaper, available through the Help menu item, for descriptions of all available lands within OncoLand.
 
 ## TCGALand
 
