@@ -22,8 +22,9 @@ theme:
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
-  feature:
-    tabs: true
+  features:
+    - navigation.tabs
+    - navigation.instant
   #custom_dir: 'theme/material-extend'
 
 extra_javascript:
@@ -250,16 +251,9 @@ extra:
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
-  feature:
-    tabs: true
-  social:
-    - type: 'github'
-      link: 'https://github.com/OmicsoftDocs'
-    - type: 'twitter'
-      link: 'https://twitter.com/omicsoft'
-    - type: 'linkedin'
-      link: 'https://www.linkedin.com/company-beta/3531113/'
-
+  features:
+    - navigation.tabs
+    - navigation.instant
 # Google Analytics
 google_analytics:
   - 'UA-XXXXXXXX-X'
