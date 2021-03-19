@@ -1,0 +1,3731 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="OmicSoft Doc">
+      
+      
+      
+        <meta name="author" content="OmicSoft Support">
+      
+      
+        <link rel="canonical" href="https://omicsoftdocs.github.io/ArraySuiteDoc/tutorials/SingleCellLand/Introduction/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
+    
+    
+      
+        <title>Introduction - omicsoft doc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2c0c5eaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="teal">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="omicsoft doc" class="md-header__button md-logo" aria-label="omicsoft doc" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            omicsoft doc
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ArrayStudio/ArrayStudio/" class="md-tabs__link">
+        Framework
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Microarray/Installing_Array_Studio/" class="md-tabs__link">
+        OmicData
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../RNASeq/Introduction/" class="md-tabs__link">
+        NGS
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../OncoLand/Introduction/" class="md-tabs__link md-tabs__link--active">
+        Land
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about/Release-notes/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="omicsoft doc" class="md-nav__button md-logo" aria-label="omicsoft doc" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    omicsoft doc
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Framework
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Framework" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Framework
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ArrayStudio/ArrayStudio/" class="md-nav__link">
+        Array Studio
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        Array Server
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Array Server" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Array Server
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ServerAnalysisBasics/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ServerAnalysisBasics/Connecting_to_a_Server_and_Uploading_Files/" class="md-nav__link">
+        Connecting to a Server and Uploading Files
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ServerAnalysisBasics/Creating_and_Publishing_a_Server_Project/" class="md-nav__link">
+        Creating and Publishing a Server Project
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ServerAnalysisBasics/Array_Server_on_Cluster/" class="md-nav__link">
+        Array Server on Cluster
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ServerAnalysisBasics/Array_Server_on_Cloud/" class="md-nav__link">
+        Array Server on Cloud
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        Server Explorer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Server Explorer" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Server Explorer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ServerExplorer/Getting_Started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ServerExplorer/Searching_Projects/" class="md-nav__link">
+        Searching Projects
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ServerExplorer/Publishing_Data/" class="md-nav__link">
+        Publishing Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ServerExplorer/Server_FileManagement/" class="md-nav__link">
+        Server File Management
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ServerExplorer/Server_Sample_Management/" class="md-nav__link">
+        Server Sample Management
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ServerExplorer/Server_Administration/" class="md-nav__link">
+        Server Administration
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        GenomeBrowser
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="GenomeBrowser" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          GenomeBrowser
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GenomeBrowser/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GenomeBrowser/Create_Genome_Browser/" class="md-nav__link">
+        Create Genome Browser
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GenomeBrowser/Adding_Tracks/" class="md-nav__link">
+        Adding Tracks
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GenomeBrowser/Browsing_Data/" class="md-nav__link">
+        Browsing Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GenomeBrowser/Browsing_Data_from_Local_Analysis/" class="md-nav__link">
+        Browsing Data from Local Analysis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GenomeBrowser/Others/" class="md-nav__link">
+        Others
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        Sample Management
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Sample Management" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Sample Management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SampleManagement/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SampleManagement/SampleManagement/" class="md-nav__link">
+        Sample Management
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SampleManagement/Integration/" class="md-nav__link">
+        Integration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SampleManagement/Others/" class="md-nav__link">
+        Others
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      <label class="md-nav__link" for="__nav_2_6">
+        Studio on the Cloud
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Studio on the Cloud" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Studio on the Cloud
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Cloud/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Cloud/Connecting_to_Cloud_and_Uploading_Files/" class="md-nav__link">
+        Cloud Connection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Cloud/Creatinga_Cloud_Project/" class="md-nav__link">
+        Cloud Project
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Cloud/Managing_Cloud_Instance_and_Proxy/" class="md-nav__link">
+        Proxy Instance
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
+      
+      <label class="md-nav__link" for="__nav_2_7">
+        Oscript
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Oscript" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          Oscript
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Oscript/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Oscript/RunOscript/" class="md-nav__link">
+        Run Oscript
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Oscript/PipelineScript/" class="md-nav__link">
+        Pipeline Script
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" >
+      
+      <label class="md-nav__link" for="__nav_2_8">
+        Land Explorer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Land Explorer" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_8">
+          <span class="md-nav__icon md-icon"></span>
+          Land Explorer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_2" type="checkbox" id="__nav_2_8_2" >
+      
+      <label class="md-nav__link" for="__nav_2_8_2">
+        Explorer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Explorer" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Explorer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Explorer/SampleExplorer/" class="md-nav__link">
+        Sample Explorer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Explorer/ComparisonExplorer/" class="md-nav__link">
+        Comparison Explorer
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_3" type="checkbox" id="__nav_2_8_3" >
+      
+      <label class="md-nav__link" for="__nav_2_8_3">
+        Land Views
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Land Views" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_8_3">
+          <span class="md-nav__icon md-icon"></span>
+          Land Views
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Views/" class="md-nav__link">
+        Views
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_3_2" type="checkbox" id="__nav_2_8_3_2" >
+      
+      <label class="md-nav__link" for="__nav_2_8_3_2">
+        Sample Level Views
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Sample Level Views" data-md-level="4">
+        <label class="md-nav__title" for="__nav_2_8_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Sample Level Views
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Sample%20Level%20Views/Samples/" class="md-nav__link">
+        Distribution Views
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Sample%20Level%20Views/Comparisons/" class="md-nav__link">
+        Comparisons
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Sample%20Level%20Views/Sample_Details/" class="md-nav__link">
+        Sample Details
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Sample%20Level%20Views/Comparison_Availability/" class="md-nav__link">
+        Comparison Availability
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Sample%20Level%20Views/Data_Availability/" class="md-nav__link">
+        Data Availability
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Sample%20Level%20Views/Survival_Data/" class="md-nav__link">
+        Survival Data
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_3_3" type="checkbox" id="__nav_2_8_3_3" >
+      
+      <label class="md-nav__link" for="__nav_2_8_3_3">
+        Gene Level Views
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gene Level Views" data-md-level="4">
+        <label class="md-nav__title" for="__nav_2_8_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Gene Level Views
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Gene%20Level%20Views/OmicDataIntegrationViews/" class="md-nav__link">
+        Integration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Gene%20Level%20Views/AllComparisons/" class="md-nav__link">
+        Comparisons
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Gene%20Level%20Views/DNAAlterationDistribution/" class="md-nav__link">
+        DNA-Seq
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Gene%20Level%20Views/CopyNumberViews/" class="md-nav__link">
+        Copy Number
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Gene%20Level%20Views/RnaSeqQuantification/" class="md-nav__link">
+        RNA-Seq Quantification
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Gene%20Level%20Views/RNASeqSomaticMutation/" class="md-nav__link">
+        RNA-Seq Mutation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Gene%20Level%20Views/RNASeqFusion/" class="md-nav__link">
+        RNA-Seq Fusion
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Gene%20Level%20Views/ExpressionRatio/" class="md-nav__link">
+        Microarray Expression
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Gene%20Level%20Views/miRNA_views/" class="md-nav__link">
+        miRNA-Seq
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Gene%20Level%20Views/Proteomics/" class="md-nav__link">
+        Proteomics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Gene%20Level%20Views/Methylation/" class="md-nav__link">
+        Methylation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_3_4" type="checkbox" id="__nav_2_8_3_4" >
+      
+      <label class="md-nav__link" for="__nav_2_8_3_4">
+        Comparison Level Views
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Comparison Level Views" data-md-level="4">
+        <label class="md-nav__title" for="__nav_2_8_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Comparison Level Views
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Views/Comparison%20Level%20Views/Volcano_Plot/" class="md-nav__link">
+        Volcano Plot
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_4" type="checkbox" id="__nav_2_8_4" >
+      
+      <label class="md-nav__link" for="__nav_2_8_4">
+        Using Land Explorer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Using Land Explorer" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_8_4">
+          <span class="md-nav__icon md-icon"></span>
+          Using Land Explorer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/LandExplorerInterface/" class="md-nav__link">
+        Land Explorer Interface
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_4_2" type="checkbox" id="__nav_2_8_4_2" >
+      
+      <label class="md-nav__link" for="__nav_2_8_4_2">
+        Filters
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Filters" data-md-level="4">
+        <label class="md-nav__title" for="__nav_2_8_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Filters
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/Filters/Filters/" class="md-nav__link">
+        Filtering
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/Filters/Sample_Filters/" class="md-nav__link">
+        Sample Filters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/Filters/Comparison_filters/" class="md-nav__link">
+        Comparison Filters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/Filters/Project_filters/" class="md-nav__link">
+        Project Filters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/Filters/Gene/" class="md-nav__link">
+        Gene Filters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/Filters/Mutation/" class="md-nav__link">
+        Mutation Filters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/Filters/CNV/" class="md-nav__link">
+        CNV Filters
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_4_3" type="checkbox" id="__nav_2_8_4_3" >
+      
+      <label class="md-nav__link" for="__nav_2_8_4_3">
+        Queries
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Queries" data-md-level="4">
+        <label class="md-nav__title" for="__nav_2_8_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Queries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/Queries/Custom_Query/" class="md-nav__link">
+        Custom Query
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/Queries/Searching_Genes/" class="md-nav__link">
+        Search Bar
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/GenerateViewLink/" class="md-nav__link">
+        Generate View Link
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/Customizations/" class="md-nav__link">
+        Customizations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Using%20Land%20Explorer/View_controller/" class="md-nav__link">
+        View Controller
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_5" type="checkbox" id="__nav_2_8_5" >
+      
+      <label class="md-nav__link" for="__nav_2_8_5">
+        Land Explorer for IPA
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Land Explorer for IPA" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_8_5">
+          <span class="md-nav__icon md-icon"></span>
+          Land Explorer for IPA
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Land%20Explorer/Land%20Explorer%20for%20IPA/Land_Explorer_for_IPA/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        OmicData
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="OmicData" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          OmicData
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        Microarray
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Microarray" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Microarray
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Microarray/Installing_Array_Studio/" class="md-nav__link">
+        Installing Array Studio
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Microarray/Importing_a_Dataset/" class="md-nav__link">
+        Importing a Dataset
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Microarray/Data_Visualization_and_Quality_Control/" class="md-nav__link">
+        Data Visualization and Quality Control
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Microarray/Differential_Expression/" class="md-nav__link">
+        Differential Expression
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Microarray/Data_Exploration/" class="md-nav__link">
+        Data Exploration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Microarray/Audit_trail/" class="md-nav__link">
+        Audit trail
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Microarray/References/" class="md-nav__link">
+        References
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        CNV
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="CNV" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          CNV
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CNV/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CNV/Visualization_of_Data/" class="md-nav__link">
+        Data Visulization
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CNV/Summarization_of_CNV_Data/" class="md-nav__link">
+        Data Summarization
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CNV/Advanced_Visualization/" class="md-nav__link">
+        Advanced Visulization
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CNV/Analysis_Modules/" class="md-nav__link">
+        Analysis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CNV/Save_Close_Project/" class="md-nav__link">
+        Save/Close Project
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        ExonArray
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="ExonArray" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          ExonArray
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ExonArray/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ExonArray/Importing_a_Dataset/" class="md-nav__link">
+        Importing a Dataset
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ExonArray/Visualization_of_Data/" class="md-nav__link">
+        Visualization of Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ExonArray/Data_Visualization_and_Quality_Control/" class="md-nav__link">
+        Data Visualization and Quality Control
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ExonArray/Differential_Expression__Probeset_Level_/" class="md-nav__link">
+        Differential Expression Probeset Level
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ExonArray/Exon_Level_ANOVA_ExonDiffertialExpression_/" class="md-nav__link">
+        Exon Level Differtial Expression
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ExonArray/Alternative_Splicing_ANOVA/" class="md-nav__link">
+        Alternative Splicing ANOVA
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ExonArray/Generate_Transcript_Level_Data/" class="md-nav__link">
+        Generate Transcript Level Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ExonArray/Save_Close_Project/" class="md-nav__link">
+        Save/Close Project
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      <label class="md-nav__link" for="__nav_3_4">
+        RT-PCR
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="RT-PCR" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          RT-PCR
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RTPCR/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RTPCR/Manage_RT-PCR_Raw_Data/" class="md-nav__link">
+        Manage RT-PCR Raw Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RTPCR/Import_RT-PCR_Wizard/" class="md-nav__link">
+        Import RT-PCR Wizard
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RTPCR/Downstream_Analysis_of_RT-PCR_data/" class="md-nav__link">
+        Downstream Analysis of RT-PCR data
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      <label class="md-nav__link" for="__nav_3_5">
+        SNP
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="SNP" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          SNP
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SNP/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SNP/Visualization_of_Data/" class="md-nav__link">
+        Visualization of Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SNP/Marker_Statistics__Data_Filtering__and_Population_Structure/" class="md-nav__link">
+        Marker Statistics Data Filtering and Population Structure
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SNP/Association_Analysis/" class="md-nav__link">
+        Association Analysis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SNP/Visualizationof_pValues/" class="md-nav__link">
+        Visualizationof pValues
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SNP/Save_Close_Project/" class="md-nav__link">
+        Save/Close Project
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        NGS
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="NGS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          NGS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      <label class="md-nav__link" for="__nav_4_1">
+        RNA-Seq
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="RNA-Seq" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          RNA-Seq
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RNASeq/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RNASeq/CreateArray_Studio_Project/" class="md-nav__link">
+        Create ArrayStudio Project
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RNASeq/Add%20From%20RNA-Seq%20Pipeline/" class="md-nav__link">
+        Add From RNA-Seq Pipeline
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RNASeq/QC_ofRawData_Files/" class="md-nav__link">
+        QC of RawData Files
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RNASeq/Alignment_to_the_Genome/" class="md-nav__link">
+        Alignment to the Genome
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RNASeq/QC_of_AlignedData/" class="md-nav__link">
+        QC of AlignedData
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RNASeq/RNA-Seq_Quantification/" class="md-nav__link">
+        RNA-Seq Quantification
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RNASeq/RNA-Seq_Fusion_Gene_Detection/" class="md-nav__link">
+        RNA-Seq Fusion Gene Detection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RNASeq/RNA-Seq_Mutation_Detection/" class="md-nav__link">
+        RNA-Seq Mutation Detection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RNASeq/Others/" class="md-nav__link">
+        Others
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RNASeq/Save___Close_Project/" class="md-nav__link">
+        Save/Close Project
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      <label class="md-nav__link" for="__nav_4_2">
+        DNA-Seq
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="DNA-Seq" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          DNA-Seq
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DNASeq/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DNASeq/Create_Array_Studio_Project/" class="md-nav__link">
+        Create Project
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DNASeq/QC_of_Raw_Data_Files/" class="md-nav__link">
+        Raw Data QC
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DNASeq/Alignment_to_the_Genome/" class="md-nav__link">
+        Alignment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DNASeq/QC_of_Aligned_Data/" class="md-nav__link">
+        Aligned QC
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DNASeq/DNA-Seq_Fusion_Gene_Detection/" class="md-nav__link">
+        Fusion Detection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DNASeq/DNA-SeqMutation_Detection/" class="md-nav__link">
+        Variant Detection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DNASeq/DNA-Seq_Copy_Number_Analysis/" class="md-nav__link">
+        Copy Number Analysis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DNASeq/Save___Close_Project/" class="md-nav__link">
+        Save/Close Project
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      <label class="md-nav__link" for="__nav_4_3">
+        miRNA-Seq
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="miRNA-Seq" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          miRNA-Seq
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miRNAseq/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miRNAseq/CreateArray_Studio_Project/" class="md-nav__link">
+        CreateArray Studio Project
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miRNAseq/workflow_and_pipeline/" class="md-nav__link">
+        workflow and pipeline
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miRNAseq/QC_ofRaw_Data_Files/" class="md-nav__link">
+        QC of Raw Data Files
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miRNAseq/Filtering_Trimming_Reads/" class="md-nav__link">
+        Filtering Trimming Reads
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miRNAseq/Alignment_to_the_Genome/" class="md-nav__link">
+        Alignment to the Genome
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miRNAseq/QC_of_Aligned_Data/" class="md-nav__link">
+        QC of Aligned Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miRNAseq/miRNA-Seq_Quantification/" class="md-nav__link">
+        miRNA-Seq Quantification
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miRNAseq/Others/" class="md-nav__link">
+        Others
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miRNAseq/Save_Close_Project/" class="md-nav__link">
+        Save and Close Project
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      <label class="md-nav__link" for="__nav_4_4">
+        scRNA-Seq
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="scRNA-Seq" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          scRNA-Seq
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scRNAseq/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_2" type="checkbox" id="__nav_4_4_2" >
+      
+      <label class="md-nav__link" for="__nav_4_4_2">
+        Pre-processing
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-processing" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-processing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scRNAseq/Pre-processing/10X%20Data%20Sets/" class="md-nav__link">
+        10X Genomics Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scRNAseq/Pre-processing/non10XData/" class="md-nav__link">
+        Other UMI Data sets
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scRNAseq/Alignment_to_the_Genome/" class="md-nav__link">
+        Alignment to the Genome
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scRNAseq/QC%20of%20Aligned%20Data/" class="md-nav__link">
+        QC of Aligned Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scRNAseq/scRNASeq_Quantification/" class="md-nav__link">
+        scRNA-Seq Quantification
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scRNAseq/Downstream%20Analyses%20of%20SC%20Data/" class="md-nav__link">
+        Downstream Analyses of SC Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scRNAseq/Save_Close_Project/" class="md-nav__link">
+        Save and Close Project
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scRNAseq/AdditionalOptions/" class="md-nav__link">
+        Addtional Options
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+      
+      <label class="md-nav__link" for="__nav_4_5">
+        GWAS
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="GWAS" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          GWAS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GWAS/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GWAS/Connecting_To_A_Server_And_Uploading_Files/" class="md-nav__link">
+        Connecting To A Server And Uploading Files
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GWAS/Preprocessing/" class="md-nav__link">
+        Preprocessing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GWAS/QC_of_GWAS_data/" class="md-nav__link">
+        QC of GWAS data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GWAS/Imputation/" class="md-nav__link">
+        Imputation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GWAS/Association/" class="md-nav__link">
+        Association
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GWAS/Annotation/" class="md-nav__link">
+        Annotation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GWAS/Save_Close_Project/" class="md-nav__link">
+        Save/Close Project
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      <label class="md-nav__link" for="__nav_4_6">
+        Transgene
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Transgene" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          Transgene
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transgene/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transgene/DataAnalysis/" class="md-nav__link">
+        Analysis Workflow
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transgene/Others/" class="md-nav__link">
+        Others
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      <label class="md-nav__link" for="__nav_5">
+        Land
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Land" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Land
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" type="checkbox" id="__nav_5_1" >
+      
+      <label class="md-nav__link" for="__nav_5_1">
+        OncoLand
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="OncoLand" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          OncoLand
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OncoLand/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OncoLand/Search_Basics/" class="md-nav__link">
+        Basic Search
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OncoLand/Advanced_Analytics/" class="md-nav__link">
+        Advanced Analytics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OncoLand/Measurement_Data/" class="md-nav__link">
+        Measurement Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OncoLand/Land_Tools/" class="md-nav__link">
+        Land Tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OncoLand/Virtual_Land/" class="md-nav__link">
+        Virtual Land
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      <label class="md-nav__link" for="__nav_5_2">
+        DiseaseLand
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="DiseaseLand" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          DiseaseLand
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DiseaseLand/Introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DiseaseLand/BodyMap/" class="md-nav__link">
+        Body Map
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DiseaseLand/DiseaseLand/" class="md-nav__link">
+        DiseaseLand
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DiseaseLand/LINCS/" class="md-nav__link">
+        LINCs
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" checked>
+      
+      <label class="md-nav__link" for="__nav_5_3">
+        Single Cell Lands
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Single Cell Lands" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Single Cell Lands
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Introduction
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#single-cell-lands" class="md-nav__link">
+    Single Cell Lands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curation-and-processing" class="md-nav__link">
+    Curation and processing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#land-organization" class="md-nav__link">
+    Land Organization
+  </a>
+  
+    <nav class="md-nav" aria-label="Land Organization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#non-umi-datasets" class="md-nav__link">
+    Non-UMI Datasets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#umi-datasets" class="md-nav__link">
+    UMI Datasets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-datasets" class="md-nav__link">
+    Special datasets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distribution-views" class="md-nav__link">
+    Distribution Views
+  </a>
+  
+    <nav class="md-nav" aria-label="Distribution Views">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cluster-distribution" class="md-nav__link">
+    Cluster Distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-distribution" class="md-nav__link">
+    Sample Distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-distribution" class="md-nav__link">
+    Project distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-distribution" class="md-nav__link">
+    Comparison distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cellmap-browser" class="md-nav__link">
+    CellMap Browser
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gene_Views/" class="md-nav__link">
+        Gene Views
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+      
+      <label class="md-nav__link" for="__nav_5_4">
+        GeneticsLand
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="GeneticsLand" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          GeneticsLand
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GeneticsLand/Introduction_to_GeneticsLand/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GeneticsLand/Adding_Data_to_GeneticsLand/" class="md-nav__link">
+        Adding Data to GeneticsLand
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GeneticsLand/Explore_Your_Data_in_GeneticsLand/" class="md-nav__link">
+        Explore Your Data in GeneticsLand
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GeneticsLand/Delete_your_GeneticsLand/" class="md-nav__link">
+        Delete your GeneticsLand
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        About
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/Release-notes/" class="md-nav__link">
+        Release Notes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/Contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#single-cell-lands" class="md-nav__link">
+    Single Cell Lands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curation-and-processing" class="md-nav__link">
+    Curation and processing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#land-organization" class="md-nav__link">
+    Land Organization
+  </a>
+  
+    <nav class="md-nav" aria-label="Land Organization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#non-umi-datasets" class="md-nav__link">
+    Non-UMI Datasets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#umi-datasets" class="md-nav__link">
+    UMI Datasets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-datasets" class="md-nav__link">
+    Special datasets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distribution-views" class="md-nav__link">
+    Distribution Views
+  </a>
+  
+    <nav class="md-nav" aria-label="Distribution Views">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cluster-distribution" class="md-nav__link">
+    Cluster Distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-distribution" class="md-nav__link">
+    Sample Distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-distribution" class="md-nav__link">
+    Project distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-distribution" class="md-nav__link">
+    Comparison distribution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cellmap-browser" class="md-nav__link">
+    CellMap Browser
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="introduction">Introduction</h1>
+<h2 id="single-cell-lands">Single Cell Lands</h2>
+<p>OmicSoft's new Single Cell Land framework extends the revolutionary OmicLand Framework (OncoLand and DiseaseLand) to deliver large results from curated scRNA-seq projects.
+Single Cell Lands extend the DiseaseLand and OncoLand results, enabling exploration of normal expression, as well as oncology and disease-focused data.
+Land files are built up based on OmicSoft File System (OFS), which stores genomics data in database files and different layers of indexes for gene/markers and samples/cell clusters.</p>
+<p>This tutorial will introduce the key visualizations of Single Cell Lands, designed to accelerate discovery of relevant curated datasets and expression for your work.</p>
+<h2 id="curation-and-processing">Curation and processing</h2>
+<p>OmicSoft's teams of biologists and bioinformaticians manually process and curate every project in Single Cell Lands to maximize the ability to discover, explor, and cross-compare data.</p>
+<ul>
+<li>Project metadata evaluation</li>
+<li>Is the project compatible with the platform?</li>
+<li>Are all necessary metadata available from the data submission?</li>
+<li>Are results interpretable in context of the paper?</li>
+<li>Data retrieval</li>
+<li>Are data available?</li>
+<li>Preferred: Raw FASTQ files or BAM</li>
+<li>Special Lands: processed quantification matrices</li>
+<li>Is the data submission complete, with necessary parsing/processing information?</li>
+<li>Metadata curation</li>
+<li>Extract/curate project, technical, sample, and clinical metadata</li>
+<li>Apply controlled vocabularies and curation standards</li>
+<li>Curate expected results from paper, such as clustering experiments, cell types, and key markers/differentially expressed genes</li>
+<li>Data Processing</li>
+<li>Alignment, quantification, normalization, and post-processing QC</li>
+<li>Dimension reduction/clustering to reproduce paper's key findings</li>
+<li>Statistical comparisons between clusters</li>
+<li>Manual Cell type Annotation</li>
+<li>Manual curation of predicted clusters</li>
+<li>Overlay key marker genes</li>
+<li>Confirm proper cluster isolation of expected cell types</li>
+</ul>
+<p>The output of this extensive curation process, including project, sample, and curated cell cluster metadata, cell-level gene expression results, and differential expression, are all accessible through the Land interface.</p>
+<h2 id="land-organization">Land Organization</h2>
+<p>To enable discovery of relevant datasets that you might not be looking for, diverse projects are gathered in Single Cell Lands, separated by species (human or mouse) and technology (UMI or nonUMI).</p>
+<h3 id="non-umi-datasets">Non-UMI Datasets</h3>
+<p>Full transcript (non-UMI) scRNAseq datasets such as SMART-seq will be found in Lands such as "SingleCellHuman". Typically fewer cells are measured per experiment, but less gene dropout.</p>
+<h3 id="umi-datasets">UMI Datasets</h3>
+<p>3' and 5' Tag-based technologies enable highly parallel measurement of single cell expression, but does not detect full transcripts, instead only labeling the 5' or 3' end of the transcript.</p>
+<h3 id="special-datasets">Special datasets</h3>
+<p>Some Lands, such as SingleCellHCL, were processed directly from expression matrices and fully curated, so will be on a different gene model from other Lands.</p>
+<h2 id="distribution-views">Distribution Views</h2>
+<p>Click <strong>Select Land</strong> and choose SingleCellHuman_B37.</p>
+<p>When you open a Single Cell Land, you will first see a "distribution view", indicating the number of datasets available at a level of organization, such as Project, Sample, Cluster, and Comparison.</p>
+<p>Use these Views to get a high-level understanding of available data.</p>
+<p>In SingleCellHuman, the default distribution View is Cluster Distribution.</p>
+<p><img alt="" src="../images/Overview.png" /></p>
+<p>You can click <strong>Select View</strong> to see the available visualizations for the <strong>context</strong>, e.g. metadata/Land context (default), gene-level context (after you search for a gene), multi-gene context (searching for more than one gene), or Comparison-level context (searching for one or more statistical comparisons). Many of the visualizations can be useful in certain circumstances, but this tutorial will focus on the most commonly used visualizations.</p>
+<h3 id="cluster-distribution">Cluster Distribution</h3>
+<p>The <strong>Clusters</strong> view is the most important distribution View, since it shows the available manually-curated cell types within the Land. Specifically, it displays the number of Cell Clusters, groups of cells within or between samples of a project, that were identified during Dimension Reduction analysis (tSNE, UMAP, etc). The X-axis shows the number of cell clusters, counting different samples in the same cluster; a cluster that is comprised of five different samples from a dimension reduction analysis will display as 5.</p>
+<p>The key filter is the <strong>Cluster</strong> filter, because it includes <strong>ClusterCellType</strong>, which is OmicSoft's manual annotation of the cell type based on gene expression markers. Additional filters in this level are primarily technical parameters from the clustering.</p>
+<p><img alt="" src="../images/ClusterDistribution.png" /></p>
+<p>Using the ClusterCellType is generally the best way to search the available datasets using the curated metadata. Filter on sample-level metadata such as TissueCategory () or Tissue, or DiseaseState,Gender, Age, or any other clinicla parameter to refine the displayed datasets; you could also filter Project metadata such as TherapeuticArea. Try filtering for a couple tissues like Pancreas, Skin and Liver.</p>
+<p>Then use Specify Histogram Columns to regroup the data on the Y-axis, for example ProjectName. Now you can clearly see the available cell types identified, in the datasets that passed your required filters.</p>
+<p><img alt="" src="../images/PancreasSkinLiverClusterCellTypes.png" /></p>
+<h3 id="sample-distribution">Sample Distribution</h3>
+<p>The <strong>Samples</strong> view shows the number of biological samples in each dataset.
+In the Task tab (right side) use "Specify Histogram columns" to regroup data by Tissue, Disease, or other sample-level metadata, or aggregate by Project metadata.
+Use "Specify Group column" to split each bar further by metadata.</p>
+<p><img alt="" src="../images/SampleDistribution.png" /></p>
+<h3 id="project-distribution">Project distribution</h3>
+<p>To get a higher-level view of the datasets, you can use the Projects view to see project IDs (like GSE or ArrayExpress IDs), filter on metadata keywords, and find new datasets.</p>
+<p><img alt="" src="../images/ProjectDistribution.png" /></p>
+<h3 id="comparison-distribution">Comparison distribution</h3>
+<p>As part of the curation process, QIAGEN statisticians calculate full differential expression analyses between each cluster in a dimension reduction "CellMap" and all other clusters, revealing the genes that are most enriched and depleted in each cluster. For each comparison, a group of <strong>Case</strong> cells (one cluster) and a group of <strong>Control</strong> cells (all other clusters)</p>
+<p><img alt="" src="../images/ComparisonDistribution.png" /></p>
+<p>Use the comparison distribution View to identify the comparisons that are relevant to your data. For example, use Case.TissueCategory filter (left) to filter for liver cell clusters from pancreas tissue, then Specify Histogram Columns (right) to group on Case.ClusterCellType. This reveals the precomputed comparisons for pancreatic alpha cells, beta cells, PP cells, etc.</p>
+<p>Select one or more comparisons (e.g. pancreatic beta cell) to confirm the details, then click "Browse Selected Comparisons" to open the full volcano plots.</p>
+<h3 id="cellmap-browser">CellMap Browser</h3>
+<p>In Single Cell Lands, Dimension Reduction plots are called <strong>CellMaps</strong>, because they may be derived from multiple algorithms, and it is tedious to keep writing "Dimension Reduction". You can browse the available CellMaps in the CellMap browser.</p>
+<p>Before you open this View, consider filtering for data most relevant to you, such as particular tissues. CellMaps contain a lot of data, so initial syncing will take a few minutes if you attempt to browse all the data, and the variety of cell types will be hard to interpret easily.</p>
+<p>Try filtering for a few tissues, like "embryo" (often cells differentiated from ESCs) or "skin".</p>
+<p><img alt="" src="../images/CellMapBrowser.png" /></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../../DiseaseLand/LINCS/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              LINCs
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../Gene_Views/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Gene Views
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2008 - 2017 OmicSoft/QIAGEN Bioinformatics
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a1c7c35e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
