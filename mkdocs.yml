@@ -3,7 +3,7 @@ site_name: 'omicsoft doc'
 site_description: 'OmicSoft Doc'
 site_author: 'OmicSoft Support'
 site_url: 'https://omicsoftdocs.github.io/ArraySuiteDoc/'
-#site_url: 'http://192.168.3.222/WikiBigFiles/doc/v10.3/'
+#site_url: 'http://127.0.0.1:8000'
 
 # Repository
 # repo_name: 'omicsoft.github.io'
@@ -229,13 +229,9 @@ nav:
       - Body Map: tutorials/DiseaseLand/BodyMap.md
       - DiseaseLand: tutorials/DiseaseLand/DiseaseLand.md
       - LINCs: tutorials/DiseaseLand/LINCS.md
-      - Single Cell Lands: tutorials/DiseaseLand/scLand.md
-    - ComparisonLand from External Inferences:
-      - Introduction: tutorials/ComparisonLand/Introduction.md
-      - Add Expression Data: tutorials/ComparisonLand/AddExpressionData.md
-      - Convert Inference Data: tutorials/ComparisonLand/ConvertInferenceData.md
-      - Create Land: tutorials/ComparisonLand/CreateLand.md
-      - Explore ComparisonLand: tutorials/ComparisonLand/ExploreComparisonLand.md
+    - Single Cell Lands:
+      - Introduction: tutorials/SingleCellLand/Introduction.md
+      - Gene Views: tutorials/SingleCellLand/Gene_Views.md
     - GeneticsLand:
       - Introduction: tutorials/GeneticsLand/Introduction_to_GeneticsLand.md
       - Adding Data to GeneticsLand: tutorials/GeneticsLand/Adding_Data_to_GeneticsLand.md
