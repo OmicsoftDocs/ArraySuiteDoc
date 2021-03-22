@@ -3302,6 +3302,42 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MultiGene_Views/" class="md-nav__link">
+        Multigene Views
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ComparisonViews/" class="md-nav__link">
+        Cluster Comparisons
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DownloadData/" class="md-nav__link">
+        Download and Export
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -3585,27 +3621,41 @@ Land files are built up based on OmicSoft File System (OFS), which stores genomi
 <h2 id="curation-and-processing">Curation and processing</h2>
 <p>OmicSoft's teams of biologists and bioinformaticians manually process and curate every project in Single Cell Lands to maximize the ability to discover, explor, and cross-compare data.</p>
 <ul>
-<li>Project metadata evaluation</li>
+<li>Project metadata evaluation<ul>
 <li>Is the project compatible with the platform?</li>
 <li>Are all necessary metadata available from the data submission?</li>
 <li>Are results interpretable in context of the paper?</li>
-<li>Data retrieval</li>
-<li>Are data available?</li>
+</ul>
+</li>
+<li>Data retrieval<ul>
+<li>Are data available?<ul>
 <li>Preferred: Raw FASTQ files or BAM</li>
 <li>Special Lands: processed quantification matrices</li>
+</ul>
+</li>
 <li>Is the data submission complete, with necessary parsing/processing information?</li>
-<li>Metadata curation</li>
+</ul>
+</li>
+<li>Metadata curation<ul>
 <li>Extract/curate project, technical, sample, and clinical metadata</li>
 <li>Apply controlled vocabularies and curation standards</li>
 <li>Curate expected results from paper, such as clustering experiments, cell types, and key markers/differentially expressed genes</li>
-<li>Data Processing</li>
+</ul>
+</li>
+<li>Data Processing<ul>
 <li>Alignment, quantification, normalization, and post-processing QC</li>
 <li>Dimension reduction/clustering to reproduce paper's key findings</li>
 <li>Statistical comparisons between clusters</li>
-<li>Manual Cell type Annotation</li>
-<li>Manual curation of predicted clusters</li>
+</ul>
+</li>
+<li>Manual Cell type Annotation<ul>
+<li>Manual curation of predicted clusters<ul>
 <li>Overlay key marker genes</li>
 <li>Confirm proper cluster isolation of expected cell types</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p>The output of this extensive curation process, including project, sample, and curated cell cluster metadata, cell-level gene expression results, and differential expression, are all accessible through the Land interface.</p>
 <h2 id="land-organization">Land Organization</h2>
