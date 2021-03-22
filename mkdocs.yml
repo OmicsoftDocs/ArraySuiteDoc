@@ -233,6 +233,9 @@ nav:
     - Single Cell Lands:
       - Introduction: tutorials/SingleCellLand/Introduction.md
       - Gene Views: tutorials/SingleCellLand/Gene_Views.md
+      - Multigene Views: tutorials/SingleCellLand/MultiGene_Views.md
+      - Cluster Comparisons: tutorials/SingleCellLand/ComparisonViews.md
+      - Download and Export: tutorials/SingleCellLand/DownloadData.md
     - GeneticsLand:
       - Introduction: tutorials/GeneticsLand/Introduction_to_GeneticsLand.md
       - Adding Data to GeneticsLand: tutorials/GeneticsLand/Adding_Data_to_GeneticsLand.md

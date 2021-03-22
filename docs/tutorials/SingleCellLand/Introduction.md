@@ -11,26 +11,26 @@ This tutorial will introduce the key visualizations of Single Cell Lands, design
 OmicSoft's teams of biologists and bioinformaticians manually process and curate every project in Single Cell Lands to maximize the ability to discover, explor, and cross-compare data.
 
 * Project metadata evaluation
- * Is the project compatible with the platform?
- * Are all necessary metadata available from the data submission?
- * Are results interpretable in context of the paper?
+    * Is the project compatible with the platform?
+    * Are all necessary metadata available from the data submission?
+    * Are results interpretable in context of the paper?
 * Data retrieval
- * Are data available?
-   * Preferred: Raw FASTQ files or BAM
-   * Special Lands: processed quantification matrices
- * Is the data submission complete, with necessary parsing/processing information?
+    * Are data available?
+        * Preferred: Raw FASTQ files or BAM
+        * Special Lands: processed quantification matrices
+    * Is the data submission complete, with necessary parsing/processing information?
 * Metadata curation
- * Extract/curate project, technical, sample, and clinical metadata
- *  Apply controlled vocabularies and curation standards
- *  Curate expected results from paper, such as clustering experiments, cell types, and key markers/differentially expressed genes
+    * Extract/curate project, technical, sample, and clinical metadata
+    *  Apply controlled vocabularies and curation standards
+    *  Curate expected results from paper, such as clustering experiments, cell types, and key markers/differentially expressed genes
 * Data Processing
- * Alignment, quantification, normalization, and post-processing QC
- * Dimension reduction/clustering to reproduce paper's key findings
- * Statistical comparisons between clusters
+    * Alignment, quantification, normalization, and post-processing QC
+    * Dimension reduction/clustering to reproduce paper's key findings
+    * Statistical comparisons between clusters
 * Manual Cell type Annotation
- * Manual curation of predicted clusters
-   * Overlay key marker genes
-   * Confirm proper cluster isolation of expected cell types
+    * Manual curation of predicted clusters
+        * Overlay key marker genes
+        * Confirm proper cluster isolation of expected cell types
 
 The output of this extensive curation process, including project, sample, and curated cell cluster metadata, cell-level gene expression results, and differential expression, are all accessible through the Land interface.
 ## Land Organization
