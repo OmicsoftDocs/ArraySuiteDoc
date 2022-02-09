@@ -9,14 +9,13 @@
         <meta name="description" content="OmicSoft Doc">
       
       
-      
         <meta name="author" content="OmicSoft Support">
       
       
         <link rel="canonical" href="https://omicsoftdocs.github.io/ArraySuiteDoc/tutorials/RTPCR/Introduction/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10">
     
     
       
@@ -24,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.2c0c5eaf.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.d6be258b.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.7fa14f5b.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
         
           
           
@@ -41,19 +40,16 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
-    
     
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-        
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
+
     
     
   </head>
@@ -65,8 +61,8 @@
     
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="teal">
-      
   
+    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -83,7 +79,10 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+    
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="omicsoft doc" class="md-header__button md-logo" aria-label="omicsoft doc" data-md-component="logo">
       
@@ -110,26 +109,28 @@
         </div>
       </div>
     </div>
-    <div class="md-header__options">
-      
-    </div>
+    
+    
     
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -146,6 +147,7 @@
     
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -153,6 +155,7 @@
       
         
           
+            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
@@ -275,6 +278,7 @@
     </ul>
   </div>
 </nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -331,10 +335,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
-      <label class="md-nav__link" for="__nav_2">
-        Framework
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Framework
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Framework" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
@@ -343,6 +351,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -353,8 +362,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -364,10 +375,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
       
-      <label class="md-nav__link" for="__nav_2_2">
-        Array Server
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Array Server
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Array Server" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
@@ -376,6 +391,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -386,8 +402,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -398,8 +416,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -410,8 +430,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -422,8 +444,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -434,14 +458,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -451,10 +478,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
       
-      <label class="md-nav__link" for="__nav_2_3">
-        Server Explorer
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Server Explorer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Server Explorer" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_3">
           <span class="md-nav__icon md-icon"></span>
@@ -463,6 +494,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -473,8 +505,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -485,8 +519,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -497,8 +533,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -509,8 +547,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -521,8 +561,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -533,14 +575,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -550,10 +595,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
       
-      <label class="md-nav__link" for="__nav_2_4">
-        GenomeBrowser
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          GenomeBrowser
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="GenomeBrowser" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_4">
           <span class="md-nav__icon md-icon"></span>
@@ -562,6 +611,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -572,8 +622,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -584,8 +636,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -596,8 +650,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -608,8 +664,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -620,8 +678,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -632,14 +692,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -649,10 +712,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
       
-      <label class="md-nav__link" for="__nav_2_5">
-        Sample Management
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5">
+          Sample Management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Sample Management" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_5">
           <span class="md-nav__icon md-icon"></span>
@@ -661,6 +728,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -671,8 +739,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -683,8 +753,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -695,8 +767,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -707,14 +781,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -724,10 +801,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
       
-      <label class="md-nav__link" for="__nav_2_6">
-        Studio on the Cloud
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6">
+          Studio on the Cloud
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Studio on the Cloud" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_6">
           <span class="md-nav__icon md-icon"></span>
@@ -736,6 +817,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -746,8 +828,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -758,8 +842,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -770,8 +856,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -782,14 +870,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -799,10 +890,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
       
-      <label class="md-nav__link" for="__nav_2_7">
-        Oscript
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_7">
+          Oscript
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Oscript" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_7">
           <span class="md-nav__icon md-icon"></span>
@@ -811,6 +906,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -821,8 +917,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -833,8 +931,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -845,14 +945,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -862,10 +965,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" >
       
-      <label class="md-nav__link" for="__nav_2_8">
-        Land Explorer
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8">
+          Land Explorer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Land Explorer" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_8">
           <span class="md-nav__icon md-icon"></span>
@@ -874,6 +981,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -884,8 +992,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -895,10 +1005,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_2" type="checkbox" id="__nav_2_8_2" >
       
-      <label class="md-nav__link" for="__nav_2_8_2">
-        Explorer
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8_2">
+          Explorer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Explorer" data-md-level="3">
         <label class="md-nav__title" for="__nav_2_8_2">
           <span class="md-nav__icon md-icon"></span>
@@ -907,6 +1021,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -917,8 +1032,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -929,14 +1046,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -946,10 +1066,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_3" type="checkbox" id="__nav_2_8_3" >
       
-      <label class="md-nav__link" for="__nav_2_8_3">
-        Land Views
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8_3">
+          Land Views
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Land Views" data-md-level="3">
         <label class="md-nav__title" for="__nav_2_8_3">
           <span class="md-nav__icon md-icon"></span>
@@ -958,6 +1082,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -968,8 +1093,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -979,10 +1106,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_3_2" type="checkbox" id="__nav_2_8_3_2" >
       
-      <label class="md-nav__link" for="__nav_2_8_3_2">
-        Sample Level Views
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8_3_2">
+          Sample Level Views
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Sample Level Views" data-md-level="4">
         <label class="md-nav__title" for="__nav_2_8_3_2">
           <span class="md-nav__icon md-icon"></span>
@@ -991,6 +1122,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1001,8 +1133,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1013,8 +1147,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1025,8 +1161,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1037,8 +1175,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1049,8 +1189,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1061,14 +1203,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1078,10 +1223,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_3_3" type="checkbox" id="__nav_2_8_3_3" >
       
-      <label class="md-nav__link" for="__nav_2_8_3_3">
-        Gene Level Views
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8_3_3">
+          Gene Level Views
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Gene Level Views" data-md-level="4">
         <label class="md-nav__title" for="__nav_2_8_3_3">
           <span class="md-nav__icon md-icon"></span>
@@ -1090,6 +1239,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1100,8 +1250,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1112,8 +1264,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1124,8 +1278,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1136,8 +1292,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1148,8 +1306,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1160,8 +1320,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1172,8 +1334,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1184,8 +1348,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1196,8 +1362,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1208,8 +1376,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1220,14 +1390,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1237,10 +1410,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_3_4" type="checkbox" id="__nav_2_8_3_4" >
       
-      <label class="md-nav__link" for="__nav_2_8_3_4">
-        Comparison Level Views
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8_3_4">
+          Comparison Level Views
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Comparison Level Views" data-md-level="4">
         <label class="md-nav__title" for="__nav_2_8_3_4">
           <span class="md-nav__icon md-icon"></span>
@@ -1249,6 +1426,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1259,20 +1437,24 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1282,10 +1464,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_4" type="checkbox" id="__nav_2_8_4" >
       
-      <label class="md-nav__link" for="__nav_2_8_4">
-        Using Land Explorer
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8_4">
+          Using Land Explorer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Using Land Explorer" data-md-level="3">
         <label class="md-nav__title" for="__nav_2_8_4">
           <span class="md-nav__icon md-icon"></span>
@@ -1294,6 +1480,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1304,8 +1491,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1315,10 +1504,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_4_2" type="checkbox" id="__nav_2_8_4_2" >
       
-      <label class="md-nav__link" for="__nav_2_8_4_2">
-        Filters
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8_4_2">
+          Filters
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Filters" data-md-level="4">
         <label class="md-nav__title" for="__nav_2_8_4_2">
           <span class="md-nav__icon md-icon"></span>
@@ -1327,6 +1520,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1337,8 +1531,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1349,8 +1545,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1361,8 +1559,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1373,8 +1573,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1385,8 +1587,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1397,8 +1601,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1409,14 +1615,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1426,10 +1635,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_4_3" type="checkbox" id="__nav_2_8_4_3" >
       
-      <label class="md-nav__link" for="__nav_2_8_4_3">
-        Queries
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8_4_3">
+          Queries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Queries" data-md-level="4">
         <label class="md-nav__title" for="__nav_2_8_4_3">
           <span class="md-nav__icon md-icon"></span>
@@ -1438,6 +1651,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1448,8 +1662,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1460,14 +1676,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1478,8 +1697,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1490,8 +1711,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1502,14 +1725,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1519,10 +1745,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_5" type="checkbox" id="__nav_2_8_5" >
       
-      <label class="md-nav__link" for="__nav_2_8_5">
-        Land Explorer for IPA
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8_5">
+          Land Explorer for IPA
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Land Explorer for IPA" data-md-level="3">
         <label class="md-nav__title" for="__nav_2_8_5">
           <span class="md-nav__icon md-icon"></span>
@@ -1531,6 +1761,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1541,18 +1772,21 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1575,10 +1809,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
-      <label class="md-nav__link" for="__nav_3">
-        OmicData
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          OmicData
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="OmicData" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
@@ -1587,6 +1825,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1596,10 +1835,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
       
-      <label class="md-nav__link" for="__nav_3_1">
-        Microarray
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          Microarray
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Microarray" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_1">
           <span class="md-nav__icon md-icon"></span>
@@ -1608,6 +1851,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1618,8 +1862,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1630,8 +1876,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1642,8 +1890,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1654,8 +1904,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1666,8 +1918,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1678,8 +1932,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1690,14 +1946,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1707,10 +1966,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
       
-      <label class="md-nav__link" for="__nav_3_2">
-        CNV
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          CNV
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="CNV" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_2">
           <span class="md-nav__icon md-icon"></span>
@@ -1719,6 +1982,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1729,8 +1993,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1741,8 +2007,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1753,8 +2021,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1765,8 +2035,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1777,8 +2049,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1789,14 +2063,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1806,10 +2083,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
       
-      <label class="md-nav__link" for="__nav_3_3">
-        ExonArray
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          ExonArray
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="ExonArray" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
@@ -1818,6 +2099,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1828,8 +2110,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1840,8 +2124,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1852,8 +2138,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1864,8 +2152,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1876,8 +2166,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1888,8 +2180,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1900,8 +2194,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1912,8 +2208,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1924,14 +2222,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -1943,10 +2244,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" checked>
       
-      <label class="md-nav__link" for="__nav_3_4">
-        RT-PCR
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          RT-PCR
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="RT-PCR" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
@@ -1955,6 +2260,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
     
@@ -1963,6 +2269,7 @@
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
       
         
       
@@ -1977,7 +2284,9 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -2010,8 +2319,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2022,8 +2333,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2034,8 +2347,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2046,14 +2361,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2063,10 +2381,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
       
-      <label class="md-nav__link" for="__nav_3_5">
-        SNP
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          SNP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="SNP" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_5">
           <span class="md-nav__icon md-icon"></span>
@@ -2075,6 +2397,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2085,8 +2408,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2097,8 +2422,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2109,8 +2436,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2121,8 +2450,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2133,8 +2464,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2145,12 +2478,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -2171,10 +2506,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        NGS
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          NGS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="NGS" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -2183,6 +2522,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2192,10 +2532,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
       
-      <label class="md-nav__link" for="__nav_4_1">
-        RNA-Seq
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          RNA-Seq
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="RNA-Seq" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_1">
           <span class="md-nav__icon md-icon"></span>
@@ -2204,6 +2548,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2214,8 +2559,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2226,8 +2573,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2238,8 +2587,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2250,8 +2601,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2262,8 +2615,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2274,8 +2629,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2286,8 +2643,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2298,8 +2657,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2310,8 +2671,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2322,8 +2685,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2334,14 +2699,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2351,10 +2719,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
       
-      <label class="md-nav__link" for="__nav_4_2">
-        DNA-Seq
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          DNA-Seq
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="DNA-Seq" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_2">
           <span class="md-nav__icon md-icon"></span>
@@ -2363,6 +2735,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2373,8 +2746,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2385,8 +2760,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2397,8 +2774,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2409,8 +2788,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2421,8 +2802,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2433,8 +2816,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2445,8 +2830,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2457,8 +2844,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2469,14 +2858,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2486,10 +2878,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
       
-      <label class="md-nav__link" for="__nav_4_3">
-        miRNA-Seq
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          miRNA-Seq
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="miRNA-Seq" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_3">
           <span class="md-nav__icon md-icon"></span>
@@ -2498,6 +2894,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2508,8 +2905,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2520,8 +2919,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2532,8 +2933,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2544,8 +2947,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2556,8 +2961,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2568,8 +2975,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2580,8 +2989,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2592,8 +3003,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2604,8 +3017,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2616,14 +3031,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2633,10 +3051,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
       
-      <label class="md-nav__link" for="__nav_4_4">
-        scRNA-Seq
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          scRNA-Seq
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="scRNA-Seq" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_4">
           <span class="md-nav__icon md-icon"></span>
@@ -2645,6 +3067,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2655,8 +3078,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2666,10 +3091,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_2" type="checkbox" id="__nav_4_4_2" >
       
-      <label class="md-nav__link" for="__nav_4_4_2">
-        Pre-processing
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4_2">
+          Pre-processing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Pre-processing" data-md-level="3">
         <label class="md-nav__title" for="__nav_4_4_2">
           <span class="md-nav__icon md-icon"></span>
@@ -2678,6 +3107,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2688,8 +3118,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2700,14 +3132,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2718,8 +3153,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2730,8 +3167,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2742,8 +3181,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2754,8 +3195,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2766,8 +3209,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2778,14 +3223,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2795,10 +3243,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
       
-      <label class="md-nav__link" for="__nav_4_5">
-        GWAS
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5">
+          GWAS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="GWAS" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_5">
           <span class="md-nav__icon md-icon"></span>
@@ -2807,6 +3259,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2817,8 +3270,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2829,8 +3284,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2841,8 +3298,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2853,8 +3312,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2865,8 +3326,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2877,8 +3340,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2889,8 +3354,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2901,14 +3368,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2918,10 +3388,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
       
-      <label class="md-nav__link" for="__nav_4_6">
-        Transgene
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          Transgene
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Transgene" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_6">
           <span class="md-nav__icon md-icon"></span>
@@ -2930,6 +3404,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -2940,8 +3415,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2952,8 +3429,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -2964,12 +3443,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -2990,10 +3471,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="__nav_5">
-        Land
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Land
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Land" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
@@ -3002,6 +3487,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3011,10 +3497,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" type="checkbox" id="__nav_5_1" >
       
-      <label class="md-nav__link" for="__nav_5_1">
-        OncoLand
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_1">
+          OncoLand
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="OncoLand" data-md-level="2">
         <label class="md-nav__title" for="__nav_5_1">
           <span class="md-nav__icon md-icon"></span>
@@ -3023,6 +3513,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3033,8 +3524,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3045,8 +3538,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3057,8 +3552,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3069,8 +3566,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3081,8 +3580,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3093,14 +3594,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3110,10 +3614,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
       
-      <label class="md-nav__link" for="__nav_5_2">
-        DiseaseLand
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          DiseaseLand
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="DiseaseLand" data-md-level="2">
         <label class="md-nav__title" for="__nav_5_2">
           <span class="md-nav__icon md-icon"></span>
@@ -3122,6 +3630,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3132,8 +3641,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3144,8 +3655,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3156,8 +3669,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3168,14 +3683,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3185,10 +3703,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
       
-      <label class="md-nav__link" for="__nav_5_3">
-        Single Cell Lands
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3">
+          Single Cell Lands
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Single Cell Lands" data-md-level="2">
         <label class="md-nav__title" for="__nav_5_3">
           <span class="md-nav__icon md-icon"></span>
@@ -3197,6 +3719,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3207,8 +3730,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3219,8 +3744,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3231,8 +3758,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3243,8 +3772,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3255,14 +3786,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3272,10 +3806,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
       
-      <label class="md-nav__link" for="__nav_5_4">
-        GeneticsLand
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4">
+          GeneticsLand
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="GeneticsLand" data-md-level="2">
         <label class="md-nav__title" for="__nav_5_4">
           <span class="md-nav__icon md-icon"></span>
@@ -3284,6 +3822,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3294,8 +3833,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3306,8 +3847,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3318,8 +3861,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3330,12 +3875,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -3356,10 +3903,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="__nav_6">
-        About
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="About" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -3368,6 +3919,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -3378,8 +3930,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -3390,6 +3944,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -3409,7 +3964,9 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
@@ -3447,8 +4004,8 @@
             <article class="md-content__inner md-typeset">
               
                 
-                
-                <h1 id="introduction">Introduction</h1>
+
+<h1 id="introduction">Introduction</h1>
 <p><em>Array Studio</em>
 provides an integrated environment for analyzing and visualizing high dimensional data.
 It is convenient in organizing and visualizing data with its <em>Solution Explorer</em>, which organizes each project into <em>Data, QC, Table, List, Cluster, Text, Attachments</em> and other categories. Multiple projects can be opened simultaneously in the <em>Solution Explorer</em>, and data can be shared among projects.
@@ -3507,24 +4064,20 @@ installation, basic usage, data structure and standard visualization in Array St
 <p>Switch to the <strong>Solution Explorer</strong> by clicking on the <em>Solution Explorer</em> tab, which should be found at the bottom of the <em>Workflow Window</em>. If the <em>Solution Explorer</em> tab is not visible, open it by going to the <em>View Menu | Show Solution Explorer</em>.</p>
 <p><img alt="NewImage_3_png" src="../images/201510-3.png" /></p>
 <p>The Solution Explorer will be empty except for data containers for List, Cluster, and Text files. You can right-click on List, Cluster, and Text for their additional options. For instance, right-clicking on List will bring up options to add a new List, add list from file, etc. A List can be used to filter the data, by either Variables (e.g. probesets), or Observations (e.g. chips or samples).</p>
-                
-              
-              
-                
-
 
               
             </article>
           </div>
         </div>
+        
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../ExonArray/Save_Close_Project/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../../ExonArray/Save_Close_Project/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Save/Close Project" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -3539,7 +4092,8 @@ installation, basic usage, data structure and standard visualization in Array St
         </a>
       
       
-        <a href="../Manage_RT-PCR_Raw_Data/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../Manage_RT-PCR_Raw_Data/" class="md-footer__link md-footer__link--next" aria-label="Next: Manage RT-PCR Raw Data" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -3557,18 +4111,19 @@ installation, basic usage, data structure and standard visualization in Array St
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2008 - 2017 OmicSoft/QIAGEN Bioinformatics
-          </div>
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2008 - 2017 OmicSoft/QIAGEN Bioinformatics
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
     </div>
   </div>
@@ -3578,10 +4133,10 @@ installation, basic usage, data structure and standard visualization in Array St
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.092fa1f6.min.js"}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.a1c7c35e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e3b2bf44.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
